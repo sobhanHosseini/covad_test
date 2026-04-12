@@ -56,12 +56,117 @@ except ImportError:
         "Falling back to VLM-only deduplication for Stage 2."
     )
 
+# ── Optional: CLIP + PyTorch for visual-grounded concept clustering ─────────────
+try:
+    import clip
+    import torch
+    from PIL import Image
+    CLIP_AVAILABLE = True
+except ImportError:
+    CLIP_AVAILABLE = False
+
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s | %(levelname)s | %(message)s",
     datefmt="%H:%M:%S",
 )
 log = logging.getLogger(__name__)
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# CONSTANTS — Dimension normalisation & per-dimension clustering thresholds
+# ══════════════════════════════════════════════════════════════════════════════
+
+DIMENSION_NORMALIZE = {
+    # texture variants
+    "surface texture":              "texture",
+    "surface_texture":              "texture",
+    "texture":                      "texture",
+    # color variants
+    "surface color":                "color",
+    "surface_color":                "color",
+    "color":                        "color",
+    # shape variants
+    "shape/geometry":               "shape",
+    "shape_geometry":               "shape",
+    "shape":                        "shape",
+    "geometry":                     "shape",
+    # finish variants
+    "material finish":              "finish",
+    "material_finish":              "finish",
+    "finish":                       "finish",
+    # structure variants
+    "structural integrity":         "structure",
+    "structural_integrity":         "structure",
+    "structure":                    "structure",
+    "structural":                   "structure",
+    # marking variants
+    "visible surface markings":     "marking",
+    "visible_surface_markings":     "marking",
+    "marking":                      "marking",
+    "markings":                     "marking",
+    "surface markings":             "marking",
+}
+
+DIMENSION_THRESHOLDS = {
+    "color":     0.75,
+    "texture":   0.72,
+    "shape":     0.70,
+    "finish":    0.72,
+    "structure": 0.60,
+    "marking":   0.65,
+    "unknown":   0.68,
+}
+
+# ── Tier 2: fixed generic anomaly concepts (AnomalyCLIP-inspired) ─────────────
+# These are always included in the vocabulary regardless of category or holdout.
+GENERIC_ANOMALY_CONCEPTS: list[dict] = [
+    {
+        "name": "surface_irregularity",
+        "description": (
+            "Any visible irregularity, roughness or discontinuity on the surface "
+            "that deviates from the expected normal appearance"
+        ),
+        "visual_dimension": "texture",
+        "tier": "generic",
+    },
+    {
+        "name": "color_deviation",
+        "description": (
+            "Any unexpected change in color, discoloration, staining or abnormal "
+            "pigmentation compared to normal appearance"
+        ),
+        "visual_dimension": "color",
+        "tier": "generic",
+    },
+    {
+        "name": "structural_discontinuity",
+        "description": (
+            "Any break, crack, hole, fracture or loss of structural continuity "
+            "in the material"
+        ),
+        "visual_dimension": "structure",
+        "tier": "generic",
+    },
+    {
+        "name": "texture_inconsistency",
+        "description": (
+            "Any localized region where surface texture is inconsistent with "
+            "surrounding normal texture"
+        ),
+        "visual_dimension": "texture",
+        "tier": "generic",
+    },
+    {
+        "name": "unexpected_surface_pattern",
+        "description": (
+            "Any pattern, marking, deposit or foreign material on the surface "
+            "that should not be present on a normal specimen"
+        ),
+        "visual_dimension": "marking",
+        "tier": "generic",
+    },
+]
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -97,6 +202,26 @@ def to_snake_case(name: str) -> str:
     name = re.sub(r"[^a-z0-9\s_]", "", name)
     name = re.sub(r"\s+", "_", name)
     return name
+
+
+def normalize_dimension(dim: str) -> str:
+    """Normalize a VLM-generated visual_dimension string to a canonical form."""
+    if not dim:
+        return "unknown"
+    normalized = DIMENSION_NORMALIZE.get(dim.lower().strip())
+    if normalized:
+        return normalized
+    # Partial-match fallback
+    dim_lower = dim.lower()
+    for key, value in DIMENSION_NORMALIZE.items():
+        if key in dim_lower or dim_lower in key:
+            return value
+    return "unknown"
+
+
+def get_dimension_threshold(dim: str, global_threshold: float) -> float:
+    """Return the clustering threshold for a specific visual dimension."""
+    return DIMENSION_THRESHOLDS.get(normalize_dimension(dim), global_threshold)
 
 
 def call_vlm(client: Client, model_name: str, prompt: str,
@@ -339,32 +464,52 @@ def stage2_build_normal_dictionary(
     canonical_map: dict[str, str] = {}  # original_name → canonical_name
 
     if CLUSTERING_AVAILABLE and len(all_unique_names) > 1:
-        log.info("  Running embedding-based clustering (sentence-transformers)...")
+        log.info("  Running embedding-based clustering per visual dimension...")
         embedder = SentenceTransformer("all-MiniLM-L6-v2")
-        embeddings = embedder.encode(all_unique_names, normalize_embeddings=True)
-        # AgglomerativeClustering with cosine distance
-        clustering = AgglomerativeClustering(
-            n_clusters=None,
-            distance_threshold=1.0 - cluster_threshold,
-            metric="cosine",
-            linkage="average",
-        )
-        labels = clustering.fit_predict(embeddings)
-
-        # For each cluster: pick the most frequent concept as canonical
         name_freq = Counter(c["name"] for c in all_raw_concepts)
-        clusters: dict[int, list[str]] = {}
-        for name, label in zip(all_unique_names, labels):
-            clusters.setdefault(int(label), []).append(name)
 
-        for cluster_members in clusters.values():
-            # canonical = most frequent in corpus; if tie, shortest name
-            canonical = max(cluster_members, key=lambda n: (name_freq[n], -len(n)))
-            for member in cluster_members:
-                canonical_map[member] = canonical
+        # Determine the dominant normalized dimension for each unique concept name
+        name_to_dims: dict[str, Counter] = {}
+        for c in all_raw_concepts:
+            name_to_dims.setdefault(c["name"], Counter())[
+                normalize_dimension(c.get("visual_dimension", ""))
+            ] += 1
+        name_to_dim = {n: dc.most_common(1)[0][0] for n, dc in name_to_dims.items()}
 
-        n_clusters = len(set(labels))
-        log.info(f"  Clustering reduced {len(all_unique_names)} → {n_clusters} canonical concepts")
+        # Group names by dimension and cluster each group with its own threshold
+        dim_groups: dict[str, list[str]] = {}
+        for name in all_unique_names:
+            dim_groups.setdefault(name_to_dim.get(name, "unknown"), []).append(name)
+
+        n_total_clusters = 0
+        for dim, group_names in dim_groups.items():
+            dim_threshold = get_dimension_threshold(dim, cluster_threshold)
+            log.info(
+                f"  Clustering {len(group_names)} '{dim}' concepts "
+                f"with threshold {dim_threshold:.2f}"
+            )
+            if len(group_names) == 1:
+                canonical_map[group_names[0]] = group_names[0]
+                n_total_clusters += 1
+                continue
+            group_embs = embedder.encode(group_names, normalize_embeddings=True)
+            grp_clustering = AgglomerativeClustering(
+                n_clusters=None,
+                distance_threshold=1.0 - dim_threshold,
+                metric="cosine",
+                linkage="average",
+            )
+            grp_labels = grp_clustering.fit_predict(group_embs)
+            grp_clusters: dict[int, list[str]] = {}
+            for name, label in zip(group_names, grp_labels):
+                grp_clusters.setdefault(int(label), []).append(name)
+            for cluster_members in grp_clusters.values():
+                canonical = max(cluster_members, key=lambda n: (name_freq[n], -len(n)))
+                for member in cluster_members:
+                    canonical_map[member] = canonical
+            n_total_clusters += len(set(grp_labels))
+
+        log.info(f"  Clustering reduced {len(all_unique_names)} → {n_total_clusters} canonical concepts")
 
         # Optional VLM refinement for large clusters (>3 members)
         large_clusters = {
@@ -468,6 +613,29 @@ Return ONLY a JSON object: {{"representative_name": ["member1", "member2", ...],
         log.info(f"  {c['name']:35s}  freq={c['frequency']:.2f}  dim={c['visual_dimension']}")
 
     return final_concepts
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# 3b.  STAGE 2b — FIXED GENERIC ANOMALY CONCEPTS (TIER 2)
+# ══════════════════════════════════════════════════════════════════════════════
+
+def stage2b_add_generic_concepts(normal_concepts: list[dict]) -> list[dict]:
+    """
+    Append the fixed Tier-2 generic anomaly concepts (GENERIC_ANOMALY_CONCEPTS)
+    to the normal concept list, skipping any that already exist by name.
+
+    These concepts describe object-agnostic anomaly signatures inspired by
+    AnomalyCLIP and are always included in the vocabulary regardless of category
+    or holdout setting.
+
+    Returns the combined list (Tier 1 normal + Tier 2 generic).
+    """
+    existing_names = {c["name"] for c in normal_concepts}
+    added = [c for c in GENERIC_ANOMALY_CONCEPTS if c["name"] not in existing_names]
+    log.info(f"Stage 2b: added {len(added)} fixed generic anomaly concepts (Tier 2)")
+    for c in added:
+        log.info(f"  + {c['name']}  [{c['visual_dimension']}]")
+    return list(normal_concepts) + added
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -649,12 +817,71 @@ def collect_defect_concepts(all_annotations: list[dict]) -> dict[str, list[dict]
     return {k: list(v.values()) for k, v in defect_concepts.items()}
 
 
+def compute_visual_concept_prototypes(
+    concept_names: list[str],
+    defect_type: str,
+    all_annotations: list[dict],
+    device: str | None = None,
+) -> dict[str, np.ndarray]:
+    """
+    For each concept name, compute a visual prototype as the average CLIP image
+    embedding across all defect images of this type where that concept is True
+    in concept_vector.
+
+    Returns {concept_name: np.ndarray of shape (512,)}.
+    Returns {} if CLIP is unavailable or no images qualify.
+    """
+    if not CLIP_AVAILABLE:
+        return {}
+
+    if device is None:
+        device = "cuda" if torch.cuda.is_available() else "cpu"
+
+    clip_model, clip_preprocess = clip.load("ViT-B/32", device=device)
+    clip_model.eval()
+
+    defect_anns = [
+        ann for ann in all_annotations
+        if ann.get("anomaly_type") == defect_type
+    ]
+
+    prototypes: dict[str, np.ndarray] = {}
+    for concept_name in concept_names:
+        concept_images = [
+            ann["image_path"] for ann in defect_anns
+            if ann.get("concept_vector", {}).get(concept_name, False)
+        ]
+        if not concept_images:
+            continue
+
+        embeddings = []
+        for img_path in concept_images:
+            try:
+                image = clip_preprocess(
+                    Image.open(img_path).convert("RGB")
+                ).unsqueeze(0).to(device)
+                with torch.no_grad():
+                    emb = clip_model.encode_image(image)
+                    emb = emb / emb.norm(dim=-1, keepdim=True)
+                embeddings.append(emb.cpu().numpy()[0])
+            except Exception:
+                continue
+
+        if embeddings:
+            prototypes[concept_name] = np.mean(embeddings, axis=0)
+
+    return prototypes
+
+
 def stage4_refine_defect_concepts(
     all_annotations: list[dict],
     defect_concept_map: dict[str, list[dict]],
     cluster_threshold: float = 0.65,
     max_concepts_per_defect: int = 5,
-    min_defect_types_for_generic: int = 3,
+    min_defect_types_for_generic: int = 2,
+    min_defect_freq: float = 0.20,
+    use_visual_grounding: bool = False,
+    visual_weight: float = 0.6,
 ) -> tuple[dict[str, list[dict]], list[dict]]:
     """
     Stage 4: Cluster and refine per-defect concepts, then separate generic ones.
@@ -664,6 +891,8 @@ def stage4_refine_defect_concepts(
          with AgglomerativeClustering using the given cosine similarity threshold.
       2. Keep only the most frequent concept per cluster (frequency = number of images
          in that defect type that produced it), capped at max_concepts_per_defect.
+      2b. Frequency filter: drop any kept concept that appears in fewer than
+         min_defect_freq of that defect type's annotated images.
       3. Find concepts that appear in >= min_defect_types_for_generic defect types
          → move to generic_anomaly_concepts and remove from per-defect lists.
 
@@ -682,12 +911,15 @@ def stage4_refine_defect_concepts(
         )
         return defect_concept_map, []
 
-    # Build per-defect image-level concept frequency from Stage 3 annotations
-    concept_image_freq: dict[str, Counter] = {}
+    # Build per-defect image-level concept frequency and total image counts
+    # from Stage 3 annotations (concept_vector keys reflect what was seen per image)
+    concept_image_freq: dict[str, Counter] = {}   # defect_type → {concept_name: n_images}
+    defect_image_count: dict[str, int] = Counter() # defect_type → total annotated images
     for ann in all_annotations:
         defect_type = ann.get("defect_category", "unknown")
         if defect_type == "good":
             continue
+        defect_image_count[defect_type] += 1
         for c in ann.get("new_defect_concepts", []):
             concept_image_freq.setdefault(defect_type, Counter())[c["name"]] += 1
 
@@ -702,42 +934,145 @@ def stage4_refine_defect_concepts(
 
         names = [c["name"] for c in concepts]
         freq_counter = concept_image_freq.get(defect_type, Counter())
-
-        if len(names) == 1:
-            refined_defect_concept_map[defect_type] = concepts[:max_concepts_per_defect]
-            log.info(f"Stage 4: '{defect_type}' had 1 concept → 1 after clustering")
-            continue
-
-        # Embed and cluster
-        embeddings = embedder.encode(names, normalize_embeddings=True)
-        clustering = AgglomerativeClustering(
-            n_clusters=None,
-            distance_threshold=1.0 - cluster_threshold,
-            metric="cosine",
-            linkage="average",
-        )
-        labels = clustering.fit_predict(embeddings)
-
-        # Per cluster: keep the most frequent concept (tie-break: shortest name)
-        clusters: dict[int, list[str]] = {}
-        for name, label in zip(names, labels):
-            clusters.setdefault(int(label), []).append(name)
-
-        kept_names: list[str] = []
-        for cluster_members in clusters.values():
-            best = max(cluster_members, key=lambda n: (freq_counter.get(n, 0), -len(n)))
-            kept_names.append(best)
-
-        # Reconstruct concept dicts, sort by frequency, cap count
+        n_images = defect_image_count.get(defect_type, 1)
         name_to_dict = {c["name"]: c for c in concepts}
+
+        # Group concepts by normalized visual_dimension; defect concepts default to "structure"
+        dim_groups: dict[str, list[dict]] = {}
+        for c in concepts:
+            raw_dim = c.get("visual_dimension", "") or ""
+            dim = normalize_dimension(raw_dim) if raw_dim else "structure"
+            dim_groups.setdefault(dim, []).append(c)
+
+        # Cluster each dimension group; record original→canonical for every member
+        # so that the frequency filter can credit the whole cluster, not just the
+        # canonical name that survived.
+        kept_names: list[str] = []
+        name_to_canonical: dict[str, str] = {}  # original_name → canonical (cluster rep)
+        for dim, group_concepts in dim_groups.items():
+            group_names = [c["name"] for c in group_concepts]
+            dim_threshold = get_dimension_threshold(dim, cluster_threshold)
+            log.info(
+                f"  Stage 4: clustering {len(group_names)} '{dim}' concepts "
+                f"for '{defect_type}' with threshold {dim_threshold:.2f}"
+            )
+            if len(group_names) == 1:
+                name_to_canonical[group_names[0]] = group_names[0]
+                kept_names.append(group_names[0])
+                continue
+
+            # Text embeddings (always computed)
+            group_embs = embedder.encode(group_names, normalize_embeddings=True)
+
+            if use_visual_grounding and CLIP_AVAILABLE:
+                # Compute visual prototypes for each concept in this group
+                visual_protos = compute_visual_concept_prototypes(
+                    group_names, defect_type, all_annotations
+                )
+                n_with_visual = sum(1 for n in group_names if n in visual_protos)
+                log.info(
+                    f"  Stage 4: visual grounding for {len(group_names)} concepts in "
+                    f"'{dim}' — {n_with_visual}/{len(group_names)} have visual prototypes"
+                )
+
+                # Build precomputed distance matrix from combined similarity
+                n = len(group_names)
+                dist_matrix = np.zeros((n, n), dtype=np.float32)
+                for i in range(n):
+                    for j in range(i + 1, n):
+                        text_sim = float(np.dot(group_embs[i], group_embs[j]))
+                        ni, nj = group_names[i], group_names[j]
+                        if ni in visual_protos and nj in visual_protos:
+                            vi = visual_protos[ni] / (np.linalg.norm(visual_protos[ni]) + 1e-8)
+                            vj = visual_protos[nj] / (np.linalg.norm(visual_protos[nj]) + 1e-8)
+                            visual_sim = float(np.dot(vi, vj))
+                            combined_sim = visual_weight * visual_sim + (1.0 - visual_weight) * text_sim
+                        else:
+                            combined_sim = text_sim
+                        dist = max(0.0, 1.0 - combined_sim)
+                        dist_matrix[i, j] = dist
+                        dist_matrix[j, i] = dist
+
+                grp_clustering = AgglomerativeClustering(
+                    n_clusters=None,
+                    distance_threshold=1.0 - dim_threshold,
+                    metric="precomputed",
+                    linkage="average",
+                )
+                grp_labels = grp_clustering.fit_predict(dist_matrix)
+            else:
+                grp_clustering = AgglomerativeClustering(
+                    n_clusters=None,
+                    distance_threshold=1.0 - dim_threshold,
+                    metric="cosine",
+                    linkage="average",
+                )
+                grp_labels = grp_clustering.fit_predict(group_embs)
+
+            grp_clusters: dict[int, list[str]] = {}
+            for name, label in zip(group_names, grp_labels):
+                grp_clusters.setdefault(int(label), []).append(name)
+            for cluster_members in grp_clusters.values():
+                best = max(cluster_members, key=lambda n: (freq_counter.get(n, 0), -len(n)))
+                for member in cluster_members:
+                    name_to_canonical[member] = best
+                kept_names.append(best)
+
+        # Build reverse map: canonical → all original names in its cluster
+        canonical_to_members: dict[str, set[str]] = {}
+        for orig, canon in name_to_canonical.items():
+            canonical_to_members.setdefault(canon, set()).add(orig)
+
+        # Precompute concept_vector key sets for this defect type's images so we
+        # only scan all_annotations once per defect type.
+        defect_ann_vectors: list[set[str]] = [
+            set(ann.get("concept_vector", {}).keys())
+            for ann in all_annotations
+            if ann.get("defect_category") == defect_type
+        ]
+
+        # Reconstruct concept dicts; sort by cluster-level frequency (any member
+        # of the cluster appearing in an image counts toward the canonical).
         kept_concepts = [name_to_dict[n] for n in kept_names if n in name_to_dict]
-        kept_concepts.sort(key=lambda c: -freq_counter.get(c["name"], 0))
+
+        def _cluster_count(c: dict) -> int:
+            members = canonical_to_members.get(c["name"], {c["name"]})
+            return sum(1 for vec in defect_ann_vectors if members & vec)
+
+        kept_concepts.sort(key=_cluster_count, reverse=True)
         kept_concepts = kept_concepts[:max_concepts_per_defect]
 
         log.info(
             f"Stage 4: '{defect_type}' had {len(names)} concepts "
             f"→ {len(kept_concepts)} after clustering"
         )
+
+        # Frequency filter: use corrected cluster-level frequency so that a
+        # canonical concept is not penalised for having been reached via different
+        # surface-name variants in different images.
+        freq_filtered: list[dict] = []
+        for c in kept_concepts:
+            members = canonical_to_members.get(c["name"], {c["name"]})
+            count = sum(1 for vec in defect_ann_vectors if members & vec)
+            freq = count / n_images
+            if freq >= min_defect_freq:
+                log.info(
+                    f"  Stage 4: '{c['name']}' freq={freq:.2f} "
+                    f"(cluster members: {sorted(members)})"
+                )
+                freq_filtered.append(c)
+            else:
+                log.info(
+                    f"  Stage 4: removed '{c['name']}' from '{defect_type}' "
+                    f"(freq={freq:.2f} < {min_defect_freq}, "
+                    f"cluster_members={sorted(members)})"
+                )
+        kept_concepts = freq_filtered
+        log.info(
+            f"  Stage 4: '{defect_type}' final concepts after freq filter: "
+            f"{[c['name'] for c in kept_concepts]}"
+        )
+
         refined_defect_concept_map[defect_type] = kept_concepts
 
     # Identify concepts that span >= min_defect_types_for_generic defect types
@@ -768,8 +1103,9 @@ def stage4_refine_defect_concepts(
         ]
 
     log.info(f"Stage 4: {len(generic_anomaly_concepts)} generic anomaly concepts identified")
-    if generic_anomaly_concepts:
-        log.info(f"  Generic concepts: {[c['name'] for c in generic_anomaly_concepts]}")
+    for c in generic_anomaly_concepts:
+        spanning = concept_defect_types[c["name"]]
+        log.info(f"  Generic concept '{c['name']}' spans {len(spanning)} defect types: {spanning}")
 
     return refined_defect_concept_map, generic_anomaly_concepts
 
@@ -778,24 +1114,36 @@ def build_full_concept_vocabulary(
     normal_concepts: list[dict],
     defect_concept_map: dict[str, list[dict]],
     holdout_defect: str | None = None,
+    generic_concepts: list[dict] | None = None,
     generic_anomaly_concepts: list[dict] | None = None,
 ) -> list[str]:
     """
-    Build the final concept list:
-      - All normal concepts (always included)
-      - Generic anomaly concepts shared across defect types (always included)
-      - Defect-specific concepts from all defect types EXCEPT holdout_defect
+    Build the final concept list in three tiers:
+      Tier 1 — normal_concepts: always included
+      Tier 2 — generic_concepts (fixed, object-agnostic) +
+                generic_anomaly_concepts (Stage 4 dynamic cross-defect):
+                always included, NEVER excluded by holdout
+      Tier 3 — defect-specific per defect type, EXCEPT holdout_defect
 
     Returns a list of canonical concept names (column headers for the CSV).
     """
-    vocab = [c["name"] for c in normal_concepts]
+    # Tier 1
+    vocab: list[str] = [c["name"] for c in normal_concepts]
+    n_normal = len(vocab)
 
-    # Include generic anomaly concepts (cross-defect, not tied to any single type)
+    # Tier 2a: fixed generic concepts (GENERIC_ANOMALY_CONCEPTS, always safe)
+    for c in (generic_concepts or []):
+        if c["name"] not in vocab:
+            vocab.append(c["name"])
+    n_generic = len(vocab) - n_normal
+
+    # Tier 2b: Stage 4 dynamic cross-defect concepts (also always included)
     for c in (generic_anomaly_concepts or []):
         if c["name"] not in vocab:
             vocab.append(c["name"])
 
-    excluded_defect_concepts: set = set()
+    # Tier 3: defect-specific (holdout-aware)
+    excluded_defect_concepts: set[str] = set()
     if holdout_defect:
         excluded_defect_concepts = {
             c["name"] for c in defect_concept_map.get(holdout_defect, [])
@@ -805,15 +1153,20 @@ def build_full_concept_vocabulary(
             f"unique to '{holdout_defect}': {excluded_defect_concepts}"
         )
 
+    n_before_defect = len(vocab)
     for defect_type, concepts in defect_concept_map.items():
         if defect_type == holdout_defect:
             continue
         for c in concepts:
             if c["name"] not in vocab and c["name"] not in excluded_defect_concepts:
                 vocab.append(c["name"])
+    n_defect = len(vocab) - n_before_defect
 
-    log.info(f"Final concept vocabulary: {len(vocab)} concepts "
-             f"({'holdout=' + holdout_defect if holdout_defect else 'no holdout'})")
+    log.info(
+        f"Vocabulary tiers: {n_normal} normal + {n_generic} generic "
+        f"+ {n_defect} defect-specific = {len(vocab)} total"
+        + (f"  (holdout={holdout_defect})" if holdout_defect else "")
+    )
     return vocab
 
 
@@ -990,6 +1343,16 @@ def run_pipeline(args: argparse.Namespace):
         json.dump(normal_concepts, f, indent=2)
     log.info(f"Normal dictionary saved → {stage2_path}")
 
+    # ── Stage 2b: Add fixed Tier-2 generic concepts ────────────────────────
+    log.info("\n" + "═" * 60)
+    log.info("STAGE 2b — Fixed generic anomaly concepts (Tier 2)")
+    log.info("═" * 60)
+
+    all_concepts = stage2b_add_generic_concepts(normal_concepts)
+    # Track which generic concepts were actually added (not already in normal dict)
+    existing_normal_names = {c["name"] for c in normal_concepts}
+    tier2_generic = [c for c in GENERIC_ANOMALY_CONCEPTS if c["name"] not in existing_normal_names]
+
     # ── Stage 3: Per-image annotation ─────────────────────────────────────
     log.info("\n" + "═" * 60)
     log.info("STAGE 3 — Per-image annotation")
@@ -999,10 +1362,12 @@ def run_pipeline(args: argparse.Namespace):
     all_normal = image_groups["normal"]
     normal_ref = all_normal[len(all_normal) // 2]
     log.info(f"Normal reference image: {Path(normal_ref).name}")
+    log.info(f"Annotating with {len(all_concepts)} concepts "
+             f"({len(normal_concepts)} normal + {len(tier2_generic)} generic Tier 2)")
 
     all_annotations: list[dict] = []
 
-    # 3a. Annotate all normal train images
+    # 3a. Annotate all normal train images (use all_concepts = Tier 1 + Tier 2)
     normal_train_imgs = all_normal[:args.n_annotate_sample] if args.n_annotate_sample is not None else all_normal
     log.info(f"\nAnnotating {len(normal_train_imgs)} normal (train) images...")
     for i, img_path in enumerate(normal_train_imgs, 1):
@@ -1010,7 +1375,7 @@ def run_pipeline(args: argparse.Namespace):
             log.info(f"  [{i}/{len(normal_train_imgs)}] {Path(img_path).name}")
         concept_vector = annotate_normal_image(
             client, args.model_name, img_path,
-            normal_concepts, args.category, debug=args.debug,
+            all_concepts, args.category, debug=args.debug,
         )
         all_annotations.append({
             "image_path": img_path,
@@ -1029,7 +1394,7 @@ def run_pipeline(args: argparse.Namespace):
             log.info(f"  [{i}/{len(normal_test)}] {Path(img_path).name}")
         concept_vector = annotate_normal_image(
             client, args.model_name, img_path,
-            normal_concepts, args.category, debug=args.debug,
+            all_concepts, args.category, debug=args.debug,
         )
         all_annotations.append({
             "image_path": img_path,
@@ -1039,7 +1404,8 @@ def run_pipeline(args: argparse.Namespace):
             "defect_category": "good",
         })
 
-    # 3c. Annotate defective images (comparative)
+    # 3c. Annotate defective images (comparative, pass all_concepts so generic
+    #     concepts are included in the normal_concept_annotations prompt section)
     for defect_type in defect_types:
         defect_imgs_all = image_groups[defect_type]
         defect_imgs = defect_imgs_all[:args.n_annotate_sample] if args.n_annotate_sample is not None else defect_imgs_all
@@ -1050,7 +1416,7 @@ def run_pipeline(args: argparse.Namespace):
             ann = annotate_defect_image(
                 client, args.model_name,
                 img_path, normal_ref,
-                normal_concepts, defect_type,
+                all_concepts, defect_type,
                 args.category, debug=args.debug,
             )
             # Merge normal annotations + defect-specific concept flags
@@ -1075,17 +1441,22 @@ def run_pipeline(args: argparse.Namespace):
         log.info(f"  {dt}: {[c['name'] for c in concepts]}")
 
     # ── Stage 4: Cluster and refine defect concepts ────────────────────────
-    refined_defect_concept_map, generic_anomaly_concepts = stage4_refine_defect_concepts(
+    refined_defect_concept_map, stage4_generic = stage4_refine_defect_concepts(
         all_annotations,
         defect_concept_map,
         cluster_threshold=args.stage4_cluster_threshold,
         max_concepts_per_defect=args.max_concepts_per_defect,
+        min_defect_types_for_generic=args.min_defect_types_for_generic,
+        min_defect_freq=args.min_defect_freq,
+        use_visual_grounding=args.use_visual_grounding,
+        visual_weight=args.visual_weight,
     )
 
     final_vocab = build_full_concept_vocabulary(
         normal_concepts, refined_defect_concept_map,
         holdout_defect=args.holdout_defect,
-        generic_anomaly_concepts=generic_anomaly_concepts,
+        generic_concepts=tier2_generic,
+        generic_anomaly_concepts=stage4_generic,
     )
 
     # ── Build and save CSV ─────────────────────────────────────────────────
@@ -1101,16 +1472,17 @@ def run_pipeline(args: argparse.Namespace):
     log.info(f"\n✓ Final CSV saved → {args.save_path}")
 
     # ── Summary ────────────────────────────────────────────────────────────
+    n_tier3 = sum(len(v) for v in refined_defect_concept_map.values())
     log.info("\n" + "═" * 60)
     log.info("PIPELINE SUMMARY")
     log.info("═" * 60)
-    log.info(f"  Normal concepts in dictionary : {len(normal_concepts)}")
-    log.info(f"  Total defect-specific concepts: {sum(len(v) for v in refined_defect_concept_map.values())}")
-    log.info(f"  Generic anomaly concepts      : {len(generic_anomaly_concepts)}")
-    log.info(f"  Final vocab size              : {len(final_vocab)}")
-    log.info(f"  Total images annotated        : {len(all_annotations)}")
-    log.info(f"  CSV shape                     : {df.shape}")
-    log.info(f"  Hold-out defect               : {args.holdout_defect or 'none'}")
+    log.info(f"  Tier 1 normal concepts    : {len(normal_concepts)}")
+    log.info(f"  Tier 2 generic concepts   : {len(tier2_generic)}")
+    log.info(f"  Tier 3 defect concepts    : {n_tier3}")
+    log.info(f"  Final vocab size          : {len(final_vocab)}")
+    log.info(f"  Total images annotated    : {len(all_annotations)}")
+    log.info(f"  CSV shape                 : {df.shape}")
+    log.info(f"  Hold-out defect           : {args.holdout_defect or 'none'}")
     log.info("═" * 60)
 
     return df, normal_concepts, refined_defect_concept_map
@@ -1150,6 +1522,14 @@ def parse_args():
                    help="Cosine similarity threshold for Stage 4 defect concept clustering (default: 0.55)")
     p.add_argument("--max_concepts_per_defect", type=int, default=4,
                    help="Max concepts kept per defect type after Stage 4 clustering (default: 4)")
+    p.add_argument("--min_defect_freq", type=float, default=0.20,
+                   help="Min fraction of a defect type's images a concept must appear in to be kept (default: 0.20)")
+    p.add_argument("--min_defect_types_for_generic", type=int, default=2,
+                   help="Min number of defect types a concept must span to be treated as generic (default: 2)")
+    p.add_argument("--use_visual_grounding", action="store_true",
+                   help="Use CLIP image embeddings alongside text embeddings for Stage 4 clustering")
+    p.add_argument("--visual_weight",    type=float, default=0.6,
+                   help="Weight for visual vs text similarity in combined clustering (default: 0.6)")
     p.add_argument("--random_seed",      type=int, default=42)
     p.add_argument("--debug",            action="store_true",
                    help="Print all VLM prompts and raw responses")
