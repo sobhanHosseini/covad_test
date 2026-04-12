@@ -114,14 +114,14 @@ class ConceptDataset(Dataset):
             ]
         )
         mask_gemini_logo_path = os.environ.get("GEMINI_LOGO_MASK_PATH")
-        self.mask_gemini_logo_path = (
-            Path(mask_gemini_logo_path)
-            if isinstance(mask_gemini_logo_path, str)
-            else mask_gemini_logo_path
-        )
+        if isinstance(mask_gemini_logo_path, str):
+            mask_gemini_logo_path = mask_gemini_logo_path.strip()
+            self.mask_gemini_logo_path = Path(mask_gemini_logo_path) if mask_gemini_logo_path else None
+        else:
+            self.mask_gemini_logo_path = mask_gemini_logo_path
         # load and save the gemini logo mask if provided
         if self.mask_gemini_logo_path is not None:
-            if not self.mask_gemini_logo_path.exists():
+            if not self.mask_gemini_logo_path.exists() or not self.mask_gemini_logo_path.is_file():
                 raise FileNotFoundError(
                     f"Gemini logo mask file not found: {self.mask_gemini_logo_path}"
                 )

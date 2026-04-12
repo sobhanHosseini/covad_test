@@ -353,7 +353,7 @@ def main():
     parser.add_argument("--model_type", type = str, nargs="+", help="Which model to train, e.g. 'independent', 'joint', ...")
     parser.add_argument("--save_dir", type=str, help="Directory to save the models in")
     parser.add_argument("--category", type = str, help="Which category to train/test")
-    parser.add_argument("--device", type=str, help="Where to run the script")
+    parser.add_argument("--device", type=str, default=None, help="Where to run the script")
     parser.add_argument("--backbone", type = str, default="resnet18", help = "Which pre-trained network to use for concept extraction")
     parser.add_argument("--expand_dim", type=int, default = 0, help="How many neurons to use in FC layers")
     parser.add_argument("--batch_size", type=int, default = 8, help="Batch size to use")
@@ -371,13 +371,18 @@ def main():
     parser.add_argument("--use_gen_anomalies", action="store_true", help="Perform training on dataset with generated anomalies")
     parser.add_argument("--gemini_logo_mask_path", default=None, help="Path to the Gemini logo mask to be applied to all images")
     
-    # set the gemini_logo_mask_path as an evironment variable
-    os.environ["GEMINI_LOGO_MASK_PATH"] = parser.parse_args().gemini_logo_mask_path if parser.parse_args().gemini_logo_mask_path is not None else ""
-
     args = parser.parse_args()
 
+    # set the gemini_logo_mask_path as an environment variable
+    if args.gemini_logo_mask_path is not None:
+        os.environ["GEMINI_LOGO_MASK_PATH"] = args.gemini_logo_mask_path
+    else:
+        os.environ.pop("GEMINI_LOGO_MASK_PATH", None)
+
     torch.manual_seed(args.seeds)
-    device = torch.device(args.device)
+    resolved_device = args.device if args.device is not None else ("cuda" if torch.cuda.is_available() else "cpu")
+    device = torch.device(resolved_device)
+    print(f"Using device: {device}")
 
     for model_type in args.model_type:           
         if args.mode == "train":

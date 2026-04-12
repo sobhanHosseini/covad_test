@@ -2,7 +2,7 @@ from models.model_backbones import BackboneModel, MLP, End2EndModel
 
 def joint_model(num_attr, expand_dim, freeze_parameters, use_relu = False, use_sigmoid = False, backbone = "resnet18", model_state_dict = None, mode = "train", concept_intervention = False):
     model_1 = BackboneModel(num_attr=num_attr, num_classes = 1, freeze_parameters=freeze_parameters, expand_dim=expand_dim, bottleneck=True, backbone = backbone)
-    if mode == "train":
+    if mode == "train" and model_state_dict is not None:
         filtered_dict = {k: v for k, v in model_state_dict.items() if not k.startswith('fc_layers.0')}
         model_1.load_state_dict(filtered_dict)
         if freeze_parameters:
@@ -54,7 +54,7 @@ def standard_model(freeze_parameters, backbone = "resnet18", model_state_dict = 
 
 def concepts_model(num_attr, freeze_parameters, expand_dim, backbone = "resnet18", model_state_dict = None, mode = "train"): #for concept prediction in independent and sequential model
     model = BackboneModel(num_attr=num_attr, num_classes=1, freeze_parameters=freeze_parameters, expand_dim=expand_dim, bottleneck=True, backbone=backbone)
-    if mode == "train":
+    if mode == "train" and model_state_dict is not None:
         filtered_dict = {k: v for k, v in model_state_dict.items() if not k.startswith('fc_layers.0')}
         model.load_state_dict(filtered_dict)
         if freeze_parameters:

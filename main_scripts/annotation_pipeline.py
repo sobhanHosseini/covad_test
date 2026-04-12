@@ -448,6 +448,20 @@ Return ONLY a JSON object: {{"representative_name": ["member1", "member2", ...],
     # Sort by frequency descending
     final_concepts.sort(key=lambda x: -x["frequency"])
 
+    # Keyword filter: remove concepts whose names contain defect-related words
+    _DEFECT_KEYWORDS = {
+        "crack", "fracture", "break", "void", "damage",
+        "defect", "missing", "irregular", "absence", "broken",
+    }
+    filtered_concepts = []
+    for c in final_concepts:
+        name_words = set(re.split(r"[\s_]+", c["name"].lower()))
+        if name_words & _DEFECT_KEYWORDS:
+            log.info(f"  Removed defect-like concept from normal dict: {c['name']}")
+        else:
+            filtered_concepts.append(c)
+    final_concepts = filtered_concepts
+
     log.info(f"Stage 2 complete: {len(final_concepts)} concepts in shared normal dictionary")
     log.info(f"  (after freq filter: min={min_freq}, max={max_freq})")
     for c in final_concepts:
@@ -635,19 +649,151 @@ def collect_defect_concepts(all_annotations: list[dict]) -> dict[str, list[dict]
     return {k: list(v.values()) for k, v in defect_concepts.items()}
 
 
+def stage4_refine_defect_concepts(
+    all_annotations: list[dict],
+    defect_concept_map: dict[str, list[dict]],
+    cluster_threshold: float = 0.65,
+    max_concepts_per_defect: int = 5,
+    min_defect_types_for_generic: int = 3,
+) -> tuple[dict[str, list[dict]], list[dict]]:
+    """
+    Stage 4: Cluster and refine per-defect concepts, then separate generic ones.
+
+    Steps:
+      1. For each defect type, embed concept names with all-MiniLM-L6-v2 and cluster
+         with AgglomerativeClustering using the given cosine similarity threshold.
+      2. Keep only the most frequent concept per cluster (frequency = number of images
+         in that defect type that produced it), capped at max_concepts_per_defect.
+      3. Find concepts that appear in >= min_defect_types_for_generic defect types
+         → move to generic_anomaly_concepts and remove from per-defect lists.
+
+    Returns:
+      - refined_defect_concept_map: {defect_type: [top concepts]}
+      - generic_anomaly_concepts: [concepts shared across defects]
+    """
+    log.info("\n" + "═" * 60)
+    log.info("STAGE 4 — Defect concept clustering and refinement")
+    log.info("═" * 60)
+
+    if not CLUSTERING_AVAILABLE:
+        log.warning(
+            "Stage 4: sentence-transformers not available — "
+            "skipping clustering, returning raw map"
+        )
+        return defect_concept_map, []
+
+    # Build per-defect image-level concept frequency from Stage 3 annotations
+    concept_image_freq: dict[str, Counter] = {}
+    for ann in all_annotations:
+        defect_type = ann.get("defect_category", "unknown")
+        if defect_type == "good":
+            continue
+        for c in ann.get("new_defect_concepts", []):
+            concept_image_freq.setdefault(defect_type, Counter())[c["name"]] += 1
+
+    embedder = SentenceTransformer("all-MiniLM-L6-v2")
+    refined_defect_concept_map: dict[str, list[dict]] = {}
+
+    for defect_type, concepts in defect_concept_map.items():
+        if not concepts:
+            refined_defect_concept_map[defect_type] = []
+            log.info(f"Stage 4: '{defect_type}' had 0 concepts → 0 after clustering")
+            continue
+
+        names = [c["name"] for c in concepts]
+        freq_counter = concept_image_freq.get(defect_type, Counter())
+
+        if len(names) == 1:
+            refined_defect_concept_map[defect_type] = concepts[:max_concepts_per_defect]
+            log.info(f"Stage 4: '{defect_type}' had 1 concept → 1 after clustering")
+            continue
+
+        # Embed and cluster
+        embeddings = embedder.encode(names, normalize_embeddings=True)
+        clustering = AgglomerativeClustering(
+            n_clusters=None,
+            distance_threshold=1.0 - cluster_threshold,
+            metric="cosine",
+            linkage="average",
+        )
+        labels = clustering.fit_predict(embeddings)
+
+        # Per cluster: keep the most frequent concept (tie-break: shortest name)
+        clusters: dict[int, list[str]] = {}
+        for name, label in zip(names, labels):
+            clusters.setdefault(int(label), []).append(name)
+
+        kept_names: list[str] = []
+        for cluster_members in clusters.values():
+            best = max(cluster_members, key=lambda n: (freq_counter.get(n, 0), -len(n)))
+            kept_names.append(best)
+
+        # Reconstruct concept dicts, sort by frequency, cap count
+        name_to_dict = {c["name"]: c for c in concepts}
+        kept_concepts = [name_to_dict[n] for n in kept_names if n in name_to_dict]
+        kept_concepts.sort(key=lambda c: -freq_counter.get(c["name"], 0))
+        kept_concepts = kept_concepts[:max_concepts_per_defect]
+
+        log.info(
+            f"Stage 4: '{defect_type}' had {len(names)} concepts "
+            f"→ {len(kept_concepts)} after clustering"
+        )
+        refined_defect_concept_map[defect_type] = kept_concepts
+
+    # Identify concepts that span >= min_defect_types_for_generic defect types
+    concept_defect_types: dict[str, list[str]] = {}
+    for defect_type, concepts in refined_defect_concept_map.items():
+        for c in concepts:
+            concept_defect_types.setdefault(c["name"], []).append(defect_type)
+
+    generic_names: set[str] = {
+        name for name, types in concept_defect_types.items()
+        if len(types) >= min_defect_types_for_generic
+    }
+
+    # Collect one dict per generic concept (from the first defect type that holds it)
+    generic_anomaly_concepts: list[dict] = []
+    seen_generic: set[str] = set()
+    for concepts in refined_defect_concept_map.values():
+        for c in concepts:
+            if c["name"] in generic_names and c["name"] not in seen_generic:
+                generic_anomaly_concepts.append(c)
+                seen_generic.add(c["name"])
+
+    # Remove generic concepts from every per-defect list
+    for defect_type in refined_defect_concept_map:
+        refined_defect_concept_map[defect_type] = [
+            c for c in refined_defect_concept_map[defect_type]
+            if c["name"] not in generic_names
+        ]
+
+    log.info(f"Stage 4: {len(generic_anomaly_concepts)} generic anomaly concepts identified")
+    if generic_anomaly_concepts:
+        log.info(f"  Generic concepts: {[c['name'] for c in generic_anomaly_concepts]}")
+
+    return refined_defect_concept_map, generic_anomaly_concepts
+
+
 def build_full_concept_vocabulary(
     normal_concepts: list[dict],
     defect_concept_map: dict[str, list[dict]],
     holdout_defect: str | None = None,
+    generic_anomaly_concepts: list[dict] | None = None,
 ) -> list[str]:
     """
     Build the final concept list:
       - All normal concepts (always included)
+      - Generic anomaly concepts shared across defect types (always included)
       - Defect-specific concepts from all defect types EXCEPT holdout_defect
 
     Returns a list of canonical concept names (column headers for the CSV).
     """
     vocab = [c["name"] for c in normal_concepts]
+
+    # Include generic anomaly concepts (cross-defect, not tied to any single type)
+    for c in (generic_anomaly_concepts or []):
+        if c["name"] not in vocab:
+            vocab.append(c["name"])
 
     excluded_defect_concepts: set = set()
     if holdout_defect:
@@ -928,9 +1074,18 @@ def run_pipeline(args: argparse.Namespace):
     for dt, concepts in defect_concept_map.items():
         log.info(f"  {dt}: {[c['name'] for c in concepts]}")
 
+    # ── Stage 4: Cluster and refine defect concepts ────────────────────────
+    refined_defect_concept_map, generic_anomaly_concepts = stage4_refine_defect_concepts(
+        all_annotations,
+        defect_concept_map,
+        cluster_threshold=args.stage4_cluster_threshold,
+        max_concepts_per_defect=args.max_concepts_per_defect,
+    )
+
     final_vocab = build_full_concept_vocabulary(
-        normal_concepts, defect_concept_map,
+        normal_concepts, refined_defect_concept_map,
         holdout_defect=args.holdout_defect,
+        generic_anomaly_concepts=generic_anomaly_concepts,
     )
 
     # ── Build and save CSV ─────────────────────────────────────────────────
@@ -950,14 +1105,15 @@ def run_pipeline(args: argparse.Namespace):
     log.info("PIPELINE SUMMARY")
     log.info("═" * 60)
     log.info(f"  Normal concepts in dictionary : {len(normal_concepts)}")
-    log.info(f"  Total defect-specific concepts: {sum(len(v) for v in defect_concept_map.values())}")
+    log.info(f"  Total defect-specific concepts: {sum(len(v) for v in refined_defect_concept_map.values())}")
+    log.info(f"  Generic anomaly concepts      : {len(generic_anomaly_concepts)}")
     log.info(f"  Final vocab size              : {len(final_vocab)}")
     log.info(f"  Total images annotated        : {len(all_annotations)}")
     log.info(f"  CSV shape                     : {df.shape}")
     log.info(f"  Hold-out defect               : {args.holdout_defect or 'none'}")
     log.info("═" * 60)
 
-    return df, normal_concepts, defect_concept_map
+    return df, normal_concepts, refined_defect_concept_map
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -989,7 +1145,11 @@ def parse_args():
     p.add_argument("--max_concept_freq", type=float, default=0.95,
                    help="Max fraction of normal images a concept may appear in (default: 0.95)")
     p.add_argument("--cluster_threshold", type=float, default=0.80,
-                   help="Cosine similarity threshold for concept clustering (default: 0.80)")
+                   help="Cosine similarity threshold for Stage 2 normal concept clustering (default: 0.80)")
+    p.add_argument("--stage4_cluster_threshold", type=float, default=0.55,
+                   help="Cosine similarity threshold for Stage 4 defect concept clustering (default: 0.55)")
+    p.add_argument("--max_concepts_per_defect", type=int, default=4,
+                   help="Max concepts kept per defect type after Stage 4 clustering (default: 4)")
     p.add_argument("--random_seed",      type=int, default=42)
     p.add_argument("--debug",            action="store_true",
                    help="Print all VLM prompts and raw responses")
