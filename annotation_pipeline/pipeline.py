@@ -23,6 +23,7 @@ from annotation_pipeline import checkpoints
 from annotation_pipeline.clip_utils import load_clip, load_or_compute_clip_embeddings
 from annotation_pipeline.dataset import discover_images, get_defect_types
 from annotation_pipeline.stages import stage1, stage2, stage3, stage4
+from annotation_pipeline import clip_filter
 from annotation_pipeline import vocabulary, csv_builder
 
 log = logging.getLogger(__name__)
@@ -79,6 +80,12 @@ def parse_args() -> argparse.Namespace:
                    help="Stage 2 dimension-aware clustering threshold.")
     p.add_argument("--skip_vlm_audit",   action="store_true",
                    help="Skip Stage 2d VLM self-audit.")
+    p.add_argument("--skip_clip_filter",  action="store_true",
+                   help="Skip Stage 2e CLIP discriminability filter.")
+    p.add_argument("--min_cohen_d",       type=float, default=0.10,
+                   help="Min Cohen's d for discriminability filter (default 0.10).")
+    p.add_argument("--clip_filter_top_k", type=int, default=6,
+                   help="Floor: always keep at least this many concepts (default 6).")
 
     # ── Stage 3 ───────────────────────────────────────────────────────────────
     p.add_argument("--n_normal_refs",           type=int, default=3,
@@ -237,6 +244,29 @@ def run(args: argparse.Namespace):
         )
         checkpoints.save_stage2(normal_concepts, args.save_path, args.category)
 
+    # ── Stage 2e — CLIP discriminability filter ───────────────────────────────
+    if not args.skip_clip_filter and normal_concepts and normal_embeddings:
+        all_defect_paths_for_filter = [
+            p for k, v in image_groups.items()
+            if k not in ("normal", "normal_test") for p in v
+        ]
+        normal_concepts = clip_filter.run(
+            concepts=normal_concepts,
+            normal_image_paths=all_normal,
+            defect_image_paths=all_defect_paths_for_filter,
+            clip_model=clip_model,
+            clip_preprocess=clip_preprocess,
+            device=clip_device,
+            normal_embeddings=normal_embeddings,
+            defect_embeddings=defect_embeddings,
+            min_cohen_d=args.min_cohen_d,
+            top_k=args.clip_filter_top_k,
+        )
+    elif args.skip_clip_filter:
+        log.info("Stage 2e: skipped (--skip_clip_filter)")
+    else:
+        log.info("Stage 2e: skipped (CLIP not available or no embeddings)")
+
     # Stage 2b — always recomputed (it's just a list merge, instant)
     all_concepts = stage2.add_generic_concepts(normal_concepts)
 
@@ -367,6 +397,8 @@ def run(args: argparse.Namespace):
     log.info("  Stage 4                     : %s",
              "skipped (v2-mode)" if args.skip_stage4 else "on")
     log.info("  Loaded from stage           : %d", args.load_from_stage)
+    log.info("  CLIP filter (Stage 2e)      : %s",
+             "off" if args.skip_clip_filter else f"on (min_d={args.min_cohen_d})")
     log.info("  VLM audit (Stage 2d)        : %s",
              "off" if args.skip_vlm_audit else "on")
     log.info("  CLIP refs (Stage 3, P1-A)   : %d", args.n_normal_refs)
