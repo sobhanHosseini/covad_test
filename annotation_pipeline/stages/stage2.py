@@ -119,7 +119,7 @@ def run(
     canonical_map: dict[str, str] = {}
 
     if CLUSTERING_AVAILABLE and len(all_unique_names) > 1:
-        embedder = SentenceTransformer("all-MiniLM-L6-v2")
+        embedder = SentenceTransformer("BAAI/bge-large-en-v1.5")
         # name_freq: how many times each name appeared across ALL images (image-level count)
         name_freq: Counter = Counter()
         for c in raw_concepts:

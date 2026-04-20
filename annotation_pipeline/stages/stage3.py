@@ -175,35 +175,44 @@ def run(
         # Fallback: stable middle image (used when CLIP is unavailable or n_normal_refs=1)
         return [all_normal[len(all_normal) // 2]] if all_normal else []
 
-    # ── 3a. Normal training images ─────────────────────────────────────────────
+    # ── 3a. Normal training images (parallel) ─────────────────────────────────
     normal_sample = all_normal
     if n_annotate_sample:
         normal_sample = all_normal[:n_annotate_sample]
 
-    log.info("Annotating %d normal (train) images...", len(normal_sample))
-    for i, img_path in enumerate(normal_sample, 1):
-        if i % 20 == 0 or i == len(normal_sample):
-            log.info("  [%d/%d] %s", i, len(normal_sample), Path(img_path).name)
+    def _worker_normal(img_path: str) -> dict:
         cv = _annotate_normal(client, model_name, img_path, all_concepts, category, debug)
-        _append({
+        return {
             "image_path": img_path, "anomaly_type": "good",
             "concept_vector": cv, "new_defect_concepts": [], "defect_category": "good",
-        })
+        }
 
-    # ── 3b. Normal test images ─────────────────────────────────────────────────
+    log.info("Annotating %d normal (train) images with %d worker(s)...",
+             len(normal_sample), n_workers)
+    completed_n = 0
+    with ThreadPoolExecutor(max_workers=n_workers) as ex:
+        futures_n = {ex.submit(_worker_normal, p): p for p in normal_sample}
+        for fut in as_completed(futures_n):
+            _append(fut.result())
+            completed_n += 1
+            if completed_n % 20 == 0 or completed_n == len(normal_sample):
+                log.info("  Normal (train): %d/%d", completed_n, len(normal_sample))
+
+    # ── 3b. Normal test images (parallel) ─────────────────────────────────────
     normal_test = image_groups.get("normal_test", [])
     if n_annotate_sample:
         normal_test = normal_test[:n_annotate_sample]
 
-    log.info("Annotating %d normal (test) images...", len(normal_test))
-    for i, img_path in enumerate(normal_test, 1):
-        if i % 20 == 0 or i == len(normal_test):
-            log.info("  [%d/%d] %s", i, len(normal_test), Path(img_path).name)
-        cv = _annotate_normal(client, model_name, img_path, all_concepts, category, debug)
-        _append({
-            "image_path": img_path, "anomaly_type": "good",
-            "concept_vector": cv, "new_defect_concepts": [], "defect_category": "good",
-        })
+    log.info("Annotating %d normal (test) images with %d worker(s)...",
+             len(normal_test), n_workers)
+    completed_t = 0
+    with ThreadPoolExecutor(max_workers=n_workers) as ex:
+        futures_t = {ex.submit(_worker_normal, p): p for p in normal_test}
+        for fut in as_completed(futures_t):
+            _append(fut.result())
+            completed_t += 1
+            if completed_t % 20 == 0 or completed_t == len(normal_test):
+                log.info("  Normal (test): %d/%d", completed_t, len(normal_test))
 
     # ── 3c. Defect images (parallel, P2-B) ────────────────────────────────────
     def _worker(img_path: str, defect_type: str) -> dict:

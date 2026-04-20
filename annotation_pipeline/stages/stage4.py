@@ -112,7 +112,7 @@ def run(
         log.warning("Stage 4: sentence-transformers unavailable — returning raw concepts")
         return defect_concept_map, []
 
-    embedder = SentenceTransformer("all-MiniLM-L6-v2")
+    embedder = SentenceTransformer("BAAI/bge-large-en-v1.5")
     refined: dict[str, list[dict]] = {}
 
     for defect_type, concepts in defect_concept_map.items():
