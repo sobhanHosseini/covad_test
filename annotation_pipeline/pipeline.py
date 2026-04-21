@@ -122,6 +122,16 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--random_seed", type=int, default=42)
     p.add_argument("--debug",       action="store_true")
 
+    # ── Two-stage mode ──────────────────────────────────────────────────────
+    p.add_argument("--two_stage",          action="store_true",
+                   help="Use text-only vocab builder + CLIP scoring (faster, more consistent).")
+    p.add_argument("--n_per_dim",          type=int, default=5,
+                   help="Two-stage: concepts per visual dimension (default 5 → 30 total).")
+    p.add_argument("--presence_threshold", type=float, default=0.24,
+                   help="Two-stage: CLIP sim threshold for concept presence (default 0.24).")
+    p.add_argument("--min_clip_activation", type=float, default=0.20,
+                   help="Two-stage: min CLIP activation on normal images (default 0.20).")
+
     return p.parse_args()
 
 
@@ -131,6 +141,8 @@ def parse_args() -> argparse.Namespace:
 
 def run(args: argparse.Namespace):
     random.seed(args.random_seed)
+    # Holds precomputed normal concept vectors in two-stage mode
+    two_stage_normal_vectors: dict = {}
 
     # ── Imports that require ollama (lazy — keeps module importable without it) ─
     from ollama import Client
@@ -179,7 +191,14 @@ def run(args: argparse.Namespace):
     normal_embeddings: dict = {}
     defect_embeddings: dict = {}
 
-    if clip_model is not None and args.load_from_stage < 3:
+    # Determine what CLIP embeddings are needed:
+    #   Stage 3 reference selection needs both (only when running Stage 3)
+    #   Stage 2e CLIP filter always needs both (even when loading from Stage 3)
+    _need_for_stage3   = clip_model is not None and args.load_from_stage < 3
+    _need_for_filter   = clip_model is not None and not args.skip_clip_filter
+    _need_embeddings   = _need_for_stage3 or _need_for_filter
+
+    if _need_embeddings:
         cache_path = str(checkpoints.clip_cache_path(args.save_path, args.category))
         normal_embeddings = load_or_compute_clip_embeddings(
             all_normal, clip_model, clip_preprocess, clip_device,
@@ -190,13 +209,17 @@ def run(args: argparse.Namespace):
             if k not in ("normal", "normal_test") for p in v
         ]
         if all_defect_paths:
-            log.info("CLIP: computing embeddings for %d defect images...", len(all_defect_paths))
             from annotation_pipeline.clip_utils import compute_clip_embeddings
+            if _need_for_stage3:
+                log.info("CLIP: computing embeddings for %d defect images (Stage 3)...",
+                         len(all_defect_paths))
+            else:
+                log.info("CLIP: computing defect embeddings for Stage 2e filter...")
             defect_embeddings = compute_clip_embeddings(
                 all_defect_paths, clip_model, clip_preprocess, clip_device
             )
     elif clip_model is not None:
-        log.info("CLIP: skipping (Stage 3 loaded from checkpoint)")
+        log.info("CLIP: skipping (Stage 3 from checkpoint, filter disabled)")
 
     # ══════════════════════════════════════════════════════════════════════════
     # STAGE 1
