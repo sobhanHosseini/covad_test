@@ -200,7 +200,7 @@ pyrightconfig.json
 !datasets/gemini_logo_mask.png
 
 # Ignore JSON files
-*.json
+# *.json
 
 # Ignore a specific Jupyter notebook
 plots.ipynb

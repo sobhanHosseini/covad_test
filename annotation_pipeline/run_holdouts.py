@@ -55,7 +55,7 @@ def discover_defects(dataset_path: str, category: str) -> list[str]:
 
 def stage3_checkpoint_path(base_save_path: str, category: str) -> Path:
     """Return the expected Stage 3 checkpoint path."""
-    return Path(base_save_path).parent / f"stage3_annotations.json"
+    return Path(base_save_path).parent / f"{category}_stage3_annotations.json"
 
 
 def wait_for_stage3(checkpoint: Path, poll_interval: int = 60) -> None:
