@@ -1,0 +1,3242 @@
+[
+  {
+    "name": "smooth_outer_surface",
+    "description": "The exterior surface is uniformly smooth without any perceptible bumps or ridges",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/163.png"
+  },
+  {
+    "name": "uniform_surface_texture",
+    "description": "The surface texture remains consistent across the entire visible area",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/163.png"
+  },
+  {
+    "name": "opaque_black_portion",
+    "description": "One segment of the object is solid black and does not allow light to pass through",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/163.png"
+  },
+  {
+    "name": "translucent_amber_portion",
+    "description": "The other segment is a semi-transparent amber color",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/163.png"
+  },
+  {
+    "name": "cylindrical_central_body",
+    "description": "The middle section of the object forms a long, straight cylinder",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/163.png"
+  },
+  {
+    "name": "hemispherical_end_shapes",
+    "description": "The two ends of the object are rounded into hemispherical shapes",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/163.png"
+  },
+  {
+    "name": "glossy_reflective_finish",
+    "description": "The surface has a high-gloss finish that reflects incident light",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/163.png"
+  },
+  {
+    "name": "shiny_material_coating",
+    "description": "A bright, reflective coating is present on the outer layer",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/163.png"
+  },
+  {
+    "name": "seamless_part_junction",
+    "description": "The interface where the two colored segments meet is smooth and continuous",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/163.png"
+  },
+  {
+    "name": "unbroken_outer_perimeter",
+    "description": "The outer boundary of the object shows no cracks, breaks, or gaps",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/163.png"
+  },
+  {
+    "name": "white_numeric_markings",
+    "description": "The white digits '500' are clearly printed on the amber section",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/163.png"
+  },
+  {
+    "name": "small_alphanumeric_text",
+    "description": "Small alphanumeric characters are visible on the black section",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/163.png"
+  },
+  {
+    "name": "smooth_outer_surface",
+    "description": "The surface is even and lacks any visible bumps or ridges",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/028.png"
+  },
+  {
+    "name": "uniform_texture_distribution",
+    "description": "The texture is consistent across the visible surface",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/028.png"
+  },
+  {
+    "name": "opaque_black_color",
+    "description": "One end of the object is a solid, non-transparent black",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/028.png"
+  },
+  {
+    "name": "translucent_amber_section",
+    "description": "The other section has a semi-transparent brownish hue",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/028.png"
+  },
+  {
+    "name": "elongated_cylindrical_geometry",
+    "description": "The object has a long, straight-sided cylindrical shape",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/028.png"
+  },
+  {
+    "name": "rounded_terminal_ends",
+    "description": "The ends of the object are curved and blunt",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/028.png"
+  },
+  {
+    "name": "glossy_reflective_finish",
+    "description": "The surface exhibits a shiny, light-reflecting quality",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/028.png"
+  },
+  {
+    "name": "semi_transparent_material",
+    "description": "The amber portion allows light to pass through the surface",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/028.png"
+  },
+  {
+    "name": "seamless_edge_junction",
+    "description": "The meeting point of the two colors is a clean, continuous line",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/028.png"
+  },
+  {
+    "name": "unbroken_shell_perimeter",
+    "description": "The outer boundary of the object is continuous and without cracks",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/028.png"
+  },
+  {
+    "name": "white_numeric_print",
+    "description": "The number 500 is printed in white ink",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/028.png"
+  },
+  {
+    "name": "centered_digit_marking",
+    "description": "The white digits are positioned centrally on the amber section",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/028.png"
+  },
+  {
+    "name": "smooth_surface_texture",
+    "description": "The surface is uniformly smooth without any detectable roughness or bumps",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/006.png"
+  },
+  {
+    "name": "even_surface_texture",
+    "description": "The texture remains consistent across the entire visible surface area",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/006.png"
+  },
+  {
+    "name": "opaque_black_color",
+    "description": "One section of the object features a deep, non-transparent black color",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/006.png"
+  },
+  {
+    "name": "amber_translucent_color",
+    "description": "The second section features a semi-transparent amber or brownish-orange color",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/006.png"
+  },
+  {
+    "name": "cylindrical_central_body",
+    "description": "The middle portion of the object forms a straight cylindrical shape",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/006.png"
+  },
+  {
+    "name": "rounded_hemispherical_ends",
+    "description": "The two ends of the object are shaped into smooth hemispheres",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/006.png"
+  },
+  {
+    "name": "reflective_glossy_finish",
+    "description": "The surface finish is highly reflective, creating bright specular highlights",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/006.png"
+  },
+  {
+    "name": "semi_transparent_finish",
+    "description": "The material finish allows light to pass through the amber-colored section",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/006.png"
+  },
+  {
+    "name": "intact_outer_surface",
+    "description": "The outer surface is continuous and free of any cracks or punctures",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/006.png"
+  },
+  {
+    "name": "seamless_part_interface",
+    "description": "The junction where the two colored sections meet is tight and seamless",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/006.png"
+  },
+  {
+    "name": "white_printed_text",
+    "description": "White alphanumeric characters are clearly printed on the surface",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/006.png"
+  },
+  {
+    "name": "printed_numeric_digits",
+    "description": "Distinct numeric digits are visible on the translucent section",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/006.png"
+  },
+  {
+    "name": "smooth_surface_texture",
+    "description": "The exterior surface is even and lacks any roughness or bumps",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/189.png"
+  },
+  {
+    "name": "uniform_surface_texture",
+    "description": "The texture remains consistent across the entire visible area",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/189.png"
+  },
+  {
+    "name": "opaque_black_color",
+    "description": "One segment of the object is a solid, non-transparent black",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/189.png"
+  },
+  {
+    "name": "translucent_amber_color",
+    "description": "The other segment is a semi-transparent brownish-orange hue",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/189.png"
+  },
+  {
+    "name": "oblong_cylindrical_shape",
+    "description": "The object features an elongated, cylindrical form",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/189.png"
+  },
+  {
+    "name": "rounded_end_geometry",
+    "description": "The terminal ends of the object are smoothly curved",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/189.png"
+  },
+  {
+    "name": "glossy_reflective_finish",
+    "description": "The surface displays clear, bright light reflections",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/189.png"
+  },
+  {
+    "name": "lustrous_material_finish",
+    "description": "The surface has a high-shine, polished appearance",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/189.png"
+  },
+  {
+    "name": "intact_outer_casing",
+    "description": "The external structure shows no cracks, splits, or breaks",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/189.png"
+  },
+  {
+    "name": "seamless_part_junction",
+    "description": "The interface between the two colored sections is continuous",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/189.png"
+  },
+  {
+    "name": "white_numeric_marking",
+    "description": "The number 500 is printed clearly in white ink",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/189.png"
+  },
+  {
+    "name": "sharp_printed_digits",
+    "description": "The printed numerical characters have well-defined edges",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/189.png"
+  },
+  {
+    "name": "smooth_surface_texture",
+    "description": "The outer surface is even and without bumps",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/070.png"
+  },
+  {
+    "name": "even_surface_texture",
+    "description": "The surface exhibits a consistent and uniform feel",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/070.png"
+  },
+  {
+    "name": "black_colored_segment",
+    "description": "One part of the object is solid black",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/070.png"
+  },
+  {
+    "name": "brown_colored_segment",
+    "description": "One part of the object is tan or brown",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/070.png"
+  },
+  {
+    "name": "cylindrical_central_body",
+    "description": "The middle section has a cylindrical geometry",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/070.png"
+  },
+  {
+    "name": "hemispherical_end_shapes",
+    "description": "The ends of the object are rounded and hemispherical",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/070.png"
+  },
+  {
+    "name": "glossy_material_finish",
+    "description": "The surface exhibits a bright, shiny appearance",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/070.png"
+  },
+  {
+    "name": "reflective_surface_sheen",
+    "description": "The surface reflects light from the environment",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/070.png"
+  },
+  {
+    "name": "intact_structural_edge",
+    "description": "The perimeter of the object is unbroken",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/070.png"
+  },
+  {
+    "name": "continuous_outer_surface",
+    "description": "The surface material is a single, unbroken layer",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/070.png"
+  },
+  {
+    "name": "white_printed_digits",
+    "description": "The digits 500 are printed in white",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/070.png"
+  },
+  {
+    "name": "numeric_surface_markings",
+    "description": "Numerical characters are visible on the surface",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/070.png"
+  },
+  {
+    "name": "smooth_surface_texture",
+    "description": "The surface is even and lacks any perceptible roughness",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/062.png"
+  },
+  {
+    "name": "uniform_surface_smoothness",
+    "description": "The smoothness is consistent across the entire visible area",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/062.png"
+  },
+  {
+    "name": "black_pigmented_section",
+    "description": "One end of the object is colored a solid, deep black",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/062.png"
+  },
+  {
+    "name": "brown_pigmented_section",
+    "description": "The other end of the object is a brownish-orange color",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/062.png"
+  },
+  {
+    "name": "elongated_cylindrical_geometry",
+    "description": "The object has a long, cylindrical geometric form",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/062.png"
+  },
+  {
+    "name": "rounded_hemispherical_ends",
+    "description": "The ends of the object are shaped as smooth hemispheres",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/062.png"
+  },
+  {
+    "name": "glossy_reflective_finish",
+    "description": "The surface exhibits bright, specular light reflections",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/062.png"
+  },
+  {
+    "name": "high_shine_sheen",
+    "description": "The surface has a lustrous and light-reflecting quality",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/062.png"
+  },
+  {
+    "name": "seamless_junction_line",
+    "description": "The boundary between the two colored sections is smooth and flush",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/062.png"
+  },
+  {
+    "name": "intact_outer_shell",
+    "description": "The exterior surface shows no visible cracks or ruptures",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/062.png"
+  },
+  {
+    "name": "white_alphanumeric_characters",
+    "description": "White printed characters are visible on the surface",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/062.png"
+  },
+  {
+    "name": "printed_numeric_digits",
+    "description": "The number 500 is clearly printed in white",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/062.png"
+  },
+  {
+    "name": "smooth_surface_texture",
+    "description": "The surface is uniformly smooth and lacks any visible pores",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/057.png"
+  },
+  {
+    "name": "consistent_surface_smoothness",
+    "description": "The smoothness is even across the entire visible area",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/057.png"
+  },
+  {
+    "name": "black_opaque_segment",
+    "description": "A portion of the object is a solid, non-transparent black",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/057.png"
+  },
+  {
+    "name": "orange_translucent_segment",
+    "description": "A portion of the object is a semi-transparent orange",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/057.png"
+  },
+  {
+    "name": "cylindrical_body_shape",
+    "description": "The main central part of the object is cylindrical",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/057.png"
+  },
+  {
+    "name": "rounded_end_geometry",
+    "description": "The distal ends of the object are curved and rounded",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/057.png"
+  },
+  {
+    "name": "glossy_reflective_finish",
+    "description": "The surface exhibits high reflectivity of ambient light",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/057.png"
+  },
+  {
+    "name": "lustrous_surface_sheen",
+    "description": "The material has a bright and shiny appearance",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/057.png"
+  },
+  {
+    "name": "intact_joint_seam",
+    "description": "The junction between the two segments is tightly closed",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/057.png"
+  },
+  {
+    "name": "unbroken_outer_boundary",
+    "description": "The outer perimeter of the object is a continuous loop",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/057.png"
+  },
+  {
+    "name": "white_numeric_digits",
+    "description": "White-colored numbers are printed on the surface",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/057.png"
+  },
+  {
+    "name": "white_brand_inscription",
+    "description": "White-colored lettering is visible on the black segment",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/057.png"
+  },
+  {
+    "name": "smooth_outer_surface",
+    "description": "The surface is even and lacks any visible bumps or irregularities",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/035.png"
+  },
+  {
+    "name": "glossy_reflective_texture",
+    "description": "The surface exhibits specular highlights from light reflection",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/035.png"
+  },
+  {
+    "name": "opaque_black_segment",
+    "description": "One end of the object is solid, non-transparent black",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/035.png"
+  },
+  {
+    "name": "translucent_amber_segment",
+    "description": "The other end is a semi-transparent, dark amber color",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/035.png"
+  },
+  {
+    "name": "cylindrical_main_body",
+    "description": "The central portion of the object follows a cylindrical geometry",
+    "visual_dimension": "shape_geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/035.png"
+  },
+  {
+    "name": "rounded_hemispherical_ends",
+    "description": "The ends of the object are shaped as smooth hemispheres",
+    "visual_dimension": "shape_geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/035.png"
+  },
+  {
+    "name": "high_gloss_finish",
+    "description": "The material has a shiny, polished surface finish",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/035.png"
+  },
+  {
+    "name": "semi_transparent_finish",
+    "description": "The amber portion allows partial light transmission through the material",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/035.png"
+  },
+  {
+    "name": "seamless_part_junction",
+    "description": "The two halves meet without any visible gaps or separation",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/035.png"
+  },
+  {
+    "name": "unbroken_surface_edge",
+    "description": "The edges and boundaries are continuous without cracks or chips",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/035.png"
+  },
+  {
+    "name": "white_printed_digits",
+    "description": "The numbers '500' are printed in a solid white color",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/035.png"
+  },
+  {
+    "name": "numeric_surface_characters",
+    "description": "Distinct numerical characters are clearly visible on the amber section",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/035.png"
+  },
+  {
+    "name": "smooth_surface_texture",
+    "description": "The surface is even and without bumps",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/188.png"
+  },
+  {
+    "name": "even_exterior_texture",
+    "description": "The texture is uniform across the visible area",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/188.png"
+  },
+  {
+    "name": "opaque_black_color",
+    "description": "The dark end is solid and non-transparent",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/188.png"
+  },
+  {
+    "name": "translucent_brown_color",
+    "description": "The brown section allows some light to pass through",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/188.png"
+  },
+  {
+    "name": "cylindrical_body_shape",
+    "description": "The main body follows a cylindrical form",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/188.png"
+  },
+  {
+    "name": "rounded_end_geometry",
+    "description": "The ends of the object are curved and rounded",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/188.png"
+  },
+  {
+    "name": "glossy_material_finish",
+    "description": "The surface has a high-shine, glossy appearance",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/188.png"
+  },
+  {
+    "name": "reflective_surface_finish",
+    "description": "Light reflects clearly off the outer surface",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/188.png"
+  },
+  {
+    "name": "seamless_part_junction",
+    "description": "The meeting point of the two sections is smooth and gapless",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/188.png"
+  },
+  {
+    "name": "unbroken_outer_layer",
+    "description": "The outer surface layer is continuous and intact",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/188.png"
+  },
+  {
+    "name": "white_printed_digits",
+    "description": "The numbers 500 are printed in white ink",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/188.png"
+  },
+  {
+    "name": "numerical_surface_print",
+    "description": "White numeric characters are visible on the surface",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/188.png"
+  },
+  {
+    "name": "even_surface_texture",
+    "description": "The surface is consistent and lacks irregularities",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/139.png"
+  },
+  {
+    "name": "smooth_material_surface",
+    "description": "The surface is even and lacks roughness",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/139.png"
+  },
+  {
+    "name": "black_opaque_segment",
+    "description": "One segment is solid black in color",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/139.png"
+  },
+  {
+    "name": "brown_translucent_segment",
+    "description": "The other segment is a translucent brown",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/139.png"
+  },
+  {
+    "name": "elongated_cylindrical_geometry",
+    "description": "The shape is a long, round cylinder",
+    "visual_dimension": "shape_geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/139.png"
+  },
+  {
+    "name": "rounded_terminal_ends",
+    "description": "The ends of the part are curved",
+    "visual_dimension": "shape_geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/139.png"
+  },
+  {
+    "name": "glossy_reflective_finish",
+    "description": "The surface reflects light with high luster",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/139.png"
+  },
+  {
+    "name": "specular_material_finish",
+    "description": "The surface exhibits bright light highlights",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/139.png"
+  },
+  {
+    "name": "continuous_shell_structure",
+    "description": "The outer casing is an unbroken unit",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/139.png"
+  },
+  {
+    "name": "seamless_joint_interface",
+    "description": "The connection between parts is integrated",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/139.png"
+  },
+  {
+    "name": "white_numeric_print",
+    "description": "The number 500 is printed in white",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/139.png"
+  },
+  {
+    "name": "numeric_surface_markings",
+    "description": "White digits are visible on the surface",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/139.png"
+  },
+  {
+    "name": "smooth_outer_texture",
+    "description": "The outer surface is even and without perceptible roughness",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/022.png"
+  },
+  {
+    "name": "even_surface_consistency",
+    "description": "The texture is uniform across the entire visible surface",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/022.png"
+  },
+  {
+    "name": "opaque_black_pigmentation",
+    "description": "The dark portion is entirely non-transparent",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/022.png"
+  },
+  {
+    "name": "translucent_amber_pigmentation",
+    "description": "The lighter portion allows light transmission",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/022.png"
+  },
+  {
+    "name": "elongated_cylindrical_form",
+    "description": "The object features an extended tube-like shape",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/022.png"
+  },
+  {
+    "name": "rounded_hemispherical_ends",
+    "description": "The distal ends are dome-shaped",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/022.png"
+  },
+  {
+    "name": "glossy_reflective_finish",
+    "description": "The surface exhibits high specular reflection",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/022.png"
+  },
+  {
+    "name": "lustrous_material_finish",
+    "description": "The surface has a distinct sheen",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/022.png"
+  },
+  {
+    "name": "flush_part_interface",
+    "description": "The junction between the two halves is level",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/022.png"
+  },
+  {
+    "name": "unbroken_edge_contour",
+    "description": "The exterior perimeter is a continuous line",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/022.png"
+  },
+  {
+    "name": "white_numeric_printing",
+    "description": "White numbers are printed on the surface",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/022.png"
+  },
+  {
+    "name": "printed_digit_characters",
+    "description": "Numerical characters are visible on the surface",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/022.png"
+  },
+  {
+    "name": "smooth_surface_texture",
+    "description": "The outer surface is uniformly smooth without any visible bumps or pits",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/151.png"
+  },
+  {
+    "name": "uniform_surface_smoothness",
+    "description": "The texture is consistent across both colored segments",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/151.png"
+  },
+  {
+    "name": "opaque_black_color",
+    "description": "One portion of the object is a solid, non-transparent black",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/151.png"
+  },
+  {
+    "name": "translucent_amber_color",
+    "description": "The other portion is a see-through brownish-orange hue",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/151.png"
+  },
+  {
+    "name": "elongated_cylindrical_geometry",
+    "description": "The object possesses a long, cylindrical form",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/151.png"
+  },
+  {
+    "name": "rounded_hemispherical_ends",
+    "description": "The ends of the object are shaped like smooth hemispheres",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/151.png"
+  },
+  {
+    "name": "glossy_reflective_finish",
+    "description": "The surface reflects light, indicating a highly polished finish",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/151.png"
+  },
+  {
+    "name": "semi_transparent_sheen",
+    "description": "Light passes through the amber-colored section with a slight sheen",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/151.png"
+  },
+  {
+    "name": "seamless_part_junction",
+    "description": "The meeting point between the black and amber sections is smooth and continuous",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/151.png"
+  },
+  {
+    "name": "continuous_surface_structure",
+    "description": "The exterior surface shows no cracks, breaks, or interruptions",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/151.png"
+  },
+  {
+    "name": "white_numeric_printing",
+    "description": "The numbers '500' are printed in a bright white color",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/151.png"
+  },
+  {
+    "name": "printed_digit_character",
+    "description": "Clear, opaque digits are visible on the translucent section",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/151.png"
+  },
+  {
+    "name": "smooth_surface_texture",
+    "description": "The outer surface is even and smooth",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/108.png"
+  },
+  {
+    "name": "uniform_surface_texture",
+    "description": "The surface texture is consistent across the part",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/108.png"
+  },
+  {
+    "name": "black_opaque_color",
+    "description": "The black segment is solid and opaque",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/108.png"
+  },
+  {
+    "name": "orange_translucent_color",
+    "description": "The orange segment is translucent",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/108.png"
+  },
+  {
+    "name": "cylindrical_body_shape",
+    "description": "The main body has a cylindrical shape",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/108.png"
+  },
+  {
+    "name": "hemispherical_end_geometry",
+    "description": "The ends of the part are hemispherical",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/108.png"
+  },
+  {
+    "name": "reflective_glossy_finish",
+    "description": "The surface has a reflective, glossy finish",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/108.png"
+  },
+  {
+    "name": "translucent_material_finish",
+    "description": "The orange material allows light to pass through",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/108.png"
+  },
+  {
+    "name": "seamless_part_junction",
+    "description": "The junction between the two halves is seamless",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/108.png"
+  },
+  {
+    "name": "intact_outer_boundary",
+    "description": "The outer boundary is continuous and unbroken",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/108.png"
+  },
+  {
+    "name": "white_numeric_print",
+    "description": "The number 500 is printed in white",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/108.png"
+  },
+  {
+    "name": "white_text_print",
+    "description": "The brand name is printed in white text",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/108.png"
+  },
+  {
+    "name": "smooth_surface_texture",
+    "description": "The surface is even and lacks any visible roughness or bumps",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/008.png"
+  },
+  {
+    "name": "glossy_surface_texture",
+    "description": "The texture is shiny and reflects light smoothly",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/008.png"
+  },
+  {
+    "name": "black_opaque_color",
+    "description": "One section of the object is deep black and non-transparent",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/008.png"
+  },
+  {
+    "name": "amber_translucent_color",
+    "description": "One section of the object is amber-colored and allows light penetration",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/008.png"
+  },
+  {
+    "name": "cylindrical_central_geometry",
+    "description": "The main longitudinal section follows a straight cylindrical shape",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/008.png"
+  },
+  {
+    "name": "rounded_end_geometry",
+    "description": "The two ends of the object are curved into hemispheres",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/008.png"
+  },
+  {
+    "name": "highly_reflective_finish",
+    "description": "The surface finish produces clear and sharp light reflections",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/008.png"
+  },
+  {
+    "name": "polished_material_finish",
+    "description": "The material has a smooth, polished, and lustrous appearance",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/008.png"
+  },
+  {
+    "name": "seamless_structural_join",
+    "description": "The transition between the two colored sections is continuous and without gaps",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/008.png"
+  },
+  {
+    "name": "intact_surface_boundary",
+    "description": "The outer perimeter of the object is continuous and without breaks",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/008.png"
+  },
+  {
+    "name": "white_numeric_marking",
+    "description": "The digits 500 are clearly printed in a white color",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/008.png"
+  },
+  {
+    "name": "white_alphabetic_marking",
+    "description": "The characters actavis are clearly printed in a white color",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/008.png"
+  },
+  {
+    "name": "smooth_external_surface",
+    "description": "The outer surface is even and lacks any visible roughness",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/007.png"
+  },
+  {
+    "name": "uniform_surface_texture",
+    "description": "The surface texture is consistent across all visible areas",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/007.png"
+  },
+  {
+    "name": "opaque_black_color",
+    "description": "One section of the object is a solid, non-transparent black",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/007.png"
+  },
+  {
+    "name": "translucent_amber_color",
+    "description": "One section of the object is a semi-transparent amber brown",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/007.png"
+  },
+  {
+    "name": "elongated_oblong_shape",
+    "description": "The overall geometry is long and stretched along its axis",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/007.png"
+  },
+  {
+    "name": "rounded_terminal_ends",
+    "description": "The ends of the object are smooth and curved",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/007.png"
+  },
+  {
+    "name": "glossy_reflective_finish",
+    "description": "The surface exhibits bright specular highlights",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/007.png"
+  },
+  {
+    "name": "high_luster_surface",
+    "description": "The material has a polished, shiny appearance",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/007.png"
+  },
+  {
+    "name": "intact_outer_shell",
+    "description": "The exterior layer is unbroken and shows no cracks",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/007.png"
+  },
+  {
+    "name": "seamless_edge_junction",
+    "description": "The meeting point between the two halves is smooth and continuous",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/007.png"
+  },
+  {
+    "name": "white_numeric_marking",
+    "description": "A white numeric value is printed on the surface",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/007.png"
+  },
+  {
+    "name": "white_textual_marking",
+    "description": "White alphabetic characters are clearly visible on the surface",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/007.png"
+  },
+  {
+    "name": "smooth_external_surface",
+    "description": "The outer surface is even and devoid of any roughness",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/023.png"
+  },
+  {
+    "name": "glossy_shell_texture",
+    "description": "The surface exhibits a high-shine, reflective quality",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/023.png"
+  },
+  {
+    "name": "opaque_black_color",
+    "description": "One end of the object is solid and non-transparent black",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/023.png"
+  },
+  {
+    "name": "amber_tinted_color",
+    "description": "The other end has a translucent brownish-red hue",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/023.png"
+  },
+  {
+    "name": "cylindrical_central_section",
+    "description": "The main portion of the object has a round, elongated shape",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/023.png"
+  },
+  {
+    "name": "rounded_hemispherical_ends",
+    "description": "The tips of the object are smoothly curved",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/023.png"
+  },
+  {
+    "name": "reflective_light_finish",
+    "description": "Specular highlights are visible on the surface",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/023.png"
+  },
+  {
+    "name": "translucent_material_finish",
+    "description": "Light passes through the colored portion of the object",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/023.png"
+  },
+  {
+    "name": "seamless_joint_interface",
+    "description": "The two segments meet without any visible gap or misalignment",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/023.png"
+  },
+  {
+    "name": "unbroken_outer_boundary",
+    "description": "The surface is continuous without cracks or pits",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/023.png"
+  },
+  {
+    "name": "white_numerical_print",
+    "description": "The number 500 is printed in white ink on the surface",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/023.png"
+  },
+  {
+    "name": "high_contrast_digits",
+    "description": "The white characters stand out sharply against the dark background",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/023.png"
+  },
+  {
+    "name": "smooth_surface_texture",
+    "description": "The surface is even without any ridges or bumps",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/055.png"
+  },
+  {
+    "name": "glossy_surface_texture",
+    "description": "The surface exhibits a high degree of shine",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/055.png"
+  },
+  {
+    "name": "black_pigmented_region",
+    "description": "One segment of the surface is deep black",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/055.png"
+  },
+  {
+    "name": "orange_brown_pigmented_region",
+    "description": "One segment of the surface is orange-brown",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/055.png"
+  },
+  {
+    "name": "cylindrical_central_geometry",
+    "description": "The main body follows a cylindrical shape",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/055.png"
+  },
+  {
+    "name": "rounded_hemispherical_ends",
+    "description": "The two ends of the object are shaped as hemispheres",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/055.png"
+  },
+  {
+    "name": "reflective_material_finish",
+    "description": "Light is reflected off the surface",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/055.png"
+  },
+  {
+    "name": "polished_material_finish",
+    "description": "The surface has a highly lustrous appearance",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/055.png"
+  },
+  {
+    "name": "seamless_component_junction",
+    "description": "The meeting point of the two parts is tight and continuous",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/055.png"
+  },
+  {
+    "name": "unbroken_outer_shell",
+    "description": "The outer structure is continuous and intact",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/055.png"
+  },
+  {
+    "name": "white_numeric_printing",
+    "description": "White digits are visible on the orange section",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/055.png"
+  },
+  {
+    "name": "white_alphanumeric_text",
+    "description": "White letters are visible on the black section",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/055.png"
+  },
+  {
+    "name": "smooth_exterior_surface",
+    "description": "The outer surface of the object is even and without bumps",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/059.png"
+  },
+  {
+    "name": "uniform_surface_texture",
+    "description": "The texture is consistent across the visible areas",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/059.png"
+  },
+  {
+    "name": "opaque_black_pigmentation",
+    "description": "One segment of the object is a solid, non-transparent black",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/059.png"
+  },
+  {
+    "name": "translucent_amber_pigmentation",
+    "description": "The other segment is a semi-transparent brownish color",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/059.png"
+  },
+  {
+    "name": "elongated_cylindrical_shape",
+    "description": "The main body of the object follows a long, cylindrical geometry",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/059.png"
+  },
+  {
+    "name": "hemispherical_end_caps",
+    "description": "The ends of the object are shaped like rounded hemispheres",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/059.png"
+  },
+  {
+    "name": "highly_reflective_finish",
+    "description": "The surface reflects light from external sources clearly",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/059.png"
+  },
+  {
+    "name": "glossy_specular_sheen",
+    "description": "The surface possesses a bright, shiny appearance",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/059.png"
+  },
+  {
+    "name": "intact_outer_casing",
+    "description": "The external shell shows no signs of cracks or breaks",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/059.png"
+  },
+  {
+    "name": "seamless_part_junction",
+    "description": "The interface between the two segments is smooth and continuous",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/059.png"
+  },
+  {
+    "name": "white_numeric_printing",
+    "description": "White numbers are clearly visible on the surface",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/059.png"
+  },
+  {
+    "name": "printed_digit_characters",
+    "description": "Specific numeric characters are imprinted on the side",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/059.png"
+  },
+  {
+    "name": "smooth_surface_texture",
+    "description": "The outer surface is even and without roughness",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/129.png"
+  },
+  {
+    "name": "glossy_surface_texture",
+    "description": "The surface exhibits a shiny, light-reflecting texture",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/129.png"
+  },
+  {
+    "name": "black_opaque_color",
+    "description": "One section of the object is solid, opaque black",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/129.png"
+  },
+  {
+    "name": "orange_translucent_color",
+    "description": "The other section is a semi-transparent orange color",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/129.png"
+  },
+  {
+    "name": "cylindrical_central_section",
+    "description": "The main part of the object is elongated and cylindrical",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/129.png"
+  },
+  {
+    "name": "rounded_hemispherical_ends",
+    "description": "The ends of the object are rounded and hemispherical",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/129.png"
+  },
+  {
+    "name": "reflective_gloss_finish",
+    "description": "The surface features a highly reflective, shiny finish",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/129.png"
+  },
+  {
+    "name": "polished_lustrous_finish",
+    "description": "The material surface appears polished and lustrous",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/129.png"
+  },
+  {
+    "name": "seamless_part_junction",
+    "description": "The boundary where the two parts meet is flush and seamless",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/129.png"
+  },
+  {
+    "name": "continuous_outer_shell",
+    "description": "The outer surface is an unbroken and continuous layer",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/129.png"
+  },
+  {
+    "name": "white_numerical_print",
+    "description": "The digits 500 are printed in white ink",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/129.png"
+  },
+  {
+    "name": "crisp_digit_edges",
+    "description": "The edges of the printed numbers are sharp and well-defined",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/129.png"
+  },
+  {
+    "name": "smooth_surface_texture",
+    "description": "The outer surface is uniformly smooth with no visible roughness",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/154.png"
+  },
+  {
+    "name": "even_surface_uniformity",
+    "description": "The texture is consistent across the entire visible area",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/154.png"
+  },
+  {
+    "name": "opaque_black_color",
+    "description": "One segment of the object is solid and non-transparent black",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/154.png"
+  },
+  {
+    "name": "translucent_brown_color",
+    "description": "The other segment features a see-through brownish hue",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/154.png"
+  },
+  {
+    "name": "elongated_cylindrical_shape",
+    "description": "The object possesses an elongated and cylindrical form",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/154.png"
+  },
+  {
+    "name": "rounded_hemispherical_ends",
+    "description": "The two ends of the object are shaped like hemispheres",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/154.png"
+  },
+  {
+    "name": "glossy_reflective_finish",
+    "description": "The surface exhibits a high-gloss and reflective quality",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/154.png"
+  },
+  {
+    "name": "semi_transparent_sheen",
+    "description": "The brown portion has a light and translucent luster",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/154.png"
+  },
+  {
+    "name": "intact_part_junction",
+    "description": "The seam where the two segments meet is continuous and unbroken",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/154.png"
+  },
+  {
+    "name": "unbroken_surface_layer",
+    "description": "The outer surface shows no visible cracks or splits",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/154.png"
+  },
+  {
+    "name": "white_numeric_print",
+    "description": "White numerical characters are printed on the surface",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/154.png"
+  },
+  {
+    "name": "printed_digit_characters",
+    "description": "Distinct numerical digits are visible on the brown segment",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/154.png"
+  },
+  {
+    "name": "smooth_surface_texture",
+    "description": "The surface is uniformly even and lacks roughness",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/216.png"
+  },
+  {
+    "name": "even_surface_texture",
+    "description": "The texture is consistent across the visible area",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/216.png"
+  },
+  {
+    "name": "opaque_black_color",
+    "description": "One segment is a solid, non-transparent black",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/216.png"
+  },
+  {
+    "name": "translucent_amber_color",
+    "description": "One segment is a semi-transparent orange hue",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/216.png"
+  },
+  {
+    "name": "oblong_segment_shape",
+    "description": "The form is an elongated cylinder with rounded ends",
+    "visual_dimension": "shape_geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/216.png"
+  },
+  {
+    "name": "hemispherical_end_geometry",
+    "description": "The terminal ends are rounded and curved",
+    "visual_dimension": "shape_geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/216.png"
+  },
+  {
+    "name": "glossy_reflective_finish",
+    "description": "The surface exhibits specular light reflections",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/216.png"
+  },
+  {
+    "name": "polished_material_finish",
+    "description": "The surface has a high-shine, even appearance",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/216.png"
+  },
+  {
+    "name": "aligned_structural_junction",
+    "description": "The meeting point of the two segments is straight",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/216.png"
+  },
+  {
+    "name": "undistorted_structural_form",
+    "description": "The overall shape shows no dents or warping",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/216.png"
+  },
+  {
+    "name": "white_numeric_marking",
+    "description": "The number '500' is printed in white ink",
+    "visual_dimension": "surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/216.png"
+  },
+  {
+    "name": "white_text_inscription",
+    "description": "The brand name is printed in white characters",
+    "visual_dimension": "surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/216.png"
+  },
+  {
+    "name": "smooth_surface_texture",
+    "description": "The outer surface is uniformly smooth without any visible roughness",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/143.png"
+  },
+  {
+    "name": "even_surface_texture",
+    "description": "The texture is consistent across the entire visible surface",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/143.png"
+  },
+  {
+    "name": "black_opaque_color",
+    "description": "One segment of the object is solid black and non-transparent",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/143.png"
+  },
+  {
+    "name": "amber_translucent_color",
+    "description": "The second segment is a semi-transparent reddish-brown color",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/143.png"
+  },
+  {
+    "name": "cylindrical_body_geometry",
+    "description": "The object features an elongated cylindrical form",
+    "visual_dimension": "shape_geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/143.png"
+  },
+  {
+    "name": "rounded_hemispherical_ends",
+    "description": "The ends of the object are curved and hemispherical",
+    "visual_dimension": "shape_geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/143.png"
+  },
+  {
+    "name": "glossy_material_finish",
+    "description": "The surface has a high-shine, glossy appearance",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/143.png"
+  },
+  {
+    "name": "reflective_surface_finish",
+    "description": "The smooth surface reflects light from the environment",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/143.png"
+  },
+  {
+    "name": "intact_shell_seam",
+    "description": "The junction where the two parts meet is closed and continuous",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/143.png"
+  },
+  {
+    "name": "unbroken_edge_structure",
+    "description": "The edges of the segments are continuous without cracks or splits",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/143.png"
+  },
+  {
+    "name": "white_numeric_printing",
+    "description": "The number 500 is printed in white ink on the surface",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/143.png"
+  },
+  {
+    "name": "printed_digit_markings",
+    "description": "White numeric digits are clearly visible on the amber segment",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/143.png"
+  },
+  {
+    "name": "smooth_surface_texture",
+    "description": "The outer surface is even and uniform",
+    "visual_dimension": "texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/050.png"
+  },
+  {
+    "name": "even_surface_profile",
+    "description": "The surface shows no visible roughness",
+    "visual_dimension": "texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/050.png"
+  },
+  {
+    "name": "black_end_color",
+    "description": "One end of the part is deep black",
+    "visual_dimension": "color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/050.png"
+  },
+  {
+    "name": "brown_end_color",
+    "description": "The other end of the part is reddish-brown",
+    "visual_dimension": "color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/050.png"
+  },
+  {
+    "name": "cylindrical_main_body",
+    "description": "The central part follows a cylindrical geometry",
+    "visual_dimension": "shape",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/050.png"
+  },
+  {
+    "name": "rounded_end_caps",
+    "description": "The ends of the part are curved",
+    "visual_dimension": "shape",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/050.png"
+  },
+  {
+    "name": "glossy_reflective_finish",
+    "description": "The surface reflects light with a high sheen",
+    "visual_dimension": "finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/050.png"
+  },
+  {
+    "name": "lustrous_material_finish",
+    "description": "The surface exhibits a polished appearance",
+    "visual_dimension": "finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/050.png"
+  },
+  {
+    "name": "unbroken_outer_shell",
+    "description": "The exterior structure shows no cracks or breaks",
+    "visual_dimension": "integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/050.png"
+  },
+  {
+    "name": "seamless_part_junction",
+    "description": "The boundary between the two halves is tightly closed",
+    "visual_dimension": "integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/050.png"
+  },
+  {
+    "name": "white_printed_numbers",
+    "description": "The digits are printed in white",
+    "visual_dimension": "markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/050.png"
+  },
+  {
+    "name": "numerical_digit_marking",
+    "description": "A set of numbers is visible on the surface",
+    "visual_dimension": "markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/050.png"
+  },
+  {
+    "name": "smooth_outer_surface",
+    "description": "The exterior surface is even and without pits or bumps",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/183.png"
+  },
+  {
+    "name": "uniform_surface_texture",
+    "description": "The texture is consistent across the visible area",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/183.png"
+  },
+  {
+    "name": "opaque_black_pigmentation",
+    "description": "The left-hand portion is a solid, non-transparent black",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/183.png"
+  },
+  {
+    "name": "translucent_amber_pigmentation",
+    "description": "The right-hand portion is a semi-transparent orange-brown",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/183.png"
+  },
+  {
+    "name": "elongated_cylindrical_form",
+    "description": "The part has a long, cylindrical geometry",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/183.png"
+  },
+  {
+    "name": "rounded_hemispherical_ends",
+    "description": "The extremities are curved into smooth hemispheres",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/183.png"
+  },
+  {
+    "name": "glossy_reflective_finish",
+    "description": "The surface reflects light with high clarity",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/183.png"
+  },
+  {
+    "name": "lustrous_surface_sheen",
+    "description": "The surface exhibits a bright, shining quality",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/183.png"
+  },
+  {
+    "name": "unbroken_shell_structure",
+    "description": "The outer layer is continuous without cracks or breaks",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/183.png"
+  },
+  {
+    "name": "seamless_part_junction",
+    "description": "The meeting point of the two halves is flush and even",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/183.png"
+  },
+  {
+    "name": "white_alphanumeric_text",
+    "description": "White letters are printed clearly on the surface",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/183.png"
+  },
+  {
+    "name": "white_numeric_characters",
+    "description": "White numbers are printed clearly on the surface",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/183.png"
+  },
+  {
+    "name": "smooth_surface_texture",
+    "description": "The outer surface is even and lacks visible grooves or pits",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/166.png"
+  },
+  {
+    "name": "uniform_surface_smoothness",
+    "description": "The texture is consistent and even across the entire visible area",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/166.png"
+  },
+  {
+    "name": "black_end_color",
+    "description": "One terminal end of the object is deep black",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/166.png"
+  },
+  {
+    "name": "brown_end_color",
+    "description": "The opposite end of the object is a tan or brown color",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/166.png"
+  },
+  {
+    "name": "elongated_cylindrical_form",
+    "description": "The object possesses a long, cylindrical geometry",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/166.png"
+  },
+  {
+    "name": "rounded_hemispherical_ends",
+    "description": "The terminal ends of the object are rounded in shape",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/166.png"
+  },
+  {
+    "name": "glossy_reflective_finish",
+    "description": "The surface has a highly reflective and shiny appearance",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/166.png"
+  },
+  {
+    "name": "lustrous_surface_sheen",
+    "description": "The material displays a subtle, light-reflecting luster",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/166.png"
+  },
+  {
+    "name": "unbroken_outer_boundary",
+    "description": "The outer surface boundary is continuous and without cracks",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/166.png"
+  },
+  {
+    "name": "seamless_part_junction",
+    "description": "The meeting point between the two colored segments is clean and integrated",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/166.png"
+  },
+  {
+    "name": "white_numerical_print",
+    "description": "The number 500 is printed in a distinct white color",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/166.png"
+  },
+  {
+    "name": "visible_digit_markings",
+    "description": "Numeric characters are clearly visible on the brown segment",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/166.png"
+  },
+  {
+    "name": "smooth_outer_texture",
+    "description": "The outer surface is even and lacks any palpable roughness",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/179.png"
+  },
+  {
+    "name": "uniform_surface_texture",
+    "description": "The texture is consistent across the entire visible area",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/179.png"
+  },
+  {
+    "name": "black_opaque_color",
+    "description": "One end of the object is a solid, non-transparent black",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/179.png"
+  },
+  {
+    "name": "translucent_amber_color",
+    "description": "The other end of the object is a semi-transparent amber hue",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/179.png"
+  },
+  {
+    "name": "cylindrical_body_geometry",
+    "description": "The central portion follows a straight cylindrical shape",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/179.png"
+  },
+  {
+    "name": "rounded_hemispherical_ends",
+    "description": "The two extremities of the object are shaped like hemispheres",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/179.png"
+  },
+  {
+    "name": "glossy_reflective_finish",
+    "description": "The surface possesses a high-shine, reflective quality",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/179.png"
+  },
+  {
+    "name": "specular_surface_highlights",
+    "description": "Bright, concentrated points of light reflect off the surface",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/179.png"
+  },
+  {
+    "name": "unbroken_shell_structure",
+    "description": "The external casing is continuous and free of cracks",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/179.png"
+  },
+  {
+    "name": "seamless_part_junction",
+    "description": "The interface where the two halves meet is smooth and tight",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/179.png"
+  },
+  {
+    "name": "white_numeric_marking",
+    "description": "The digits '500' are printed in a white color",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/179.png"
+  },
+  {
+    "name": "crisp_printed_digits",
+    "description": "The printed numbers have sharp and well-defined edges",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/179.png"
+  },
+  {
+    "name": "smooth_surface_texture",
+    "description": "The exterior surface is even and lacks roughness",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/206.png"
+  },
+  {
+    "name": "glossy_surface_sheen",
+    "description": "A shiny reflection is visible on the surface",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/206.png"
+  },
+  {
+    "name": "black_colored_half",
+    "description": "The left section of the object is pigmented black",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/206.png"
+  },
+  {
+    "name": "amber_colored_half",
+    "description": "The right section of the object is pigmented amber",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/206.png"
+  },
+  {
+    "name": "oblong_cylindrical_shape",
+    "description": "The object has an elongated cylindrical form",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/206.png"
+  },
+  {
+    "name": "rounded_end_geometry",
+    "description": "The tips of the object are curved",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/206.png"
+  },
+  {
+    "name": "reflective_material_finish",
+    "description": "The surface finish reflects incident light",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/206.png"
+  },
+  {
+    "name": "translucent_material_property",
+    "description": "The amber section is partially see-through",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/206.png"
+  },
+  {
+    "name": "seamless_shell_junction",
+    "description": "The boundary between the two halves is continuous",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/206.png"
+  },
+  {
+    "name": "unbroken_shell_structure",
+    "description": "The exterior shows no visible cracks or splits",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/206.png"
+  },
+  {
+    "name": "white_numeric_digits",
+    "description": "The number 500 is printed in white",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/206.png"
+  },
+  {
+    "name": "white_alphabetic_text",
+    "description": "The word actavis is printed in white",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/206.png"
+  },
+  {
+    "name": "smooth_surface_texture",
+    "description": "The surface is even and without visible bumps or pits",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/107.png"
+  },
+  {
+    "name": "uniform_surface_grain",
+    "description": "The surface texture is consistent across the visible area",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/107.png"
+  },
+  {
+    "name": "black_pigmented_segment",
+    "description": "One portion of the object is solid black",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/107.png"
+  },
+  {
+    "name": "reddish_brown_segment",
+    "description": "One portion of the object is a reddish-brown color",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/107.png"
+  },
+  {
+    "name": "elongated_cylindrical_shape",
+    "description": "The object has a long, rounded, cylindrical form",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/107.png"
+  },
+  {
+    "name": "hemispherical_end_caps",
+    "description": "The ends of the object are rounded hemispheres",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/107.png"
+  },
+  {
+    "name": "glossy_reflective_finish",
+    "description": "The surface has a high-shine, reflective quality",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/107.png"
+  },
+  {
+    "name": "lustrous_material_sheen",
+    "description": "A bright sheen is visible on the surface under light",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/107.png"
+  },
+  {
+    "name": "seamless_segment_junction",
+    "description": "The boundary between the two colored segments is a clean, straight line",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/107.png"
+  },
+  {
+    "name": "unbroken_edge_contour",
+    "description": "The outer perimeter of the object is a continuous, unbroken loop",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/107.png"
+  },
+  {
+    "name": "white_numerical_marking",
+    "description": "The digits '500' are printed in white ink",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/107.png"
+  },
+  {
+    "name": "printed_digit_characters",
+    "description": "White numerical characters are visible on the brown surface",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/107.png"
+  },
+  {
+    "name": "smooth_surface_texture",
+    "description": "The exterior surface is even and lacks any visible roughness",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/114.png"
+  },
+  {
+    "name": "consistent_surface_texture",
+    "description": "The texture is uniform across the entire visible area",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/114.png"
+  },
+  {
+    "name": "opaque_black_pigment",
+    "description": "The dark section of the object is completely non-transparent",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/114.png"
+  },
+  {
+    "name": "translucent_amber_hue",
+    "description": "The orange section allows partial light transmission",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/114.png"
+  },
+  {
+    "name": "cylindrical_main_body",
+    "description": "The central portion of the object is elongated and round",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/114.png"
+  },
+  {
+    "name": "hemispherical_end_surfaces",
+    "description": "The two ends of the object are shaped like rounded domes",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/114.png"
+  },
+  {
+    "name": "glossy_material_finish",
+    "description": "The surface exhibits a high level of shine and polish",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/114.png"
+  },
+  {
+    "name": "reflective_surface_sheen",
+    "description": "Specular light highlights are visible on the smooth surface",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/114.png"
+  },
+  {
+    "name": "intact_seam_junction",
+    "description": "The meeting point of the two halves is closed and continuous",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/114.png"
+  },
+  {
+    "name": "continuous_edge_contour",
+    "description": "The outer perimeter of the object is unbroken and smooth",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/114.png"
+  },
+  {
+    "name": "white_alphanumeric_text",
+    "description": "White letters and characters are printed on the black section",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/114.png"
+  },
+  {
+    "name": "numeric_digit_marking",
+    "description": "A set of white numeric digits is visible on the orange surface",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/114.png"
+  },
+  {
+    "name": "smooth_surface_texture",
+    "description": "The surface is even and lacks visible roughness",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/150.png"
+  },
+  {
+    "name": "uniform_surface_consistency",
+    "description": "The texture remains constant across the visible area",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/150.png"
+  },
+  {
+    "name": "black_pigmented_area",
+    "description": "One section of the object is colored deep black",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/150.png"
+  },
+  {
+    "name": "reddish_brown_hue",
+    "description": "The other section displays a reddish-brown color",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/150.png"
+  },
+  {
+    "name": "elongated_cylindrical_geometry",
+    "description": "The object has a long, rounded, cylindrical form",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/150.png"
+  },
+  {
+    "name": "rounded_terminal_ends",
+    "description": "The longitudinal ends are smoothly curved",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/150.png"
+  },
+  {
+    "name": "glossy_reflective_finish",
+    "description": "The surface displays high specular reflections",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/150.png"
+  },
+  {
+    "name": "translucent_material_layer",
+    "description": "The brown section possesses a semi-transparent quality",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/150.png"
+  },
+  {
+    "name": "intact_structural_boundary",
+    "description": "The outer boundary is continuous and unbroken",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/150.png"
+  },
+  {
+    "name": "unbroken_surface_layer",
+    "description": "The visible surface shows no cracks or ruptures",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/150.png"
+  },
+  {
+    "name": "white_numerical_marking",
+    "description": "The digits 500 are printed in white",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/150.png"
+  },
+  {
+    "name": "printed_digit_symbols",
+    "description": "White numerical characters are visible on the surface",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/150.png"
+  },
+  {
+    "name": "smooth_external_surface",
+    "description": "The exterior surface is devoid of bumps or irregularities",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/071.png"
+  },
+  {
+    "name": "uniform_surface_texture",
+    "description": "The texture is consistent across the entire visible area",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/071.png"
+  },
+  {
+    "name": "opaque_black_color",
+    "description": "The dark section of the object is solid and non-transparent",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/071.png"
+  },
+  {
+    "name": "translucent_brown_color",
+    "description": "The brown section allows light to pass through the material",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/071.png"
+  },
+  {
+    "name": "cylindrical_central_geometry",
+    "description": "The main body of the object follows a cylindrical shape",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/071.png"
+  },
+  {
+    "name": "rounded_hemispherical_ends",
+    "description": "The ends of the object are shaped into rounded hemispheres",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/071.png"
+  },
+  {
+    "name": "glossy_surface_finish",
+    "description": "The outer surface has a high-shine, glossy appearance",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/071.png"
+  },
+  {
+    "name": "reflective_material_finish",
+    "description": "The surface finish reflects light from the surroundings",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/071.png"
+  },
+  {
+    "name": "intact_longitudinal_seam",
+    "description": "The junction between the two colored halves is seamless",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/071.png"
+  },
+  {
+    "name": "unbroken_outer_shell",
+    "description": "The outer perimeter is continuous without cracks or splits",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/071.png"
+  },
+  {
+    "name": "white_numeric_marking",
+    "description": "White-colored numbers are visible on the brown section",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/071.png"
+  },
+  {
+    "name": "printed_digit_sequence",
+    "description": "A sequence of digits is printed on the translucent surface",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/071.png"
+  },
+  {
+    "name": "smooth_outer_surface",
+    "description": "The exterior surface is consistently smooth.",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/001.png"
+  },
+  {
+    "name": "even_surface_texture",
+    "description": "The surface texture is uniform across the object.",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/001.png"
+  },
+  {
+    "name": "black_opaque_color",
+    "description": "One section of the shell is black and non-transparent.",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/001.png"
+  },
+  {
+    "name": "amber_translucent_color",
+    "description": "One section of the shell is amber and semi-transparent.",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/001.png"
+  },
+  {
+    "name": "cylindrical_body_geometry",
+    "description": "The main longitudinal section is a cylinder.",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/001.png"
+  },
+  {
+    "name": "hemispherical_end_shape",
+    "description": "The ends of the object are rounded and dome-like.",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/001.png"
+  },
+  {
+    "name": "glossy_reflective_finish",
+    "description": "The surface exhibits high specular reflection.",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/001.png"
+  },
+  {
+    "name": "shiny_material_finish",
+    "description": "The material has a bright, lustrous appearance.",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/001.png"
+  },
+  {
+    "name": "unbroken_shell_structure",
+    "description": "The shell shows no visible cracks or splits.",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/001.png"
+  },
+  {
+    "name": "intact_joint_seam",
+    "description": "The junction between the two parts is continuous.",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/001.png"
+  },
+  {
+    "name": "white_numeric_printing",
+    "description": "White numbers are visible on the translucent section.",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/001.png"
+  },
+  {
+    "name": "printed_digit_marking",
+    "description": "Numerical characters are present on the surface.",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/001.png"
+  },
+  {
+    "name": "smooth_surface_texture",
+    "description": "The outer surface is even and lacks any visible pits or bumps",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/040.png"
+  },
+  {
+    "name": "glossy_surface_texture",
+    "description": "The surface displays a lustrous and light-reflective quality",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/040.png"
+  },
+  {
+    "name": "black_pigmented_section",
+    "description": "One half of the object is a solid, opaque black",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/040.png"
+  },
+  {
+    "name": "amber_pigmented_section",
+    "description": "The other half of the object is a translucent amber",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/040.png"
+  },
+  {
+    "name": "cylindrical_body_geometry",
+    "description": "The central part of the object is a uniform cylinder",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/040.png"
+  },
+  {
+    "name": "rounded_terminal_ends",
+    "description": "The extremities of the object are shaped as hemispheres",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/040.png"
+  },
+  {
+    "name": "reflective_material_finish",
+    "description": "The surface exhibits bright specular highlights",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/040.png"
+  },
+  {
+    "name": "high_gloss_finish",
+    "description": "The object possesses a bright and shiny surface sheen",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/040.png"
+  },
+  {
+    "name": "intact_structural_junction",
+    "description": "The junction between the two halves is seamless and closed",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/040.png"
+  },
+  {
+    "name": "continuous_outer_perimeter",
+    "description": "The outer edge of the object is an unbroken line",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/040.png"
+  },
+  {
+    "name": "white_numeric_marking",
+    "description": "The digits 500 are printed in white",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/040.png"
+  },
+  {
+    "name": "white_alphabetic_marking",
+    "description": "The brand name is printed in white characters",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/040.png"
+  },
+  {
+    "name": "smooth_surface_texture",
+    "description": "The outer surface is even and without bumps",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/178.png"
+  },
+  {
+    "name": "even_surface_texture",
+    "description": "The surface texture is uniform across the entire object",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/178.png"
+  },
+  {
+    "name": "opaque_black_color",
+    "description": "The left segment is a solid, light-blocking black",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/178.png"
+  },
+  {
+    "name": "translucent_amber_color",
+    "description": "The right segment allows light to pass through visibly",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/178.png"
+  },
+  {
+    "name": "cylindrical_central_body",
+    "description": "The main section possesses a cylindrical geometry",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/178.png"
+  },
+  {
+    "name": "rounded_hemispherical_ends",
+    "description": "The ends of the object are shaped like hemispheres",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/178.png"
+  },
+  {
+    "name": "reflective_surface_finish",
+    "description": "The surface reflects light with a high degree of shine",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/178.png"
+  },
+  {
+    "name": "lustrous_material_sheen",
+    "description": "A bright light reflection is visible on the surface",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/178.png"
+  },
+  {
+    "name": "intact_joint_seam",
+    "description": "The boundary between the two parts is closed and continuous",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/178.png"
+  },
+  {
+    "name": "unbroken_outer_shell",
+    "description": "The exterior surface shows no cracks or ruptures",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/178.png"
+  },
+  {
+    "name": "white_numerical_text",
+    "description": "The number 500 is displayed in white ink",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/178.png"
+  },
+  {
+    "name": "printed_alphanumeric_logo",
+    "description": "The text actavis is clearly printed on the surface",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/178.png"
+  },
+  {
+    "name": "smooth_surface_texture",
+    "description": "The exterior surface is even and lacks any perceptible roughness",
+    "visual_dimension": "texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/203.png"
+  },
+  {
+    "name": "uniform_surface_smoothness",
+    "description": "The surface texture is consistent and homogenous across the visible area",
+    "visual_dimension": "texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/203.png"
+  },
+  {
+    "name": "opaque_black_segment",
+    "description": "One longitudinal section of the object is a solid, dark black",
+    "visual_dimension": "color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/203.png"
+  },
+  {
+    "name": "translucent_amber_segment",
+    "description": "The second longitudinal section is a semi-transparent amber color",
+    "visual_dimension": "color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/203.png"
+  },
+  {
+    "name": "elongated_cylindrical_geometry",
+    "description": "The object possesses a long, cylindrical structural form",
+    "visual_dimension": "shape",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/203.png"
+  },
+  {
+    "name": "rounded_hemispherical_ends",
+    "description": "The extremities of the object are curved and rounded",
+    "visual_dimension": "shape",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/203.png"
+  },
+  {
+    "name": "glossy_reflective_finish",
+    "description": "The surface exhibits a high-shine, reflective quality",
+    "visual_dimension": "finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/203.png"
+  },
+  {
+    "name": "polished_surface_sheen",
+    "description": "The surface has a bright, lustrous appearance under light",
+    "visual_dimension": "finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/203.png"
+  },
+  {
+    "name": "unbroken_structural_perimeter",
+    "description": "The outer boundary is continuous and closed without gaps",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/203.png"
+  },
+  {
+    "name": "intact_surface_layer",
+    "description": "The outer surface is free of visible cracks, splits, or fractures",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/203.png"
+  },
+  {
+    "name": "white_numerical_printing",
+    "description": "The digits '500' are printed clearly in white ink",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/203.png"
+  },
+  {
+    "name": "white_alphabetic_printing",
+    "description": "The lowercase text 'actavis' is printed clearly in white ink",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/203.png"
+  },
+  {
+    "name": "smooth_surface_texture",
+    "description": "The outer surface is even and lacks any visible roughness",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/087.png"
+  },
+  {
+    "name": "even_surface_consistency",
+    "description": "The surface texture is uniform across the entire visible area",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/087.png"
+  },
+  {
+    "name": "opaque_black_color",
+    "description": "The dark section of the object is completely non-transparent",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/087.png"
+  },
+  {
+    "name": "translucent_amber_hue",
+    "description": "The brownish-orange section allows for light transmission",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/087.png"
+  },
+  {
+    "name": "cylindrical_body_shape",
+    "description": "The central portion of the object forms a cylindrical shape",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/087.png"
+  },
+  {
+    "name": "hemispherical_end_geometry",
+    "description": "The two ends of the object have a rounded, hemispherical geometry",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/087.png"
+  },
+  {
+    "name": "glossy_reflective_finish",
+    "description": "The surface exhibits bright, specular light reflections",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/087.png"
+  },
+  {
+    "name": "high_luster_sheen",
+    "description": "The outer layer has a shiny and highly reflective quality",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/087.png"
+  },
+  {
+    "name": "intact_part_seam",
+    "description": "The junction where the two components meet is seamless and unbroken",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/087.png"
+  },
+  {
+    "name": "continuous_outer_boundary",
+    "description": "The outer perimeter of the object is a single, uninterrupted edge",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/087.png"
+  },
+  {
+    "name": "white_printed_digits",
+    "description": "The number 500 is clearly visible as white printed text",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/087.png"
+  },
+  {
+    "name": "numeric_surface_marking",
+    "description": "A white numerical label is present on the translucent section",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/087.png"
+  },
+  {
+    "name": "smooth_surface_texture",
+    "description": "The visible surface is smooth without irregularities",
+    "visual_dimension": "texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/184.png"
+  },
+  {
+    "name": "uniform_surface_texture",
+    "description": "The texture is consistent across the visible area",
+    "visual_dimension": "texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/184.png"
+  },
+  {
+    "name": "black_hemisphere_color",
+    "description": "The left hemisphere of the object is black",
+    "visual_dimension": "color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/184.png"
+  },
+  {
+    "name": "tan_segment_color",
+    "description": "The right section of the object is tan",
+    "visual_dimension": "color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/184.png"
+  },
+  {
+    "name": "cylindrical_body_shape",
+    "description": "The central part of the object is cylindrical",
+    "visual_dimension": "geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/184.png"
+  },
+  {
+    "name": "rounded_end_geometry",
+    "description": "The ends of the object are rounded",
+    "visual_dimension": "geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/184.png"
+  },
+  {
+    "name": "glossy_material_finish",
+    "description": "The surface material is glossy",
+    "visual_dimension": "finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/184.png"
+  },
+  {
+    "name": "reflective_surface_sheen",
+    "description": "The surface reflects incident light",
+    "visual_dimension": "finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/184.png"
+  },
+  {
+    "name": "intact_shell_seam",
+    "description": "The seam where the two halves meet is intact",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/184.png"
+  },
+  {
+    "name": "unbroken_part_perimeter",
+    "description": "The outer perimeter of the object is continuous",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/184.png"
+  },
+  {
+    "name": "white_text_inscription",
+    "description": "White alphanumeric characters are visible on the surface",
+    "visual_dimension": "markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/184.png"
+  },
+  {
+    "name": "numeric_dosage_print",
+    "description": "Numeric digits are printed on the surface",
+    "visual_dimension": "markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/184.png"
+  },
+  {
+    "name": "smooth_outer_surface",
+    "description": "The exterior surface is even and lacks any visible roughness",
+    "visual_dimension": "texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/039.png"
+  },
+  {
+    "name": "uniform_surface_texture",
+    "description": "The texture is consistent across the entire visible area",
+    "visual_dimension": "texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/039.png"
+  },
+  {
+    "name": "opaque_black_color",
+    "description": "The first section is a solid and non-transparent black",
+    "visual_dimension": "color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/039.png"
+  },
+  {
+    "name": "translucent_brown_color",
+    "description": "The second section is a semi-transparent reddish-brown",
+    "visual_dimension": "color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/039.png"
+  },
+  {
+    "name": "rounded_terminal_ends",
+    "description": "The ends of the object are curved rather than flat",
+    "visual_dimension": "shape",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/039.png"
+  },
+  {
+    "name": "elongated_cylindrical_body",
+    "description": "The object features a long and rounded geometry",
+    "visual_dimension": "shape",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/039.png"
+  },
+  {
+    "name": "glossy_reflective_finish",
+    "description": "The surface reflects light prominently",
+    "visual_dimension": "finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/039.png"
+  },
+  {
+    "name": "lustrous_surface_sheen",
+    "description": "A bright, light-reflecting quality is visible on the surface",
+    "visual_dimension": "finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/039.png"
+  },
+  {
+    "name": "intact_outer_shell",
+    "description": "The outer boundary shows no cracks or structural breaks",
+    "visual_dimension": "structural",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/039.png"
+  },
+  {
+    "name": "aligned_component_junction",
+    "description": "The two parts meet at a clearly defined longitudinal line",
+    "visual_dimension": "structural",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/039.png"
+  },
+  {
+    "name": "white_printed_digits",
+    "description": "White numerical characters are clearly visible on the surface",
+    "visual_dimension": "markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/039.png"
+  },
+  {
+    "name": "numerical_surface_printing",
+    "description": "The digits 500 are printed on the brown section",
+    "visual_dimension": "markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/039.png"
+  },
+  {
+    "name": "smooth_shell_surface",
+    "description": "The outer surface is even without any visible bumps or irregularities",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/199.png"
+  },
+  {
+    "name": "uniform_surface_texture",
+    "description": "The texture remains consistent across both visible segments",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/199.png"
+  },
+  {
+    "name": "deep_black_color",
+    "description": "One portion of the object is a solid, opaque black",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/199.png"
+  },
+  {
+    "name": "amber_brown_pigmentation",
+    "description": "The second portion features a translucent brownish-orange hue",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/199.png"
+  },
+  {
+    "name": "cylindrical_central_geometry",
+    "description": "The middle section of the object follows a cylindrical shape",
+    "visual_dimension": "shape_geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/199.png"
+  },
+  {
+    "name": "rounded_hemispherical_ends",
+    "description": "The two ends of the object are shaped as half-spheres",
+    "visual_dimension": "shape_geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/199.png"
+  },
+  {
+    "name": "glossy_reflective_finish",
+    "description": "The surface reflects light from the environment with high clarity",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/199.png"
+  },
+  {
+    "name": "lustrous_surface_sheen",
+    "description": "A bright, shiny sheen is visible across the outer coating",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/199.png"
+  },
+  {
+    "name": "seamless_segment_junction",
+    "description": "The meeting point between the two colored parts is continuous and unbroken",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/199.png"
+  },
+  {
+    "name": "unbroken_outer_perimeter",
+    "description": "The outer edge of the object is smooth and continuous without nicks",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/199.png"
+  },
+  {
+    "name": "white_numeric_inscription",
+    "description": "The number 500 is printed clearly in white ink",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/199.png"
+  },
+  {
+    "name": "printed_digit_characters",
+    "description": "White numeric digits are visible on the amber segment",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/199.png"
+  },
+  {
+    "name": "smooth_outer_surface",
+    "description": "The exterior surface is even and lacks any palpable roughness",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/209.png"
+  },
+  {
+    "name": "uniform_surface_texture",
+    "description": "The texture remains consistent across both visible segments",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/209.png"
+  },
+  {
+    "name": "black_colored_section",
+    "description": "One end of the object is pigmented with a deep black color",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/209.png"
+  },
+  {
+    "name": "brown_colored_section",
+    "description": "The second end of the object is pigmented with a medium brown color",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/209.png"
+  },
+  {
+    "name": "oblong_body_geometry",
+    "description": "The object possesses an elongated and oval-like geometric form",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/209.png"
+  },
+  {
+    "name": "rounded_end_geometry",
+    "description": "The distal ends of the object are smoothly curved",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/209.png"
+  },
+  {
+    "name": "glossy_material_finish",
+    "description": "The surface exhibits a high-shine, glossy finish",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/209.png"
+  },
+  {
+    "name": "reflective_surface_sheen",
+    "description": "Light reflects visibly off the smooth surface",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/209.png"
+  },
+  {
+    "name": "continuous_outer_layer",
+    "description": "The outer surface layer appears unbroken and uninterrupted",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/209.png"
+  },
+  {
+    "name": "seamless_part_connection",
+    "description": "The junction where the two colored segments meet is smooth and flush",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/209.png"
+  },
+  {
+    "name": "white_alphanumeric_print",
+    "description": "White text and characters are clearly visible on the surface",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/209.png"
+  },
+  {
+    "name": "printed_numerical_digits",
+    "description": "White numerical characters are printed prominently on the brown segment",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/209.png"
+  },
+  {
+    "name": "smooth_surface_texture",
+    "description": "The surface is even and devoid of roughness",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/200.png"
+  },
+  {
+    "name": "uniform_surface_texture",
+    "description": "The texture is consistent across the entire surface",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/200.png"
+  },
+  {
+    "name": "bi_colored_panels",
+    "description": "The surface consists of black and brown sections",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/200.png"
+  },
+  {
+    "name": "dark_pigmented_section",
+    "description": "One part of the surface is deep black",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/200.png"
+  },
+  {
+    "name": "oblong_cylindrical_shape",
+    "description": "The form is elongated with a cylindrical profile",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/200.png"
+  },
+  {
+    "name": "rounded_terminal_ends",
+    "description": "The edges at the ends are smoothly curved",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/200.png"
+  },
+  {
+    "name": "glossy_reflective_finish",
+    "description": "The surface has a high-shine, reflective quality",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/200.png"
+  },
+  {
+    "name": "specular_material_sheen",
+    "description": "A bright, light-reflecting sheen is visible",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/200.png"
+  },
+  {
+    "name": "intact_shell_boundary",
+    "description": "The outer edge is continuous and unbroken",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/200.png"
+  },
+  {
+    "name": "seamless_longitudinal_joint",
+    "description": "The meeting point of the halves is smooth",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/200.png"
+  },
+  {
+    "name": "printed_numeric_digits",
+    "description": "Numbers are clearly visible on the surface",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/200.png"
+  },
+  {
+    "name": "white_digit_print",
+    "description": "The printed digits are light in color",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/200.png"
+  },
+  {
+    "name": "smooth_surface_texture",
+    "description": "The surface lacks any perceptible bumps or ridges",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/097.png"
+  },
+  {
+    "name": "even_surface_smoothness",
+    "description": "The texture is consistent across the entire visible area",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/097.png"
+  },
+  {
+    "name": "opaque_black_color",
+    "description": "One portion of the object is deep, non-transparent black",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/097.png"
+  },
+  {
+    "name": "translucent_amber_color",
+    "description": "One portion of the object is see-through with an orange tint",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/097.png"
+  },
+  {
+    "name": "cylindrical_lateral_surface",
+    "description": "The side of the object follows a straight, curved path",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/097.png"
+  },
+  {
+    "name": "rounded_end_geometry",
+    "description": "The ends of the object feature a smooth, circular curve",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/097.png"
+  },
+  {
+    "name": "glossy_reflective_finish",
+    "description": "The surface reflects light with high specular brightness",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/097.png"
+  },
+  {
+    "name": "lustrous_surface_sheen",
+    "description": "The material has a subtle, light-reflecting glow",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/097.png"
+  },
+  {
+    "name": "continuous_part_junction",
+    "description": "The meeting point of the two halves is a clean, straight line",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/097.png"
+  },
+  {
+    "name": "intact_outer_boundary",
+    "description": "The outer edge is unbroken and smooth",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/097.png"
+  },
+  {
+    "name": "white_numeric_markings",
+    "description": "White numbers are clearly imprinted on the surface",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/097.png"
+  },
+  {
+    "name": "printed_digit_characters",
+    "description": "Specific numeric digits are visible on the translucent section",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/097.png"
+  },
+  {
+    "name": "smooth_surface_texture",
+    "description": "The surface is uniformly smooth without any perceptible roughness",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/024.png"
+  },
+  {
+    "name": "even_surface_smoothness",
+    "description": "The smoothness of the surface is consistent across the entire area",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/024.png"
+  },
+  {
+    "name": "black_pigmented_section",
+    "description": "One end of the object is covered in black pigment",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/024.png"
+  },
+  {
+    "name": "reddish_brown_pigment",
+    "description": "The other end features a reddish-brown color",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/024.png"
+  },
+  {
+    "name": "cylindrical_main_geometry",
+    "description": "The central part of the object has a cylindrical shape",
+    "visual_dimension": "shape_geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/024.png"
+  },
+  {
+    "name": "rounded_terminal_ends",
+    "description": "The ends of the object are curved and rounded",
+    "visual_dimension": "shape_geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/024.png"
+  },
+  {
+    "name": "glossy_material_finish",
+    "description": "The material surface has a bright, glossy finish",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/024.png"
+  },
+  {
+    "name": "reflective_surface_sheen",
+    "description": "The surface displays a reflective light sheen",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/024.png"
+  },
+  {
+    "name": "seamless_cap_junction",
+    "description": "The junction where the two halves meet is seamless",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/024.png"
+  },
+  {
+    "name": "unbroken_outer_perimeter",
+    "description": "The outer edge of the object is continuous and unbroken",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/024.png"
+  },
+  {
+    "name": "white_numeric_digits",
+    "description": "White numeric digits are visible on the side",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/024.png"
+  },
+  {
+    "name": "printed_digit_marking",
+    "description": "A clear white numeric marking is printed on the surface",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/024.png"
+  },
+  {
+    "name": "smooth_outer_surface",
+    "description": "The exterior surface lacks any palpable roughness or bumps",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/091.png"
+  },
+  {
+    "name": "consistent_surface_texture",
+    "description": "The texture is uniform across the entire visible area",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/091.png"
+  },
+  {
+    "name": "opaque_black_color",
+    "description": "The first section features a dense, non-transparent black pigment",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/091.png"
+  },
+  {
+    "name": "amber_translucent_hue",
+    "description": "The second section has a clear, yellowish-orange tint",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/091.png"
+  },
+  {
+    "name": "elongated_cylindrical_form",
+    "description": "The geometry is long with a circular cross-section",
+    "visual_dimension": "shape_geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/091.png"
+  },
+  {
+    "name": "rounded_hemispherical_ends",
+    "description": "The tips are curved in a dome-like shape",
+    "visual_dimension": "shape_geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/091.png"
+  },
+  {
+    "name": "glossy_reflective_finish",
+    "description": "The surface exhibits bright specular highlights",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/091.png"
+  },
+  {
+    "name": "semi_transparent_material",
+    "description": "Light passes through the amber-colored section",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/091.png"
+  },
+  {
+    "name": "seamless_joint_interface",
+    "description": "The junction between the two colored sections is smooth",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/091.png"
+  },
+  {
+    "name": "unbroken_shell_boundary",
+    "description": "The outer perimeter is a continuous, closed loop",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/091.png"
+  },
+  {
+    "name": "white_numeric_print",
+    "description": "White-colored numbers are clearly visible",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/091.png"
+  },
+  {
+    "name": "printed_digit_characters",
+    "description": "Clear, distinct digits are stamped onto the surface",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/091.png"
+  },
+  {
+    "name": "smooth_surface_texture",
+    "description": "The outer surface is exceptionally smooth to the touch and sight",
+    "visual_dimension": "texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/088.png"
+  },
+  {
+    "name": "even_surface_texture",
+    "description": "The texture is consistent across the entire visible area",
+    "visual_dimension": "texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/088.png"
+  },
+  {
+    "name": "opaque_black_color",
+    "description": "One end of the object is a solid, non-transparent black",
+    "visual_dimension": "color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/088.png"
+  },
+  {
+    "name": "translucent_amber_hue",
+    "description": "The opposite end is a semi-transparent brownish-orange color",
+    "visual_dimension": "color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/088.png"
+  },
+  {
+    "name": "oblong_cylindrical_body",
+    "description": "The object has a long, cylindrical geometric form",
+    "visual_dimension": "shape",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/088.png"
+  },
+  {
+    "name": "rounded_end_geometry",
+    "description": "The two extremities of the object are smoothly curved",
+    "visual_dimension": "shape",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/088.png"
+  },
+  {
+    "name": "glossy_reflective_finish",
+    "description": "The surface exhibits high reflectivity with bright light highlights",
+    "visual_dimension": "finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/088.png"
+  },
+  {
+    "name": "shiny_lustrous_coating",
+    "description": "The material has a bright, light-reflecting sheen",
+    "visual_dimension": "finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/088.png"
+  },
+  {
+    "name": "solid_shell_boundary",
+    "description": "The outer edges of the object appear firm and continuous",
+    "visual_dimension": "integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/088.png"
+  },
+  {
+    "name": "seamless_material_junction",
+    "description": "The transition between the black and amber segments is smooth",
+    "visual_dimension": "integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/088.png"
+  },
+  {
+    "name": "white_numerical_print",
+    "description": "The number 500 is printed in white on the surface",
+    "visual_dimension": "markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/088.png"
+  },
+  {
+    "name": "printed_digit_markings",
+    "description": "Distinct white digits are clearly visible on the translucent section",
+    "visual_dimension": "markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/capsule/train/good/088.png"
+  }
+]

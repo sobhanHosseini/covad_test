@@ -1,0 +1,3170 @@
+[
+  {
+    "name": "smooth_surface_patches",
+    "description": "The surface has areas that are even and without ridges",
+    "visual_dimension": "texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/012.png"
+  },
+  {
+    "name": "longitudinal_grooved_lines",
+    "description": "Fine, lengthwise indentations are visible on the surface",
+    "visual_dimension": "texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/012.png"
+  },
+  {
+    "name": "deep_brown_hues",
+    "description": "The primary surface color is a dark brown",
+    "visual_dimension": "color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/012.png"
+  },
+  {
+    "name": "light_tan_base_area",
+    "description": "A pale, beige-colored patch is located at one end",
+    "visual_dimension": "color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/012.png"
+  },
+  {
+    "name": "ovoid_body_shape",
+    "description": "The object has a rounded, egg-like geometry",
+    "visual_dimension": "shape",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/012.png"
+  },
+  {
+    "name": "tapered_rounded_end",
+    "description": "One extremity of the form gradually narrows",
+    "visual_dimension": "shape",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/012.png"
+  },
+  {
+    "name": "matte_surface_finish",
+    "description": "The surface lacks any shiny or glossy appearance",
+    "visual_dimension": "finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/012.png"
+  },
+  {
+    "name": "dull_surface_luster",
+    "description": "Light is scattered across the surface without specular highlights",
+    "visual_dimension": "finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/012.png"
+  },
+  {
+    "name": "unbroken_outer_layer",
+    "description": "The exterior skin is continuous without cracks",
+    "visual_dimension": "integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/012.png"
+  },
+  {
+    "name": "solid_surface_structure",
+    "description": "The exterior presents a whole and unbroken form",
+    "visual_dimension": "integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/012.png"
+  },
+  {
+    "name": "fine_linear_striations",
+    "description": "Very thin, light-colored lines run along the surface",
+    "visual_dimension": "markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/012.png"
+  },
+  {
+    "name": "small_white_flecks",
+    "description": "Tiny, bright white spots are scattered on the surface",
+    "visual_dimension": "markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/012.png"
+  },
+  {
+    "name": "fine_longitudinal_grooves",
+    "description": "Narrow, parallel lines running along the length of the surface",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/379.png"
+  },
+  {
+    "name": "subtle_surface_ridges",
+    "description": "Slightly raised textural lines across the outer boundary",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/379.png"
+  },
+  {
+    "name": "reddish_brown_hue",
+    "description": "The primary deep reddish-brown color of the surface",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/379.png"
+  },
+  {
+    "name": "pale_tan_patches",
+    "description": "Small areas of lighter, tan-colored coloration",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/379.png"
+  },
+  {
+    "name": "ovoid_geometric_form",
+    "description": "An elongated, egg-like overall shape",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/379.png"
+  },
+  {
+    "name": "asymmetrical_rounded_body",
+    "description": "A rounded mass with a slightly uneven, non-spherical profile",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/379.png"
+  },
+  {
+    "name": "matte_surface_finish",
+    "description": "A flat, non-glossy appearance on the exterior",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/379.png"
+  },
+  {
+    "name": "dull_non_reflective_sheen",
+    "description": "An absence of bright, specular light reflections",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/379.png"
+  },
+  {
+    "name": "unbroken_outer_surface",
+    "description": "A continuous and uninterrupted outer layer",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/379.png"
+  },
+  {
+    "name": "intact_structural_boundary",
+    "description": "The outer perimeter shows no visible cracks or fissures",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/379.png"
+  },
+  {
+    "name": "pale_basal_spot",
+    "description": "A light-colored marking located at the base end",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/379.png"
+  },
+  {
+    "name": "linear_surface_striations",
+    "description": "Light-colored, line-like markings following the longitudinal axis",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/379.png"
+  },
+  {
+    "name": "smooth_groove_surface",
+    "description": "The surface areas between the longitudinal ridges are smooth",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/140.png"
+  },
+  {
+    "name": "ribbed_surface_texture",
+    "description": "The object features a distinct ribbed surface texture",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/140.png"
+  },
+  {
+    "name": "warm_brown_pigmentation",
+    "description": "The surface exhibits a warm brown pigment",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/140.png"
+  },
+  {
+    "name": "light_tan_patches",
+    "description": "Small patches of light tan color are visible",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/140.png"
+  },
+  {
+    "name": "tapered_ovoid_geometry",
+    "description": "The object has a tapered ovoid geometric shape",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/140.png"
+  },
+  {
+    "name": "rounded_asymmetric_base",
+    "description": "The base of the object is rounded and asymmetric",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/140.png"
+  },
+  {
+    "name": "matte_material_finish",
+    "description": "The surface has a matte material finish",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/140.png"
+  },
+  {
+    "name": "non_reflective_surface",
+    "description": "The surface is non-reflective and lacks high gloss",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/140.png"
+  },
+  {
+    "name": "unbroken_outer_boundary",
+    "description": "The outer boundary of the object is unbroken",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/140.png"
+  },
+  {
+    "name": "continuous_solid_form",
+    "description": "The object presents a continuous and solid form",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/140.png"
+  },
+  {
+    "name": "longitudinal_groove_patterns",
+    "description": "Parallel groove patterns run along the length",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/140.png"
+  },
+  {
+    "name": "small_surface_pits",
+    "description": "Tiny dark pits are scattered across the surface",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/140.png"
+  },
+  {
+    "name": "longitudinal_ribbed_texture",
+    "description": "Fine raised ridges running along the length of the surface",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/125.png"
+  },
+  {
+    "name": "fine_granular_surface",
+    "description": "A subtle, grainy micro-texture visible upon close inspection",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/125.png"
+  },
+  {
+    "name": "reddish_brown_pigmentation",
+    "description": "Deep reddish-brown tones covering the majority of the surface",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/125.png"
+  },
+  {
+    "name": "light_tan_base_area",
+    "description": "A lighter, yellowish-tan color at the bottom attachment point",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/125.png"
+  },
+  {
+    "name": "asymmetrical_ovoid_form",
+    "description": "An elongated, egg-like shape that is not perfectly symmetrical",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/125.png"
+  },
+  {
+    "name": "rounded_bulbous_geometry",
+    "description": "Smooth, curved edges creating a swollen, rounded profile",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/125.png"
+  },
+  {
+    "name": "semi_matte_luster",
+    "description": "A dull, non-glossy sheen that softly diffuses light",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/125.png"
+  },
+  {
+    "name": "low_reflectivity_sheen",
+    "description": "Minimal specular highlights across the curved surfaces",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/125.png"
+  },
+  {
+    "name": "unbroken_outer_boundary",
+    "description": "A continuous and seamless outer perimeter without gaps",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/125.png"
+  },
+  {
+    "name": "continuous_shell_surface",
+    "description": "An uninterrupted outer layer without cracks or fissures",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/125.png"
+  },
+  {
+    "name": "vertical_striation_patterns",
+    "description": "Light-colored linear streaks following the longitudinal axis",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/125.png"
+  },
+  {
+    "name": "pale_basal_patch",
+    "description": "A distinct, lighter-colored circular area at the base",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/125.png"
+  },
+  {
+    "name": "longitudinal_raised_ridges",
+    "description": "Raised linear patterns running along the length of the surface",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/114.png"
+  },
+  {
+    "name": "smooth_interstitial_areas",
+    "description": "Flat, even areas between the prominent ridges",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/114.png"
+  },
+  {
+    "name": "reddish_brown_pigmentation",
+    "description": "The primary warm, reddish-brown color of the surface",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/114.png"
+  },
+  {
+    "name": "dark_basal_area",
+    "description": "A patch of darker brown color at the base",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/114.png"
+  },
+  {
+    "name": "ovoid_geometric_form",
+    "description": "An overall egg-like, rounded three-dimensional shape",
+    "visual_dimension": "shape_geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/114.png"
+  },
+  {
+    "name": "tapered_asymmetric_end",
+    "description": "One end that narrows and lacks perfect symmetry",
+    "visual_dimension": "shape_geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/114.png"
+  },
+  {
+    "name": "matte_surface_finish",
+    "description": "A non-reflective and dull outer coating",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/114.png"
+  },
+  {
+    "name": "subtle_satin_luster",
+    "description": "A very slight, soft sheen when light hits the surface",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/114.png"
+  },
+  {
+    "name": "intact_outer_surface",
+    "description": "A continuous surface without any visible cracks or breaks",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/114.png"
+  },
+  {
+    "name": "unbroken_structural_perimeter",
+    "description": "A smooth and continuous outer boundary edge",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/114.png"
+  },
+  {
+    "name": "dark_circular_patch",
+    "description": "A distinct, dark, roughly circular mark at the base",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/114.png"
+  },
+  {
+    "name": "vertical_linear_striations",
+    "description": "Fine, dark vertical lines visible across the surface",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/114.png"
+  },
+  {
+    "name": "fine_longitudinal_striations",
+    "description": "Thin parallel lines running along the surface",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/071.png"
+  },
+  {
+    "name": "smooth_surface_segments",
+    "description": "Even and flat surface areas",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/071.png"
+  },
+  {
+    "name": "reddish_brown_hue",
+    "description": "A warm reddish-brown color",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/071.png"
+  },
+  {
+    "name": "dark_basal_coloration",
+    "description": "A deep dark brown area at the base",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/071.png"
+  },
+  {
+    "name": "ellipsoidal_body_form",
+    "description": "An elongated, rounded three-dimensional form",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/071.png"
+  },
+  {
+    "name": "asymmetrical_rounded_geometry",
+    "description": "A non-spherical, rounded geometric shape",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/071.png"
+  },
+  {
+    "name": "matte_surface_finish",
+    "description": "A dull, non-reflective appearance",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/071.png"
+  },
+  {
+    "name": "subtle_specular_sheen",
+    "description": "A faint, localized light reflection",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/071.png"
+  },
+  {
+    "name": "unbroken_outer_structure",
+    "description": "A whole and intact outer layer",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/071.png"
+  },
+  {
+    "name": "seamless_exterior_surface",
+    "description": "A continuous surface without cracks",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/071.png"
+  },
+  {
+    "name": "dark_circular_patch",
+    "description": "A prominent dark spot at the pole",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/071.png"
+  },
+  {
+    "name": "small_surface_pitting",
+    "description": "Minute, shallow surface indentations",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/071.png"
+  },
+  {
+    "name": "fine_longitudinal_striations",
+    "description": "The surface features thin, parallel recessed lines",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/377.png"
+  },
+  {
+    "name": "smooth_shell_surface",
+    "description": "The outer surface is generally smooth to the touch",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/377.png"
+  },
+  {
+    "name": "light_brown_pigmentation",
+    "description": "The primary color of the shell is light brown",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/377.png"
+  },
+  {
+    "name": "reddish_tan_shades",
+    "description": "Subtle reddish and tan tones are visible on the surface",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/377.png"
+  },
+  {
+    "name": "ovoid_geometric_form",
+    "description": "The object has a distinct egg-like shape",
+    "visual_dimension": "shape_geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/377.png"
+  },
+  {
+    "name": "rounded_tapered_profile",
+    "description": "The shape tapers slightly towards one end",
+    "visual_dimension": "shape_geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/377.png"
+  },
+  {
+    "name": "matte_surface_finish",
+    "description": "The surface lacks any glossy or shiny appearance",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/377.png"
+  },
+  {
+    "name": "low_specular_reflectance",
+    "description": "The surface does not reflect light sharply",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/377.png"
+  },
+  {
+    "name": "unbroken_shell_boundary",
+    "description": "The outer surface is continuous without visible cracks",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/377.png"
+  },
+  {
+    "name": "continuous_surface_layer",
+    "description": "There are no visible breaks or punctures in the shell",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/377.png"
+  },
+  {
+    "name": "dark_linear_markings",
+    "description": "Darker brown lines run along the length of the shell",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/377.png"
+  },
+  {
+    "name": "textured_basal_disc",
+    "description": "The base area has a rougher, circular texture",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/377.png"
+  },
+  {
+    "name": "grooved_surface_texture",
+    "description": "shallow vertical indentations along the shell",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/052.png"
+  },
+  {
+    "name": "fine_linear_striations",
+    "description": "closely spaced thin parallel lines",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/052.png"
+  },
+  {
+    "name": "reddish_brown_hue",
+    "description": "primary deep reddish-brown color",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/052.png"
+  },
+  {
+    "name": "tan_pigmentation",
+    "description": "lighter tan colored areas",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/052.png"
+  },
+  {
+    "name": "ovoid_shell_geometry",
+    "description": "elongated egg-shaped outer form",
+    "visual_dimension": "shape_geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/052.png"
+  },
+  {
+    "name": "rounded_edge_contours",
+    "description": "smoothly curved and blunt margins",
+    "visual_dimension": "shape_geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/052.png"
+  },
+  {
+    "name": "matte_surface_finish",
+    "description": "dull and non-glossy surface",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/052.png"
+  },
+  {
+    "name": "non_reflective_sheen",
+    "description": "low level of light reflectivity",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/052.png"
+  },
+  {
+    "name": "unbroken_outer_shell",
+    "description": "intact and continuous exterior layer",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/052.png"
+  },
+  {
+    "name": "continuous_surface_boundary",
+    "description": "uninterrupted outer surface perimeter",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/052.png"
+  },
+  {
+    "name": "dark_basal_patch",
+    "description": "large dark area at the base",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/052.png"
+  },
+  {
+    "name": "pale_linear_streaks",
+    "description": "light-colored thin line patterns",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/052.png"
+  },
+  {
+    "name": "longitudinal_striated_texture",
+    "description": "Fine lines running lengthwise along the surface",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/346.png"
+  },
+  {
+    "name": "uniform_surface_texture",
+    "description": "A consistent and even surface feel",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/346.png"
+  },
+  {
+    "name": "reddish_brown_color",
+    "description": "Deep reddish-brown pigmentation across the body",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/346.png"
+  },
+  {
+    "name": "pale_tan_base",
+    "description": "Light tan colored area at the base",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/346.png"
+  },
+  {
+    "name": "ovoid_body_geometry",
+    "description": "Egg-shaped geometric form",
+    "visual_dimension": "shape_geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/346.png"
+  },
+  {
+    "name": "tapered_distal_end",
+    "description": "One end of the object narrows to a point",
+    "visual_dimension": "shape_geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/346.png"
+  },
+  {
+    "name": "non_reflective_finish",
+    "description": "Absence of specular highlights or gloss",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/346.png"
+  },
+  {
+    "name": "dull_surface_sheen",
+    "description": "Lack of luster on the outer surface",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/346.png"
+  },
+  {
+    "name": "unbroken_outer_surface",
+    "description": "Continuous and intact exterior boundary",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/346.png"
+  },
+  {
+    "name": "smooth_outer_contour",
+    "description": "Smoothly curved external edges",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/346.png"
+  },
+  {
+    "name": "vertical_line_pattern",
+    "description": "Pattern of vertical stripes on the surface",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/346.png"
+  },
+  {
+    "name": "light_colored_basal_area",
+    "description": "A light colored patch at the base",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/346.png"
+  },
+  {
+    "name": "fine_longitudinal_ridges",
+    "description": "Small ridges running along the length of the surface",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/279.png"
+  },
+  {
+    "name": "striated_surface_pattern",
+    "description": "Linear patterns across the outer surface",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/279.png"
+  },
+  {
+    "name": "reddish_brown_hue",
+    "description": "A warm brownish color with red undertones",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/279.png"
+  },
+  {
+    "name": "light_tan_streaks",
+    "description": "Lighter colored linear markings on the surface",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/279.png"
+  },
+  {
+    "name": "ellipsoidal_geometric_form",
+    "description": "An elongated, rounded, egg-like shape",
+    "visual_dimension": "shape_geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/279.png"
+  },
+  {
+    "name": "tapered_distal_end",
+    "description": "One end of the object narrows to a point",
+    "visual_dimension": "shape_geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/279.png"
+  },
+  {
+    "name": "matte_surface_finish",
+    "description": "The surface lacks a high-gloss appearance",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/279.png"
+  },
+  {
+    "name": "non_reflective_luster",
+    "description": "The surface does not exhibit specular highlights",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/279.png"
+  },
+  {
+    "name": "unbroken_outer_layer",
+    "description": "The outer layer is free of any cracks or splits",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/279.png"
+  },
+  {
+    "name": "continuous_structural_form",
+    "description": "A single, cohesive and solid body shape",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/279.png"
+  },
+  {
+    "name": "pale_linear_striations",
+    "description": "Light-colored lines running across the surface",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/279.png"
+  },
+  {
+    "name": "circular_basal_scar",
+    "description": "A distinct circular mark at the base of the object",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/279.png"
+  },
+  {
+    "name": "ovoid_body_shape",
+    "description": "The object exhibits an elongated, egg-like geometry",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/044.png"
+  },
+  {
+    "name": "rounded_surface_edges",
+    "description": "The edges of the object are curved and smooth",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/044.png"
+  },
+  {
+    "name": "reddish_brown_pigmentation",
+    "description": "The surface is primarily a warm reddish-brown",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/044.png"
+  },
+  {
+    "name": "tan_colored_segments",
+    "description": "Lighter, tan-colored sections are visible on the surface",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/044.png"
+  },
+  {
+    "name": "smooth_shell_surface",
+    "description": "The majority of the surface is even and sleek",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/044.png"
+  },
+  {
+    "name": "grainy_textured_area",
+    "description": "A portion of the surface is rough and granular",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/044.png"
+  },
+  {
+    "name": "matte_material_finish",
+    "description": "The surface does not exhibit high-gloss reflectivity",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/044.png"
+  },
+  {
+    "name": "subtle_satin_sheen",
+    "description": "A faint, soft luster is present on the surface",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/044.png"
+  },
+  {
+    "name": "unbroken_shell_structure",
+    "description": "The exterior shows no visible cracks or fractures",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/044.png"
+  },
+  {
+    "name": "unmarred_outer_surface",
+    "description": "The outer surface is continuous and without pits",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/044.png"
+  },
+  {
+    "name": "dark_circular_patch",
+    "description": "A prominent dark, circular area marks one side",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/044.png"
+  },
+  {
+    "name": "fine_longitudinal_lines",
+    "description": "Narrow, vertical lines run along the surface",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/044.png"
+  },
+  {
+    "name": "longitudinal_striations",
+    "description": "Fine vertical lines running along the surface",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/302.png"
+  },
+  {
+    "name": "ovoid_body_shape",
+    "description": "Egg-like overall geometry",
+    "visual_dimension": "shape_geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/302.png"
+  },
+  {
+    "name": "matte_surface_finish",
+    "description": "Non-glossy and dull surface appearance",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/302.png"
+  },
+  {
+    "name": "reddish_brown_pigmentation",
+    "description": "Primary deep reddish-brown coloration",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/302.png"
+  },
+  {
+    "name": "intact_outer_surface",
+    "description": "Unbroken and solid outer boundary",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/302.png"
+  },
+  {
+    "name": "fine_grain_texture",
+    "description": "Subtle granular surface texture",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/302.png"
+  },
+  {
+    "name": "pale_basal_area",
+    "description": "Light tan colored patch at the base",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/302.png"
+  },
+  {
+    "name": "tapered_apex_point",
+    "description": "Narrowed tip at the upper end",
+    "visual_dimension": "shape_geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/302.png"
+  },
+  {
+    "name": "non_reflective_sheen",
+    "description": "Absence of specular highlights or shine",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/302.png"
+  },
+  {
+    "name": "light_tan_shading",
+    "description": "Areas of lighter tan color gradient",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/302.png"
+  },
+  {
+    "name": "continuous_outer_contour",
+    "description": "Smooth and uninterrupted perimeter edge",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/302.png"
+  },
+  {
+    "name": "ridged_surface_texture",
+    "description": "Presence of subtle longitudinal ridges",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/302.png"
+  },
+  {
+    "name": "smooth_surface_area",
+    "description": "The dark brown sections of the surface are even and smooth",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/216.png"
+  },
+  {
+    "name": "rough_textured_patch",
+    "description": "The lighter area at the top possesses a coarse, uneven texture",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/216.png"
+  },
+  {
+    "name": "deep_reddish_brown_hue",
+    "description": "The primary color of the surface is a dark, saturated brown",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/216.png"
+  },
+  {
+    "name": "pale_tan_region",
+    "description": "A lighter, cream-colored area is visible near the top",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/216.png"
+  },
+  {
+    "name": "ovoid_geometric_shape",
+    "description": "The object possesses an elongated, egg-like form",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/216.png"
+  },
+  {
+    "name": "rounded_lateral_profile",
+    "description": "The sides of the object feature smooth, continuous curves",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/216.png"
+  },
+  {
+    "name": "matte_surface_finish",
+    "description": "The surface lacks a high-gloss or highly reflective appearance",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/216.png"
+  },
+  {
+    "name": "subtle_light_reflectivity",
+    "description": "A faint, low-intensity sheen is visible on smooth sections",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/216.png"
+  },
+  {
+    "name": "intact_surface_structure",
+    "description": "The surface shows no visible signs of chipping or cracking",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/216.png"
+  },
+  {
+    "name": "unbroken_outer_boundary",
+    "description": "The perimeter of the object is continuous and solid",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/216.png"
+  },
+  {
+    "name": "irregular_light_marking",
+    "description": "A non-uniform, light-colored patch is present on the top surface",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/216.png"
+  },
+  {
+    "name": "fine_surface_striations",
+    "description": "Very thin, subtle linear markings are visible on the surface",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/216.png"
+  },
+  {
+    "name": "longitudinal_grooved_lines",
+    "description": "Parallel grooves running along the length of the surface",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/016.png"
+  },
+  {
+    "name": "grainy_surface_grain",
+    "description": "Fine, unevenly textured surface grain",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/016.png"
+  },
+  {
+    "name": "reddish_brown_pigmentation",
+    "description": "Deep reddish-brown base color",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/016.png"
+  },
+  {
+    "name": "light_tan_patches",
+    "description": "Lighter, yellowish-brown areas on the surface",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/016.png"
+  },
+  {
+    "name": "ovoid_body_shape",
+    "description": "Egg-shaped, rounded geometric form",
+    "visual_dimension": "shape_geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/016.png"
+  },
+  {
+    "name": "tapered_distal_end",
+    "description": "One end narrowing to a point",
+    "visual_dimension": "shape_geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/016.png"
+  },
+  {
+    "name": "matte_surface_finish",
+    "description": "Dull, non-reflective surface appearance",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/016.png"
+  },
+  {
+    "name": "non_glossy_luster",
+    "description": "Absence of bright specular highlights",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/016.png"
+  },
+  {
+    "name": "intact_exterior_surface",
+    "description": "Unbroken and continuous outer layer",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/016.png"
+  },
+  {
+    "name": "seamless_outer_boundary",
+    "description": "A smooth, crack-free surface perimeter",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/016.png"
+  },
+  {
+    "name": "linear_striated_markings",
+    "description": "Raised or indented vertical lines",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/016.png"
+  },
+  {
+    "name": "pale_color_streaks",
+    "description": "Light-colored longitudinal streaks",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/016.png"
+  },
+  {
+    "name": "longitudinal_ridges",
+    "description": "Parallel raised lines running along the length of the surface",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/015.png"
+  },
+  {
+    "name": "shallow_grooved_surface",
+    "description": "Surface with small, shallow indentations",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/015.png"
+  },
+  {
+    "name": "reddish_brown_hue",
+    "description": "A warm, reddish-brown pigmentation across the surface",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/015.png"
+  },
+  {
+    "name": "light_tan_shading",
+    "description": "Areas of lighter, yellowish-brown tone",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/015.png"
+  },
+  {
+    "name": "ovoid_geometric_form",
+    "description": "An elongated, egg-like shape",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/015.png"
+  },
+  {
+    "name": "tapered_pointed_end",
+    "description": "One end of the object tapers to a point",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/015.png"
+  },
+  {
+    "name": "matte_surface_finish",
+    "description": "A surface lacking specular reflection",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/015.png"
+  },
+  {
+    "name": "non_reflective_luster",
+    "description": "A dull, light-absorbing surface quality",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/015.png"
+  },
+  {
+    "name": "unbroken_surface_layer",
+    "description": "A continuous and intact outer surface",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/015.png"
+  },
+  {
+    "name": "intact_outer_boundary",
+    "description": "An uninterrupted and solid outer perimeter",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/015.png"
+  },
+  {
+    "name": "parallel_line_markings",
+    "description": "Lines running parallel to each other along the length",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/015.png"
+  },
+  {
+    "name": "fine_linear_striations",
+    "description": "Very thin, light-colored lines on the surface",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/015.png"
+  },
+  {
+    "name": "fine_longitudinal_striations",
+    "description": "Narrow parallel lines running along the surface length",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/047.png"
+  },
+  {
+    "name": "coarse_basal_texture",
+    "description": "Rougher surface area at the base of the object",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/047.png"
+  },
+  {
+    "name": "deep_reddish_brown_hue",
+    "description": "Predominant dark reddish brown color",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/047.png"
+  },
+  {
+    "name": "light_tan_patches",
+    "description": "Small areas of lighter tan color on the surface",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/047.png"
+  },
+  {
+    "name": "ovoid_body_geometry",
+    "description": "An oval-shaped overall geometry",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/047.png"
+  },
+  {
+    "name": "asymmetrical_rounded_form",
+    "description": "An uneven and rounded form",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/047.png"
+  },
+  {
+    "name": "subtle_semi_matte_finish",
+    "description": "A surface with low light reflectivity",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/047.png"
+  },
+  {
+    "name": "soft_natural_luster",
+    "description": "A gentle and non-glossy sheen",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/047.png"
+  },
+  {
+    "name": "intact_surface_perimeter",
+    "description": "A continuous and unbroken outer boundary",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/047.png"
+  },
+  {
+    "name": "unbroken_surface_structure",
+    "description": "A solid and continuous surface area",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/047.png"
+  },
+  {
+    "name": "pale_linear_markings",
+    "description": "Light colored thin vertical lines",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/047.png"
+  },
+  {
+    "name": "dark_basal_area",
+    "description": "A concentrated dark patch at the base",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/047.png"
+  },
+  {
+    "name": "longitudinal_grooves",
+    "description": "Parallel indentations running along the length of the surface",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/111.png"
+  },
+  {
+    "name": "fine_surface_ridges",
+    "description": "Small, raised linear features on the exterior",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/111.png"
+  },
+  {
+    "name": "reddish_brown_hue",
+    "description": "A primary coloration of deep reddish brown",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/111.png"
+  },
+  {
+    "name": "warm_brown_tones",
+    "description": "Presence of warm brown pigmentation throughout",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/111.png"
+  },
+  {
+    "name": "ovoid_geometry",
+    "description": "An egg-shaped structural form",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/111.png"
+  },
+  {
+    "name": "rounded_contour",
+    "description": "Smoothly curved outer edges and perimeter",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/111.png"
+  },
+  {
+    "name": "asymmetrical_form",
+    "description": "A slightly irregular and non-uniform body shape",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/111.png"
+  },
+  {
+    "name": "matte_material_finish",
+    "description": "A dull, non-glossy surface finish",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/111.png"
+  },
+  {
+    "name": "non_reflective_surface",
+    "description": "A surface lacking specular highlights or gloss",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/111.png"
+  },
+  {
+    "name": "intact_outer_surface",
+    "description": "A continuous and unbroken exterior layer",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/111.png"
+  },
+  {
+    "name": "dark_basal_patch",
+    "description": "A distinct dark area located at the base",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/111.png"
+  },
+  {
+    "name": "linear_surface_striations",
+    "description": "Fine, thin lines etched into the surface",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/111.png"
+  },
+  {
+    "name": "rough_basal_patch",
+    "description": "A coarse and uneven textured area at one end",
+    "visual_dimension": "texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/308.png"
+  },
+  {
+    "name": "smooth_surface_areas",
+    "description": "Flat and even sections between the grooves",
+    "visual_dimension": "texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/308.png"
+  },
+  {
+    "name": "reddish_brown_pigmentation",
+    "description": "A deep reddish-brown color across the main body",
+    "visual_dimension": "color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/308.png"
+  },
+  {
+    "name": "tan_colored_base",
+    "description": "A lighter tan colored region at the base",
+    "visual_dimension": "color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/308.png"
+  },
+  {
+    "name": "ovoid_body_shape",
+    "description": "An egg-like rounded geometric form",
+    "visual_dimension": "geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/308.png"
+  },
+  {
+    "name": "rounded_outer_contours",
+    "description": "Smoothly curved outer edges",
+    "visual_dimension": "geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/308.png"
+  },
+  {
+    "name": "matte_material_finish",
+    "description": "A dull and non-reflective surface quality",
+    "visual_dimension": "finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/308.png"
+  },
+  {
+    "name": "subtle_lustrous_sheen",
+    "description": "A faint light-reflecting quality on smooth areas",
+    "visual_dimension": "finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/308.png"
+  },
+  {
+    "name": "solid_outer_surface",
+    "description": "A complete and continuous surface layer",
+    "visual_dimension": "integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/308.png"
+  },
+  {
+    "name": "continuous_structural_edge",
+    "description": "A seamless and whole outer boundary",
+    "visual_dimension": "integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/308.png"
+  },
+  {
+    "name": "linear_surface_striations",
+    "description": "Fine parallel lines visible on the surface",
+    "visual_dimension": "markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/308.png"
+  },
+  {
+    "name": "basal_area_markings",
+    "description": "Distinct textural patterns at the base",
+    "visual_dimension": "markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/308.png"
+  },
+  {
+    "name": "longitudinal_ridges",
+    "description": "Raised parallel lines running along the length of the surface",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/013.png"
+  },
+  {
+    "name": "striated_surface_texture",
+    "description": "Fine, repeating grooves across the outer shell",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/013.png"
+  },
+  {
+    "name": "reddish_brown_pigmentation",
+    "description": "Warm reddish-brown color covering most of the surface",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/013.png"
+  },
+  {
+    "name": "dark_basal_patch",
+    "description": "A concentrated area of dark brown at one pole",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/013.png"
+  },
+  {
+    "name": "ellipsoidal_body_shape",
+    "description": "An elongated and oval geometric form",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/013.png"
+  },
+  {
+    "name": "tapered_lateral_sides",
+    "description": "Sides that curve inward toward the ends of the object",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/013.png"
+  },
+  {
+    "name": "matte_surface_finish",
+    "description": "A dull and non-reflective surface appearance",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/013.png"
+  },
+  {
+    "name": "subtle_specular_lustre",
+    "description": "A very faint, low-level sheen visible on the ridges",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/013.png"
+  },
+  {
+    "name": "unbroken_outer_shell",
+    "description": "A continuous surface layer without visible cracks",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/013.png"
+  },
+  {
+    "name": "intact_surface_layer",
+    "description": "A structural surface free of visible splits or fissures",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/013.png"
+  },
+  {
+    "name": "light_colored_flecks",
+    "description": "Small, pale-colored spots visible on the shell",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/013.png"
+  },
+  {
+    "name": "linear_groove_pattern",
+    "description": "A pattern of parallel, lengthwise indentations",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/013.png"
+  },
+  {
+    "name": "fine_longitudinal_striations",
+    "description": "Thin parallel lines running lengthwise",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/287.png"
+  },
+  {
+    "name": "smooth_exterior_surface",
+    "description": "Evenly textured surface areas",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/287.png"
+  },
+  {
+    "name": "reddish_brown_hue",
+    "description": "Warm reddish-brown coloration",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/287.png"
+  },
+  {
+    "name": "dark_brown_patch",
+    "description": "A localized area of dark pigment",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/287.png"
+  },
+  {
+    "name": "ovoid_body_shape",
+    "description": "An elongated, egg-like form",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/287.png"
+  },
+  {
+    "name": "rounded_outer_contour",
+    "description": "Smoothly curved outer edges",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/287.png"
+  },
+  {
+    "name": "semi_matte_finish",
+    "description": "A low-gloss, non-reflective surface",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/287.png"
+  },
+  {
+    "name": "subtle_satin_sheen",
+    "description": "A light, soft surface luster",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/287.png"
+  },
+  {
+    "name": "continuous_outer_boundary",
+    "description": "An unbroken, looping perimeter",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/287.png"
+  },
+  {
+    "name": "unified_surface_layer",
+    "description": "A single, consistent outer layer",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/287.png"
+  },
+  {
+    "name": "vertical_linear_grooves",
+    "description": "Parallel recessed lines along the length",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/287.png"
+  },
+  {
+    "name": "light_colored_rim",
+    "description": "A pale edge around the base",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/287.png"
+  },
+  {
+    "name": "vertical_surface_ridges",
+    "description": "The surface features raised parallel lines running along the body",
+    "visual_dimension": "texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/101.png"
+  },
+  {
+    "name": "rough_basal_patch",
+    "description": "A coarse and uneven area at the bottom base",
+    "visual_dimension": "texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/101.png"
+  },
+  {
+    "name": "medium_brown_pigmentation",
+    "description": "The primary color of the surface is a medium brown",
+    "visual_dimension": "color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/101.png"
+  },
+  {
+    "name": "dark_base_coloration",
+    "description": "The lower portion displays deeper brown tones",
+    "visual_dimension": "color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/101.png"
+  },
+  {
+    "name": "ovoid_geometric_form",
+    "description": "The object possesses an egg-like overall structure",
+    "visual_dimension": "shape",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/101.png"
+  },
+  {
+    "name": "tapered_upper_end",
+    "description": "The top portion narrows into a pointed tip",
+    "visual_dimension": "shape",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/101.png"
+  },
+  {
+    "name": "matte_surface_finish",
+    "description": "The exterior surface lacks a high-gloss shine",
+    "visual_dimension": "finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/101.png"
+  },
+  {
+    "name": "low_reflectivity_surface",
+    "description": "The surface presents minimal light reflection",
+    "visual_dimension": "finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/101.png"
+  },
+  {
+    "name": "solid_outer_shell",
+    "description": "The exterior layer presents a firm and unbroken structure",
+    "visual_dimension": "integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/101.png"
+  },
+  {
+    "name": "continuous_surface_boundary",
+    "description": "The outer perimeter follows an unbroken path",
+    "visual_dimension": "integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/101.png"
+  },
+  {
+    "name": "longitudinal_groove_lines",
+    "description": "Vertical indented patterns etched into the surface",
+    "visual_dimension": "markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/101.png"
+  },
+  {
+    "name": "dark_basal_mark",
+    "description": "A concentrated dark patch located at the base",
+    "visual_dimension": "markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/101.png"
+  },
+  {
+    "name": "longitudinal_ridges",
+    "description": "Raised lines running along the length of the surface",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/366.png"
+  },
+  {
+    "name": "fine_surface_grooves",
+    "description": "Small, shallow indentations across the exterior",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/366.png"
+  },
+  {
+    "name": "deep_brown_color",
+    "description": "A dark, reddish-brown primary coloration",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/366.png"
+  },
+  {
+    "name": "pale_tan_patch",
+    "description": "A lighter, yellowish-tan area at one end",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/366.png"
+  },
+  {
+    "name": "ovoid_geometric_shape",
+    "description": "An elongated, egg-like overall form",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/366.png"
+  },
+  {
+    "name": "rounded_lateral_edges",
+    "description": "Smoothly curved sides along the longitudinal axis",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/366.png"
+  },
+  {
+    "name": "matte_shell_finish",
+    "description": "A dull, non-shiny surface appearance",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/366.png"
+  },
+  {
+    "name": "non_reflective_surface",
+    "description": "An absence of bright specular highlights",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/366.png"
+  },
+  {
+    "name": "unbroken_outer_surface",
+    "description": "A continuous and seamless exterior layer",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/366.png"
+  },
+  {
+    "name": "intact_structural_shell",
+    "description": "A solid and undamaged outer structure",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/366.png"
+  },
+  {
+    "name": "circular_base_marking",
+    "description": "A distinct, round patch located at the base",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/366.png"
+  },
+  {
+    "name": "parallel_line_pattern",
+    "description": "Regular, parallel lines running along the surface",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/366.png"
+  },
+  {
+    "name": "rough_top_texture",
+    "description": "The upper surface exhibits a coarse and fibrous texture",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/332.png"
+  },
+  {
+    "name": "fine_linear_grooves",
+    "description": "Shallow, narrow indentations are visible across the surface",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/332.png"
+  },
+  {
+    "name": "deep_brown_color",
+    "description": "The main portion of the shell features a dark brown pigment",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/332.png"
+  },
+  {
+    "name": "light_beige_area",
+    "description": "A pale, light-colored region is located at the top",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/332.png"
+  },
+  {
+    "name": "rounded_ovoid_shape",
+    "description": "The object possesses a smooth, egg-like geometric form",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/332.png"
+  },
+  {
+    "name": "asymmetric_bulbous_form",
+    "description": "The structure has an uneven, rounded volumetric profile",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/332.png"
+  },
+  {
+    "name": "matte_surface_finish",
+    "description": "The outer surface has a non-shiny, dull appearance",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/332.png"
+  },
+  {
+    "name": "low_reflectivity_surface",
+    "description": "The surface lacks significant specular highlights or glare",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/332.png"
+  },
+  {
+    "name": "continuous_outer_shell",
+    "description": "The exterior layer appears as a single, unbroken surface",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/332.png"
+  },
+  {
+    "name": "unbroken_surface_layer",
+    "description": "The surface coating remains whole without visible separations",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/332.png"
+  },
+  {
+    "name": "vertical_surface_striations",
+    "description": "Distinct vertical lines are patterned along the sides",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/332.png"
+  },
+  {
+    "name": "irregular_top_patch",
+    "description": "An unevenly shaped, light-colored mark sits at the apex",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/332.png"
+  },
+  {
+    "name": "fine_longitudinal_ridges",
+    "description": "Small raised lines running along the length of the surface",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/359.png"
+  },
+  {
+    "name": "striated_surface_grooves",
+    "description": "Parallel recessed lines across the outer surface",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/359.png"
+  },
+  {
+    "name": "deep_brown_pigmentation",
+    "description": "A dark and saturated brown primary color",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/359.png"
+  },
+  {
+    "name": "reddish_brown_shading",
+    "description": "Subtle warm reddish tones within the brown surface",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/359.png"
+  },
+  {
+    "name": "ovoid_geometric_form",
+    "description": "An elongated and egg-like three-dimensional shape",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/359.png"
+  },
+  {
+    "name": "tapered_distal_end",
+    "description": "The surface narrows to a distinct point at one end",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/359.png"
+  },
+  {
+    "name": "matte_surface_finish",
+    "description": "A dull surface finish without any glossy sheen",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/359.png"
+  },
+  {
+    "name": "non_reflective_luster",
+    "description": "The surface lacks specular light reflections",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/359.png"
+  },
+  {
+    "name": "unbroken_exterior_surface",
+    "description": "The outer surface is free of cracks or fissures",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/359.png"
+  },
+  {
+    "name": "continuous_outer_layer",
+    "description": "The exterior surface layer is unbroken and solid",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/359.png"
+  },
+  {
+    "name": "pale_apical_zone",
+    "description": "A lighter-colored textured area at one extremity",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/359.png"
+  },
+  {
+    "name": "dark_linear_striations",
+    "description": "Darker thin lines marking the outer surface",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/359.png"
+  },
+  {
+    "name": "smooth_surface_texture",
+    "description": "The outer surface is even and lacks coarse roughness",
+    "visual_dimension": "texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/214.png"
+  },
+  {
+    "name": "fine_linear_striations",
+    "description": "Subtle vertical lines are visible across the surface",
+    "visual_dimension": "texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/214.png"
+  },
+  {
+    "name": "deep_brown_pigmentation",
+    "description": "The main body features a rich, dark brown color",
+    "visual_dimension": "color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/214.png"
+  },
+  {
+    "name": "tan_colored_patches",
+    "description": "Lighter, yellowish-brown areas are present on the surface",
+    "visual_dimension": "color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/214.png"
+  },
+  {
+    "name": "ovoid_geometric_form",
+    "description": "The object possesses an elongated, egg-like shape",
+    "visual_dimension": "shape",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/214.png"
+  },
+  {
+    "name": "rounded_asymmetric_contour",
+    "description": "The edges follow a curved and slightly irregular path",
+    "visual_dimension": "shape",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/214.png"
+  },
+  {
+    "name": "matte_material_finish",
+    "description": "The surface has a non-glossy, dull appearance",
+    "visual_dimension": "finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/214.png"
+  },
+  {
+    "name": "non_reflective_luster",
+    "description": "The surface does not produce bright specular highlights",
+    "visual_dimension": "finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/214.png"
+  },
+  {
+    "name": "continuous_outer_perimeter",
+    "description": "The outer boundary of the object is a single, unbroken loop",
+    "visual_dimension": "integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/214.png"
+  },
+  {
+    "name": "solid_structural_form",
+    "description": "The object appears as a whole, dense, and unpierced unit",
+    "visual_dimension": "integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/214.png"
+  },
+  {
+    "name": "light_colored_apex",
+    "description": "A pale, lighter-toned area is located at the top tip",
+    "visual_dimension": "markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/214.png"
+  },
+  {
+    "name": "dark_basal_area",
+    "description": "A concentrated dark patch is situated at the base",
+    "visual_dimension": "markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/214.png"
+  },
+  {
+    "name": "ribbed_longitudinal_ridges",
+    "description": "Parallel ridges running along the length of the surface",
+    "visual_dimension": "texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/112.png"
+  },
+  {
+    "name": "fine_striated_grooves",
+    "description": "Shallow, closely spaced linear indentations",
+    "visual_dimension": "texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/112.png"
+  },
+  {
+    "name": "deep_brown_pigmentation",
+    "description": "Darker brown tones distributed across the surface",
+    "visual_dimension": "color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/112.png"
+  },
+  {
+    "name": "mottled_tan_streaks",
+    "description": "Light-colored, irregular patches and lines",
+    "visual_dimension": "color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/112.png"
+  },
+  {
+    "name": "ellipsoidal_outer_form",
+    "description": "An elongated, oval-shaped geometry",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/112.png"
+  },
+  {
+    "name": "rounded_convex_contour",
+    "description": "Smoothly curving outer edges",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/112.png"
+  },
+  {
+    "name": "subtle_satin_luster",
+    "description": "A soft, non-reflective surface sheen",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/112.png"
+  },
+  {
+    "name": "low_gloss_finish",
+    "description": "Minimal specular light reflection on the surface",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/112.png"
+  },
+  {
+    "name": "unbroken_outer_boundary",
+    "description": "A continuous and seamless outer edge",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/112.png"
+  },
+  {
+    "name": "intact_surface_structure",
+    "description": "A firm and undamaged outer surface",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/112.png"
+  },
+  {
+    "name": "dark_basal_patch",
+    "description": "A concentrated dark area at the base",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/112.png"
+  },
+  {
+    "name": "light_linear_streaks",
+    "description": "Thin, light-colored lines across the surface",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/112.png"
+  },
+  {
+    "name": "vertical_striations",
+    "description": "Prominent vertical grooves running along the surface",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/229.png"
+  },
+  {
+    "name": "fine_surface_ridges",
+    "description": "Subtle raised lines across the exterior",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/229.png"
+  },
+  {
+    "name": "reddish_brown_pigmentation",
+    "description": "Warm reddish-brown color covering the main body",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/229.png"
+  },
+  {
+    "name": "dark_brown_base_hue",
+    "description": "Deeply darkened color concentrated at the base",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/229.png"
+  },
+  {
+    "name": "ovoid_body_shape",
+    "description": "Rounded egg-like geometry",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/229.png"
+  },
+  {
+    "name": "tapered_upper_end",
+    "description": "Narrowing shape at one extremity",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/229.png"
+  },
+  {
+    "name": "matte_surface_finish",
+    "description": "Dull and non-lustrous finish",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/229.png"
+  },
+  {
+    "name": "non_reflective_sheen",
+    "description": "Absence of specular light reflections",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/229.png"
+  },
+  {
+    "name": "continuous_outer_perimeter",
+    "description": "Uninterrupted boundary around the exterior",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/229.png"
+  },
+  {
+    "name": "unbroken_external_surface",
+    "description": "Surface without visible cracks or fractures",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/229.png"
+  },
+  {
+    "name": "longitudinal_dark_lines",
+    "description": "Dark vertical markings running along the side",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/229.png"
+  },
+  {
+    "name": "irregular_basal_patch",
+    "description": "Uneven dark area located near the base",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/229.png"
+  },
+  {
+    "name": "smooth_shell_sections",
+    "description": "Even and level areas on the outer surface",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/301.png"
+  },
+  {
+    "name": "rough_base_texture",
+    "description": "Coarse and uneven surface at the base",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/301.png"
+  },
+  {
+    "name": "deep_brown_hue",
+    "description": "Dark, saturated brown color across the body",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/301.png"
+  },
+  {
+    "name": "light_tan_patch",
+    "description": "Pale, beige-colored region at the base",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/301.png"
+  },
+  {
+    "name": "ovoid_geometric_form",
+    "description": "Egg-shaped three-dimensional structure",
+    "visual_dimension": "shape_geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/301.png"
+  },
+  {
+    "name": "tapered_pole_end",
+    "description": "Gradual narrowing towards one extremity",
+    "visual_dimension": "shape_geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/301.png"
+  },
+  {
+    "name": "subtle_glossy_sheen",
+    "description": "Low-level reflective coating on the shell",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/301.png"
+  },
+  {
+    "name": "matte_base_area",
+    "description": "Non-reflective, dull finish on the hilum",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/301.png"
+  },
+  {
+    "name": "unbroken_exterior_surface",
+    "description": "Continuous surface without cracks or fissures",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/301.png"
+  },
+  {
+    "name": "intact_shell_perimeter",
+    "description": "Uninterrupted outer edge of the object",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/301.png"
+  },
+  {
+    "name": "fine_longitudinal_lines",
+    "description": "Narrow, elongated markings along the length",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/301.png"
+  },
+  {
+    "name": "circular_hilum_scar",
+    "description": "Round, distinct mark at the base",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/301.png"
+  },
+  {
+    "name": "longitudinal_ridges",
+    "description": "Parallel grooves running along the surface",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/142.png"
+  },
+  {
+    "name": "fine_surface_striations",
+    "description": "Small, subtle lines across the exterior",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/142.png"
+  },
+  {
+    "name": "warm_brown_pigmentation",
+    "description": "Deep brownish color of the surface",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/142.png"
+  },
+  {
+    "name": "reddish_brown_hue",
+    "description": "Warm reddish tones on the surface",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/142.png"
+  },
+  {
+    "name": "ovoid_geometry",
+    "description": "Rounded, egg-like overall shape",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/142.png"
+  },
+  {
+    "name": "bulbous_form",
+    "description": "Swollen, rounded structural shape",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/142.png"
+  },
+  {
+    "name": "matte_surface_finish",
+    "description": "Dull, non-reflective outer surface",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/142.png"
+  },
+  {
+    "name": "low_gloss_luster",
+    "description": "Minimal light reflection on the surface",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/142.png"
+  },
+  {
+    "name": "intact_outer_layer",
+    "description": "Continuous and unbroken outer surface",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/142.png"
+  },
+  {
+    "name": "seamless_surface_structure",
+    "description": "Uniformly connected outer boundary",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/142.png"
+  },
+  {
+    "name": "pale_basal_disc",
+    "description": "Light-colored circular area at the base",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/142.png"
+  },
+  {
+    "name": "concentric_base_pattern",
+    "description": "Ringed markings on the bottom end",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/142.png"
+  },
+  {
+    "name": "ribbed_surface_texture",
+    "description": "Parallel raised ridges covering the shell surface",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/388.png"
+  },
+  {
+    "name": "coarse_basal_area",
+    "description": "Rough and uneven texture at the base",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/388.png"
+  },
+  {
+    "name": "reddish_brown_hue",
+    "description": "Deep reddish-brown color of the main shell",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/388.png"
+  },
+  {
+    "name": "light_tan_patch",
+    "description": "Pale tan colored section on the base area",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/388.png"
+  },
+  {
+    "name": "ovoid_body_shape",
+    "description": "Elongated oval geometric form",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/388.png"
+  },
+  {
+    "name": "tapered_end_geometry",
+    "description": "The base end of the shell narrows slightly",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/388.png"
+  },
+  {
+    "name": "matte_material_finish",
+    "description": "The surface has a non-glossy appearance",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/388.png"
+  },
+  {
+    "name": "non_reflective_surface",
+    "description": "A dull surface with no significant sheen",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/388.png"
+  },
+  {
+    "name": "unbroken_shell_exterior",
+    "description": "The outer surface is continuous without cracks",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/388.png"
+  },
+  {
+    "name": "continuous_outer_edge",
+    "description": "The perimeter of the shell is seamless",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/388.png"
+  },
+  {
+    "name": "longitudinal_groove_markings",
+    "description": "Vertical lines running along the length",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/388.png"
+  },
+  {
+    "name": "faint_surface_scuffs",
+    "description": "Small light-colored marks on the shell",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/388.png"
+  },
+  {
+    "name": "fine_longitudinal_striations",
+    "description": "Thin lines running lengthwise across the shell",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/081.png"
+  },
+  {
+    "name": "subtle_surface_ridges",
+    "description": "Small raised texture patterns on the surface",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/081.png"
+  },
+  {
+    "name": "reddish_brown_hue",
+    "description": "A warm reddish-brown color tone",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/081.png"
+  },
+  {
+    "name": "dark_brown_base",
+    "description": "A deep brown area at the base",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/081.png"
+  },
+  {
+    "name": "ovoid_body_geometry",
+    "description": "An egg-shaped overall structure",
+    "visual_dimension": "shape_geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/081.png"
+  },
+  {
+    "name": "tapered_distal_end",
+    "description": "A narrowing, pointed tip at one extremity",
+    "visual_dimension": "shape_geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/081.png"
+  },
+  {
+    "name": "matte_surface_finish",
+    "description": "A flat, dull surface appearance",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/081.png"
+  },
+  {
+    "name": "low_gloss_sheen",
+    "description": "A muted, non-reflective surface luster",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/081.png"
+  },
+  {
+    "name": "continuous_outer_shell",
+    "description": "A single, integrated surface layer",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/081.png"
+  },
+  {
+    "name": "solid_outer_surface",
+    "description": "A firm and intact surface layer",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/081.png"
+  },
+  {
+    "name": "dark_basal_patch",
+    "description": "A dark pigmented area on the base",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/081.png"
+  },
+  {
+    "name": "light_colored_streaks",
+    "description": "Pale, thin surface lines",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/081.png"
+  },
+  {
+    "name": "smooth_shell_segments",
+    "description": "The upper portion of the shell has areas that are notably smooth to the touch",
+    "visual_dimension": "texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/357.png"
+  },
+  {
+    "name": "rough_basal_area",
+    "description": "The bottom end of the shell exhibits a coarse and uneven surface texture",
+    "visual_dimension": "texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/357.png"
+  },
+  {
+    "name": "deep_brown_hue",
+    "description": "The main body of the shell is characterized by a dark brown coloration",
+    "visual_dimension": "color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/357.png"
+  },
+  {
+    "name": "pale_tan_apex",
+    "description": "The terminal end of the shell features a much lighter tan color",
+    "visual_dimension": "color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/357.png"
+  },
+  {
+    "name": "ovoid_shell_geometry",
+    "description": "The overall structure of the shell follows an egg-like, rounded shape",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/357.png"
+  },
+  {
+    "name": "asymmetric_ellipsoid_form",
+    "description": "The shell shape is slightly unevenly balanced along its longitudinal axis",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/357.png"
+  },
+  {
+    "name": "semi_matte_finish",
+    "description": "The surface has a low-gloss, non-reflective material finish",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/357.png"
+  },
+  {
+    "name": "subtle_specular_highlights",
+    "description": "Small, localized points of light reflection are visible on the shell surface",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/357.png"
+  },
+  {
+    "name": "intact_shell_surface",
+    "description": "The outer surface layer shows no visible signs of chipping or fragmentation",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/357.png"
+  },
+  {
+    "name": "unbroken_outer_layer",
+    "description": "The outer casing is continuous without any visible punctures or cracks",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/357.png"
+  },
+  {
+    "name": "radiating_basal_lines",
+    "description": "Fine lines originate from the center of the base and spread outwards",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/357.png"
+  },
+  {
+    "name": "vertical_surface_striations",
+    "description": "Parallel linear markings run vertically along the length of the shell",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/357.png"
+  },
+  {
+    "name": "fine_longitudinal_striations",
+    "description": "Thin, parallel lines running along the longitudinal axis of the surface",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/174.png"
+  },
+  {
+    "name": "smooth_surface_texture",
+    "description": "The primary surface area is even and lacks significant protrusions",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/174.png"
+  },
+  {
+    "name": "medium_brown_hue",
+    "description": "The predominant color of the visible surface is a medium shade of brown",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/174.png"
+  },
+  {
+    "name": "mottled_brown_shading",
+    "description": "Variations in brown tones across the surface create a mottled appearance",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/174.png"
+  },
+  {
+    "name": "ovoid_outer_geometry",
+    "description": "The overall form is egg-shaped and elongated",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/174.png"
+  },
+  {
+    "name": "rounded_bulbous_shape",
+    "description": "The structure features smooth, swelling curves",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/174.png"
+  },
+  {
+    "name": "semi_matte_finish",
+    "description": "The surface has a low-gloss, non-reflective finish",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/174.png"
+  },
+  {
+    "name": "subtle_surface_sheen",
+    "description": "A very slight, light-catching luster is visible on the surface",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/174.png"
+  },
+  {
+    "name": "continuous_outer_shell",
+    "description": "The outer boundary is unbroken and surrounds the entire object",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/174.png"
+  },
+  {
+    "name": "unbroken_surface_layer",
+    "description": "The surface layer is free of cracks, fissures, or breaks",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/174.png"
+  },
+  {
+    "name": "rough_basal_area",
+    "description": "A textured, uneven circular region at the base of the object",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/174.png"
+  },
+  {
+    "name": "shallow_linear_grooves",
+    "description": "Small, indented lines are present across the surface",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/174.png"
+  },
+  {
+    "name": "longitudinal_grooved_surface",
+    "description": "The surface features prominent grooves running along the length of the object",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/079.png"
+  },
+  {
+    "name": "fine_ribbed_texture",
+    "description": "A texture characterized by closely spaced, subtle ridges",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/079.png"
+  },
+  {
+    "name": "reddish_brown_hue",
+    "description": "The primary color is a deep, warm reddish-brown",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/079.png"
+  },
+  {
+    "name": "tan_colored_segments",
+    "description": "Areas of lighter, tan-colored pigment appearing between darker lines",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/079.png"
+  },
+  {
+    "name": "asymmetrical_ovoid_shape",
+    "description": "An egg-like form that lacks perfect bilateral symmetry",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/079.png"
+  },
+  {
+    "name": "tapered_rounded_geometry",
+    "description": "A form that narrows toward one end while maintaining rounded edges",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/079.png"
+  },
+  {
+    "name": "matte_surface_finish",
+    "description": "A non-glossy surface that does not reflect direct light",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/079.png"
+  },
+  {
+    "name": "dull_non_reflective_surface",
+    "description": "A surface texture that lacks specular highlights",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/079.png"
+  },
+  {
+    "name": "intact_outer_surface",
+    "description": "The exterior boundary is continuous and free of cracks",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/079.png"
+  },
+  {
+    "name": "solid_continuous_structure",
+    "description": "The exterior layer appears unbroken and uniform in density",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/079.png"
+  },
+  {
+    "name": "vertical_linear_striations",
+    "description": "Visible thin lines running vertically across the object's surface",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/079.png"
+  },
+  {
+    "name": "dark_basal_patch",
+    "description": "A concentrated area of darker, brownish pigment at the base",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/079.png"
+  },
+  {
+    "name": "raised_longitudinal_ridges",
+    "description": "Subtle raised lines running along the length of the shell",
+    "visual_dimension": "texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/110.png"
+  },
+  {
+    "name": "coarse_basal_area",
+    "description": "A rougher, more textured patch at the base of the shell",
+    "visual_dimension": "texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/110.png"
+  },
+  {
+    "name": "reddish_brown_pigmentation",
+    "description": "The primary deep reddish-brown color of the shell surface",
+    "visual_dimension": "color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/110.png"
+  },
+  {
+    "name": "light_tan_patch",
+    "description": "A pale tan or beige colored area at the base",
+    "visual_dimension": "color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/110.png"
+  },
+  {
+    "name": "ovoid_shell_geometry",
+    "description": "The overall egg-like, rounded shape of the object",
+    "visual_dimension": "shape",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/110.png"
+  },
+  {
+    "name": "tapered_apex_point",
+    "description": "The slightly pointed or narrowed end of the shell",
+    "visual_dimension": "shape",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/110.png"
+  },
+  {
+    "name": "matte_surface_finish",
+    "description": "A flat, non-shiny surface finish",
+    "visual_dimension": "finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/110.png"
+  },
+  {
+    "name": "non_glossy_sheen",
+    "description": "The absence of specular highlights or reflective shine",
+    "visual_dimension": "finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/110.png"
+  },
+  {
+    "name": "seamless_shell_surface",
+    "description": "A continuous and unbroken outer surface layer",
+    "visual_dimension": "integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/110.png"
+  },
+  {
+    "name": "solid_outer_perimeter",
+    "description": "A complete and unbroken edge around the object's boundary",
+    "visual_dimension": "integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/110.png"
+  },
+  {
+    "name": "dark_linear_streaks",
+    "description": "Thin, dark-colored lines visible on the surface",
+    "visual_dimension": "markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/110.png"
+  },
+  {
+    "name": "distinct_basal_spot",
+    "description": "A clearly defined light-colored mark at the bottom pole",
+    "visual_dimension": "markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/110.png"
+  },
+  {
+    "name": "longitudinal_ribbed_texture",
+    "description": "The surface features prominent ridges running lengthwise",
+    "visual_dimension": "texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/390.png"
+  },
+  {
+    "name": "smooth_inter_ridge_areas",
+    "description": "The spaces between the ridges are relatively smooth",
+    "visual_dimension": "texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/390.png"
+  },
+  {
+    "name": "dark_brown_apical_region",
+    "description": "The top portion of the object is deep brown in color",
+    "visual_dimension": "color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/390.png"
+  },
+  {
+    "name": "light_tan_striations",
+    "description": "Lighter tan colored lines are visible across the surface",
+    "visual_dimension": "color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/390.png"
+  },
+  {
+    "name": "ovoid_body_geometry",
+    "description": "The overall form is egg-shaped and elongated",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/390.png"
+  },
+  {
+    "name": "rounded_hemispherical_apex",
+    "description": "The upper end of the object has a rounded, dome-like shape",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/390.png"
+  },
+  {
+    "name": "matte_surface_finish",
+    "description": "The surface lacks a high-gloss or reflective finish",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/390.png"
+  },
+  {
+    "name": "subtle_satin_sheen",
+    "description": "A very slight luster is visible on the surface highlights",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/390.png"
+  },
+  {
+    "name": "intact_shell_surface",
+    "description": "The outer surface is continuous without visible cracks or breaks",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/390.png"
+  },
+  {
+    "name": "solid_shell_structure",
+    "description": "The object appears structurally whole and unbroken",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/390.png"
+  },
+  {
+    "name": "linear_groove_pattern",
+    "description": "A pattern of parallel lines covers the surface",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/390.png"
+  },
+  {
+    "name": "dark_cap_coloration",
+    "description": "A distinct dark patch is located at the top of the object",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/390.png"
+  },
+  {
+    "name": "fine_vertical_striations",
+    "description": "Small, closely spaced vertical lines etched into the surface",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/172.png"
+  },
+  {
+    "name": "rough_basal_area",
+    "description": "The bottom section features a coarser, uneven texture",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/172.png"
+  },
+  {
+    "name": "deep_brown_hue",
+    "description": "The primary surface color is a rich, dark brown",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/172.png"
+  },
+  {
+    "name": "pale_tan_patch",
+    "description": "A light, yellowish-tan colored region at the top",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/172.png"
+  },
+  {
+    "name": "ovoid_body_shape",
+    "description": "The overall geometry is rounded and egg-shaped",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/172.png"
+  },
+  {
+    "name": "rounded_lateral_contour",
+    "description": "The side edges exhibit a smooth, curved profile",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/172.png"
+  },
+  {
+    "name": "matte_surface_finish",
+    "description": "The outer surface has a non-reflective, dull finish",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/172.png"
+  },
+  {
+    "name": "subtle_satin_sheen",
+    "description": "A very slight, low-gloss light reflection is visible",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/172.png"
+  },
+  {
+    "name": "unbroken_shell_surface",
+    "description": "The outer layer is continuous with no visible cracks",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/172.png"
+  },
+  {
+    "name": "continuous_outer_boundary",
+    "description": "The perimeter of the object is smooth and uninterrupted",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/172.png"
+  },
+  {
+    "name": "longitudinal_groove_patterns",
+    "description": "Repeating vertical lines running along the length of the object",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/172.png"
+  },
+  {
+    "name": "light_colored_apex",
+    "description": "A distinct, lighter colored area at the top extremity",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/172.png"
+  },
+  {
+    "name": "longitudinal_grooved_texture",
+    "description": "The surface features deep vertical grooves",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/194.png"
+  },
+  {
+    "name": "fine_surface_striations",
+    "description": "Tiny parallel lines across the shell",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/194.png"
+  },
+  {
+    "name": "reddish_brown_hue",
+    "description": "The primary color is reddish-brown",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/194.png"
+  },
+  {
+    "name": "dark_basal_patch",
+    "description": "A dark grey area at the base",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/194.png"
+  },
+  {
+    "name": "ovoid_geometric_shape",
+    "description": "An egg-like elongated shape",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/194.png"
+  },
+  {
+    "name": "rounded_asymmetrical_form",
+    "description": "The form is rounded and uneven",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/194.png"
+  },
+  {
+    "name": "matte_material_finish",
+    "description": "A dull and non-shiny finish",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/194.png"
+  },
+  {
+    "name": "non_reflective_surface",
+    "description": "The surface lacks specular highlights",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/194.png"
+  },
+  {
+    "name": "continuous_outer_shell",
+    "description": "The exterior surface is unbroken",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/194.png"
+  },
+  {
+    "name": "unbroken_surface_layer",
+    "description": "The outer layer shows no cracks",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/194.png"
+  },
+  {
+    "name": "light_colored_streaks",
+    "description": "Small pale lines across the ridges",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/194.png"
+  },
+  {
+    "name": "linear_surface_ridges",
+    "description": "Raised lines running along the length",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/194.png"
+  },
+  {
+    "name": "fine_longitudinal_ridges",
+    "description": "The surface features subtle, lengthwise grooves",
+    "visual_dimension": "texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/049.png"
+  },
+  {
+    "name": "subtle_surface_grain",
+    "description": "The exterior has a light, uneven tactile texture",
+    "visual_dimension": "texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/049.png"
+  },
+  {
+    "name": "warm_brown_hue",
+    "description": "The primary color is a deep, warm brown",
+    "visual_dimension": "color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/049.png"
+  },
+  {
+    "name": "dark_brown_streaks",
+    "description": "Darker brown lines run along the longitudinal axis",
+    "visual_dimension": "color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/049.png"
+  },
+  {
+    "name": "ovoid_body_geometry",
+    "description": "The object has a rounded, egg-like shape",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/049.png"
+  },
+  {
+    "name": "tapered_end_shape",
+    "description": "One end of the structure narrows significantly",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/049.png"
+  },
+  {
+    "name": "matte_surface_finish",
+    "description": "The surface has a dull, non-shiny appearance",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/049.png"
+  },
+  {
+    "name": "non_reflective_luster",
+    "description": "The surface does not reflect light brightly",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/049.png"
+  },
+  {
+    "name": "continuous_outer_casing",
+    "description": "The outer layer is solid without visible gaps",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/049.png"
+  },
+  {
+    "name": "unbroken_surface_boundary",
+    "description": "The exterior edge is smooth and uninterrupted",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/049.png"
+  },
+  {
+    "name": "linear_striation_pattern",
+    "description": "Parallel lines are visible across the surface",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/049.png"
+  },
+  {
+    "name": "circular_base_patch",
+    "description": "A distinct, circular area is located at the base",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/049.png"
+  },
+  {
+    "name": "longitudinal_ridges",
+    "description": "Vertical raised lines running along the surface",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/183.png"
+  },
+  {
+    "name": "coarse_basal_texture",
+    "description": "Rougher texture at the bottom end",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/183.png"
+  },
+  {
+    "name": "reddish_brown_hue",
+    "description": "Primary warm brown color of the shell",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/183.png"
+  },
+  {
+    "name": "dark_brown_base_area",
+    "description": "Darker colored region at the attachment point",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/183.png"
+  },
+  {
+    "name": "rounded_globular_form",
+    "description": "A nearly spherical and rounded shape",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/183.png"
+  },
+  {
+    "name": "asymmetrical_top_taper",
+    "description": "An unevenly tapered upper portion",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/183.png"
+  },
+  {
+    "name": "matte_surface_finish",
+    "description": "Dull and non-reflective surface appearance",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/183.png"
+  },
+  {
+    "name": "low_luster_sheen",
+    "description": "Subtle light reflection on smooth areas",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/183.png"
+  },
+  {
+    "name": "intact_shell_structure",
+    "description": "Continuous and unbroken outer shell",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/183.png"
+  },
+  {
+    "name": "seamless_outer_surface",
+    "description": "Smoothly connected surface without cracks",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/183.png"
+  },
+  {
+    "name": "small_dark_spots",
+    "description": "Tiny dark pigmented points on the shell",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/183.png"
+  },
+  {
+    "name": "light_colored_striations",
+    "description": "Pale lines following the longitudinal grooves",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/183.png"
+  },
+  {
+    "name": "longitudinal_grooves",
+    "description": "Fine vertical indentations running along the shell length",
+    "visual_dimension": "texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/176.png"
+  },
+  {
+    "name": "smooth_surface_texture",
+    "description": "An even surface texture without coarse roughness or pits",
+    "visual_dimension": "texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/176.png"
+  },
+  {
+    "name": "reddish_brown_hue",
+    "description": "The primary deep reddish-brown coloration of the shell",
+    "visual_dimension": "color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/176.png"
+  },
+  {
+    "name": "pale_basal_patch",
+    "description": "A light-colored, creamy area located at the base",
+    "visual_dimension": "color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/176.png"
+  },
+  {
+    "name": "ovoid_body_geometry",
+    "description": "An egg-shaped, rounded three-dimensional form",
+    "visual_dimension": "shape",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/176.png"
+  },
+  {
+    "name": "asymmetric_ellipsoid_form",
+    "description": "An elongated shape with slightly uneven proportions",
+    "visual_dimension": "shape",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/176.png"
+  },
+  {
+    "name": "satin_material_finish",
+    "description": "A subtle, low-luster reflective quality on the surface",
+    "visual_dimension": "finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/176.png"
+  },
+  {
+    "name": "subtle_surface_sheen",
+    "description": "A soft, non-glossy reflection of light across the shell",
+    "visual_dimension": "finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/176.png"
+  },
+  {
+    "name": "unbroken_outer_shell",
+    "description": "A continuous surface without any visible cracks or splits",
+    "visual_dimension": "integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/176.png"
+  },
+  {
+    "name": "intact_surface_layer",
+    "description": "A structural surface free from chips or surface breaks",
+    "visual_dimension": "integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/176.png"
+  },
+  {
+    "name": "dark_circumferential_ring",
+    "description": "A dark, irregular border encircling the pale basal patch",
+    "visual_dimension": "markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/176.png"
+  },
+  {
+    "name": "longitudinal_color_bands",
+    "description": "Light and dark linear patterns running along the length",
+    "visual_dimension": "markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/176.png"
+  },
+  {
+    "name": "smooth_exterior_surface",
+    "description": "The main body of the surface is smooth and even",
+    "visual_dimension": "texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/309.png"
+  },
+  {
+    "name": "fibrous_base_texture",
+    "description": "The top section features a fibrous and rough texture",
+    "visual_dimension": "texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/309.png"
+  },
+  {
+    "name": "reddish_brown_hue",
+    "description": "The primary color of the surface is a deep reddish brown",
+    "visual_dimension": "color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/309.png"
+  },
+  {
+    "name": "pale_cream_patch",
+    "description": "A light cream colored area is visible at the base",
+    "visual_dimension": "color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/309.png"
+  },
+  {
+    "name": "ovoid_geometric_form",
+    "description": "The overall geometric shape is ovoid",
+    "visual_dimension": "shape",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/309.png"
+  },
+  {
+    "name": "asymmetric_rounded_profile",
+    "description": "The side profile shows an asymmetric rounded shape",
+    "visual_dimension": "shape",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/309.png"
+  },
+  {
+    "name": "semi_matte_finish",
+    "description": "The surface has a semi-matte finish with low reflectivity",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/309.png"
+  },
+  {
+    "name": "subtle_surface_luster",
+    "description": "There is a subtle luster visible under the light",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/309.png"
+  },
+  {
+    "name": "uniform_outer_surface",
+    "description": "The outer surface layer appears uniform and consistent",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/309.png"
+  },
+  {
+    "name": "continuous_outer_boundary",
+    "description": "The outer edge forms a continuous and unbroken boundary",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/309.png"
+  },
+  {
+    "name": "vertical_fine_striations",
+    "description": "Fine vertical lines are visible across the surface",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/309.png"
+  },
+  {
+    "name": "light_colored_patch",
+    "description": "A light colored patch is present at one end",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/309.png"
+  },
+  {
+    "name": "fine_longitudinal_grooves",
+    "description": "Small, parallel lines running along the length of the surface",
+    "visual_dimension": "texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/135.png"
+  },
+  {
+    "name": "smooth_shell_surface",
+    "description": "The outer surface is even and lacks significant pits",
+    "visual_dimension": "texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/135.png"
+  },
+  {
+    "name": "deep_brown_hue",
+    "description": "A dark, saturated brown color across the surface",
+    "visual_dimension": "color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/135.png"
+  },
+  {
+    "name": "reddish_brown_tones",
+    "description": "Warm reddish undertones visible within the brown color",
+    "visual_dimension": "color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/135.png"
+  },
+  {
+    "name": "ovoid_shell_geometry",
+    "description": "An elongated, egg-like structural form",
+    "visual_dimension": "shape",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/135.png"
+  },
+  {
+    "name": "tapered_rounded_end",
+    "description": "One end of the object tapers into a rounded point",
+    "visual_dimension": "shape",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/135.png"
+  },
+  {
+    "name": "matte_shell_finish",
+    "description": "A non-reflective and flat surface appearance",
+    "visual_dimension": "finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/135.png"
+  },
+  {
+    "name": "dull_surface_luster",
+    "description": "A surface lack of bright specular highlights",
+    "visual_dimension": "finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/135.png"
+  },
+  {
+    "name": "continuous_shell_layer",
+    "description": "A single, uninterrupted outer casing",
+    "visual_dimension": "integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/135.png"
+  },
+  {
+    "name": "solid_shell_structure",
+    "description": "A firm and cohesive outer surface layer",
+    "visual_dimension": "integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/135.png"
+  },
+  {
+    "name": "subtle_dark_speckles",
+    "description": "Small, scattered dark points on the surface",
+    "visual_dimension": "markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/135.png"
+  },
+  {
+    "name": "rough_basal_area",
+    "description": "A textured and irregular patch at the base",
+    "visual_dimension": "markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/135.png"
+  },
+  {
+    "name": "longitudinal_linear_grooves",
+    "description": "Parallel grooves running along the length of the surface",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/022.png"
+  },
+  {
+    "name": "smooth_surface_patches",
+    "description": "Areas of the surface that are even and non-rough",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/022.png"
+  },
+  {
+    "name": "deep_reddish_brown_hue",
+    "description": "A primary color of dark, warm reddish-brown",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/022.png"
+  },
+  {
+    "name": "light_tan_pigmentation",
+    "description": "Areas of pale, yellowish-brown coloring",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/022.png"
+  },
+  {
+    "name": "ovoid_body_shape",
+    "description": "An elongated, egg-like geometric form",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/022.png"
+  },
+  {
+    "name": "tapered_asymmetric_geometry",
+    "description": "The form narrows significantly toward one end",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/022.png"
+  },
+  {
+    "name": "matte_surface_finish",
+    "description": "A non-glossy and non-reflective outer layer",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/022.png"
+  },
+  {
+    "name": "dull_surface_luster",
+    "description": "A low-reflectivity, muted surface sheen",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/022.png"
+  },
+  {
+    "name": "intact_outer_surface",
+    "description": "A surface free from visible cracks or breaks",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/022.png"
+  },
+  {
+    "name": "continuous_perimeter_edge",
+    "description": "An unbroken and seamless outer boundary",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/022.png"
+  },
+  {
+    "name": "dark_parallel_striations",
+    "description": "Darker, thin lines following the longitudinal axis",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/022.png"
+  },
+  {
+    "name": "distinct_beige_patch",
+    "description": "A clearly visible, light-colored area on the base",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/022.png"
+  }
+]

@@ -1,0 +1,128 @@
+[
+  {
+    "name": "concentric_ring_pattern",
+    "description": "The visible edges form layers of concentric circles around the center",
+    "visual_dimension": "shape/geometry",
+    "frequency": 0.907
+  },
+  {
+    "name": "continuous_rim_edge",
+    "description": "The perimeter of the edge shows a consistent and uniform width",
+    "visual_dimension": "structural integrity",
+    "frequency": 0.86
+  },
+  {
+    "name": "specular_light_reflections",
+    "description": "Thin lines of reflected light are visible along the circular edges",
+    "visual_dimension": "visible surface markings",
+    "frequency": 0.721
+  },
+  {
+    "name": "bright_specular_highlights",
+    "description": "Small bright white spots appear due to light hitting the glossy surface",
+    "visual_dimension": "visible surface markings",
+    "frequency": 0.558
+  },
+  {
+    "name": "unbroken_circular_rim",
+    "description": "The outer perimeter line is unbroken and structurally sound",
+    "visual_dimension": "structural integrity",
+    "frequency": 0.488
+  },
+  {
+    "name": "amber_edge_tint",
+    "description": "The transparent portion of the material exhibits a dark amber color",
+    "visual_dimension": "surface color",
+    "frequency": 0.442
+  },
+  {
+    "name": "glossy_reflective_finish",
+    "description": "The surface strongly reflects light from the surrounding environment",
+    "visual_dimension": "material finish",
+    "frequency": 0.442
+  },
+  {
+    "name": "circular_rim_geometry",
+    "description": "The edge of the component follows a precise circular path",
+    "visual_dimension": "shape/geometry",
+    "frequency": 0.395
+  },
+  {
+    "name": "smooth_rim_surface",
+    "description": "The outer edge of the rim is uniformly smooth without roughness",
+    "visual_dimension": "surface texture",
+    "frequency": 0.326
+  },
+  {
+    "name": "glossy_specular_finish",
+    "description": "Sharp, bright reflections are visible on the surface edges",
+    "visual_dimension": "material finish",
+    "frequency": 0.326
+  },
+  {
+    "name": "glossy_surface_finish",
+    "description": "The surface material has a high-gloss, polished appearance",
+    "visual_dimension": "material finish",
+    "frequency": 0.279
+  },
+  {
+    "name": "reflective_surface_finish",
+    "description": "The surface has a high-shine, specularly reflective finish",
+    "visual_dimension": "material finish",
+    "frequency": 0.256
+  },
+  {
+    "name": "uniform_rim_thickness",
+    "description": "The visible thickness of the rim is consistent around the perimeter",
+    "visual_dimension": "structural integrity",
+    "frequency": 0.256
+  },
+  {
+    "name": "smooth_rim_texture",
+    "description": "The inner edge of the rim exhibits a smooth and even texture",
+    "visual_dimension": "surface texture",
+    "frequency": 0.256
+  },
+  {
+    "name": "even_surface_texture",
+    "description": "The texture is consistent across the entire visible rim area",
+    "visual_dimension": "surface texture",
+    "frequency": 0.233
+  },
+  {
+    "name": "deep_black_hue",
+    "description": "The central part of the opening shows a dark brown tone",
+    "visual_dimension": "surface color",
+    "frequency": 0.209
+  },
+  {
+    "name": "smooth_inner_surface",
+    "description": "The surface is uniform and lacks any visible roughness or bumps",
+    "visual_dimension": "surface_texture",
+    "frequency": 0.209
+  },
+  {
+    "name": "amber_rim_color",
+    "description": "The outer perimeter edge features a subtle amber or orange tint",
+    "visual_dimension": "surface color",
+    "frequency": 0.186
+  },
+  {
+    "name": "dark_central_color",
+    "description": "The color is a single, deep, and dark shade across the visible area",
+    "visual_dimension": "color",
+    "frequency": 0.186
+  },
+  {
+    "name": "rounded_edge_profile",
+    "description": "The perimeter follows a perfectly circular geometry",
+    "visual_dimension": "shape/geometry",
+    "frequency": 0.163
+  },
+  {
+    "name": "concentric_light_bands",
+    "description": "Concentric bands of light are visible around the surface",
+    "visual_dimension": "visible_surface_markings",
+    "frequency": 0.163
+  }
+]

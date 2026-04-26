@@ -58,19 +58,19 @@ def _checkpoint_dir(save_path: str, category: str) -> Path:
 # ── Path helpers ──────────────────────────────────────────────────────────────
 
 def stage1_path(save_path: str, category: str) -> Path:
-    return _checkpoint_dir(save_path, category) / "stage1_raw.json"
+    return _checkpoint_dir(save_path, category) / f"{category}_stage1_raw.json"
 
 
 def stage2_path(save_path: str, category: str) -> Path:
-    return _checkpoint_dir(save_path, category) / "stage2_normal_dict.json"
+    return _checkpoint_dir(save_path, category) / f"{category}_stage2_normal_dict.json"
 
 
 def stage3_path(save_path: str, category: str) -> Path:
-    return _checkpoint_dir(save_path, category) / "stage3_annotations.json"
+    return _checkpoint_dir(save_path, category) / f"{category}_stage3_annotations.json"
 
 
 def clip_cache_path(save_path: str, category: str) -> Path:
-    return _checkpoint_dir(save_path, category) / "clip_normal.npz"
+    return _checkpoint_dir(save_path, category) / f"{category}_clip_normal.npz"
 
 
 # ── Save helpers ──────────────────────────────────────────────────────────────

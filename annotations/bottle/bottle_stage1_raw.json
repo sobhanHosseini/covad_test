@@ -1,0 +1,3092 @@
+[
+  {
+    "name": "smooth_annular_texture",
+    "description": "The surface of the ring is even and without roughness",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/163.png"
+  },
+  {
+    "name": "uniform_surface_smoothness",
+    "description": "The texture across the area is consistent",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/163.png"
+  },
+  {
+    "name": "deep_black_center",
+    "description": "The central area is a very dark, near-black color",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/163.png"
+  },
+  {
+    "name": "dark_interior_hue",
+    "description": "The innermost part of the circular structure shows a dark tone",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/163.png"
+  },
+  {
+    "name": "concentric_circular_geometry",
+    "description": "The shape is composed of nested circular elements",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/163.png"
+  },
+  {
+    "name": "rounded_edge_profile",
+    "description": "The outer boundary follows a smooth, rounded path",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/163.png"
+  },
+  {
+    "name": "glossy_reflective_finish",
+    "description": "The surface has a high-shine, glossy appearance",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/163.png"
+  },
+  {
+    "name": "unbroken_circular_boundary",
+    "description": "The outer edge forms a continuous, uninterrupted loop",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/163.png"
+  },
+  {
+    "name": "continuous_edge_structure",
+    "description": "There are no visible gaps or breaks in the boundary",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/163.png"
+  },
+  {
+    "name": "bright_light_reflections",
+    "description": "Small, intense white spots of light are present",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/163.png"
+  },
+  {
+    "name": "concentric_ring_patterns",
+    "description": "Concentric circular lines are visible within the structure",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/163.png"
+  },
+  {
+    "name": "ribbed_thread_texture",
+    "description": "The rim surface features periodic raised ridges",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/028.png"
+  },
+  {
+    "name": "smooth_rim_surface",
+    "description": "The inner edge is even and flat",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/028.png"
+  },
+  {
+    "name": "concentric_ring_form",
+    "description": "The surface consists of nested circular layers",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/028.png"
+  },
+  {
+    "name": "dark_opaque_hue",
+    "description": "The central area is a deep, non-transparent shade",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/028.png"
+  },
+  {
+    "name": "amber_edge_tint",
+    "description": "The outer edge shows light brown hues",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/028.png"
+  },
+  {
+    "name": "circular_annular_geometry",
+    "description": "The structure follows a ring-shaped pattern",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/028.png"
+  },
+  {
+    "name": "glossy_reflective_finish",
+    "description": "The surface exhibits high light reflectivity",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/028.png"
+  },
+  {
+    "name": "specular_edge_sheen",
+    "description": "Bright light reflections appear on the rim",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/028.png"
+  },
+  {
+    "name": "continuous_perimeter_edge",
+    "description": "The outer boundary is a single unbroken line",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/028.png"
+  },
+  {
+    "name": "solid_rim_contour",
+    "description": "The circular edge maintains a steady outline",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/028.png"
+  },
+  {
+    "name": "spiral_thread_grooves",
+    "description": "The surface features helical thread patterns",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/028.png"
+  },
+  {
+    "name": "concentric_ring_lines",
+    "description": "Visible circular boundaries define the layers",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/028.png"
+  },
+  {
+    "name": "smooth_rim_surface",
+    "description": "The outer rim surface is even and without roughness",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/006.png"
+  },
+  {
+    "name": "even_internal_texture",
+    "description": "The interior surface appears consistent and smooth",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/006.png"
+  },
+  {
+    "name": "dark_amber_hue",
+    "description": "The material exhibits a deep amber color",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/006.png"
+  },
+  {
+    "name": "deep_black_shadows",
+    "description": "The central area contains deep black shadow tones",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/006.png"
+  },
+  {
+    "name": "circular_rim_edge",
+    "description": "The outer edge forms a continuous circular shape",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/006.png"
+  },
+  {
+    "name": "concentric_ring_structure",
+    "description": "The rim geometry follows concentric ring patterns",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/006.png"
+  },
+  {
+    "name": "glossy_reflective_finish",
+    "description": "The surface has a high-gloss, shiny finish",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/006.png"
+  },
+  {
+    "name": "specular_light_reflections",
+    "description": "Bright points of light reflect off the surface",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/006.png"
+  },
+  {
+    "name": "continuous_rim_border",
+    "description": "The outer boundary is an unbroken, solid line",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/006.png"
+  },
+  {
+    "name": "uniform_rim_thickness",
+    "description": "The width of the rim is consistent throughout",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/006.png"
+  },
+  {
+    "name": "golden_light_highlights",
+    "description": "Bright orange-toned highlights appear on the rim",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/006.png"
+  },
+  {
+    "name": "concentric_light_bands",
+    "description": "Light reflections form concentric bands around the edge",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/006.png"
+  },
+  {
+    "name": "smooth_rim_surface",
+    "description": "The surface of the rim is smooth and even",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/189.png"
+  },
+  {
+    "name": "even_internal_texture",
+    "description": "The interior surface shows a uniform texture",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/189.png"
+  },
+  {
+    "name": "deep_dark_color",
+    "description": "The object features a deep dark hue",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/189.png"
+  },
+  {
+    "name": "uniform_dark_tonality",
+    "description": "The dark color is consistent across the surface",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/189.png"
+  },
+  {
+    "name": "concentric_circular_geometry",
+    "description": "The shape consists of concentric circles",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/189.png"
+  },
+  {
+    "name": "annular_rim_profile",
+    "description": "The rim has a ring-shaped profile",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/189.png"
+  },
+  {
+    "name": "glossy_reflective_finish",
+    "description": "The finish is shiny and reflects light",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/189.png"
+  },
+  {
+    "name": "specular_surface_sheen",
+    "description": "A bright sheen is visible on the surface",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/189.png"
+  },
+  {
+    "name": "continuous_rim_boundary",
+    "description": "The boundary of the rim is continuous",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/189.png"
+  },
+  {
+    "name": "unbroken_edge_contour",
+    "description": "The outer edge contour is unbroken",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/189.png"
+  },
+  {
+    "name": "bright_specular_highlights",
+    "description": "Bright spots of light are visible on the surface",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/189.png"
+  },
+  {
+    "name": "radial_light_reflections",
+    "description": "Light reflections follow a radial pattern",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/189.png"
+  },
+  {
+    "name": "smooth_surface_texture",
+    "description": "The surface exhibits a smooth and even texture",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/070.png"
+  },
+  {
+    "name": "even_edge_texture",
+    "description": "The texture along the edge is consistent and uniform",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/070.png"
+  },
+  {
+    "name": "deep_black_hue",
+    "description": "The primary surface color is a deep black",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/070.png"
+  },
+  {
+    "name": "amber_edge_tint",
+    "description": "Small amber-colored tints are visible on the edge",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/070.png"
+  },
+  {
+    "name": "concentric_circular_geometry",
+    "description": "The structure is composed of concentric circular layers",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/070.png"
+  },
+  {
+    "name": "rounded_edge_profile",
+    "description": "The visible edge has a rounded profile",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/070.png"
+  },
+  {
+    "name": "glossy_material_finish",
+    "description": "The material displays a highly glossy finish",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/070.png"
+  },
+  {
+    "name": "reflective_surface_sheen",
+    "description": "The surface has a reflective and shiny sheen",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/070.png"
+  },
+  {
+    "name": "continuous_outer_edge",
+    "description": "The outer perimeter is a continuous unbroken circle",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/070.png"
+  },
+  {
+    "name": "uniform_edge_thickness",
+    "description": "The thickness of the edge appears uniform",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/070.png"
+  },
+  {
+    "name": "specular_light_reflections",
+    "description": "Bright points of light act as specular reflections",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/070.png"
+  },
+  {
+    "name": "bright_edge_highlights",
+    "description": "Bright highlights are visible along the circular edge",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/070.png"
+  },
+  {
+    "name": "circular_rim_geometry",
+    "description": "The edge of the opening forms a precise circular shape",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/062.png"
+  },
+  {
+    "name": "concentric_ring_pattern",
+    "description": "Visible concentric circular layers within the structure",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/062.png"
+  },
+  {
+    "name": "deep_black_hue",
+    "description": "The primary color of the interior is a dark black",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/062.png"
+  },
+  {
+    "name": "uniform_dark_tone",
+    "description": "The color distribution is a consistent dark shade",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/062.png"
+  },
+  {
+    "name": "smooth_inner_surface",
+    "description": "The interior surface of the opening is devoid of roughness",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/062.png"
+  },
+  {
+    "name": "glossy_surface_texture",
+    "description": "The texture appears smooth and highly reflective",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/062.png"
+  },
+  {
+    "name": "highly_reflective_finish",
+    "description": "The surface exhibits a high degree of light reflectivity",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/062.png"
+  },
+  {
+    "name": "polished_glass_sheen",
+    "description": "The material presents a shiny and polished sheen",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/062.png"
+  },
+  {
+    "name": "continuous_rim_edge",
+    "description": "The outer edge of the rim is an unbroken circle",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/062.png"
+  },
+  {
+    "name": "uniform_rim_width",
+    "description": "The thickness of the rim remains consistent around the perimeter",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/062.png"
+  },
+  {
+    "name": "bright_specular_highlights",
+    "description": "Small points of intense, bright reflected light",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/062.png"
+  },
+  {
+    "name": "subtle_light_reflections",
+    "description": "Faint and diffuse light patterns on the dark surface",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/062.png"
+  },
+  {
+    "name": "smooth_rim_surface",
+    "description": "The rim edge is even and lacks perceptible roughness",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/188.png"
+  },
+  {
+    "name": "uniform_edge_texture",
+    "description": "The surface texture is consistent across the outer edge",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/188.png"
+  },
+  {
+    "name": "dark_black_pigmentation",
+    "description": "The base color is a deep, consistent black",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/188.png"
+  },
+  {
+    "name": "amber_edge_highlights",
+    "description": "Light creates amber-colored streaks along the rim",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/188.png"
+  },
+  {
+    "name": "concentric_circular_rings",
+    "description": "The visible pattern features nested circular elements",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/188.png"
+  },
+  {
+    "name": "annular_ring_geometry",
+    "description": "The structure forms a distinct ring-like shape",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/188.png"
+  },
+  {
+    "name": "semi_glossy_finish",
+    "description": "The surface exhibits a subtle reflective sheen",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/188.png"
+  },
+  {
+    "name": "specular_light_reflections",
+    "description": "Bright, localized light reflections are present",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/188.png"
+  },
+  {
+    "name": "unbroken_circular_rim",
+    "description": "The circular edge is continuous without gaps",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/188.png"
+  },
+  {
+    "name": "continuous_edge_boundary",
+    "description": "The outer perimeter forms an uninterrupted loop",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/188.png"
+  },
+  {
+    "name": "circular_light_bands",
+    "description": "Concentric bands of light are visible around the surface",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/188.png"
+  },
+  {
+    "name": "subtle_tonal_gradients",
+    "description": "Smooth transitions between dark and light areas",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/188.png"
+  },
+  {
+    "name": "smooth_edge_surface",
+    "description": "The outer edge surface is uniformly smooth without roughness",
+    "visual_dimension": "texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/026.png"
+  },
+  {
+    "name": "even_internal_texture",
+    "description": "The interior surface texture appears consistent and uniform",
+    "visual_dimension": "texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/026.png"
+  },
+  {
+    "name": "dark_central_hue",
+    "description": "The center region of the part features a dark hue",
+    "visual_dimension": "color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/026.png"
+  },
+  {
+    "name": "amber_edge_tint",
+    "description": "A subtle amber tint is visible along the edge",
+    "visual_dimension": "color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/026.png"
+  },
+  {
+    "name": "circular_edge_geometry",
+    "description": "The outer boundary follows a precise circular geometry",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/026.png"
+  },
+  {
+    "name": "concentric_ring_pattern",
+    "description": "Concentric ring patterns are visible within the structure",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/026.png"
+  },
+  {
+    "name": "glossy_material_finish",
+    "description": "The material surface has a high-gloss finish",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/026.png"
+  },
+  {
+    "name": "reflective_surface_sheen",
+    "description": "The surface exhibits a reflective and shiny sheen",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/026.png"
+  },
+  {
+    "name": "continuous_edge_boundary",
+    "description": "The edge forms a continuous and unbroken boundary",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/026.png"
+  },
+  {
+    "name": "unbroken_outer_perimeter",
+    "description": "The outer perimeter is intact without any visible breaks",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/026.png"
+  },
+  {
+    "name": "bright_specular_highlights",
+    "description": "Bright specular highlights are present on the edges",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/026.png"
+  },
+  {
+    "name": "edge_light_reflections",
+    "description": "Reflections of light are visible along the outer edge",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/026.png"
+  },
+  {
+    "name": "smooth_rim_texture",
+    "description": "The surface of the rim is smooth and even",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/173.png"
+  },
+  {
+    "name": "concentric_ring_pattern",
+    "description": "Concentric rings are visible along the rim edge",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/173.png"
+  },
+  {
+    "name": "dark_liquid_hue",
+    "description": "The internal liquid has a dark, opaque hue",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/173.png"
+  },
+  {
+    "name": "black_rim_color",
+    "description": "The outer edge of the rim is black",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/173.png"
+  },
+  {
+    "name": "circular_aperture_geometry",
+    "description": "The central opening is perfectly circular",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/173.png"
+  },
+  {
+    "name": "concentric_circle_layout",
+    "description": "The surface features nested concentric circles",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/173.png"
+  },
+  {
+    "name": "glossy_surface_finish",
+    "description": "The material has a high-gloss finish",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/173.png"
+  },
+  {
+    "name": "reflective_material_finish",
+    "description": "The surface reflects ambient light clearly",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/173.png"
+  },
+  {
+    "name": "continuous_rim_edge",
+    "description": "The edge of the rim is an unbroken loop",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/173.png"
+  },
+  {
+    "name": "uniform_rim_width",
+    "description": "The thickness of the rim is consistent around the perimeter",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/173.png"
+  },
+  {
+    "name": "bright_light_reflections",
+    "description": "Bright light streaks are visible on the edges",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/173.png"
+  },
+  {
+    "name": "white_specular_highlights",
+    "description": "Small white specular highlights appear on the surface",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/173.png"
+  },
+  {
+    "name": "smooth_rim_texture",
+    "description": "The outer edge of the rim is smooth and even",
+    "visual_dimension": "texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/205.png"
+  },
+  {
+    "name": "glossy_inner_surface",
+    "description": "The interior edge shows a glossy texture",
+    "visual_dimension": "texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/205.png"
+  },
+  {
+    "name": "dark_amber_color",
+    "description": "The rim edge exhibits a dark amber color",
+    "visual_dimension": "color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/205.png"
+  },
+  {
+    "name": "deep_brown_hue",
+    "description": "The visible material has a deep brown hue",
+    "visual_dimension": "color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/205.png"
+  },
+  {
+    "name": "circular_opening_geometry",
+    "description": "The opening presents a circular geometry",
+    "visual_dimension": "shape",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/205.png"
+  },
+  {
+    "name": "concentric_ring_pattern",
+    "description": "The edges form a concentric ring pattern",
+    "visual_dimension": "shape",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/205.png"
+  },
+  {
+    "name": "reflective_glossy_finish",
+    "description": "The surface has a reflective glossy finish",
+    "visual_dimension": "finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/205.png"
+  },
+  {
+    "name": "specular_surface_finish",
+    "description": "The material displays a specular surface finish",
+    "visual_dimension": "finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/205.png"
+  },
+  {
+    "name": "continuous_rim_edge",
+    "description": "The rim edge is continuous without breaks",
+    "visual_dimension": "integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/205.png"
+  },
+  {
+    "name": "unbroken_circular_perimeter",
+    "description": "The circular perimeter is unbroken and intact",
+    "visual_dimension": "integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/205.png"
+  },
+  {
+    "name": "bright_specular_highlights",
+    "description": "Bright white highlights appear on the rim",
+    "visual_dimension": "markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/205.png"
+  },
+  {
+    "name": "linear_light_reflections",
+    "description": "Thin linear light reflections are visible on the surface",
+    "visual_dimension": "markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/205.png"
+  },
+  {
+    "name": "smooth_rim_texture",
+    "description": "The outer rim surface is smooth and even",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/139.png"
+  },
+  {
+    "name": "even_inner_surface",
+    "description": "The interior surface is uniform and flat",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/139.png"
+  },
+  {
+    "name": "deep_black_center",
+    "description": "The central region is a deep black color",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/139.png"
+  },
+  {
+    "name": "amber_peripheral_color",
+    "description": "The outer edges exhibit amber tones",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/139.png"
+  },
+  {
+    "name": "circular_aperture_shape",
+    "description": "The opening forms a circular shape",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/139.png"
+  },
+  {
+    "name": "concentric_annular_rings",
+    "description": "Visible edges form concentric ring patterns",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/139.png"
+  },
+  {
+    "name": "glossy_reflective_finish",
+    "description": "The surface has a high-gloss reflective finish",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/139.png"
+  },
+  {
+    "name": "polished_specular_finish",
+    "description": "The material shows a polished specular finish",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/139.png"
+  },
+  {
+    "name": "continuous_rim_edge",
+    "description": "The outer rim edge is continuous and unbroken",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/139.png"
+  },
+  {
+    "name": "unbroken_circular_boundary",
+    "description": "The circular boundary is intact and seamless",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/139.png"
+  },
+  {
+    "name": "bright_specular_highlights",
+    "description": "Small bright specular highlights are visible",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/139.png"
+  },
+  {
+    "name": "refractive_edge_patterns",
+    "description": "Light refraction patterns appear on the edges",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/139.png"
+  },
+  {
+    "name": "smooth_rim_surface",
+    "description": "The edge of the opening is even and without roughness",
+    "visual_dimension": "texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/022.png"
+  },
+  {
+    "name": "even_glass_texture",
+    "description": "The visible glass surface is uniform",
+    "visual_dimension": "texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/022.png"
+  },
+  {
+    "name": "dark_interior_color",
+    "description": "The center of the opening appears deep black",
+    "visual_dimension": "color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/022.png"
+  },
+  {
+    "name": "amber_rim_tint",
+    "description": "The outer edge of the glass has a brownish hue",
+    "visual_dimension": "color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/022.png"
+  },
+  {
+    "name": "concentric_circular_geometry",
+    "description": "The image shows nested circular patterns",
+    "visual_dimension": "shape",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/022.png"
+  },
+  {
+    "name": "circular_aperture_outline",
+    "description": "The opening forms a precise circular shape",
+    "visual_dimension": "shape",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/022.png"
+  },
+  {
+    "name": "glossy_material_finish",
+    "description": "The surface exhibits a high degree of shine",
+    "visual_dimension": "finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/022.png"
+  },
+  {
+    "name": "reflective_glass_finish",
+    "description": "The material surface reflects incident light",
+    "visual_dimension": "finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/022.png"
+  },
+  {
+    "name": "continuous_rim_edge",
+    "description": "The circular rim is a single, unbroken line",
+    "visual_dimension": "integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/022.png"
+  },
+  {
+    "name": "unbroken_circular_loop",
+    "description": "There are no visible gaps in the ring structure",
+    "visual_dimension": "integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/022.png"
+  },
+  {
+    "name": "bright_specular_highlights",
+    "description": "Small, intense points of light appear on the rim",
+    "visual_dimension": "markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/022.png"
+  },
+  {
+    "name": "light_reflective_glare",
+    "description": "Reflections of light are visible on the surface edges",
+    "visual_dimension": "markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/022.png"
+  },
+  {
+    "name": "smooth_outer_texture",
+    "description": "The outer surface is uniformly smooth without visible bumps or roughness",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/151.png"
+  },
+  {
+    "name": "even_surface_texture",
+    "description": "The texture is consistent across the entire visible rim area",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/151.png"
+  },
+  {
+    "name": "dark_interior_color",
+    "description": "The interior of the opening is a very deep, dark shade",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/151.png"
+  },
+  {
+    "name": "black_central_hue",
+    "description": "The central region of the opening exhibits a black color",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/151.png"
+  },
+  {
+    "name": "circular_edge_geometry",
+    "description": "The edge of the component follows a precise circular path",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/151.png"
+  },
+  {
+    "name": "concentric_ring_shape",
+    "description": "The structure features a series of concentric circular layers",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/151.png"
+  },
+  {
+    "name": "glossy_material_finish",
+    "description": "The surface material has a high-gloss, polished appearance",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/151.png"
+  },
+  {
+    "name": "highly_reflective_surface",
+    "description": "The surface strongly reflects light from the surrounding environment",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/151.png"
+  },
+  {
+    "name": "continuous_rim_edge",
+    "description": "The edge of the rim forms a single, unbroken loop",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/151.png"
+  },
+  {
+    "name": "unbroken_outer_boundary",
+    "description": "The outer perimeter shows no visible gaps or separations",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/151.png"
+  },
+  {
+    "name": "bright_specular_highlights",
+    "description": "Small, sharp points of intense light appear on the rim edge",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/151.png"
+  },
+  {
+    "name": "thin_light_reflections",
+    "description": "Fine, linear reflections of light trace along the edge",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/151.png"
+  },
+  {
+    "name": "smooth_rim_texture",
+    "description": "The outer edge of the rim is smooth to the touch",
+    "visual_dimension": "texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/108.png"
+  },
+  {
+    "name": "concentric_ring_ridges",
+    "description": "Raised ridges encircle the surface in a ring pattern",
+    "visual_dimension": "texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/108.png"
+  },
+  {
+    "name": "dark_central_color",
+    "description": "The innermost area of the object is deep black",
+    "visual_dimension": "color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/108.png"
+  },
+  {
+    "name": "amber_edge_hue",
+    "description": "The outer perimeter shows amber and brown tones",
+    "visual_dimension": "color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/108.png"
+  },
+  {
+    "name": "circular_perimeter_geometry",
+    "description": "The boundary of the object forms a perfect circle",
+    "visual_dimension": "shape",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/108.png"
+  },
+  {
+    "name": "annular_ring_shape",
+    "description": "The structure presents as a hollow ring shape",
+    "visual_dimension": "shape",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/108.png"
+  },
+  {
+    "name": "glossy_reflective_finish",
+    "description": "The surface possesses a highly reflective shine",
+    "visual_dimension": "finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/108.png"
+  },
+  {
+    "name": "translucent_edge_finish",
+    "description": "The outer edge allows light to pass through",
+    "visual_dimension": "finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/108.png"
+  },
+  {
+    "name": "continuous_rim_edge",
+    "description": "The perimeter edge is unbroken and without gaps",
+    "visual_dimension": "integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/108.png"
+  },
+  {
+    "name": "uniform_circular_structure",
+    "description": "The concentric rings are evenly and uniformly spaced",
+    "visual_dimension": "integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/108.png"
+  },
+  {
+    "name": "specular_light_reflections",
+    "description": "Bright white points of reflected light are visible",
+    "visual_dimension": "markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/108.png"
+  },
+  {
+    "name": "concentric_groove_patterns",
+    "description": "Circularly arranged grooves are visible on the surface",
+    "visual_dimension": "markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/108.png"
+  },
+  {
+    "name": "smooth_rim_texture",
+    "description": "The edge of the rim appears even and without roughness",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/008.png"
+  },
+  {
+    "name": "glossy_surface_texture",
+    "description": "The surface exhibits a high-gloss, smooth texture",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/008.png"
+  },
+  {
+    "name": "dark_interior_color",
+    "description": "The inner area of the opening is a deep, dark shade",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/008.png"
+  },
+  {
+    "name": "amber_rim_hue",
+    "description": "The outer edge of the rim shows an amber or brownish tint",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/008.png"
+  },
+  {
+    "name": "circular_opening_geometry",
+    "description": "The central opening forms a precise circular shape",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/008.png"
+  },
+  {
+    "name": "concentric_ring_geometry",
+    "description": "The lighting and shadows create a pattern of concentric rings",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/008.png"
+  },
+  {
+    "name": "reflective_material_finish",
+    "description": "The material surface has a highly reflective finish",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/008.png"
+  },
+  {
+    "name": "polished_surface_finish",
+    "description": "The surface appears polished and smooth to the light",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/008.png"
+  },
+  {
+    "name": "continuous_circular_boundary",
+    "description": "The outer edge forms an unbroken and continuous circle",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/008.png"
+  },
+  {
+    "name": "uniform_edge_perimeter",
+    "description": "The perimeter of the edge shows a consistent and uniform width",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/008.png"
+  },
+  {
+    "name": "specular_light_reflections",
+    "description": "Bright, sharp points of light are visible on the surface",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/008.png"
+  },
+  {
+    "name": "linear_highlight_markings",
+    "description": "Thin, bright streaks of light appear along the edges",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/008.png"
+  },
+  {
+    "name": "smooth_inner_wall",
+    "description": "The interior surface of the rim is even and smooth",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/007.png"
+  },
+  {
+    "name": "fine_rim_texture",
+    "description": "The outer edge possesses a subtle granular texture",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/007.png"
+  },
+  {
+    "name": "dark_central_void",
+    "description": "The center of the object is deep black",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/007.png"
+  },
+  {
+    "name": "amber_colored_rim",
+    "description": "The outer ring exhibits brownish-amber hues",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/007.png"
+  },
+  {
+    "name": "circular_rim_shape",
+    "description": "The overall geometry follows a circular path",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/007.png"
+  },
+  {
+    "name": "concentric_ring_geometry",
+    "description": "",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/007.png"
+  },
+  {
+    "name": "glossy_edge_finish",
+    "description": "The surface of the rim is highly reflective",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/007.png"
+  },
+  {
+    "name": "polished_rim_surface",
+    "description": "The outer edge has a smooth and polished appearance",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/007.png"
+  },
+  {
+    "name": "continuous_outer_ring",
+    "description": "The outermost edge is unbroken and whole",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/007.png"
+  },
+  {
+    "name": "uniform_rim_width",
+    "description": "The thickness of the ring is consistent around the circumference",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/007.png"
+  },
+  {
+    "name": "concentric_surface_grooves",
+    "description": "Fine circular lines are visible on the rim surface",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/007.png"
+  },
+  {
+    "name": "bright_light_streaks",
+    "description": "Sharp streaks of white light appear on the edge",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/007.png"
+  },
+  {
+    "name": "smooth_rim_texture",
+    "description": "The edge of the bottle neck is even and smooth to the touch",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/055.png"
+  },
+  {
+    "name": "uniform_inner_surface",
+    "description": "The interior surface of the opening appears even and consistent",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/055.png"
+  },
+  {
+    "name": "dark_amber_tint",
+    "description": "The edges of the rim exhibit a deep brownish-amber color",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/055.png"
+  },
+  {
+    "name": "deep_black_center",
+    "description": "The central part of the opening is extremely dark and opaque",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/055.png"
+  },
+  {
+    "name": "concentric_circular_pattern",
+    "description": "The visible layers of the neck form concentric circular patterns",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/055.png"
+  },
+  {
+    "name": "circular_opening_geometry",
+    "description": "The top aperture presents a clear round geometric shape",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/055.png"
+  },
+  {
+    "name": "glossy_surface_finish",
+    "description": "The material has a highly reflective and glossy finish",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/055.png"
+  },
+  {
+    "name": "reflective_material_sheen",
+    "description": "The surface displays a shiny and lustrous sheen",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/055.png"
+  },
+  {
+    "name": "undamaged_rim_edge",
+    "description": "The outer edge of the rim is smooth and free from chips",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/055.png"
+  },
+  {
+    "name": "continuous_rim_boundary",
+    "description": "The perimeter of the bottle neck forms an unbroken circle",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/055.png"
+  },
+  {
+    "name": "bright_specular_highlights",
+    "description": "Small, intense points of white light are visible on the rim",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/055.png"
+  },
+  {
+    "name": "white_light_reflections",
+    "description": "Distinct white light reflections are present on the surface edges",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/055.png"
+  },
+  {
+    "name": "smooth_internal_surface",
+    "description": "The central dark region appears devoid of visible texture",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/059.png"
+  },
+  {
+    "name": "glossy_outer_rim",
+    "description": "The outer edge displays a shiny and light-reflecting quality",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/059.png"
+  },
+  {
+    "name": "dark_central_hue",
+    "description": "The core area is characterized by a deep black tone",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/059.png"
+  },
+  {
+    "name": "amber_colored_highlights",
+    "description": "Small patches of amber light are visible along the edge",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/059.png"
+  },
+  {
+    "name": "concentric_circular_geometry",
+    "description": "The structure is composed of nested circular forms",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/059.png"
+  },
+  {
+    "name": "rounded_edge_profile",
+    "description": "The outer boundary has a smooth and curved shape",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/059.png"
+  },
+  {
+    "name": "reflective_specular_finish",
+    "description": "Sharp highlights appear on the glossy edges",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/059.png"
+  },
+  {
+    "name": "polished_surface_luster",
+    "description": "The edge surface has a high-sheen finish",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/059.png"
+  },
+  {
+    "name": "unbroken_circular_border",
+    "description": "The outer edge forms a complete and continuous loop",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/059.png"
+  },
+  {
+    "name": "continuous_edge_perimeter",
+    "description": "The rim shows no visible breaks or interruptions",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/059.png"
+  },
+  {
+    "name": "bright_light_reflections",
+    "description": "High-intensity light spots are present on the rim",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/059.png"
+  },
+  {
+    "name": "concentric_ring_pattern",
+    "description": "Visible bands of light and dark form concentric rings",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/059.png"
+  },
+  {
+    "name": "smooth_interior_surface",
+    "description": "The inner surface appears even and without visible roughness",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/129.png"
+  },
+  {
+    "name": "even_rim_texture",
+    "description": "The edge texture is consistent throughout the circumference",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/129.png"
+  },
+  {
+    "name": "deep_black_pigmentation",
+    "description": "The central area exhibits a dark, near-black color",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/129.png"
+  },
+  {
+    "name": "amber_edge_tint",
+    "description": "The outer rim shows hints of brownish-amber light",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/129.png"
+  },
+  {
+    "name": "concentric_circular_pattern",
+    "description": "The structure follows a series of nested circular paths",
+    "visual_dimension": "shape_geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/129.png"
+  },
+  {
+    "name": "round_rim_outline",
+    "description": "The outermost boundary forms a perfect circle",
+    "visual_dimension": "shape_geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/129.png"
+  },
+  {
+    "name": "glossy_reflective_finish",
+    "description": "The surface reflects light with high luster",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/129.png"
+  },
+  {
+    "name": "specular_light_sheen",
+    "description": "A bright sheen is visible on the material surface",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/129.png"
+  },
+  {
+    "name": "unbroken_outer_circumference",
+    "description": "The perimeter edge is continuous and without gaps",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/129.png"
+  },
+  {
+    "name": "intact_rim_structure",
+    "description": "The circular rim shows no signs of chipping or fractures",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/129.png"
+  },
+  {
+    "name": "bright_specular_highlights",
+    "description": "Points of intense light reflection are visible on the edges",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/129.png"
+  },
+  {
+    "name": "thin_light_bands",
+    "description": "Narrow bands of light appear along the circular contours",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/129.png"
+  },
+  {
+    "name": "smooth_inner_rim",
+    "description": "The inner edge of the circular rim is smooth and even",
+    "visual_dimension": "texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/154.png"
+  },
+  {
+    "name": "concentric_ribbed_ridges",
+    "description": "Visible circular ridges follow the inner circumference",
+    "visual_dimension": "texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/154.png"
+  },
+  {
+    "name": "dark_opaque_pigmentation",
+    "description": "The material is dark and lacks transparency",
+    "visual_dimension": "color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/154.png"
+  },
+  {
+    "name": "deep_black_hue",
+    "description": "The visible surfaces exhibit a deep black color",
+    "visual_dimension": "color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/154.png"
+  },
+  {
+    "name": "circular_annular_form",
+    "description": "The object presents a perfect ring-shaped geometry",
+    "visual_dimension": "shape",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/154.png"
+  },
+  {
+    "name": "concentric_ring_geometry",
+    "description": "The structure consists of nested circular layers",
+    "visual_dimension": "shape",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/154.png"
+  },
+  {
+    "name": "glossy_specular_finish",
+    "description": "The surface has a highly reflective and shiny finish",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/154.png"
+  },
+  {
+    "name": "polished_reflective_surface",
+    "description": "The material shows a polished and light-reflecting sheen",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/154.png"
+  },
+  {
+    "name": "continuous_rim_boundary",
+    "description": "The outer perimeter of the rim is unbroken and continuous",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/154.png"
+  },
+  {
+    "name": "uniform_circular_width",
+    "description": "The thickness of the rim is consistent around the circle",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/154.png"
+  },
+  {
+    "name": "bright_light_reflections",
+    "description": "Intense points of light are reflected on the edge",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/154.png"
+  },
+  {
+    "name": "white_specular_points",
+    "description": "Small, bright white spots appear on the surface edges",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/154.png"
+  },
+  {
+    "name": "smooth_surface_texture",
+    "description": "The surface is uniform and lacks any visible roughness or bumps",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/206.png"
+  },
+  {
+    "name": "even_surface_topography",
+    "description": "The top surface presents a consistent and level plane",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/206.png"
+  },
+  {
+    "name": "deep_black_pigmentation",
+    "description": "The primary color is a rich and intense black tone",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/206.png"
+  },
+  {
+    "name": "dark_monochromatic_hue",
+    "description": "The color is a single, deep, and dark shade across the visible area",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/206.png"
+  },
+  {
+    "name": "circular_rim_geometry",
+    "description": "The outer edge forms a precise and round circular shape",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/206.png"
+  },
+  {
+    "name": "concentric_ring_pattern",
+    "description": "The visible edges form layers of concentric circles around the center",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/206.png"
+  },
+  {
+    "name": "glossy_specular_finish",
+    "description": "The surface displays a high-shine, mirror-like reflection of light",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/206.png"
+  },
+  {
+    "name": "polished_reflective_sheen",
+    "description": "The material has a smooth and highly reflective surface luster",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/206.png"
+  },
+  {
+    "name": "continuous_rim_boundary",
+    "description": "The outer perimeter is a single, unbroken circular loop",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/206.png"
+  },
+  {
+    "name": "seamless_edge_construction",
+    "description": "The edges appear integrated without any visible joints or breaks",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/206.png"
+  },
+  {
+    "name": "bright_specular_highlights",
+    "description": "Small, intense points of white light are reflected on the surface",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/206.png"
+  },
+  {
+    "name": "linear_light_reflections",
+    "description": "Thin lines of reflected light are visible along the circular edges",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/206.png"
+  },
+  {
+    "name": "smooth_inner_surface",
+    "description": "The interior surface of the opening is uniformly smooth",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/050.png"
+  },
+  {
+    "name": "even_rim_texture",
+    "description": "The rim edge exhibits a consistent texture",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/050.png"
+  },
+  {
+    "name": "dark_central_region",
+    "description": "The center of the structure is deep black",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/050.png"
+  },
+  {
+    "name": "amber_edge_highlights",
+    "description": "Amber colored light highlights appear on the rim",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/050.png"
+  },
+  {
+    "name": "circular_rim_boundary",
+    "description": "The outer edge forms a perfect circular path",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/050.png"
+  },
+  {
+    "name": "concentric_annular_rings",
+    "description": "The structure shows a pattern of concentric rings",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/050.png"
+  },
+  {
+    "name": "glossy_reflective_finish",
+    "description": "The material has a highly reflective finish",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/050.png"
+  },
+  {
+    "name": "specular_edge_reflections",
+    "description": "Light reflects speculatively along the rim edge",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/050.png"
+  },
+  {
+    "name": "continuous_rim_edge",
+    "description": "The rim edge is unbroken and continuous",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/050.png"
+  },
+  {
+    "name": "uniform_annular_width",
+    "description": "The width of the ring structure is uniform",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/050.png"
+  },
+  {
+    "name": "bright_linear_reflections",
+    "description": "Thin bright lines of light are visible on the edge",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/050.png"
+  },
+  {
+    "name": "concentric_light_bands",
+    "description": "Visible light appears in concentric bands",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/050.png"
+  },
+  {
+    "name": "smooth_rim_surface",
+    "description": "The edge of the opening is smooth and even",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/166.png"
+  },
+  {
+    "name": "uniform_glass_texture",
+    "description": "The surface within the rim appears consistent and even",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/166.png"
+  },
+  {
+    "name": "dark_amber_hue",
+    "description": "The glass material exhibits a deep amber color",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/166.png"
+  },
+  {
+    "name": "deep_brown_tone",
+    "description": "The central part of the opening shows a dark brown tone",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/166.png"
+  },
+  {
+    "name": "circular_rim_geometry",
+    "description": "The outer boundary forms a perfect circular shape",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/166.png"
+  },
+  {
+    "name": "concentric_ring_pattern",
+    "description": "The view shows multiple concentric circular layers",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/166.png"
+  },
+  {
+    "name": "glossy_glass_finish",
+    "description": "The surface has a highly reflective and glossy appearance",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/166.png"
+  },
+  {
+    "name": "specular_light_reflections",
+    "description": "Bright points of light are reflected on the rim",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/166.png"
+  },
+  {
+    "name": "continuous_outer_rim",
+    "description": "The outer edge of the opening is unbroken and seamless",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/166.png"
+  },
+  {
+    "name": "unbroken_edge_boundary",
+    "description": "There are no visible cracks or breaks in the rim edge",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/166.png"
+  },
+  {
+    "name": "bright_rim_highlights",
+    "description": "Small, bright white light glints appear along the edge",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/166.png"
+  },
+  {
+    "name": "concentric_edge_lines",
+    "description": "Sharp, defined lines follow the circular geometry",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/166.png"
+  },
+  {
+    "name": "smooth_rim_surface",
+    "description": "The rim surface is even and smooth",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/179.png"
+  },
+  {
+    "name": "glossy_edge_texture",
+    "description": "The edge surface has a shiny, glossy texture",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/179.png"
+  },
+  {
+    "name": "dark_interior_area",
+    "description": "The interior area is dark in color",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/179.png"
+  },
+  {
+    "name": "amber_edge_tint",
+    "description": "The edge features a subtle amber tint",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/179.png"
+  },
+  {
+    "name": "circular_rim_geometry",
+    "description": "The rim follows a circular geometric shape",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/179.png"
+  },
+  {
+    "name": "concentric_ring_pattern",
+    "description": "Concentric ring patterns are visible at the edge",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/179.png"
+  },
+  {
+    "name": "reflective_surface_finish",
+    "description": "The surface has a highly reflective finish",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/179.png"
+  },
+  {
+    "name": "transparent_edge_material",
+    "description": "The edge material appears clear and transparent",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/179.png"
+  },
+  {
+    "name": "continuous_rim_boundary",
+    "description": "The rim boundary is a single continuous loop",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/179.png"
+  },
+  {
+    "name": "unbroken_edge_perimeter",
+    "description": "The edge perimeter shows no breaks or gaps",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/179.png"
+  },
+  {
+    "name": "specular_light_reflections",
+    "description": "Sharp specular light reflections are visible",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/179.png"
+  },
+  {
+    "name": "bright_rim_highlights",
+    "description": "Bright light highlights appear on the rim",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/179.png"
+  },
+  {
+    "name": "smooth_rim_surface",
+    "description": "The outer edge of the rim is visually smooth",
+    "visual_dimension": "texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/196.png"
+  },
+  {
+    "name": "untextured_inner_surface",
+    "description": "The interior area appears smooth and without visible grain",
+    "visual_dimension": "texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/196.png"
+  },
+  {
+    "name": "dark_amber_hue",
+    "description": "The rim material exhibits a dark amber color",
+    "visual_dimension": "color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/196.png"
+  },
+  {
+    "name": "deep_black_tone",
+    "description": "The center of the opening is a deep black color",
+    "visual_dimension": "color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/196.png"
+  },
+  {
+    "name": "circular_rim_geometry",
+    "description": "The rim follows a circular geometric boundary",
+    "visual_dimension": "shape",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/196.png"
+  },
+  {
+    "name": "concentric_ring_pattern",
+    "description": "The rim displays a pattern of concentric rings",
+    "visual_dimension": "shape",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/196.png"
+  },
+  {
+    "name": "glossy_material_finish",
+    "description": "The surface has a high-gloss material finish",
+    "visual_dimension": "finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/196.png"
+  },
+  {
+    "name": "polished_surface_sheen",
+    "description": "The surface shows a polished and reflective sheen",
+    "visual_dimension": "finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/196.png"
+  },
+  {
+    "name": "intact_rim_edge",
+    "description": "The rim edge is continuous and unbroken",
+    "visual_dimension": "integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/196.png"
+  },
+  {
+    "name": "uniform_rim_thickness",
+    "description": "The thickness of the rim is visually consistent",
+    "visual_dimension": "integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/196.png"
+  },
+  {
+    "name": "bright_specular_highlights",
+    "description": "Bright white points of light are visible on the surface",
+    "visual_dimension": "markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/196.png"
+  },
+  {
+    "name": "reflective_light_streaks",
+    "description": "Thin, bright reflections follow the rim curvature",
+    "visual_dimension": "markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/196.png"
+  },
+  {
+    "name": "smooth_outer_rim",
+    "description": "The outermost edge of the rim is uniformly smooth",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/107.png"
+  },
+  {
+    "name": "fine_inner_texture",
+    "description": "The interior edge exhibits a subtle grainy texture",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/107.png"
+  },
+  {
+    "name": "dark_amber_reflections",
+    "description": "Amber-colored light reflections appear on the rim surface",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/107.png"
+  },
+  {
+    "name": "deep_black_center",
+    "description": "The central area of the opening is deep black",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/107.png"
+  },
+  {
+    "name": "concentric_circular_layers",
+    "description": "The geometry consists of multiple nested circular layers",
+    "visual_dimension": "shape_geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/107.png"
+  },
+  {
+    "name": "annular_rim_profile",
+    "description": "The edge presents a ring-shaped annular profile",
+    "visual_dimension": "shape_geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/107.png"
+  },
+  {
+    "name": "glossy_specular_finish",
+    "description": "The material has a highly reflective specular finish",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/107.png"
+  },
+  {
+    "name": "reflective_surface_sheen",
+    "description": "A noticeable shiny sheen is present on the surface",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/107.png"
+  },
+  {
+    "name": "continuous_circular_edge",
+    "description": "The circular edge is continuous without any breaks",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/107.png"
+  },
+  {
+    "name": "unbroken_rim_boundary",
+    "description": "The outer boundary of the rim is an unbroken loop",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/107.png"
+  },
+  {
+    "name": "bright_light_reflections",
+    "description": "Small bright spots of light are visible on the rim",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/107.png"
+  },
+  {
+    "name": "concentric_light_arcs",
+    "description": "Arcs of light follow the concentric circular geometry",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/107.png"
+  },
+  {
+    "name": "smooth_inner_surface",
+    "description": "The interior edge of the rim is smooth without any roughness",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/056.png"
+  },
+  {
+    "name": "even_surface_uniformity",
+    "description": "The visible surface lacks any noticeable grain or texture irregularities",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/056.png"
+  },
+  {
+    "name": "dark_amber_tint",
+    "description": "The transparent portion of the material exhibits a dark amber color",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/056.png"
+  },
+  {
+    "name": "deep_black_center",
+    "description": "The innermost circular area is a solid, deep black color",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/056.png"
+  },
+  {
+    "name": "concentric_circular_rings",
+    "description": "The structure is composed of multiple concentric circular layers",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/056.png"
+  },
+  {
+    "name": "rounded_outer_perimeter",
+    "description": "The outermost edge forms a continuous rounded circular boundary",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/056.png"
+  },
+  {
+    "name": "glossy_reflective_finish",
+    "description": "The surface has a high-shine, specularly reflective finish",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/056.png"
+  },
+  {
+    "name": "clear_material_transparency",
+    "description": "The outer rim edges show high clarity and transparency",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/056.png"
+  },
+  {
+    "name": "continuous_outer_ring",
+    "description": "The outer boundary is an unbroken and continuous loop",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/056.png"
+  },
+  {
+    "name": "uniform_rim_thickness",
+    "description": "The visible thickness of the rim is consistent around the perimeter",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/056.png"
+  },
+  {
+    "name": "bright_specular_highlights",
+    "description": "Small, bright points of reflected light are present on the surface",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/056.png"
+  },
+  {
+    "name": "thin_light_streaks",
+    "description": "Narrow lines of reflected light follow the curvature of the rim",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/056.png"
+  },
+  {
+    "name": "smooth_rim_texture",
+    "description": "The rim displays a smooth and even surface texture",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/114.png"
+  },
+  {
+    "name": "glossy_surface_texture",
+    "description": "The surface exhibits a highly reflective, glossy texture",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/114.png"
+  },
+  {
+    "name": "dark_amber_hue",
+    "description": "The outer edge displays a deep amber color",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/114.png"
+  },
+  {
+    "name": "deep_black_shade",
+    "description": "The central region contains a deep black shade",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/114.png"
+  },
+  {
+    "name": "concentric_circular_rings",
+    "description": "The image features several concentric circular rings",
+    "visual_dimension": "shape_geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/114.png"
+  },
+  {
+    "name": "circular_ring_profile",
+    "description": "The edge follows a precise circular geometric profile",
+    "visual_dimension": "shape_geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/114.png"
+  },
+  {
+    "name": "reflective_specular_finish",
+    "description": "The surface has a shiny, reflective finish",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/114.png"
+  },
+  {
+    "name": "translucent_edge_finish",
+    "description": "The rim has a semi-transparent, translucent finish",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/114.png"
+  },
+  {
+    "name": "continuous_edge_perimeter",
+    "description": "The outer edge forms a continuous, unbroken perimeter",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/114.png"
+  },
+  {
+    "name": "unbroken_annular_ring",
+    "description": "The ring-like structure appears as an unbroken annular ring",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/114.png"
+  },
+  {
+    "name": "bright_specular_highlights",
+    "description": "Small, bright spots of light are visible on the surface",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/114.png"
+  },
+  {
+    "name": "concentric_light_reflections",
+    "description": "Light reflections appear in concentric patterns",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/114.png"
+  },
+  {
+    "name": "smooth_rim_texture",
+    "description": "The inner edge of the rim exhibits a smooth and even texture",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/071.png"
+  },
+  {
+    "name": "uniform_surface_smoothness",
+    "description": "The visible surface area is uniformly smooth without graininess",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/071.png"
+  },
+  {
+    "name": "deep_black_base_color",
+    "description": "The primary color of the object is a dark, saturated black",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/071.png"
+  },
+  {
+    "name": "amber_edge_tint",
+    "description": "The outer perimeter edge features a subtle amber or orange tint",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/071.png"
+  },
+  {
+    "name": "concentric_circular_rings",
+    "description": "The structure is composed of concentric circular patterns",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/071.png"
+  },
+  {
+    "name": "annular_rim_geometry",
+    "description": "The geometry forms a distinct annular or ring-like shape",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/071.png"
+  },
+  {
+    "name": "glossy_reflective_finish",
+    "description": "The surface has a high-gloss finish that reflects light",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/071.png"
+  },
+  {
+    "name": "specular_surface_sheen",
+    "description": "A specular sheen is visible across the polished surface",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/071.png"
+  },
+  {
+    "name": "continuous_circular_boundary",
+    "description": "The circular boundary is continuous and shows no breaks",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/071.png"
+  },
+  {
+    "name": "unbroken_perimeter_line",
+    "description": "The outer perimeter line is unbroken and structurally sound",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/071.png"
+  },
+  {
+    "name": "bright_specular_highlights",
+    "description": "Small, bright points of light appear as specular highlights",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/071.png"
+  },
+  {
+    "name": "circular_light_reflections",
+    "description": "Light reflects in distinct circular patterns on the surface",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/071.png"
+  },
+  {
+    "name": "smooth_rim_surface",
+    "description": "The outer edge of the rim is uniformly smooth",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/001.png"
+  },
+  {
+    "name": "even_surface_texture",
+    "description": "The texture across the visible edge is consistent",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/001.png"
+  },
+  {
+    "name": "dark_amber_tint",
+    "description": "The edge of the material shows a dark amber color",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/001.png"
+  },
+  {
+    "name": "black_central_region",
+    "description": "The innermost area of the opening is deep black",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/001.png"
+  },
+  {
+    "name": "circular_rim_profile",
+    "description": "The visible edge forms a perfect circular shape",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/001.png"
+  },
+  {
+    "name": "concentric_ring_geometry",
+    "description": "The structure follows a pattern of concentric circles",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/001.png"
+  },
+  {
+    "name": "glossy_material_finish",
+    "description": "The surface of the rim has a glossy finish",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/001.png"
+  },
+  {
+    "name": "reflective_surface_sheen",
+    "description": "The material exhibits a shiny, reflective sheen",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/001.png"
+  },
+  {
+    "name": "continuous_edge_boundary",
+    "description": "The outer boundary of the rim is an unbroken loop",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/001.png"
+  },
+  {
+    "name": "unbroken_perimeter_line",
+    "description": "The outer perimeter shows no visible gaps or breaks",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/001.png"
+  },
+  {
+    "name": "concentric_edge_grooves",
+    "description": "Small concentric lines are visible along the rim edge",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/001.png"
+  },
+  {
+    "name": "specular_light_reflections",
+    "description": "Bright highlights from light sources are visible on the edge",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/001.png"
+  },
+  {
+    "name": "circular_edge_geometry",
+    "description": "The edge forms a perfect circular shape",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/040.png"
+  },
+  {
+    "name": "concentric_ring_pattern",
+    "description": "The edge features concentric circular layers",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/040.png"
+  },
+  {
+    "name": "deep_amber_hue",
+    "description": "The visible surface has a dark amber tint",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/040.png"
+  },
+  {
+    "name": "dark_brown_color",
+    "description": "The surface displays a deep brown coloration",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/040.png"
+  },
+  {
+    "name": "smooth_outer_surface",
+    "description": "The outer edge surface is smooth",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/040.png"
+  },
+  {
+    "name": "uniform_surface_texture",
+    "description": "The texture across the edge is consistent",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/040.png"
+  },
+  {
+    "name": "glossy_material_finish",
+    "description": "The surface has a high-gloss finish",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/040.png"
+  },
+  {
+    "name": "reflective_surface_finish",
+    "description": "The surface reflects incident light",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/040.png"
+  },
+  {
+    "name": "continuous_edge_boundary",
+    "description": "The edge boundary is continuous without breaks",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/040.png"
+  },
+  {
+    "name": "unbroken_circular_rim",
+    "description": "The circular edge is entirely intact",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/040.png"
+  },
+  {
+    "name": "specular_light_highlights",
+    "description": "Bright white light spots are present",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/040.png"
+  },
+  {
+    "name": "bright_edge_reflections",
+    "description": "Intense light reflections appear on the edge",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/040.png"
+  },
+  {
+    "name": "smooth_inner_surface",
+    "description": "The interior surface is even and lacks visible roughness",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/193.png"
+  },
+  {
+    "name": "glossy_rim_surface",
+    "description": "The rim surface has a highly reflective texture",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/193.png"
+  },
+  {
+    "name": "dark_central_color",
+    "description": "The center of the object is a deep, dark tone",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/193.png"
+  },
+  {
+    "name": "amber_edge_tint",
+    "description": "The outer edge displays a warm amber hue",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/193.png"
+  },
+  {
+    "name": "concentric_circular_rings",
+    "description": "Multiple circular layers are visible from the top view",
+    "visual_dimension": "shape_geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/193.png"
+  },
+  {
+    "name": "circular_rim_geometry",
+    "description": "The outer edge forms a perfect, continuous circle",
+    "visual_dimension": "shape_geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/193.png"
+  },
+  {
+    "name": "specular_light_reflections",
+    "description": "Light reflects sharply off the smooth surface",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/193.png"
+  },
+  {
+    "name": "polished_glass_finish",
+    "description": "The surface has a highly reflective, polished finish",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/193.png"
+  },
+  {
+    "name": "continuous_outer_rim",
+    "description": "The outer perimeter is unbroken and structurally whole",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/193.png"
+  },
+  {
+    "name": "uniform_rim_thickness",
+    "description": "The width of the visible rim is consistent",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/193.png"
+  },
+  {
+    "name": "bright_edge_highlights",
+    "description": "Small, bright streaks appear on the rim's edge",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/193.png"
+  },
+  {
+    "name": "linear_light_reflections",
+    "description": "Thin lines of light follow the circular path",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/193.png"
+  },
+  {
+    "name": "smooth_rim_surface",
+    "description": "The outer edge of the rim is uniformly smooth without roughness",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/087.png"
+  },
+  {
+    "name": "ribbed_inner_ridges",
+    "description": "The inner edge features fine, repeating horizontal ridges",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/087.png"
+  },
+  {
+    "name": "opaque_black_center",
+    "description": "The central portion of the opening is solid and dark",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/087.png"
+  },
+  {
+    "name": "dark_rim_pigment",
+    "description": "The visible rim area has a deep, dark coloration",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/087.png"
+  },
+  {
+    "name": "concentric_circular_rings",
+    "description": "The structure is composed of nested circular bands",
+    "visual_dimension": "shape_geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/087.png"
+  },
+  {
+    "name": "round_edge_profile",
+    "description": "The perimeter follows a perfectly circular geometry",
+    "visual_dimension": "shape_geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/087.png"
+  },
+  {
+    "name": "glossy_reflective_finish",
+    "description": "The surface has a high-shine, glossy appearance",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/087.png"
+  },
+  {
+    "name": "specular_light_glare",
+    "description": "Sharp, bright reflections are visible on the surface edges",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/087.png"
+  },
+  {
+    "name": "unbroken_rim_boundary",
+    "description": "The circular edge is continuous without any visible gaps",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/087.png"
+  },
+  {
+    "name": "uniform_ring_spacing",
+    "description": "The concentric rings are spaced with consistent width",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/087.png"
+  },
+  {
+    "name": "bright_specular_dots",
+    "description": "Small, concentrated points of white light appear on the rim",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/087.png"
+  },
+  {
+    "name": "white_light_streaks",
+    "description": "Thin, bright lines of light trace the curved edges",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/087.png"
+  },
+  {
+    "name": "smooth_inner_surface",
+    "description": "The innermost part of the opening is uniformly smooth",
+    "visual_dimension": "texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/175.png"
+  },
+  {
+    "name": "ribbed_rim_edge",
+    "description": "The outer edge of the rim has a fine textured pattern",
+    "visual_dimension": "texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/175.png"
+  },
+  {
+    "name": "dark_central_color",
+    "description": "The center of the aperture appears deep black or dark brown",
+    "visual_dimension": "color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/175.png"
+  },
+  {
+    "name": "amber_rim_tint",
+    "description": "The edge of the rim exhibits a brownish amber hue",
+    "visual_dimension": "color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/175.png"
+  },
+  {
+    "name": "circular_rim_shape",
+    "description": "The object features a perfectly round outer perimeter",
+    "visual_dimension": "shape",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/175.png"
+  },
+  {
+    "name": "concentric_ring_geometry",
+    "description": "The structure follows a series of nested circular paths",
+    "visual_dimension": "shape",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/175.png"
+  },
+  {
+    "name": "glossy_material_finish",
+    "description": "The surface has a highly polished and shiny appearance",
+    "visual_dimension": "finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/175.png"
+  },
+  {
+    "name": "reflective_surface_sheen",
+    "description": "The material reflects light with a smooth luster",
+    "visual_dimension": "finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/175.png"
+  },
+  {
+    "name": "continuous_rim_edge",
+    "description": "The outer boundary of the rim is unbroken and smooth",
+    "visual_dimension": "integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/175.png"
+  },
+  {
+    "name": "uniform_circular_boundary",
+    "description": "The circular edge maintains a consistent and even perimeter",
+    "visual_dimension": "integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/175.png"
+  },
+  {
+    "name": "bright_light_reflections",
+    "description": "Strong points of light are visible on the surface edges",
+    "visual_dimension": "markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/175.png"
+  },
+  {
+    "name": "white_specular_highlights",
+    "description": "Small bright white spots appear due to light hitting the glossy surface",
+    "visual_dimension": "markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/175.png"
+  },
+  {
+    "name": "smooth_inner_edge",
+    "description": "The inner edge of the surface is smooth and even",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/039.png"
+  },
+  {
+    "name": "even_surface_texture",
+    "description": "The surface texture is uniform with no visible roughness",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/039.png"
+  },
+  {
+    "name": "dark_amber_color",
+    "description": "The material exhibits a dark amber coloration",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/039.png"
+  },
+  {
+    "name": "deep_brown_shading",
+    "description": "Deep brown tones are visible across the surface",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/039.png"
+  },
+  {
+    "name": "concentric_ring_pattern",
+    "description": "The geometry presents a pattern of concentric rings",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/039.png"
+  },
+  {
+    "name": "circular_outer_perimeter",
+    "description": "The outer boundary forms a complete circular shape",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/039.png"
+  },
+  {
+    "name": "glossy_material_finish",
+    "description": "The material has a high-gloss surface finish",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/039.png"
+  },
+  {
+    "name": "reflective_surface_sheen",
+    "description": "The surface exhibits a reflective, lustrous sheen",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/039.png"
+  },
+  {
+    "name": "unbroken_edge_perimeter",
+    "description": "The edge perimeter is continuous and unbroken",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/039.png"
+  },
+  {
+    "name": "uniform_edge_thickness",
+    "description": "The thickness of the edge remains uniform around the circumference",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/039.png"
+  },
+  {
+    "name": "bright_specular_highlights",
+    "description": "Bright white specular highlights are visible on the surface",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/039.png"
+  },
+  {
+    "name": "thin_light_streaks",
+    "description": "Thin light streaks are visible along the rim edges",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/039.png"
+  },
+  {
+    "name": "smooth_rim_surface",
+    "description": "The edge of the opening is uniformly smooth and even",
+    "visual_dimension": "texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/197.png"
+  },
+  {
+    "name": "even_surface_texture",
+    "description": "The surface shows no visible roughness or irregularities",
+    "visual_dimension": "texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/197.png"
+  },
+  {
+    "name": "dark_opaque_interior",
+    "description": "The central part of the opening is deep and non-transparent",
+    "visual_dimension": "color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/197.png"
+  },
+  {
+    "name": "amber_edge_highlights",
+    "description": "Golden-brown light reflects along the inner rim edges",
+    "visual_dimension": "color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/197.png"
+  },
+  {
+    "name": "black_outer_ring",
+    "description": "The outermost visible boundary is a dark black color",
+    "visual_dimension": "color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/197.png"
+  },
+  {
+    "name": "circular_annular_geometry",
+    "description": "The shape consists of concentric circular rings",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/197.png"
+  },
+  {
+    "name": "concentric_edge_profile",
+    "description": "The edges form a series of nested circular patterns",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/197.png"
+  },
+  {
+    "name": "glossy_material_finish",
+    "description": "The surface has a high-shine, glossy appearance",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/197.png"
+  },
+  {
+    "name": "reflective_surface_luster",
+    "description": "Light bounces brightly off the surface material",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/197.png"
+  },
+  {
+    "name": "unbroken_rim_edge",
+    "description": "The rim presents a continuous and seamless loop",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/197.png"
+  },
+  {
+    "name": "continuous_outer_perimeter",
+    "description": "The outer edge shows no breaks, gaps, or fissures",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/197.png"
+  },
+  {
+    "name": "specular_light_reflections",
+    "description": "Bright points of white light are visible on the surface",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/197.png"
+  },
+  {
+    "name": "smooth_outer_surface",
+    "description": "The outer edge surface is smooth and even",
+    "visual_dimension": "texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/086.png"
+  },
+  {
+    "name": "even_inner_surface",
+    "description": "The interior visible surface is uniformly smooth",
+    "visual_dimension": "texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/086.png"
+  },
+  {
+    "name": "deep_black_core",
+    "description": "The central area is a deep black color",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/086.png"
+  },
+  {
+    "name": "translucent_brown_edges",
+    "description": "The edges have a translucent brown hue",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/086.png"
+  },
+  {
+    "name": "circular_edge_geometry",
+    "description": "The edge follows a circular geometric path",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/086.png"
+  },
+  {
+    "name": "annular_ring_structure",
+    "description": "The visible part forms an annular ring shape",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/086.png"
+  },
+  {
+    "name": "glossy_material_finish",
+    "description": "The surface has a high-gloss finish",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/086.png"
+  },
+  {
+    "name": "reflective_light_spots",
+    "description": "Small specular light reflections are visible",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/086.png"
+  },
+  {
+    "name": "continuous_edge_perimeter",
+    "description": "The circular perimeter is unbroken",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/086.png"
+  },
+  {
+    "name": "uniform_edge_thickness",
+    "description": "The thickness of the visible edge is consistent",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/086.png"
+  },
+  {
+    "name": "amber_edge_highlights",
+    "description": "Bright amber light highlights appear on the edge",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/086.png"
+  },
+  {
+    "name": "concentric_ring_patterns",
+    "description": "Concentric circular lines are visible on the surface",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/086.png"
+  },
+  {
+    "name": "smooth_rim_surface",
+    "description": "The edge of the rim is smooth and even",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/190.png"
+  },
+  {
+    "name": "glossy_material_texture",
+    "description": "The surface displays a high-gloss texture",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/190.png"
+  },
+  {
+    "name": "dark_amber_color",
+    "description": "The material has a dark amber color",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/190.png"
+  },
+  {
+    "name": "deep_brown_hue",
+    "description": "The color is a deep brown hue",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/190.png"
+  },
+  {
+    "name": "circular_rim_geometry",
+    "description": "The rim forms a circular geometry",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/190.png"
+  },
+  {
+    "name": "round_aperture_shape",
+    "description": "The opening has a round shape",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/190.png"
+  },
+  {
+    "name": "reflective_material_finish",
+    "description": "The surface has a reflective finish",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/190.png"
+  },
+  {
+    "name": "specular_light_sheen",
+    "description": "A specular light sheen is visible on the surface",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/190.png"
+  },
+  {
+    "name": "continuous_rim_edge",
+    "description": "The rim edge is continuous and unbroken",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/190.png"
+  },
+  {
+    "name": "uniform_circular_border",
+    "description": "The border maintains a uniform circularity",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/190.png"
+  },
+  {
+    "name": "bright_specular_highlights",
+    "description": "Small bright highlights are visible on the edge",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/190.png"
+  },
+  {
+    "name": "concentric_light_patterns",
+    "description": "Concentric light patterns are present on the surface",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/190.png"
+  },
+  {
+    "name": "smooth_inner_rim",
+    "description": "The interior edge of the rim appears smooth and even",
+    "visual_dimension": "texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/097.png"
+  },
+  {
+    "name": "uniform_rim_surface",
+    "description": "The surface of the rim shows no visible grain or roughness",
+    "visual_dimension": "texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/097.png"
+  },
+  {
+    "name": "dark_central_area",
+    "description": "The center of the opening is deep black in color",
+    "visual_dimension": "color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/097.png"
+  },
+  {
+    "name": "amber_light_reflections",
+    "description": "Subtle amber or brownish tones are present in the highlights",
+    "visual_dimension": "color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/097.png"
+  },
+  {
+    "name": "concentric_circular_rings",
+    "description": "The view consists of multiple nested circular layers",
+    "visual_dimension": "geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/097.png"
+  },
+  {
+    "name": "round_edge_profile",
+    "description": "The visible edges form a perfectly circular shape",
+    "visual_dimension": "geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/097.png"
+  },
+  {
+    "name": "glossy_surface_finish",
+    "description": "The material has a highly reflective and shiny surface",
+    "visual_dimension": "finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/097.png"
+  },
+  {
+    "name": "reflective_specular_sheen",
+    "description": "Light reflects sharply off the surface edges",
+    "visual_dimension": "finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/097.png"
+  },
+  {
+    "name": "continuous_rim_edge",
+    "description": "The perimeter of the rim is a single unbroken loop",
+    "visual_dimension": "integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/097.png"
+  },
+  {
+    "name": "unbroken_outer_boundary",
+    "description": "The outermost visible edge shows no cracks or gaps",
+    "visual_dimension": "integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/097.png"
+  },
+  {
+    "name": "bright_edge_highlights",
+    "description": "Bright white points of light appear on the rim",
+    "visual_dimension": "markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/097.png"
+  },
+  {
+    "name": "luminous_light_streaks",
+    "description": "Linear streaks of light follow the circular contour",
+    "visual_dimension": "markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/097.png"
+  },
+  {
+    "name": "smooth_rim_surface",
+    "description": "The outer edge of the rim is smooth and even",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/024.png"
+  },
+  {
+    "name": "even_surface_texture",
+    "description": "The texture across the visible edge is consistent",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/024.png"
+  },
+  {
+    "name": "dark_amber_hue",
+    "description": "The edges of the opening exhibit a brownish tint",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/024.png"
+  },
+  {
+    "name": "deep_black_interior",
+    "description": "The central cavity appears dark and opaque",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/024.png"
+  },
+  {
+    "name": "circular_opening_geometry",
+    "description": "The visible structure forms a round circular shape",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/024.png"
+  },
+  {
+    "name": "concentric_ring_pattern",
+    "description": "The rim follows a concentric circular arrangement",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/024.png"
+  },
+  {
+    "name": "glossy_material_finish",
+    "description": "The surface has a highly reflective and shiny finish",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/024.png"
+  },
+  {
+    "name": "specular_reflective_sheen",
+    "description": "Light reflects sharply off the surface edges",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/024.png"
+  },
+  {
+    "name": "intact_rim_edge",
+    "description": "The edge of the opening is unbroken and smooth",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/024.png"
+  },
+  {
+    "name": "continuous_circular_boundary",
+    "description": "The perimeter of the opening is a continuous line",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/024.png"
+  },
+  {
+    "name": "bright_specular_highlights",
+    "description": "Small, bright white points of reflected light are visible",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/024.png"
+  },
+  {
+    "name": "concentric_rim_lines",
+    "description": "Fine, ring-like patterns are visible on the rim surface",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/024.png"
+  },
+  {
+    "name": "smooth_internal_surface",
+    "description": "The central area is even and lacks visible roughness",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/091.png"
+  },
+  {
+    "name": "glossy_edge_texture",
+    "description": "The outer ring has a slick and polished texture",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/091.png"
+  },
+  {
+    "name": "dark_central_color",
+    "description": "The innermost region is deep black",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/091.png"
+  },
+  {
+    "name": "amber_rim_hues",
+    "description": "The outer edge exhibits brownish-orange tones",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/091.png"
+  },
+  {
+    "name": "concentric_ring_geometry",
+    "description": "The visual pattern consists of nested circles",
+    "visual_dimension": "shape_geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/091.png"
+  },
+  {
+    "name": "circular_profile_shape",
+    "description": "The overall outline forms a round perimeter",
+    "visual_dimension": "shape_geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/091.png"
+  },
+  {
+    "name": "reflective_specular_highlights",
+    "description": "Bright light reflects sharply off the surface",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/091.png"
+  },
+  {
+    "name": "lustrous_surface_finish",
+    "description": "The surface has a shiny and polished sheen",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/091.png"
+  },
+  {
+    "name": "continuous_rim_structure",
+    "description": "The circular edge shows no visible breaks",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/091.png"
+  },
+  {
+    "name": "unbroken_outer_perimeter",
+    "description": "The outer boundary is a complete loop",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/091.png"
+  },
+  {
+    "name": "bright_rim_reflections",
+    "description": "Sharp white light points appear on the edge",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/091.png"
+  },
+  {
+    "name": "concentric_light_bands",
+    "description": "Circular light patterns are visible on the rim",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/091.png"
+  },
+  {
+    "name": "smooth_inner_rim",
+    "description": "The inner edge of the neck is smooth and even",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/186.png"
+  },
+  {
+    "name": "even_surface_texture",
+    "description": "The surface exhibits a uniform, non-rough texture",
+    "visual_dimension": "surface texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/186.png"
+  },
+  {
+    "name": "dark_amber_color",
+    "description": "The material displays a deep amber-brown hue",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/186.png"
+  },
+  {
+    "name": "deep_brown_tone",
+    "description": "The darker regions show a saturated brown tone",
+    "visual_dimension": "surface color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/186.png"
+  },
+  {
+    "name": "circular_top_aperture",
+    "description": "The opening is a precise and centered circle",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/186.png"
+  },
+  {
+    "name": "concentric_circular_layers",
+    "description": "The edge structure forms concentric circular patterns",
+    "visual_dimension": "shape/geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/186.png"
+  },
+  {
+    "name": "glossy_glass_finish",
+    "description": "The surface has a highly polished glass finish",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/186.png"
+  },
+  {
+    "name": "reflective_surface_sheen",
+    "description": "The material exhibits a bright, reflective sheen",
+    "visual_dimension": "material finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/186.png"
+  },
+  {
+    "name": "continuous_outer_edge",
+    "description": "The outer boundary of the rim is unbroken",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/186.png"
+  },
+  {
+    "name": "uniform_circular_boundary",
+    "description": "The edge maintains a consistent circular shape",
+    "visual_dimension": "structural integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/186.png"
+  },
+  {
+    "name": "bright_specular_highlights",
+    "description": "Intense points of light appear on the rim",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/186.png"
+  },
+  {
+    "name": "linear_light_reflections",
+    "description": "Thin streaks of light follow the edge curvature",
+    "visual_dimension": "visible surface markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/186.png"
+  },
+  {
+    "name": "smooth_edge_surface",
+    "description": "The outer edge of the surface is even and smooth",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/067.png"
+  },
+  {
+    "name": "uniform_top_texture",
+    "description": "The top surface lacks any perceptible roughness or grooves",
+    "visual_dimension": "surface_texture",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/067.png"
+  },
+  {
+    "name": "dark_opaque_center",
+    "description": "The central area is deep black and non-transparent",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/067.png"
+  },
+  {
+    "name": "amber_edge_tint",
+    "description": "The outer edge displays a light amber or brown hue",
+    "visual_dimension": "surface_color",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/067.png"
+  },
+  {
+    "name": "concentric_circular_geometry",
+    "description": "The visible structure consists of nested circular layers",
+    "visual_dimension": "shape_geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/067.png"
+  },
+  {
+    "name": "circular_edge_profile",
+    "description": "The perimeter follows a consistent round path",
+    "visual_dimension": "shape_geometry",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/067.png"
+  },
+  {
+    "name": "glossy_edge_finish",
+    "description": "The rim exhibits high specular reflectivity",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/067.png"
+  },
+  {
+    "name": "translucent_rim_layer",
+    "description": "Light passes through the thin outer edge material",
+    "visual_dimension": "material_finish",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/067.png"
+  },
+  {
+    "name": "continuous_edge_boundary",
+    "description": "The outer perimeter is a single unbroken line",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/067.png"
+  },
+  {
+    "name": "undamaged_edge_perimeter",
+    "description": "The edge shows no visible chips or irregularities",
+    "visual_dimension": "structural_integrity",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/067.png"
+  },
+  {
+    "name": "specular_light_highlights",
+    "description": "Bright spots of light appear on the surface",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/067.png"
+  },
+  {
+    "name": "bright_edge_reflections",
+    "description": "Sharp light reflections are visible along the rim",
+    "visual_dimension": "visible_surface_markings",
+    "source_image": "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/067.png"
+  }
+]

@@ -1,0 +1,116 @@
+[
+  {
+    "name": "matte_surface_finish",
+    "description": "The surface lacks a high-gloss or highly reflective appearance",
+    "visual_dimension": "material finish",
+    "frequency": 0.909
+  },
+  {
+    "name": "ovoid_body_shape",
+    "description": "The overall structure of the shell follows an egg-like, rounded shape",
+    "visual_dimension": "shape/geometry",
+    "frequency": 0.636
+  },
+  {
+    "name": "fine_linear_striations",
+    "description": "Parallel linear markings run vertically along the length of the shell",
+    "visual_dimension": "visible surface markings",
+    "frequency": 0.409
+  },
+  {
+    "name": "longitudinal_ridges",
+    "description": "The surface features raised parallel lines running along the body",
+    "visual_dimension": "surface texture",
+    "frequency": 0.364
+  },
+  {
+    "name": "brown_color_hue",
+    "description": "The primary color of the surface is a deep reddish brown",
+    "visual_dimension": "surface color",
+    "frequency": 0.341
+  },
+  {
+    "name": "reddish_brown_hue",
+    "description": "The predominant color of the visible surface is a medium shade of brown",
+    "visual_dimension": "surface_color",
+    "frequency": 0.295
+  },
+  {
+    "name": "tapered_distal_end",
+    "description": "The surface narrows to a distinct point at one end",
+    "visual_dimension": "shape_geometry",
+    "frequency": 0.295
+  },
+  {
+    "name": "dark_basal_patch",
+    "description": "A clearly defined light-colored mark at the bottom pole",
+    "visual_dimension": "markings",
+    "frequency": 0.273
+  },
+  {
+    "name": "non_reflective_sheen",
+    "description": "A very slight, light-catching luster is visible on the surface",
+    "visual_dimension": "material finish",
+    "frequency": 0.25
+  },
+  {
+    "name": "fine_longitudinal_striations",
+    "description": "Thin, parallel lines running along the longitudinal axis of the surface",
+    "visual_dimension": "surface texture",
+    "frequency": 0.25
+  },
+  {
+    "name": "light_tan_patch",
+    "description": "Lighter, yellowish-brown areas are present on the surface",
+    "visual_dimension": "surface_color",
+    "frequency": 0.227
+  },
+  {
+    "name": "ovoid_geometric_form",
+    "description": "An elongated, egg-like shape that is not perfectly symmetrical",
+    "visual_dimension": "shape/geometry",
+    "frequency": 0.227
+  },
+  {
+    "name": "rough_basal_area",
+    "description": "The bottom end of the shell exhibits a coarse and uneven surface texture",
+    "visual_dimension": "texture",
+    "frequency": 0.227
+  },
+  {
+    "name": "brown_pigmentation",
+    "description": "Deep reddish-brown tones covering the majority of the surface",
+    "visual_dimension": "surface_color",
+    "frequency": 0.205
+  },
+  {
+    "name": "longitudinal_grooves",
+    "description": "Narrow, parallel lines running along the length of the surface",
+    "visual_dimension": "surface texture",
+    "frequency": 0.182
+  },
+  {
+    "name": "non_reflective_surface",
+    "description": "The surface lacks significant specular highlights or glare",
+    "visual_dimension": "material finish",
+    "frequency": 0.182
+  },
+  {
+    "name": "reddish_brown_pigmentation",
+    "description": "The primary color of the surface is a medium brown",
+    "visual_dimension": "color",
+    "frequency": 0.159
+  },
+  {
+    "name": "subtle_satin_sheen",
+    "description": "A very slight luster is visible on the surface highlights",
+    "visual_dimension": "material_finish",
+    "frequency": 0.159
+  },
+  {
+    "name": "basal_area_markings",
+    "description": "A concentrated area of darker, brownish pigment at the base",
+    "visual_dimension": "visible_surface_markings",
+    "frequency": 0.159
+  }
+]

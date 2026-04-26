@@ -54,8 +54,14 @@ def discover_defects(dataset_path: str, category: str) -> list[str]:
 
 
 def stage3_checkpoint_path(base_save_path: str, category: str) -> Path:
-    """Return the expected Stage 3 checkpoint path."""
-    return Path(base_save_path).parent / f"{category}_stage3_annotations.json"
+    """
+    Return the Stage 3 checkpoint path.
+    Format: annotations/hazelnut/hazelnut_stage3_annotations.json
+    """
+    base = Path(base_save_path).parent
+    if base.name == category:
+        return base / f"{category}_stage3_annotations.json"
+    return base / category / f"{category}_stage3_annotations.json"
 
 
 def wait_for_stage3(checkpoint: Path, poll_interval: int = 60) -> None:
@@ -130,8 +136,7 @@ def main() -> None:
     p.add_argument("--skip_stage4",              action="store_true")
     p.add_argument("--model_name",               default="gemma4:e4b")
     p.add_argument("--ollama_host",              default="http://localhost:6000")
-    p.add_argument("--skip_clip_filter",         action="store_true")
-    p.add_argument("--min_cohen_d",              type=float, default=0.10)
+    # --skip_clip_filter and --min_cohen_d removed (not in all pipeline versions)
 
     args = p.parse_args()
 
@@ -157,12 +162,10 @@ def main() -> None:
         "--stage4_cluster_threshold", str(args.stage4_cluster_threshold),
         "--model_name",               args.model_name,
         "--ollama_host",              args.ollama_host,
-        "--min_cohen_d",              str(args.min_cohen_d),
     ]
     if args.skip_stage4:
         extra_args.append("--skip_stage4")
-    if args.skip_clip_filter:
-        extra_args.append("--skip_clip_filter")
+    # skip_clip_filter removed
 
     # Run all holdouts sequentially
     results: dict[str, bool] = {}

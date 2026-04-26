@@ -1,0 +1,116 @@
+[
+  {
+    "name": "smooth_surface_texture",
+    "description": "The exterior surface is uniformly smooth without any perceptible bumps or ridges",
+    "visual_dimension": "surface texture",
+    "frequency": 0.933
+  },
+  {
+    "name": "white_numeric_marking",
+    "description": "White alphanumeric characters are clearly printed on the surface",
+    "visual_dimension": "visible surface markings",
+    "frequency": 0.889
+  },
+  {
+    "name": "seamless_part_junction",
+    "description": "The meeting point between the black and amber sections is smooth and continuous",
+    "visual_dimension": "structural integrity",
+    "frequency": 0.8
+  },
+  {
+    "name": "opaque_black_color",
+    "description": "One segment of the object is solid black and does not allow light to pass through",
+    "visual_dimension": "surface color",
+    "frequency": 0.689
+  },
+  {
+    "name": "cylindrical_body_shape",
+    "description": "The middle portion of the object forms a straight cylindrical shape",
+    "visual_dimension": "shape/geometry",
+    "frequency": 0.511
+  },
+  {
+    "name": "translucent_amber_color",
+    "description": "The second section features a semi-transparent amber or brownish-orange color",
+    "visual_dimension": "surface color",
+    "frequency": 0.444
+  },
+  {
+    "name": "printed_digit_characters",
+    "description": "White numerical characters are printed prominently on the brown segment",
+    "visual_dimension": "visible surface markings",
+    "frequency": 0.444
+  },
+  {
+    "name": "hemispherical_end_shapes",
+    "description": "The two ends of the object are shaped into smooth hemispheres",
+    "visual_dimension": "shape/geometry",
+    "frequency": 0.4
+  },
+  {
+    "name": "uniform_surface_texture",
+    "description": "The surface texture remains consistent across the entire visible area",
+    "visual_dimension": "surface texture",
+    "frequency": 0.311
+  },
+  {
+    "name": "elongated_cylindrical_geometry",
+    "description": "The main body of the object follows a long, cylindrical geometry",
+    "visual_dimension": "shape/geometry",
+    "frequency": 0.267
+  },
+  {
+    "name": "rounded_end_geometry",
+    "description": "The ends of the object feature a smooth, circular curve",
+    "visual_dimension": "shape/geometry",
+    "frequency": 0.222
+  },
+  {
+    "name": "lustrous_surface_sheen",
+    "description": "A bright, light-reflecting quality is visible on the surface",
+    "visual_dimension": "material finish",
+    "frequency": 0.222
+  },
+  {
+    "name": "rounded_hemispherical_ends",
+    "description": "The two ends of the object have a rounded, hemispherical geometry",
+    "visual_dimension": "shape/geometry",
+    "frequency": 0.2
+  },
+  {
+    "name": "even_surface_texture",
+    "description": "The texture remains consistent across the entire visible surface area",
+    "visual_dimension": "surface texture",
+    "frequency": 0.2
+  },
+  {
+    "name": "rounded_terminal_ends",
+    "description": "The extremities of the object are shaped as hemispheres",
+    "visual_dimension": "shape/geometry",
+    "frequency": 0.178
+  },
+  {
+    "name": "reflective_surface_sheen",
+    "description": "Specular light highlights are visible on the smooth surface",
+    "visual_dimension": "material_finish",
+    "frequency": 0.178
+  },
+  {
+    "name": "uniform_surface_smoothness",
+    "description": "The surface texture is consistent and homogenous across the visible area",
+    "visual_dimension": "surface texture",
+    "frequency": 0.178
+  },
+  {
+    "name": "polished_material_finish",
+    "description": "The material has a smooth, polished, and lustrous appearance",
+    "visual_dimension": "material finish",
+    "frequency": 0.156
+  },
+  {
+    "name": "glossy_surface_texture",
+    "description": "The surface exhibits specular highlights from light reflection",
+    "visual_dimension": "surface texture",
+    "frequency": 0.156
+  }
+]
