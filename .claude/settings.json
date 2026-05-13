@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(sed -i 's/from convad_cl\\\\./from /g' evaluators/evaluator_cbm.py datasets/mvtec_dataset.py datasets/iad_dataset.py main_scripts/run_cl.py)",
+      "Bash(sed -i 's|python -m convad_cl\\\\.|python -m |g' main_scripts/run_cl.py)",
+      "Bash(.venv/bin/python -m cl.task_csv_builder)"
+    ]
+  }
+}

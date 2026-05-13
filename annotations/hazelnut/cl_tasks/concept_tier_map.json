@@ -1,0 +1,61 @@
+{
+  "tier1_normal": [
+    "basal_area_markings",
+    "bright_white_marking",
+    "bright_white_patch",
+    "brown_color_hue",
+    "brown_pigmentation",
+    "circular_shell_perforation",
+    "dark_basal_patch",
+    "dark_internal_cavity",
+    "deep_shell_fissure",
+    "exposed_internal_void",
+    "exposed_kernel_meat",
+    "exposed_nut_interior",
+    "fine_linear_striations",
+    "fine_longitudinal_striations",
+    "high_contrast_print",
+    "jagged_fracture_margin",
+    "jagged_hole_margin",
+    "jagged_shell_margin",
+    "light_tan_patch",
+    "linear_shell_crack",
+    "linear_shell_incision",
+    "longitudinal_grooves",
+    "longitudinal_ridges",
+    "matte_surface_finish",
+    "non_reflective_sheen",
+    "non_reflective_surface",
+    "ovoid_body_shape",
+    "ovoid_geometric_form",
+    "pale_linear_cut",
+    "reddish_brown_hue",
+    "reddish_brown_pigmentation",
+    "rough_basal_area",
+    "shell_fragment_loss",
+    "shell_separation_gap",
+    "subtle_satin_sheen",
+    "tapered_distal_end",
+    "white_surface_patches"
+  ],
+  "tier2_generic": [
+    "color_deviation",
+    "surface_irregularity",
+    "texture_inconsistency"
+  ],
+  "tier3_crack": [
+    "structural_discontinuity",
+    "unexpected_surface_pattern"
+  ],
+  "tier3_hole": [
+    "structural_discontinuity",
+    "unexpected_surface_pattern"
+  ],
+  "tier3_cut": [
+    "structural_discontinuity",
+    "unexpected_surface_pattern"
+  ],
+  "tier3_print": [
+    "unexpected_surface_pattern"
+  ]
+}

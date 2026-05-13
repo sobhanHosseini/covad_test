@@ -1,0 +1,45 @@
+[
+  {
+    "task_id": 1,
+    "defect": "crack",
+    "n_images": 449,
+    "n_normal": 431,
+    "n_defect": 18,
+    "n_concepts_total": 42,
+    "new_concepts": [
+      "structural_discontinuity",
+      "unexpected_surface_pattern"
+    ],
+    "csv_path": "annotations/hazelnut/cl_tasks/task_1_crack.csv"
+  },
+  {
+    "task_id": 2,
+    "defect": "hole",
+    "n_images": 18,
+    "n_normal": 0,
+    "n_defect": 18,
+    "n_concepts_total": 42,
+    "new_concepts": [],
+    "csv_path": "annotations/hazelnut/cl_tasks/task_2_hole.csv"
+  },
+  {
+    "task_id": 3,
+    "defect": "cut",
+    "n_images": 17,
+    "n_normal": 0,
+    "n_defect": 17,
+    "n_concepts_total": 42,
+    "new_concepts": [],
+    "csv_path": "annotations/hazelnut/cl_tasks/task_3_cut.csv"
+  },
+  {
+    "task_id": 4,
+    "defect": "print",
+    "n_images": 17,
+    "n_normal": 0,
+    "n_defect": 17,
+    "n_concepts_total": 42,
+    "new_concepts": [],
+    "csv_path": "annotations/hazelnut/cl_tasks/task_4_print.csv"
+  }
+]
