@@ -30,9 +30,32 @@ _META_COLS = frozenset(
 )
 
 # ── tier detection thresholds ─────────────────────────────────────────────────
-TIER3_DEFECT_THRESH = 0.30  # concept mean on defect rows must exceed this
-TIER3_NORMAL_THRESH = 0.10  # concept mean on normal rows must be below this
-TIER1_NORMAL_THRESH = 0.30  # concept mean on normal rows to count as "normal concept"
+# Tier 3 uses absolute mean-difference to catch both signal directions:
+#   - fires HIGH on defect, LOW on normal  (e.g. structural_discontinuity)
+#   - fires LOW on defect, HIGH on normal  (e.g. deep_shell_fissure)
+# The VLM annotation pipeline (Stage 3) labels all concepts on all images,
+# so "normal" surface concepts like deep_shell_fissure end up with mean≈1.00
+# on normal images and low mean on defect images — the opposite of the naive
+# expectation, but equally discriminative.
+TIER3_DIFF_THRESH = 0.30    # |mean_defect - mean_normal| must exceed this
+TIER1_NORMAL_THRESH = 0.30  # concept mean on normal rows to count as baseline normal
+
+# NOTE — pre-generated CSVs vs real CL deployment:
+# The hazelnut.csv was annotated by the pipeline across ALL defect types at once,
+# so all 42 concept columns exist from Task 1. In real CL deployment via
+# `annotation_pipeline --append_defect`, genuinely new concept columns appear
+# in the CSV when a new defect arrives, and CONCIL adds new FC head columns.
+# For this experiment CONCIL updates existing weights only (no vocabulary expansion).
+# Both cases are valid demonstrations of concept-level continual learning.
+#
+# THESIS NOTE — new concept heads per task (hazelnut experiment):
+#   T1 crack  → 32 concept heads established (all discriminative concepts)
+#   T2 hole   → 0 new heads, CONCIL updates existing weights only
+#   T3 cut    → 0 new heads, CONCIL updates existing weights only
+#   T4 print  → 3 new heads (matte_surface_finish, non_reflective_sheen,
+#                             non_reflective_surface — print-specific reflectivity)
+# The CL experiment still exercises CONCIL's forgetting prevention and the
+# concept-BWT metric at every task, even when no vocabulary expansion occurs.
 
 
 def concept_cols(df: pd.DataFrame) -> list[str]:
@@ -44,12 +67,12 @@ def build_tier_map(df: pd.DataFrame, defect_types: list[str]) -> dict[str, list[
     """Classify every concept column into tier1 / tier2 / tier3_<defect>.
 
     Assignment priority:
-      1. tier3_<defect>: mean_on_defect > TIER3_DEFECT_THRESH
-                         AND mean_on_normal < TIER3_NORMAL_THRESH
+      1. tier3_<defect>: |mean_defect - mean_normal| > TIER3_DIFF_THRESH
+         Captures both signal directions (goes up OR down on defect images).
          A concept can be tier3 for multiple defects simultaneously.
       2. tier1_normal:   not tier3 for any defect
                          AND mean_on_normal >= TIER1_NORMAL_THRESH
-      3. tier2_generic:  everything else
+      3. tier2_generic:  everything else (low signal on normal, low diff)
     """
     concepts = concept_cols(df)
     normal_df = df[df["anomaly_type"] == "good"]
@@ -64,10 +87,7 @@ def build_tier_map(df: pd.DataFrame, defect_types: list[str]) -> dict[str, list[
             continue
         defect_means = defect_df[concepts].mean()
         for c in concepts:
-            if (
-                defect_means[c] > TIER3_DEFECT_THRESH
-                and normal_means[c] < TIER3_NORMAL_THRESH
-            ):
+            if abs(defect_means[c] - normal_means[c]) > TIER3_DIFF_THRESH:
                 tier3[defect].append(c)
                 assigned_to_tier3.add(c)
 

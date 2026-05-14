@@ -3,7 +3,23 @@
     "allow": [
       "Bash(sed -i 's/from convad_cl\\\\./from /g' evaluators/evaluator_cbm.py datasets/mvtec_dataset.py datasets/iad_dataset.py main_scripts/run_cl.py)",
       "Bash(sed -i 's|python -m convad_cl\\\\.|python -m |g' main_scripts/run_cl.py)",
-      "Bash(.venv/bin/python -m cl.task_csv_builder)"
+      "Bash(.venv/bin/python -m cl.task_csv_builder)",
+      "Bash(.venv/bin/python -)",
+      "Bash(awk -F',' 'NR==2{print $1}')",
+      "Bash(ls ~/.cache/torch/hub/ 2>/dev/null | head -20 && echo \"---\" && find ~/.cache/torch/hub -name \"dinov2*\" -maxdepth 3 2>/dev/null | head -10)",
+      "Read(//mnt/nvme1/sobhan_hosseini/.cache/torch/hub/**)",
+      "Bash(ls /home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/000.png && echo \"image exists\")",
+      "Read(//mnt/disk1/borsattifr/datasets/mvtec/hazelnut/train/good/**)",
+      "Bash(.venv/bin/python -c \"import torch; print\\(torch.__version__\\); m = torch.hub.load\\('facebookresearch/dinov2', 'dinov2_vitb14', pretrained=True, verbose=False\\); print\\('loaded ok'\\); print\\(type\\(m\\)\\)\")",
+      "Bash(.venv/bin/python -m features.dinov2_extractor)",
+      "Bash(.venv/bin/python -m features.patchcore_memory)",
+      "Bash(.venv/bin/python -m models.concept_heads)",
+      "Bash(.venv/bin/python -m solvers.concil)",
+      "Bash(.venv/bin/python -m cl.concept_deduplicator)",
+      "Bash(.venv/bin/python -m evaluators.evaluator_cl)",
+      "Bash(.venv/bin/python -m cl.cl_trainer)",
+      "Bash(.venv/bin/python -m main_scripts.run_cl --mvtec_root /home/sobhan_hosseini/datasets/mvtec --annotations_dir ./annotations/hazelnut --dry_run)",
+      "Bash(echo \"Exit code: $?\")"
     ]
   }
 }

@@ -7,8 +7,38 @@
     "n_defect": 18,
     "n_concepts_total": 42,
     "new_concepts": [
+      "bright_white_marking",
+      "bright_white_patch",
+      "circular_shell_perforation",
+      "color_deviation",
+      "dark_internal_cavity",
+      "deep_shell_fissure",
+      "exposed_internal_void",
+      "exposed_kernel_meat",
+      "exposed_nut_interior",
+      "fine_linear_striations",
+      "fine_longitudinal_striations",
+      "high_contrast_print",
+      "jagged_fracture_margin",
+      "jagged_hole_margin",
+      "jagged_shell_margin",
+      "light_tan_patch",
+      "linear_shell_crack",
+      "linear_shell_incision",
+      "longitudinal_grooves",
+      "longitudinal_ridges",
+      "ovoid_body_shape",
+      "ovoid_geometric_form",
+      "pale_linear_cut",
+      "shell_fragment_loss",
+      "shell_separation_gap",
       "structural_discontinuity",
-      "unexpected_surface_pattern"
+      "subtle_satin_sheen",
+      "surface_irregularity",
+      "tapered_distal_end",
+      "texture_inconsistency",
+      "unexpected_surface_pattern",
+      "white_surface_patches"
     ],
     "csv_path": "annotations/hazelnut/cl_tasks/task_1_crack.csv"
   },
@@ -39,7 +69,11 @@
     "n_normal": 0,
     "n_defect": 17,
     "n_concepts_total": 42,
-    "new_concepts": [],
+    "new_concepts": [
+      "matte_surface_finish",
+      "non_reflective_sheen",
+      "non_reflective_surface"
+    ],
     "csv_path": "annotations/hazelnut/cl_tasks/task_4_print.csv"
   }
 ]
