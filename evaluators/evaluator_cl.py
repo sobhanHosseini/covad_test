@@ -241,12 +241,22 @@ class CLEvaluator:
             evaluated_after_task: which CL task just completed
             normal_images:        list of PIL Images — normal (label=0)
             defect_images:        list of PIL Images — defect (label=1)
-            concept_labels:       DataFrame with N rows (normal + defect, same order)
-                                  and one column per concept (ground-truth binary)
+            concept_labels:       DataFrame with N rows and one column per concept
+                                  (ground-truth binary labels from VLM annotation).
+                                  Pass None for held-out test evaluation where
+                                  ground-truth labels are not available.
+                                  When None: c_auc_per_concept={}, c_auc_mean=NaN.
             tau:                  current s_novel threshold (for logging only)
 
         Returns:
             TaskEvalResult with all metrics filled in.
+
+        Evaluation protocol note:
+            I-AUC(novel)   — PatchCore branch; uses held-out test/good/ normals.
+            I-AUC(concept) — linear head branch; uses held-out test/good/ normals.
+            C-AUC(mean)    — concept head quality; requires VLM labels, so it is
+                             NaN for held-out evaluation and must be measured
+                             separately on the training set (see compute_cauc_train).
         """
         all_images = normal_images + defect_images
         N_normal  = len(normal_images)
@@ -282,6 +292,8 @@ class CLEvaluator:
             i_auc_concept = float(roc_auc_score(y_true, y_hat_np))
 
         # ── per-concept AUC ───────────────────────────────────────────────────
+        # concept_labels always provided — hazelnut.csv covers all 501 images
+        # including test/good/ and all test defect images.
         c_np = c.cpu().numpy()                         # (N, K)
         c_auc_per_concept: dict[str, float] = {}
 
@@ -292,7 +304,6 @@ class CLEvaluator:
             c_true_k = concept_labels[k_name].values.astype(np.float32)
             c_pred_k = c_np[:, k_idx]
             if len(np.unique(c_true_k)) < 2:
-                # No variance in ground truth — AUROC undefined
                 c_auc_per_concept[k_name] = _NAN
                 continue
             try:

@@ -1,0 +1,122 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+CONVAD-CL — CONCIL
+------------------------------------------------------
+  mvtec_root           /home/sobhan_hosseini/datasets/mvtec
+  annotations_dir      ./annotations/bottle
+  category             bottle
+  checkpoint_dir       ./checkpoints/bottle
+  lambda_concept       0.0001
+  lambda_anomaly       0.0001
+  coreset_size         10000
+  tau_percentile       95.0
+  batch_size           16
+  naive_epochs         50
+  naive_lr             0.001
+
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 13699.49it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+
+Starting CONVAD-CL Scenario B — bottle
+Task sequence: ['broken_large', 'broken_small', 'contamination']
+Device: cuda
+
+============================================================
+TASK 1 — BROKEN_LARGE
+============================================================
+  loading images:   0%|          | 0/229 [00:00<?, ?it/s]  loading images:   1%|          | 2/229 [00:00<00:15, 14.80it/s]  loading images:   3%|▎         | 7/229 [00:00<00:07, 29.13it/s]  loading images:   5%|▌         | 12/229 [00:00<00:06, 34.20it/s]  loading images:   7%|▋         | 16/229 [00:00<00:05, 35.90it/s]  loading images:   9%|▉         | 21/229 [00:00<00:05, 37.79it/s]  loading images:  11%|█         | 25/229 [00:00<00:05, 38.06it/s]  loading images:  13%|█▎        | 30/229 [00:00<00:04, 39.89it/s]  loading images:  15%|█▌        | 35/229 [00:00<00:04, 40.63it/s]  loading images:  17%|█▋        | 40/229 [00:01<00:04, 40.94it/s]  loading images:  20%|█▉        | 45/229 [00:01<00:04, 40.09it/s]  loading images:  22%|██▏       | 50/229 [00:01<00:04, 40.73it/s]  loading images:  24%|██▍       | 55/229 [00:01<00:04, 40.97it/s]  loading images:  26%|██▌       | 60/229 [00:01<00:04, 41.13it/s]  loading images:  28%|██▊       | 65/229 [00:01<00:04, 40.45it/s]  loading images:  31%|███       | 70/229 [00:01<00:03, 40.66it/s]  loading images:  33%|███▎      | 75/229 [00:01<00:03, 40.89it/s]  loading images:  35%|███▍      | 80/229 [00:02<00:03, 39.62it/s]  loading images:  37%|███▋      | 84/229 [00:02<00:03, 39.70it/s]  loading images:  39%|███▉      | 89/229 [00:02<00:03, 41.05it/s]  loading images:  41%|████      | 94/229 [00:02<00:03, 41.26it/s]  loading images:  43%|████▎     | 99/229 [00:02<00:03, 41.29it/s]  loading images:  45%|████▌     | 104/229 [00:02<00:02, 41.72it/s]  loading images:  48%|████▊     | 109/229 [00:02<00:02, 42.18it/s]  loading images:  50%|████▉     | 114/229 [00:02<00:02, 42.14it/s]  loading images:  52%|█████▏    | 119/229 [00:02<00:02, 42.09it/s]  loading images:  54%|█████▍    | 124/229 [00:03<00:02, 40.80it/s]  loading images:  56%|█████▋    | 129/229 [00:03<00:02, 40.94it/s]  loading images:  59%|█████▊    | 134/229 [00:03<00:02, 42.21it/s]  loading images:  61%|██████    | 139/229 [00:03<00:02, 42.40it/s]  loading images:  63%|██████▎   | 144/229 [00:03<00:02, 39.71it/s]  loading images:  65%|██████▌   | 149/229 [00:03<00:01, 40.25it/s]  loading images:  67%|██████▋   | 154/229 [00:03<00:01, 41.09it/s]  loading images:  69%|██████▉   | 159/229 [00:03<00:01, 40.45it/s]  loading images:  72%|███████▏  | 164/229 [00:04<00:01, 41.15it/s]  loading images:  74%|███████▍  | 169/229 [00:04<00:01, 39.58it/s]  loading images:  76%|███████▌  | 174/229 [00:04<00:01, 40.20it/s]  loading images:  78%|███████▊  | 179/229 [00:04<00:01, 41.32it/s]  loading images:  80%|████████  | 184/229 [00:04<00:01, 41.37it/s]  loading images:  83%|████████▎ | 189/229 [00:04<00:00, 41.57it/s]  loading images:  85%|████████▍ | 194/229 [00:04<00:00, 41.87it/s]  loading images:  87%|████████▋ | 199/229 [00:04<00:00, 42.94it/s]  loading images:  89%|████████▉ | 204/229 [00:05<00:00, 42.44it/s]  loading images:  91%|█████████▏| 209/229 [00:05<00:00, 41.01it/s]  loading images:  93%|█████████▎| 214/229 [00:05<00:00, 36.36it/s]  loading images:  96%|█████████▌| 219/229 [00:05<00:00, 37.59it/s]  loading images:  98%|█████████▊| 224/229 [00:05<00:00, 39.64it/s]  loading images: 100%|██████████| 229/229 [00:05<00:00, 40.51it/s]                                                                     Data: 209 normal + 20 defect images  (K=34 concepts)
+  Extracting features ...
+  features T1:   0%|          | 0/15 [00:00<?, ?it/s]  features T1:   7%|▋         | 1/15 [00:00<00:04,  3.33it/s]  features T1:  13%|█▎        | 2/15 [00:00<00:02,  5.25it/s]  features T1:  20%|██        | 3/15 [00:00<00:01,  6.53it/s]  features T1:  27%|██▋       | 4/15 [00:00<00:01,  7.46it/s]  features T1:  33%|███▎      | 5/15 [00:00<00:01,  8.08it/s]  features T1:  40%|████      | 6/15 [00:00<00:01,  8.36it/s]  features T1:  47%|████▋     | 7/15 [00:00<00:00,  8.73it/s]  features T1:  53%|█████▎    | 8/15 [00:01<00:00,  8.98it/s]  features T1:  60%|██████    | 9/15 [00:01<00:00,  9.15it/s]  features T1:  67%|██████▋   | 10/15 [00:01<00:00,  9.27it/s]  features T1:  73%|███████▎  | 11/15 [00:01<00:00,  9.36it/s]  features T1:  80%|████████  | 12/15 [00:01<00:00,  9.41it/s]  features T1:  87%|████████▋ | 13/15 [00:01<00:00,  9.31it/s]  features T1:  93%|█████████▎| 14/15 [00:01<00:00,  9.40it/s]                                                                patch_tokens (229, 256, 768), pooled_z (229, 1536)
+  Memory bank: 10,000 patches (29.3 MB) — FROZEN
+  τ = 0.4285  (95.0th percentile of normal s_novel)
+  Concept heads initialised: K=34
+  Concept heads updated via CONCIL  (K=34)
+  Anomaly head updated via CONCIL
+  Evaluating on test set ...
+  T1 result: I-AUC(novel)=1.0000  I-AUC(concept)=1.0000  C-AUC=1.0000
+  Checkpoint saved → checkpoints/bottle/task_1/
+
+============================================================
+TASK 2 — BROKEN_SMALL
+============================================================
+  loading images:   0%|          | 0/22 [00:00<?, ?it/s]  loading images:  18%|█▊        | 4/22 [00:00<00:00, 38.44it/s]  loading images:  41%|████      | 9/22 [00:00<00:00, 39.83it/s]  loading images:  64%|██████▎   | 14/22 [00:00<00:00, 43.35it/s]  loading images:  86%|████████▋ | 19/22 [00:00<00:00, 42.88it/s]                                                                   Data: 22 defect images
+  Extracting pooled features ...
+  features T2:   0%|          | 0/2 [00:00<?, ?it/s]  features T2:  50%|█████     | 1/2 [00:00<00:00,  9.24it/s]                                                              pooled_z (22, 1536)
+  No new concepts. Updating existing 34 heads.
+  Concept heads updated  (K=34, n_tasks_seen=2)
+  Anomaly head updated
+  Evaluating all seen defects ...
+    broken_large I-AUC(novel)=1.0000  I-AUC(concept)=1.0000  C-AUC=1.0000
+    broken_small I-AUC(novel)=1.0000  I-AUC(concept)=1.0000  C-AUC=1.0000
+  Checkpoint saved → checkpoints/bottle/task_2/
+
+============================================================
+TASK 3 — CONTAMINATION
+============================================================
+  loading images:   0%|          | 0/21 [00:00<?, ?it/s]  loading images:  19%|█▉        | 4/21 [00:00<00:00, 36.01it/s]  loading images:  43%|████▎     | 9/21 [00:00<00:00, 41.53it/s]  loading images:  67%|██████▋   | 14/21 [00:00<00:00, 43.15it/s]  loading images:  90%|█████████ | 19/21 [00:00<00:00, 43.33it/s]                                                                   Data: 21 defect images
+  Extracting pooled features ...
+  features T3:   0%|          | 0/2 [00:00<?, ?it/s]  features T3:  50%|█████     | 1/2 [00:00<00:00,  9.21it/s]                                                              pooled_z (21, 1536)
+  No new concepts. Updating existing 34 heads.
+  Concept heads updated  (K=34, n_tasks_seen=3)
+  Anomaly head updated
+  Evaluating all seen defects ...
+    broken_large I-AUC(novel)=1.0000  I-AUC(concept)=1.0000  C-AUC=1.0000
+    broken_small I-AUC(novel)=1.0000  I-AUC(concept)=1.0000  C-AUC=1.0000
+    contamination I-AUC(novel)=1.0000  I-AUC(concept)=1.0000  C-AUC=1.0000
+  Checkpoint saved → checkpoints/bottle/task_3/
+
+============================================================
+FINAL RESULTS
+============================================================
+==================================================================================
+  CONVAD-CL Continual Learning Evaluation
+==================================================================================
+ T  defect      @   I-AUC(novel)  I-AUC(concept)  C-AUC(mean)         τ
+──────────────────────────────────────────────────────────────────────────────────
+ 1  broken_large  1         1.0000          1.0000       1.0000    0.4285
+ 1  broken_large  2         1.0000          1.0000       1.0000    0.4285
+ 2  broken_small  2         1.0000          1.0000       1.0000    0.4285
+ 1  broken_large  3         1.0000          1.0000       1.0000    0.4285
+ 2  broken_small  3         1.0000          1.0000       1.0000    0.4285
+ 3  contamination  3         1.0000          1.0000       1.0000    0.4285
+──────────────────────────────────────────────────────────────────────────────────
+  Mean Concept BWT : +0.0000
+==================================================================================
+
+I-AUC(novel) matrix:
+after_task         1      2      3
+defect                            
+broken_large  1.0000 1.0000 1.0000
+broken_small     NaN 1.0000 1.0000
+contamination    NaN    NaN 1.0000
+
+C-AUC(mean) matrix:
+after_task         1      2      3
+defect                            
+broken_large  1.0000 1.0000 1.0000
+broken_small     NaN 1.0000 1.0000
+contamination    NaN    NaN 1.0000
+
+Mean Concept BWT : +0.0000
+(Expected ≈ 0.00 with CONCIL zero-forgetting guarantee)
+
+Final log saved → checkpoints/bottle/log_final.json
+==================================================================================
+  CONVAD-CL Continual Learning Evaluation
+==================================================================================
+ T  defect      @   I-AUC(novel)  I-AUC(concept)  C-AUC(mean)         τ
+──────────────────────────────────────────────────────────────────────────────────
+ 1  broken_large  1         1.0000          1.0000       1.0000    0.4285
+ 1  broken_large  2         1.0000          1.0000       1.0000    0.4285
+ 2  broken_small  2         1.0000          1.0000       1.0000    0.4285
+ 1  broken_large  3         1.0000          1.0000       1.0000    0.4285
+ 2  broken_small  3         1.0000          1.0000       1.0000    0.4285
+ 3  contamination  3         1.0000          1.0000       1.0000    0.4285
+──────────────────────────────────────────────────────────────────────────────────
+  Mean Concept BWT : +0.0000
+==================================================================================

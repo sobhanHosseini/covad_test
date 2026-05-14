@@ -79,7 +79,11 @@ class CLTrainer:
     def _load_task_data(
         self, task_csv_path: str
     ) -> tuple[list[Image.Image], np.ndarray, np.ndarray, dict]:
-        """Load all data from a per-task CSV.
+        """Load CONCIL training data from a per-task CSV.
+
+        Normal images are filtered to MVTec train/good/ paths ONLY.
+        This prevents data leakage: test/good/ images must stay
+        held-out for evaluation and must not enter the memory bank.
 
         Returns:
             images:         list of PIL Images in CSV row order
@@ -88,6 +92,16 @@ class CLTrainer:
             meta:           {'n_normal', 'n_anomalous', 'defect_name', 'concept_names'}
         """
         df = pd.read_csv(task_csv_path)
+
+        # Keep all anomalous rows + only normals whose path is under train/good/
+        # (MVTec test/good/ images are held-out for evaluation — never for training)
+        normal_mask      = df["label_index"] == 0
+        train_normal_mask = normal_mask & df["image_path"].str.contains(
+            "/train/good/", regex=False
+        )
+        anomaly_mask = df["label_index"] == 1
+        df = df[train_normal_mask | anomaly_mask].reset_index(drop=True)
+
         images = [
             Image.open(p).convert("RGB")
             for p in tqdm(df["image_path"], desc="  loading images", leave=False)
@@ -96,13 +110,13 @@ class CLTrainer:
         concept_matrix = df[concept_names].values.astype(np.float32)
         y_labels       = df["label_index"].values.astype(np.float32)
 
-        defect_types   = df[df["label_index"] == 1]["anomaly_type"].unique().tolist()
-        defect_name    = defect_types[0] if defect_types else "unknown"
+        defect_types = df[df["label_index"] == 1]["anomaly_type"].unique().tolist()
+        defect_name  = defect_types[0] if defect_types else "unknown"
 
         meta = {
-            "n_normal":     int((y_labels == 0).sum()),
-            "n_anomalous":  int((y_labels == 1).sum()),
-            "defect_name":  defect_name,
+            "n_normal":      int((y_labels == 0).sum()),
+            "n_anomalous":   int((y_labels == 1).sum()),
+            "defect_name":   defect_name,
             "concept_names": concept_names,
         }
         return images, concept_matrix, y_labels, meta
@@ -124,28 +138,41 @@ class CLTrainer:
     def _load_test_data_for_defect(
         self, defect_name: str
     ) -> tuple[list[Image.Image], list[Image.Image], pd.DataFrame]:
-        """Load normal + defect test images and concept labels from full CSV.
+        """Load held-out test images and their concept labels for evaluation.
 
-        Uses 'test' split rows; falls back to 'val' rows if test is empty.
+        Normal images : MVTec test/good/ — never seen by CONCIL or memory bank.
+        Defect images : MVTec test/{defect}/ — all MVTec defects live in test/.
+        Concept labels: loaded from hazelnut.csv by matching image paths.
+                        hazelnut.csv covers all 501 MVTec hazelnut images,
+                        including test/good/ and all test defect images.
         """
-        df = pd.read_csv(self._full_csv_path)
+        mvtec_cat = Path(self.config["mvtec_root"]) / self._category
 
-        for split_name in ("test", "val", None):
-            if split_name is None:
-                subset = df
-            else:
-                subset = df[df["split"] == split_name]
-            normal_df = subset[subset["anomaly_type"] == "good"]
-            defect_df = subset[subset["anomaly_type"] == defect_name]
-            if len(normal_df) and len(defect_df):
-                break
+        # ── images ────────────────────────────────────────────────────────────
+        normal_paths  = sorted((mvtec_cat / "test" / "good").glob("*.png"))
+        defect_paths  = sorted((mvtec_cat / "test" / defect_name).glob("*.png"))
+        normal_images = [Image.open(p).convert("RGB") for p in normal_paths]
+        defect_images = [Image.open(p).convert("RGB") for p in defect_paths]
 
-        normal_images = [Image.open(p).convert("RGB") for p in normal_df["image_path"]]
-        defect_images = [Image.open(p).convert("RGB") for p in defect_df["image_path"]]
+        # ── concept labels from annotation CSV ────────────────────────────────
+        full_df = pd.read_csv(self._full_csv_path)
+        meta_cols   = {"image_path", "label_index", "split", "anomaly_type",
+                       "mask_path", "view"}
+        concept_cols = [c for c in full_df.columns if c not in meta_cols]
 
-        eval_df       = pd.concat([normal_df, defect_df], ignore_index=True)
-        concept_names = self._concept_cols(eval_df)
-        concept_labels = eval_df[concept_names].reset_index(drop=True)
+        normal_labels = full_df[
+            full_df["image_path"].str.contains("test/good", regex=False)
+        ][concept_cols].reset_index(drop=True)
+
+        defect_labels = full_df[
+            full_df["image_path"].str.contains(
+                f"test/{defect_name}", regex=False
+            )
+        ][concept_cols].reset_index(drop=True)
+
+        concept_labels = pd.concat(
+            [normal_labels, defect_labels], ignore_index=True
+        )
 
         return normal_images, defect_images, concept_labels
 

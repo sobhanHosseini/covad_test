@@ -1,0 +1,60 @@
+[
+  {
+    "task_id": 1,
+    "defect": "broken_large",
+    "n_images": 249,
+    "n_normal": 229,
+    "n_defect": 20,
+    "n_concepts_total": 34,
+    "new_concepts": [
+      "bright_fracture_site",
+      "chipped_rim_edge",
+      "circular_rim_geometry",
+      "cloudy_surface_smudge",
+      "concentric_ring_pattern",
+      "continuous_rim_edge",
+      "even_surface_texture",
+      "jagged_fracture_edge",
+      "jagged_rim_edge",
+      "jagged_rim_fracture",
+      "material_loss_void",
+      "missing_rim_segment",
+      "rounded_edge_profile",
+      "smooth_inner_surface",
+      "smooth_rim_surface",
+      "smooth_rim_texture",
+      "structural_discontinuity",
+      "surface_irregularity",
+      "texture_inconsistency",
+      "unbroken_circular_rim",
+      "unexpected_surface_pattern",
+      "uniform_rim_thickness"
+    ],
+    "csv_path": "annotations/bottle/cl_tasks/task_1_broken_large.csv"
+  },
+  {
+    "task_id": 2,
+    "defect": "broken_small",
+    "n_images": 22,
+    "n_normal": 0,
+    "n_defect": 22,
+    "n_concepts_total": 34,
+    "new_concepts": [
+      "color_deviation"
+    ],
+    "csv_path": "annotations/bottle/cl_tasks/task_2_broken_small.csv"
+  },
+  {
+    "task_id": 3,
+    "defect": "contamination",
+    "n_images": 21,
+    "n_normal": 0,
+    "n_defect": 21,
+    "n_concepts_total": 34,
+    "new_concepts": [
+      "dark_central_color",
+      "deep_black_hue"
+    ],
+    "csv_path": "annotations/bottle/cl_tasks/task_3_contamination.csv"
+  }
+]

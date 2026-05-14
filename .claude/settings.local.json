@@ -2,7 +2,8 @@
   "permissions": {
     "allow": [
       "Bash(python -c ':*)",
-      "Bash(python -c \"import ast; ast.parse\\(open\\('/mnt/nvme1/sobhan_hosseini/covad_test/main_scripts/annotation_pipeline.py'\\).read\\(\\)\\); print\\('Syntax OK'\\)\")"
+      "Bash(python -c \"import ast; ast.parse\\(open\\('/mnt/nvme1/sobhan_hosseini/covad_test/main_scripts/annotation_pipeline.py'\\).read\\(\\)\\); print\\('Syntax OK'\\)\")",
+      "Bash(.venv/bin/python -m evaluators.visualizer)"
     ]
   }
 }

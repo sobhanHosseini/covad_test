@@ -19,7 +19,14 @@
       "Bash(.venv/bin/python -m evaluators.evaluator_cl)",
       "Bash(.venv/bin/python -m cl.cl_trainer)",
       "Bash(.venv/bin/python -m main_scripts.run_cl --mvtec_root /home/sobhan_hosseini/datasets/mvtec --annotations_dir ./annotations/hazelnut --dry_run)",
-      "Bash(echo \"Exit code: $?\")"
+      "Bash(echo \"Exit code: $?\")",
+      "Bash(.venv/bin/python -m main_scripts.run_cl --mvtec_root /home/sobhan_hosseini/datasets/mvtec --annotations_dir ./annotations/hazelnut --baseline --dry_run)",
+      "Bash(ls /home/sobhan_hosseini/datasets/mvtec/ && echo \"---\" && ls annotations/)",
+      "Read(//mnt/disk1/borsattifr/datasets/mvtec/**)",
+      "Bash(python3 -c \"import json; d=json.load\\(open\\('checkpoints/hazelnut/log_final.json'\\)\\); print\\(len\\(d['results']\\),'results'\\); [print\\(r['task_id'],r['defect_name'],'@',r['evaluated_after_task'],'i_auc_novel=',round\\(r['i_auc_novel'],3\\)\\) for r in d['results']]\")",
+      "Bash(.venv/bin/python -c \"import json; d=json.load\\(open\\('checkpoints/hazelnut/log_final.json'\\)\\); print\\(len\\(d['results']\\),'results'\\); [print\\(r['task_id'],r['defect_name'],'@',r['evaluated_after_task'],'i_auc_novel=',round\\(r['i_auc_novel'],3\\)\\) for r in d['results']]\")",
+      "Bash(.venv/bin/python -c \"import cv2; import matplotlib; print\\('cv2:', cv2.__version__, 'mpl:', matplotlib.__version__\\)\")",
+      "Bash(.venv/bin/python -c \"import json; d=json.load\\(open\\('checkpoints/hazelnut/log_final.json'\\)\\); r=d['results'][0]; print\\('keys:', list\\(r.keys\\(\\)\\)\\); print\\('c_auc_mean:', r['c_auc_mean']\\); print\\('i_auc_concept:', r['i_auc_concept']\\)\")"
     ]
   }
 }

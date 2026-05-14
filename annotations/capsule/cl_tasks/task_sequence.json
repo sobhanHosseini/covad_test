@@ -1,0 +1,87 @@
+[
+  {
+    "task_id": 1,
+    "defect": "crack",
+    "n_images": 265,
+    "n_normal": 242,
+    "n_defect": 23,
+    "n_concepts_total": 37,
+    "new_concepts": [
+      "deformed_capsule_tip",
+      "even_surface_texture",
+      "fine_linear_crack",
+      "fragmented_digit_imprint",
+      "indented_capsule_end",
+      "jagged_capsule_edge",
+      "linear_shell_fracture",
+      "linear_surface_scratch",
+      "localized_surface_pitting",
+      "puncture_indentation",
+      "smooth_surface_texture",
+      "smudged_digit_edges",
+      "smudged_digit_imprint",
+      "structural_discontinuity",
+      "surface_indentation",
+      "surface_irregularity",
+      "surface_puncture",
+      "texture_inconsistency",
+      "unexpected_surface_pattern",
+      "uniform_surface_smoothness",
+      "uniform_surface_texture"
+    ],
+    "csv_path": "annotations/capsule/cl_tasks/task_1_crack.csv"
+  },
+  {
+    "task_id": 2,
+    "defect": "faulty_imprint",
+    "n_images": 22,
+    "n_normal": 0,
+    "n_defect": 22,
+    "n_concepts_total": 37,
+    "new_concepts": [
+      "printed_digit_characters",
+      "seamless_part_junction",
+      "white_numeric_marking"
+    ],
+    "csv_path": "annotations/capsule/cl_tasks/task_2_faulty_imprint.csv"
+  },
+  {
+    "task_id": 3,
+    "defect": "poke",
+    "n_images": 21,
+    "n_normal": 0,
+    "n_defect": 21,
+    "n_concepts_total": 37,
+    "new_concepts": [
+      "color_deviation"
+    ],
+    "csv_path": "annotations/capsule/cl_tasks/task_3_poke.csv"
+  },
+  {
+    "task_id": 4,
+    "defect": "scratch",
+    "n_images": 23,
+    "n_normal": 0,
+    "n_defect": 23,
+    "n_concepts_total": 37,
+    "new_concepts": [],
+    "csv_path": "annotations/capsule/cl_tasks/task_4_scratch.csv"
+  },
+  {
+    "task_id": 5,
+    "defect": "squeeze",
+    "n_images": 20,
+    "n_normal": 0,
+    "n_defect": 20,
+    "n_concepts_total": 37,
+    "new_concepts": [
+      "cylindrical_body_shape",
+      "elongated_cylindrical_geometry",
+      "hemispherical_end_shapes",
+      "rounded_end_geometry",
+      "rounded_hemispherical_ends",
+      "rounded_terminal_ends"
+    ],
+    "csv_path": "annotations/capsule/cl_tasks/task_5_squeeze.csv"
+  }
+]
