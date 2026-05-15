@@ -39,11 +39,13 @@ class PatchCoreMemory:
         self,
         coreset_size: int = 10_000,
         device: torch.device | None = None,
+        seed: int = 42,
     ):
         if device is None:
             device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         self.device = device
         self._coreset_size = coreset_size
+        self.seed = seed                           # fixed for reproducibility
 
         self.memory: torch.Tensor | None = None   # (N_stored, 768) after build
         self.is_built: bool = False
@@ -93,9 +95,10 @@ class PatchCoreMemory:
         # ── L2 normalise ──────────────────────────────────────────────────────
         all_patches = F.normalize(all_patches, p=2, dim=1)
 
-        # ── random coreset subsampling ────────────────────────────────────────
+        # ── random coreset subsampling (seeded for reproducibility) ─────────────
         N_total = all_patches.shape[0]
         k = min(N_total, self._coreset_size)
+        torch.manual_seed(self.seed)
         idx = torch.randperm(N_total, device=self.device)[:k]
         self.memory = all_patches[idx].contiguous()      # (k, 768)
 

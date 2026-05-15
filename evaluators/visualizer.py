@@ -1339,3 +1339,463 @@ if __name__ == "__main__":
     saved = list(FIGURE_DIR.rglob("*.png"))
     for p in sorted(saved):
         print(f"  {p.relative_to(FIGURE_DIR)}")
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# GENERIC VISUALIZATION SYSTEM — CategoryVisualizer
+# Improvements 1–4: category-agnostic, patch feature space, 5-perspective figure
+# ══════════════════════════════════════════════════════════════════════════════
+
+from dataclasses import dataclass as _dc, field as _field
+import pandas as _pd
+from sklearn.manifold import TSNE as _TSNE
+from sklearn.decomposition import PCA as _PCA
+
+
+@_dc
+class VisualizerConfig:
+    """All paths and hyperparameters needed for one MVTec category."""
+    category:           str
+    mvtec_root:         Path
+    annotations_dir:    Path
+    checkpoint_dir:     Path
+    defect_train_ratio: float = 0.8
+    tau_percentile:     float = 95.0
+    seed:               int   = 42
+
+
+class CategoryVisualizer:
+    """Loads all model components from a checkpoint and exposes visualization methods.
+
+    Works for ANY MVTec category — no hardcoded paths.
+    """
+
+    def __init__(self, config: VisualizerConfig):
+        from features.dinov2_extractor import DINOv2Extractor
+        from features.patchcore_memory import PatchCoreMemory
+        from models.concept_heads       import ConceptHeads
+        from models.linear_head         import LinearAnomalyHead
+
+        self.config   = config
+        self._device  = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+        self._cat_dir = config.mvtec_root / config.category
+
+        # ── find latest task checkpoint ───────────────────────────────────────
+        task_dirs = sorted(
+            [d for d in config.checkpoint_dir.iterdir()
+             if d.is_dir() and d.name.startswith("task_")],
+            key=lambda d: int(d.name.split("_")[1]),
+        )
+        if not task_dirs:
+            raise FileNotFoundError(f"No task_N dirs in {config.checkpoint_dir}")
+        latest = task_dirs[-1]
+
+        # ── load model components ─────────────────────────────────────────────
+        print(f"  [{config.category}] Loading from {latest} ...")
+        self.extractor     = DINOv2Extractor(device=self._device)
+        self.memory        = PatchCoreMemory.load(
+            config.checkpoint_dir / "task_1" / "memory.pt", device=self._device
+        )
+        self.concept_heads = ConceptHeads.load(latest / "concept_heads.pt")
+        self.anomaly_head  = LinearAnomalyHead.load(latest / "anomaly_head.pt")
+
+        with open(latest / "tau.json") as f:
+            self.tau = json.load(f)["tau"]
+
+        self.concept_names = self.concept_heads.concept_names
+
+        # ── concept normal baseline (compute if missing) ──────────────────────
+        baseline_path = config.checkpoint_dir / "concept_normal_baseline.json"
+        if baseline_path.exists():
+            with open(baseline_path) as f:
+                bl = json.load(f)
+            self.normal_baseline: dict[str, float] = bl["means"]
+        else:
+            print(f"  [{config.category}] Computing normal baseline ...")
+            from evaluators.visualizer import compute_normal_baseline
+            train_paths = sorted((self._cat_dir / "train" / "good").glob("*.png"))
+            train_imgs  = [Image.open(p).convert("RGB") for p in train_paths]
+            self.normal_baseline = compute_normal_baseline(
+                self.concept_heads, self.extractor, train_imgs,
+                concept_names=self.concept_names,
+                save_path=str(baseline_path),
+            )
+
+        # ── annotation CSV for concept labels ─────────────────────────────────
+        self._full_csv = _pd.read_csv(
+            config.annotations_dir / f"{config.category}.csv"
+        )
+        _META = {"image_path","label_index","mask_path","anomaly_type","split","view"}
+        self._concept_cols = [c for c in self._full_csv.columns if c not in _META]
+
+        # ── discover defect types ─────────────────────────────────────────────
+        self.defect_types = sorted(
+            d.name for d in (self._cat_dir / "test").iterdir()
+            if d.is_dir() and d.name != "good"
+        )
+        print(f"  [{config.category}] τ={self.tau:.4f}  "
+              f"K={len(self.concept_names)}  defects={self.defect_types}")
+
+    # ── internal inference ────────────────────────────────────────────────────
+
+    @torch.no_grad()
+    def _infer(self, image: Image.Image, true_label: str = "",
+               theta: float = 0.5) -> PredictionResult:
+        return _run_inference(
+            self.extractor, self.memory, self.concept_heads, self.anomaly_head,
+            image, self.tau, theta, true_label,
+        )
+
+    # ── panel helpers (shared by visualize_prediction and visualize_full) ─────
+
+    def _panel_image(self, ax, img_arr, result: PredictionResult):
+        ax.imshow(img_arr)
+        ax.set_title(f'"{result.true_label}"', fontsize=11, fontweight="bold")
+        ax.axis("off")
+        col = "#2ecc71" if result.correct else "#e74c3c"
+        rect = mpatches.FancyBboxPatch(
+            (0,0),1,1, boxstyle="square,pad=0",
+            linewidth=5, edgecolor=col, facecolor="none",
+            transform=ax.transAxes, clip_on=False,
+        )
+        ax.add_patch(rect)
+        ax.text(0.02,0.02,"✓" if result.correct else "✗",
+                transform=ax.transAxes, fontsize=10, fontweight="bold",
+                color=col, va="bottom")
+
+    def _panel_heatmap(self, ax, fig, img_arr, result: PredictionResult):
+        hm = scipy.ndimage.zoom(result.anomaly_map, _HEATMAP_ZOOM, order=3)
+        hm_norm = (hm - hm.min()) / (hm.max() - hm.min() + 1e-8)
+        ax.imshow(img_arr)
+        im2 = ax.imshow(hm_norm, cmap="jet", alpha=0.5, vmin=0, vmax=1)
+        fig.colorbar(im2, ax=ax, fraction=0.046, pad=0.04)
+        col = "#e74c3c" if result.s_novel >= result.tau else "#2ecc71"
+        ax.set_title(
+            f"Anomaly map  s={result.s_novel:.3f}  τ={result.tau:.3f}",
+            fontsize=9,
+        )
+        ax.axis("off")
+
+    def _panel_concepts(self, ax, result: PredictionResult):
+        devs = np.array([
+            result.c[i] - self.normal_baseline.get(result.concept_names[i], 0.5)
+            for i in range(len(result.c))
+        ])
+        top10 = np.argsort(np.abs(devs))[::-1][:10]
+        top_dev = devs[top10]
+        top_nms = [
+            result.concept_names[i][:20] + "…" if len(result.concept_names[i]) > 21
+            else result.concept_names[i]
+            for i in top10
+        ]
+        bar_colours = ["#e74c3c" if d > 0.2 else "#3498db" if d < -0.2 else "#bdc3c7"
+                       for d in top_dev]
+        ax.barh(range(10), top_dev[::-1], color=bar_colours[::-1],
+                edgecolor="white", linewidth=0.4)
+        ax.set_yticks(range(10))
+        ax.set_yticklabels(top_nms[::-1], fontsize=7)
+        ax.set_xlim(-1,1); ax.axvline(0, color="#333", linestyle="--", linewidth=0.8)
+        ax.set_xlabel("Δ from normal", fontsize=8)
+        ax.set_title("Top-10 concept deviations", fontsize=9)
+        ax.legend(handles=[
+            mpatches.Patch(facecolor="#e74c3c", label="activated"),
+            mpatches.Patch(facecolor="#3498db", label="suppressed"),
+        ], fontsize=6, loc="lower right")
+        ax.spines["left"].set_visible(False); ax.tick_params(axis="y", length=0)
+
+    def _panel_decision(self, ax, result: PredictionResult):
+        ax.axis("off"); ax.set_facecolor("#f8f9fa"); ax.patch.set_visible(True)
+        lc = _LEVEL_COLOUR[result.level]; ll = _LEVEL_LABEL[result.level]
+        devs = np.array([
+            result.c[i] - self.normal_baseline.get(result.concept_names[i], 0.5)
+            for i in range(len(result.c))
+        ])
+        top3 = np.argsort(np.abs(devs))[::-1][:3]
+        lines = [
+            ("DECISION: " + ll, 12, "bold", lc),
+            ("─"*32, 9, "normal", "#555"),
+            (f"s_novel: {result.s_novel:.3f}  [{_bar(result.s_novel,max_val=max(result.s_novel*1.5,result.tau*2,0.01))}]",
+             8, "normal", "#333"),
+            (f"τ: {result.tau:.3f}", 8, "normal", "#333"),
+            ("", 5, "normal", "#fff"),
+            (f"y_pred: {result.y_pred:.3f}  [{_bar(result.y_pred)}]", 8, "normal", "#333"),
+            ("", 5, "normal", "#fff"),
+            ("EXPLANATION:", 9, "bold", "#222"),
+        ]
+        for idx in top3:
+            n = result.concept_names[idx][:24]; d = devs[idx]
+            a = "↑" if d > 0 else "↓"; col = "#c0392b" if d > 0 else "#2980b9"
+            lines.append((f"  {a} {n}: {d:+.2f}", 8, "normal", col))
+        lines += [
+            ("", 5, "normal", "#fff"),
+            (f"Level {result.level}/3", 10, "bold", lc),
+            ("✓ CORRECT" if result.correct else "✗ WRONG", 10, "bold",
+             "#2ecc71" if result.correct else "#e74c3c"),
+        ]
+        y = 0.97
+        for text, size, wt, col in lines:
+            ax.text(0.04, y, text, transform=ax.transAxes,
+                    fontsize=size, fontweight=wt, color=col, va="top",
+                    fontfamily="monospace" if any(c in text for c in "─█░↑↓") else "sans-serif")
+            y -= size * 0.013 + 0.008
+
+    def _panel_patch_tsne(self, ax, img_arr, result: PredictionResult,
+                          patch_tokens: torch.Tensor,
+                          patch_distances: np.ndarray,
+                          n_memory_samples: int = 200):
+        """t-SNE scatter: memory bank vs test image patches."""
+        import torch.nn.functional as _F
+
+        # Sample from memory bank
+        mem = self.memory.memory.cpu()                    # (N_stored, 768)
+        torch.manual_seed(self.config.seed)
+        idx = torch.randperm(len(mem))[:n_memory_samples]
+        mem_sample = mem[idx].numpy()                     # (n_mem, 768)
+
+        # Test patches (already L2-normalised by PatchCore scoring path)
+        test_p = _F.normalize(patch_tokens[0].cpu().float(), p=2, dim=1).numpy()  # (256, 768)
+
+        all_p = np.vstack([mem_sample, test_p])           # (n_mem+256, 768)
+
+        # PCA 50 → t-SNE 2
+        pca = _PCA(n_components=min(50, all_p.shape[0]-1), random_state=42)
+        all_r = pca.fit_transform(all_p)
+        emb   = _TSNE(n_components=2, perplexity=30, random_state=42,
+                      max_iter=500, learning_rate="auto", init="pca").fit_transform(all_r)
+
+        mem_emb  = emb[:n_memory_samples]
+        test_emb = emb[n_memory_samples:]
+
+        most_anom = int(patch_distances.argmax())
+        is_defect = result.true_label.lower() not in ("good","normal","")
+        test_col  = "#e74c3c" if is_defect else "#3498db"
+
+        ax.scatter(mem_emb[:,0], mem_emb[:,1],
+                   c="#2ecc71", s=8, alpha=0.35, label=f"Memory ({n_memory_samples})")
+        ax.scatter(test_emb[:,0], test_emb[:,1],
+                   c=test_col, s=18, alpha=0.7, label="Test patches")
+        ax.scatter(test_emb[most_anom,0], test_emb[most_anom,1],
+                   c="#f1c40f", s=200, marker="*", zorder=5,
+                   label=f"★ worst patch (d={patch_distances[most_anom]:.3f})")
+
+        det_txt = "ANOMALY: patches outside cluster" if result.s_novel >= result.tau \
+                  else "NORMAL: patches inside cluster"
+        det_col = "#e74c3c" if result.s_novel >= result.tau else "#2ecc71"
+        ax.text(0.02, 0.98, det_txt, transform=ax.transAxes, fontsize=7,
+                color=det_col, va="top", fontweight="bold")
+        ax.set_title(f"Patch feature space (t-SNE)\ns={result.s_novel:.3f}  τ={result.tau:.3f}",
+                     fontsize=9)
+        ax.legend(fontsize=6, loc="lower right", markerscale=0.8)
+        ax.set_xticks([]); ax.set_yticks([])
+
+    def _panel_patch_grid(self, ax, img_arr, patch_distances: np.ndarray):
+        """16×16 patch grid coloured by anomaly distance."""
+        grid = patch_distances.reshape(16, 16)
+        norm = (grid - grid.min()) / (grid.max() - grid.min() + 1e-8)
+        ax.imshow(img_arr)
+        ax.imshow(norm, cmap="jet", alpha=0.6, vmin=0, vmax=1,
+                  extent=[0, img_arr.shape[1], img_arr.shape[0], 0],
+                  interpolation="nearest")
+        # Draw grid lines
+        h, w = img_arr.shape[:2]
+        for i in range(17):
+            ax.axhline(i * h/16, color="white", lw=0.3, alpha=0.4)
+            ax.axvline(i * w/16, color="white", lw=0.3, alpha=0.4)
+        # Highlight worst patch
+        worst = int(patch_distances.argmax())
+        row, col = divmod(worst, 16)
+        rect = mpatches.Rectangle(
+            (col * w/16, row * h/16), w/16, h/16,
+            linewidth=2.5, edgecolor="#f1c40f", facecolor="none",
+        )
+        ax.add_patch(rect)
+        ax.set_title("Per-patch distances\n(★ = worst, matches t-SNE)", fontsize=9)
+        ax.axis("off")
+
+    # ── PUBLIC: visualize_patch_space ─────────────────────────────────────────
+
+    @torch.no_grad()
+    def visualize_patch_space(
+        self,
+        test_image_path: str,
+        true_label: str,
+        save_path: str,
+        n_memory_samples: int = 300,
+    ) -> plt.Figure:
+        """3-panel: image with patch grid | t-SNE | patch distance grid."""
+        img  = Image.open(test_image_path).convert("RGB")
+        result = self._infer(img, true_label)
+
+        patch_tokens, _ = self.extractor.extract_both([img])    # (1, 256, 768)
+        _, amap = self.memory.score(patch_tokens)
+        patch_distances = amap[0].cpu().numpy().flatten()        # (256,)
+
+        img_arr = np.array(img.resize((_IMG_SIZE, _IMG_SIZE)))
+
+        fig, axes = plt.subplots(1, 3, figsize=(18, 6))
+        fig.subplots_adjust(wspace=0.12)
+
+        # Panel 1 — image with patch grid overlay
+        axes[0].imshow(img_arr)
+        h, w = img_arr.shape[:2]
+        for i in range(17):
+            axes[0].axhline(i*h/16, color="white", lw=0.4, alpha=0.5)
+            axes[0].axvline(i*w/16, color="white", lw=0.4, alpha=0.5)
+        axes[0].set_title(f'"{true_label}"\n16×16 patch grid', fontsize=11, fontweight="bold")
+        axes[0].axis("off")
+        col = "#2ecc71" if result.correct else "#e74c3c"
+        axes[0].add_patch(mpatches.FancyBboxPatch(
+            (0,0),1,1, boxstyle="square,pad=0",
+            linewidth=5, edgecolor=col, facecolor="none",
+            transform=axes[0].transAxes, clip_on=False,
+        ))
+
+        # Panel 2 — t-SNE
+        self._panel_patch_tsne(axes[1], img_arr, result, patch_tokens,
+                               patch_distances, n_memory_samples)
+
+        # Panel 3 — patch grid
+        self._panel_patch_grid(axes[2], img_arr, patch_distances)
+
+        fig.suptitle(
+            f"{self.config.category.capitalize()} / {true_label}  →  "
+            f"{_LEVEL_LABEL[result.level]}",
+            fontsize=12, fontweight="bold", y=1.02,
+        )
+        Path(save_path).parent.mkdir(parents=True, exist_ok=True)
+        fig.savefig(save_path, bbox_inches="tight")
+        plt.close(fig)
+        return fig
+
+    # ── PUBLIC: visualize_full ────────────────────────────────────────────────
+
+    @torch.no_grad()
+    def visualize_full(
+        self,
+        image_path: str,
+        true_label: str,
+        save_path: str,
+        n_memory_samples: int = 200,
+    ) -> plt.Figure:
+        """5-perspective figure: image | heatmap | t-SNE | concepts | patch grid | decision."""
+        img    = Image.open(image_path).convert("RGB")
+        result = self._infer(img, true_label)
+
+        patch_tokens, _ = self.extractor.extract_both([img])
+        _, amap = self.memory.score(patch_tokens)
+        patch_distances = amap[0].cpu().numpy().flatten()
+
+        img_arr = np.array(img.resize((_IMG_SIZE, _IMG_SIZE)))
+
+        fig = plt.figure(figsize=(20, 12))
+        fig.subplots_adjust(hspace=0.35, wspace=0.3)
+
+        ax1 = fig.add_subplot(2, 3, 1)
+        ax2 = fig.add_subplot(2, 3, 2)
+        ax3 = fig.add_subplot(2, 3, 3)
+        ax4 = fig.add_subplot(2, 3, 4)
+        ax5 = fig.add_subplot(2, 3, 5)
+        ax6 = fig.add_subplot(2, 3, 6)
+
+        self._panel_image(ax1, img_arr, result)
+        self._panel_heatmap(ax2, fig, img_arr, result)
+        self._panel_patch_tsne(ax3, img_arr, result, patch_tokens,
+                               patch_distances, n_memory_samples)
+        self._panel_concepts(ax4, result)
+        self._panel_patch_grid(ax5, img_arr, patch_distances)
+        self._panel_decision(ax6, result)
+
+        fig.suptitle(
+            f"{self.config.category.capitalize()} / {true_label}  "
+            f"→  {_LEVEL_LABEL[result.level]}",
+            fontsize=14, fontweight="bold",
+        )
+        Path(save_path).parent.mkdir(parents=True, exist_ok=True)
+        fig.savefig(save_path, bbox_inches="tight")
+        plt.close(fig)
+        return fig
+
+
+# ── IMPROVEMENT 4 — Generic failure cases (accepts VisualizerConfig) ─────────
+
+def find_failure_cases_generic(
+    config: VisualizerConfig,
+    viz: CategoryVisualizer,
+    max_per_type: int = 3,
+    theta: float = 0.5,
+    tier_map_path: Optional[str] = None,
+) -> list[FailureCase]:
+    """Scan all available defect types for failures. No hardcoded paths."""
+    full_df     = _pd.read_csv(config.annotations_dir / f"{config.category}.csv")
+    tier3: dict[str, set[str]] = {}
+    if tier_map_path and Path(tier_map_path).exists():
+        with open(tier_map_path) as f:
+            tm = json.load(f)
+        for d in viz.defect_types:
+            tier3[d] = set(tm.get(f"tier3_{d}", []))
+
+    buckets: dict[str, list[FailureCase]] = {k: [] for k in
+        ["false_negative","false_positive","explainability","level3"]}
+
+    def _proc(img_path: Path, label: str):
+        img = Image.open(img_path).convert("RGB")
+        r   = viz._infer(img, label, theta)
+        top_c = viz.concept_names[int(r.c.argmax())]
+
+        if label in ("good","normal"):
+            if r.s_novel >= viz.tau:
+                buckets["false_positive"].append(FailureCase(
+                    str(img_path), label, "false_positive",
+                    r.s_novel, r.c, r.anomaly_map, r.y_pred,
+                    f"False alarm: s={r.s_novel:.3f}>τ={viz.tau:.3f}",
+                ))
+        else:
+            if r.s_novel < viz.tau:
+                buckets["false_negative"].append(FailureCase(
+                    str(img_path), label, "false_negative",
+                    r.s_novel, r.c, r.anomaly_map, r.y_pred,
+                    f"Missed: s={r.s_novel:.3f}<τ={viz.tau:.3f}",
+                ))
+            elif r.c.max() > theta:
+                expected = tier3.get(label, set())
+                if expected and top_c not in expected:
+                    buckets["explainability"].append(FailureCase(
+                        str(img_path), label, "explainability",
+                        r.s_novel, r.c, r.anomaly_map, r.y_pred,
+                        f"Wrong concept: '{top_c}' on {label}",
+                    ))
+            else:
+                buckets["level3"].append(FailureCase(
+                    str(img_path), label, "level3",
+                    r.s_novel, r.c, r.anomaly_map, r.y_pred,
+                    f"Level3: detected, unexplained (max_c={r.c.max():.3f})",
+                ))
+
+    # Held-out 20% defects (same split as training)
+    for defect in viz.defect_types:
+        defect_df = full_df[full_df["anomaly_type"] == defect].reset_index(drop=True)
+        n = len(defect_df)
+        n_train = max(1, int(n * config.defect_train_ratio))
+        rng  = np.random.RandomState(config.seed)
+        shuf = rng.permutation(n)
+        held = defect_df.iloc[shuf[n_train:]]["image_path"].tolist()
+        for p in held:
+            _proc(Path(p), defect)
+
+    # Test normals (false positives)
+    for p in sorted((config.mvtec_root / config.category / "test" / "good").glob("*.png")):
+        _proc(p, "good")
+
+    result: list[FailureCase] = []
+    for key in buckets:
+        sub = sorted(buckets[key],
+            key=lambda x: x.s_novel if key == "false_positive"
+                         else (-x.s_novel if key == "false_negative" else -x.s_novel))
+        result.extend(sub[:max_per_type])
+    return result
+
+
+# ── __main__ for generic system ────────────────────────────────────────────────
+
+if __name__ == "__main__" and False:   # disabled: run as python -m evaluators.generic_viz
+    pass

@@ -96,49 +96,58 @@ class ContinualLog:
             mat.loc[r.defect_name, r.evaluated_after_task] = r.c_auc_mean
         return mat
 
-    # ── Concept-BWT ───────────────────────────────────────────────────────────
+    # ── Concept-BWT (Lopez-Paz & Ranzato 2017) ───────────────────────────────
 
-    def concept_bwt(self) -> dict[str, float]:
-        """Backward Transfer per concept.
+    def per_defect_bwt(self) -> dict[str, float]:
+        """Standard Backward Transfer per defect (Lopez-Paz & Ranzato 2017).
 
-        BWT_k = mean_C_AUC_k(final_task) - mean_C_AUC_k(first_task)
+        BWT_d = R(T, d) - R(t_first(d), d)
 
-        Averaged across all defect evaluations at each time point.
+        where:
+          R(t, d) = C-AUC(mean) of defect d evaluated after training task t
+          t_first(d) = the task at which defect d was first evaluated (= task_id)
+          T = index of the final task
+
+        Only defined for defects where t_first < T (i.e., all but the last).
         Negative = forgetting, Positive = forward transfer.
-        Only meaningful for concepts with valid AUC at both endpoints.
         """
-        times = self._eval_times()
-        if len(times) < 2:
+        if len(self.results) < 2:
             return {}
 
-        t_first = times[0]
-        t_final = times[-1]
+        T = max(r.evaluated_after_task for r in self.results)
 
-        all_concepts: set[str] = set()
+        # Build lookup: (defect, evaluated_after_task) → c_auc_mean
+        lookup: dict[tuple[str, int], float] = {}
         for r in self.results:
-            all_concepts.update(r.c_auc_per_concept)
+            lookup[(r.defect_name, r.evaluated_after_task)] = r.c_auc_mean
+
+        # For each defect, find its first evaluation time (= task_id)
+        t_first_for: dict[str, int] = {}
+        for r in self.results:
+            d = r.defect_name
+            if d not in t_first_for or r.task_id < t_first_for[d]:
+                t_first_for[d] = r.task_id   # task_id == t_first by protocol
 
         bwt: dict[str, float] = {}
-        for k in sorted(all_concepts):
-            vals_first = [
-                r.c_auc_per_concept.get(k, _NAN)
-                for r in self.results
-                if r.evaluated_after_task == t_first
-            ]
-            vals_final = [
-                r.c_auc_per_concept.get(k, _NAN)
-                for r in self.results
-                if r.evaluated_after_task == t_final
-            ]
-            vf = [v for v in vals_first if not np.isnan(v)]
-            vl = [v for v in vals_final if not np.isnan(v)]
-            bwt[k] = float(np.mean(vl) - np.mean(vf)) if (vf and vl) else _NAN
+        for d, t_first in t_first_for.items():
+            if t_first >= T:
+                continue   # last task: no future point to measure forgetting
+            r_first = lookup.get((d, t_first), _NAN)
+            r_final = lookup.get((d, T), _NAN)
+            if not (np.isnan(r_first) or np.isnan(r_final)):
+                bwt[d] = float(r_final - r_first)
+            else:
+                bwt[d] = _NAN
 
         return bwt
 
+    def concept_bwt(self) -> dict[str, float]:
+        """Alias for per_defect_bwt() — kept for backward compatibility."""
+        return self.per_defect_bwt()
+
     def mean_concept_bwt(self) -> float:
-        """Mean BWT across all concepts with valid values."""
-        vals = [v for v in self.concept_bwt().values() if not np.isnan(v)]
+        """Mean BWT across all defects with valid values (Lopez-Paz formula)."""
+        vals = [v for v in self.per_defect_bwt().values() if not np.isnan(v)]
         return float(np.mean(vals)) if vals else _NAN
 
     # ── summary ───────────────────────────────────────────────────────────────
@@ -165,7 +174,13 @@ class ContinualLog:
                 f"{r.c_auc_mean:>12.4f}  {r.tau:>8.4f}"
             )
         lines.append(sep)
-        lines.append(f"  Mean Concept BWT : {self.mean_concept_bwt():+.4f}")
+        bwt_d = self.per_defect_bwt()
+        mean_bwt = self.mean_concept_bwt()
+        lines.append(f"  Standard BWT (Lopez-Paz 2017): {mean_bwt:+.4f}")
+        if bwt_d:
+            for d, v in sorted(bwt_d.items()):
+                tag = "" if np.isnan(v) else ("  ← forgetting" if v < -0.01 else "  ← stable")
+                lines.append(f"    BWT[{d}] = {v:+.4f}{tag}")
         lines.append("=" * W)
         return "\n".join(lines)
 
@@ -350,7 +365,9 @@ class CLEvaluator:
         from PIL import Image as PILImage
 
         df = pd.read_csv(full_csv)
-        normal_paths = df[df["anomaly_type"] == "good"]["image_path"].tolist()
+        # Use only test/good/ images (H-5: excludes train/good/ from evaluation normals)
+        test_good_dir = Path(mvtec_root) / category / "test" / "good"
+        normal_paths  = sorted(test_good_dir.glob("*.png"))
         normal_images = [PILImage.open(p).convert("RGB") for p in normal_paths]
 
         results: list[TaskEvalResult] = []

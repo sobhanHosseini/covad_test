@@ -45,10 +45,12 @@ class JointTrainer:
         self._full_csv      = self._ann_dir / f"{self._category}.csv"
         self._device        = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-        self._lambda_c  = float(config.get("lambda_concept",  1e-4))
-        self._lambda_a  = float(config.get("lambda_anomaly",  1e-4))
-        self._coreset   = int(config.get("coreset_size",      10_000))
-        self._tau_pct   = float(config.get("tau_percentile",  95.0))
+        self._lambda_c           = float(config.get("lambda_concept",    1e-4))
+        self._lambda_a           = float(config.get("lambda_anomaly",    1e-4))
+        self._coreset            = int(config.get("coreset_size",        10_000))
+        self._tau_pct            = float(config.get("tau_percentile",    95.0))
+        self._defect_train_ratio = float(config.get("defect_train_ratio", 0.8))
+        self.extractor           = None   # initialised lazily in run()
 
     # ── helpers ───────────────────────────────────────────────────────────────
 
@@ -57,7 +59,7 @@ class JointTrainer:
         imgs = [Image.open(p).convert("RGB") for p in paths]
         p_all, z_all = [], []
         for i in tqdm(range(0, len(imgs), _BATCH), desc=f"  {desc}", leave=False):
-            p, z = extractor.extract_both(imgs[i : i + _BATCH])
+            p, z = self.extractor.extract_both(imgs[i : i + _BATCH])
             p_all.append(p.cpu()); z_all.append(z.cpu())
         return torch.cat(p_all), torch.cat(z_all)
 
@@ -72,19 +74,29 @@ class JointTrainer:
         print(f"\n{'='*60}")
         print(f"JOINT TRAINING — {self._category.upper()}  (upper bound)")
         print(f"{'='*60}")
-        print(f"  Device: {self._device}")
+        pct = int(self._defect_train_ratio * 100)
+        print(f"  Device: {self._device}  |  Defect split: {pct}% train / {100-pct}% held-out (seed=42)")
 
-        # ── Step 1: load and concatenate all task CSVs ────────────────────────
-        frames = []
+        # ── Step 1: load and concatenate all task CSVs (80% defects each) ─────
+        frames:      list[pd.DataFrame]          = []
+        held_out_by: dict[str, list[str]]        = {}  # defect → held-out paths
+
         for t in tasks:
             df = pd.read_csv(t["csv_path"])
-            # Keep same train/good normal filter as CLTrainer
             is_train_normal = (
                 (df["label_index"] == 0) &
                 df["image_path"].str.contains("/train/good/", regex=False)
             )
-            is_defect = df["label_index"] == 1
-            frames.append(df[is_train_normal | is_defect])
+            defect_df = df[df["label_index"] == 1].reset_index(drop=True)
+            n_d = len(defect_df)
+            n_tr = max(1, int(n_d * self._defect_train_ratio))
+            rng  = np.random.RandomState(42)
+            shuf = rng.permutation(n_d)
+            defect_train    = defect_df.iloc[shuf[:n_tr]]
+            defect_held_out = defect_df.iloc[shuf[n_tr:]]
+            held_out_by[t["defect"]] = defect_held_out["image_path"].tolist()
+            frames.append(pd.concat([df[is_train_normal], defect_train]))
+            print(f"  {t['defect']}: {n_tr} train / {len(defect_held_out)} held-out")
 
         all_df = pd.concat(frames, ignore_index=True).drop_duplicates("image_path")
         concept_names = [c for c in all_df.columns if c not in _META]
@@ -97,15 +109,15 @@ class JointTrainer:
 
         # ── Step 2: feature extraction ────────────────────────────────────────
         print("\n  Extracting features ...")
-        global extractor
-        extractor = DINOv2Extractor(device=self._device)
+        self.extractor = DINOv2Extractor(device=self._device)
 
         paths = all_df["image_path"].tolist()
         patch_tokens, pooled_z = self._extract(paths, "joint feats")
         print(f"  pooled_z {tuple(pooled_z.shape)}")
 
-        # ── Step 3: PatchCore memory bank ─────────────────────────────────────
+        # ── Step 3: PatchCore memory bank (seeded — matches sequential runs) ───
         normal_mask = torch.tensor(all_df["label_index"].values == 0)
+        torch.manual_seed(42)   # same seed as PatchCoreMemory.build()
         memory = PatchCoreMemory(coreset_size=self._coreset, device=self._device)
         memory.build(patch_tokens[normal_mask])
         s_norm, _ = memory.score(patch_tokens[normal_mask])
@@ -131,9 +143,9 @@ class JointTrainer:
         anomaly_head.set_weights(W_a, b_a)
         print(f"  CONCIL done  K={solver.K}")
 
-        # ── Step 5: evaluate per defect ───────────────────────────────────────
-        print("\n  Evaluating per defect ...")
-        evaluator  = CLEvaluator(extractor, memory, concept_heads, anomaly_head)
+        # ── Step 5: evaluate per defect (held-out 20% only) ──────────────────
+        print("\n  Evaluating per defect (held-out split) ...")
+        evaluator  = CLEvaluator(self.extractor, memory, concept_heads, anomaly_head)
         full_df    = pd.read_csv(self._full_csv)
         meta_cols  = {c for c in _META}
         concept_col_names = [c for c in full_df.columns if c not in meta_cols]
@@ -142,14 +154,20 @@ class JointTrainer:
         defect_names = [t["defect"] for t in tasks]
 
         for tid, defect in enumerate(defect_names, 1):
-            mvtec_cat = Path(self._mvtec_root) / self._category
+            mvtec_cat    = Path(self._mvtec_root) / self._category
             normal_paths = sorted((mvtec_cat / "test" / "good").glob("*.png"))
-            defect_paths = sorted((mvtec_cat / "test" / defect).glob("*.png"))
             normal_imgs  = [Image.open(p).convert("RGB") for p in normal_paths]
-            defect_imgs  = [Image.open(p).convert("RGB") for p in defect_paths]
 
-            n_lab = full_df[full_df["image_path"].str.contains("test/good",  regex=False)][concept_col_names].reset_index(drop=True)
-            d_lab = full_df[full_df["image_path"].str.contains(f"test/{defect}", regex=False)][concept_col_names].reset_index(drop=True)
+            # Use held-out defect paths (same 20% as CLTrainer / NaiveTrainer)
+            held_paths = held_out_by.get(defect, [])
+            if held_paths:
+                defect_imgs = [Image.open(p).convert("RGB") for p in held_paths]
+            else:
+                held_paths  = [str(p) for p in sorted((mvtec_cat / "test" / defect).glob("*.png"))]
+                defect_imgs = [Image.open(p).convert("RGB") for p in held_paths]
+
+            n_lab = full_df[full_df["image_path"].str.contains("test/good", regex=False)][concept_col_names].reset_index(drop=True)
+            d_lab = full_df[full_df["image_path"].isin(held_paths)].sort_values("image_path")[concept_col_names].reset_index(drop=True)
             concept_labels = pd.concat([n_lab, d_lab], ignore_index=True)
 
             result = evaluator.evaluate(

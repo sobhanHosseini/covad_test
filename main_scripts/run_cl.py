@@ -58,6 +58,9 @@ def _parse_args() -> argparse.Namespace:
                    help="percentile of normal s_novel scores used to set τ")
     p.add_argument("--batch_size",      type=int,   default=16,
                    help="images per DINOv2 extraction batch")
+    p.add_argument("--defect_train_ratio", type=float, default=0.8,
+                   help="fraction of defect images used for training (rest held out for eval). "
+                        "0.8 = paper-comparable 80/20 split; 1.0 = all defects in training")
     p.add_argument("--naive_epochs",    type=int,   default=50,
                    help="[--baseline] gradient descent epochs per task")
     p.add_argument("--naive_lr",        type=float, default=1e-3,
@@ -93,6 +96,7 @@ def main() -> None:
         "coreset_size":    args.coreset_size,
         "tau_percentile":  args.tau_percentile,
         "batch_size":      args.batch_size,
+        "defect_train_ratio": args.defect_train_ratio,
         "naive_epochs":    args.naive_epochs,
         "naive_lr":        args.naive_lr,
     }
@@ -103,7 +107,10 @@ def main() -> None:
         mode = "NAIVE BASELINE (gradient descent, no replay)"
     else:
         mode = "CONCIL sequential"
+    pct  = int(args.defect_train_ratio * 100)
     print(f"CONVAD-CL — {mode}")
+    print(f"Defect split : {pct}% train / {100-pct}% held-out (seed=42)"
+          f"  [ratio={args.defect_train_ratio}]")
     print("-" * 54)
     for k, v in config.items():
         print(f"  {k:<20} {v}")

@@ -66,6 +66,8 @@ class NaiveSequentialTrainer:
         self.log            = ContinualLog()
         self.tau:           Optional[float] = None
         self._cached_task_sequence: list[dict] = []
+        self.defect_train_ratio  = float(config.get("defect_train_ratio", 0.8))
+        self._held_out_defects: dict[str, pd.DataFrame] = {}
 
     # ── shared helpers (mirror of CLTrainer) ─────────────────────────────────
 
@@ -74,20 +76,32 @@ class NaiveSequentialTrainer:
 
     def _load_task_data(self, task_csv_path: str):
         df = pd.read_csv(task_csv_path)
-        train_normal  = (df["label_index"] == 0) & df["image_path"].str.contains(
-            "/train/good/", regex=False
-        )
-        anomaly_mask = df["label_index"] == 1
-        df = df[train_normal | anomaly_mask].reset_index(drop=True)
+        normal_df = df[
+            (df["label_index"] == 0) &
+            df["image_path"].str.contains("/train/good/", regex=False)
+        ].reset_index(drop=True)
+        defect_df = df[df["label_index"] == 1].reset_index(drop=True)
+
+        # 80/20 defect split — same seed as CLTrainer for fair comparison
+        defect = defect_df["anomaly_type"].iloc[0] if len(defect_df) else "unknown"
+        n_defect = len(defect_df)
+        n_train  = max(1, int(n_defect * self.defect_train_ratio))
+        rng      = np.random.RandomState(42)
+        shuf     = rng.permutation(n_defect)
+        defect_train    = defect_df.iloc[shuf[:n_train]].reset_index(drop=True)
+        defect_held_out = defect_df.iloc[shuf[n_train:]].reset_index(drop=True)
+        self._held_out_defects[defect] = defect_held_out
+
+        print(f"  Defect split ({defect}): {n_train} train / {len(defect_held_out)} held-out")
+        training_df = pd.concat([normal_df, defect_train], ignore_index=True)
 
         images = [
             Image.open(p).convert("RGB")
-            for p in tqdm(df["image_path"], desc="  loading images", leave=False)
+            for p in tqdm(training_df["image_path"], desc="  loading images", leave=False)
         ]
-        cnames = self._concept_cols(df)
-        C      = df[cnames].values.astype(np.float32)
-        y      = df["label_index"].values.astype(np.float32)
-        defect = df[df["label_index"] == 1]["anomaly_type"].iloc[0]
+        cnames = self._concept_cols(training_df)
+        C      = training_df[cnames].values.astype(np.float32)
+        y      = training_df["label_index"].values.astype(np.float32)
         meta   = {"n_normal": int((y==0).sum()), "n_anomalous": int((y==1).sum()),
                   "defect_name": defect, "concept_names": cnames}
         return images, C, y, meta
@@ -102,15 +116,21 @@ class NaiveSequentialTrainer:
 
     def _load_test_data_for_defect(self, defect_name: str):
         mvtec = Path(self.config["mvtec_root"]) / self._category
-        normal_paths = sorted((mvtec / "test" / "good").glob("*.png"))
-        defect_paths = sorted((mvtec / "test" / defect_name).glob("*.png"))
+        normal_paths  = sorted((mvtec / "test" / "good").glob("*.png"))
         normal_images = [Image.open(p).convert("RGB") for p in normal_paths]
-        defect_images = [Image.open(p).convert("RGB") for p in defect_paths]
+
+        held_out_df = self._held_out_defects.get(defect_name)
+        if held_out_df is not None and len(held_out_df) > 0:
+            defect_paths  = held_out_df["image_path"].tolist()
+            defect_images = [Image.open(p).convert("RGB") for p in defect_paths]
+        else:
+            defect_paths  = [str(p) for p in sorted((mvtec / "test" / defect_name).glob("*.png"))]
+            defect_images = [Image.open(p).convert("RGB") for p in defect_paths]
 
         full_df      = pd.read_csv(self._full_csv_path)
         concept_cols = [c for c in full_df.columns if c not in _META_COLS]
-        n_lab = full_df[full_df["image_path"].str.contains("test/good",      regex=False)][concept_cols].reset_index(drop=True)
-        d_lab = full_df[full_df["image_path"].str.contains(f"test/{defect_name}", regex=False)][concept_cols].reset_index(drop=True)
+        n_lab = full_df[full_df["image_path"].str.contains("test/good", regex=False)][concept_cols].reset_index(drop=True)
+        d_lab = full_df[full_df["image_path"].isin(defect_paths)].sort_values("image_path")[concept_cols].reset_index(drop=True)
         concept_labels = pd.concat([n_lab, d_lab], ignore_index=True)
         return normal_images, defect_images, concept_labels
 

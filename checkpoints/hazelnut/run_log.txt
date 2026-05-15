@@ -1,146 +1,0 @@
-Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-CONVAD-CL — Configuration
---------------------------------------------
-  mvtec_root           /home/sobhan_hosseini/datasets/mvtec
-  annotations_dir      ./annotations/hazelnut
-  category             hazelnut
-  checkpoint_dir       ./checkpoints/hazelnut
-  lambda_concept       0.0001
-  lambda_anomaly       0.0001
-  coreset_size         10000
-  tau_percentile       95.0
-  batch_size           16
-
-Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 7957.22it/s]
-[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
-Key                     | Status     |  | 
-------------------------+------------+--+-
-embeddings.position_ids | UNEXPECTED |  | 
-
-Notes:
-- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
-
-Starting CONVAD-CL Scenario B — hazelnut
-Task sequence: ['crack', 'hole', 'cut', 'print']
-Device: cuda
-
-============================================================
-TASK 1 — CRACK
-============================================================
-  loading images:   0%|          | 0/409 [00:00<?, ?it/s]  loading images:   1%|          | 3/409 [00:00<00:18, 21.88it/s]  loading images:   1%|▏         | 6/409 [00:00<00:16, 24.58it/s]  loading images:   2%|▏         | 9/409 [00:00<00:15, 25.42it/s]  loading images:   3%|▎         | 12/409 [00:00<00:15, 25.99it/s]  loading images:   4%|▎         | 15/409 [00:00<00:14, 26.65it/s]  loading images:   4%|▍         | 18/409 [00:00<00:14, 27.38it/s]  loading images:   5%|▌         | 22/409 [00:00<00:13, 28.36it/s]  loading images:   6%|▌         | 25/409 [00:00<00:13, 28.25it/s]  loading images:   7%|▋         | 28/409 [00:01<00:13, 27.85it/s]  loading images:   8%|▊         | 31/409 [00:01<00:13, 27.74it/s]  loading images:   8%|▊         | 34/409 [00:01<00:13, 27.55it/s]  loading images:   9%|▉         | 37/409 [00:01<00:13, 27.30it/s]  loading images:  10%|▉         | 40/409 [00:01<00:13, 27.58it/s]  loading images:  11%|█         | 43/409 [00:01<00:13, 27.45it/s]  loading images:  11%|█         | 46/409 [00:01<00:13, 27.41it/s]  loading images:  12%|█▏        | 49/409 [00:01<00:13, 27.25it/s]  loading images:  13%|█▎        | 53/409 [00:01<00:12, 28.33it/s]  loading images:  14%|█▎        | 56/409 [00:02<00:12, 28.22it/s]  loading images:  14%|█▍        | 59/409 [00:02<00:12, 27.94it/s]  loading images:  15%|█▌        | 62/409 [00:02<00:12, 27.35it/s]  loading images:  16%|█▌        | 65/409 [00:02<00:12, 27.54it/s]  loading images:  17%|█▋        | 68/409 [00:02<00:12, 27.16it/s]  loading images:  17%|█▋        | 71/409 [00:02<00:12, 27.68it/s]  loading images:  18%|█▊        | 74/409 [00:02<00:12, 27.20it/s]  loading images:  19%|█▉        | 77/409 [00:02<00:12, 27.41it/s]  loading images:  20%|█▉        | 80/409 [00:02<00:11, 27.47it/s]  loading images:  20%|██        | 83/409 [00:03<00:11, 27.51it/s]  loading images:  21%|██        | 86/409 [00:03<00:11, 27.70it/s]  loading images:  22%|██▏       | 89/409 [00:03<00:11, 27.77it/s]  loading images:  22%|██▏       | 92/409 [00:03<00:11, 28.39it/s]  loading images:  23%|██▎       | 95/409 [00:03<00:11, 28.16it/s]  loading images:  24%|██▍       | 98/409 [00:03<00:10, 28.66it/s]  loading images:  25%|██▍       | 101/409 [00:03<00:10, 28.92it/s]  loading images:  25%|██▌       | 104/409 [00:03<00:10, 28.42it/s]  loading images:  26%|██▌       | 107/409 [00:03<00:10, 28.04it/s]  loading images:  27%|██▋       | 110/409 [00:03<00:10, 27.93it/s]  loading images:  28%|██▊       | 113/409 [00:04<00:10, 27.73it/s]  loading images:  28%|██▊       | 116/409 [00:04<00:10, 27.69it/s]  loading images:  29%|██▉       | 119/409 [00:04<00:10, 27.83it/s]  loading images:  30%|██▉       | 122/409 [00:04<00:10, 27.89it/s]  loading images:  31%|███       | 125/409 [00:04<00:10, 27.51it/s]  loading images:  31%|███▏      | 128/409 [00:04<00:10, 27.72it/s]  loading images:  32%|███▏      | 131/409 [00:04<00:09, 27.91it/s]  loading images:  33%|███▎      | 134/409 [00:04<00:09, 28.22it/s]  loading images:  33%|███▎      | 137/409 [00:04<00:09, 27.98it/s]  loading images:  34%|███▍      | 141/409 [00:05<00:09, 28.63it/s]  loading images:  35%|███▌      | 144/409 [00:05<00:09, 28.66it/s]  loading images:  36%|███▌      | 147/409 [00:05<00:09, 27.86it/s]  loading images:  37%|███▋      | 150/409 [00:05<00:09, 28.09it/s]  loading images:  37%|███▋      | 153/409 [00:05<00:08, 28.47it/s]  loading images:  38%|███▊      | 156/409 [00:05<00:08, 28.15it/s]  loading images:  39%|███▉      | 159/409 [00:05<00:08, 28.18it/s]  loading images:  40%|███▉      | 162/409 [00:05<00:08, 27.94it/s]  loading images:  40%|████      | 165/409 [00:05<00:08, 27.96it/s]  loading images:  41%|████      | 168/409 [00:06<00:08, 28.21it/s]  loading images:  42%|████▏     | 171/409 [00:06<00:08, 27.54it/s]  loading images:  43%|████▎     | 174/409 [00:06<00:08, 28.19it/s]  loading images:  43%|████▎     | 177/409 [00:06<00:08, 27.62it/s]  loading images:  44%|████▍     | 180/409 [00:06<00:08, 27.10it/s]  loading images:  45%|████▍     | 183/409 [00:06<00:08, 27.27it/s]  loading images:  45%|████▌     | 186/409 [00:06<00:08, 27.21it/s]  loading images:  46%|████▌     | 189/409 [00:06<00:08, 27.27it/s]  loading images:  47%|████▋     | 192/409 [00:06<00:07, 27.47it/s]  loading images:  48%|████▊     | 195/409 [00:07<00:07, 27.24it/s]  loading images:  48%|████▊     | 198/409 [00:07<00:07, 27.52it/s]  loading images:  49%|████▉     | 202/409 [00:07<00:07, 28.64it/s]  loading images:  50%|█████     | 205/409 [00:07<00:07, 27.58it/s]  loading images:  51%|█████     | 208/409 [00:07<00:07, 27.08it/s]  loading images:  52%|█████▏    | 211/409 [00:07<00:07, 27.65it/s]  loading images:  52%|█████▏    | 214/409 [00:07<00:07, 27.43it/s]  loading images:  53%|█████▎    | 217/409 [00:07<00:06, 27.82it/s]  loading images:  54%|█████▍    | 220/409 [00:07<00:06, 27.79it/s]  loading images:  55%|█████▍    | 223/409 [00:08<00:06, 27.89it/s]  loading images:  55%|█████▌    | 226/409 [00:08<00:06, 28.07it/s]  loading images:  56%|█████▌    | 229/409 [00:08<00:06, 28.28it/s]  loading images:  57%|█████▋    | 232/409 [00:08<00:06, 27.99it/s]  loading images:  57%|█████▋    | 235/409 [00:08<00:06, 27.98it/s]  loading images:  58%|█████▊    | 238/409 [00:08<00:06, 27.99it/s]  loading images:  59%|█████▉    | 241/409 [00:08<00:06, 27.76it/s]  loading images:  60%|█████▉    | 244/409 [00:08<00:05, 28.07it/s]  loading images:  61%|██████    | 248/409 [00:08<00:05, 28.90it/s]  loading images:  61%|██████▏   | 251/409 [00:09<00:05, 28.06it/s]  loading images:  62%|██████▏   | 254/409 [00:09<00:05, 26.94it/s]  loading images:  63%|██████▎   | 257/409 [00:09<00:05, 26.59it/s]  loading images:  64%|██████▎   | 260/409 [00:09<00:05, 25.25it/s]  loading images:  64%|██████▍   | 263/409 [00:09<00:05, 25.91it/s]  loading images:  65%|██████▌   | 266/409 [00:09<00:05, 26.08it/s]  loading images:  66%|██████▌   | 269/409 [00:09<00:05, 26.06it/s]  loading images:  67%|██████▋   | 272/409 [00:09<00:05, 25.98it/s]  loading images:  67%|██████▋   | 275/409 [00:09<00:05, 25.33it/s]  loading images:  68%|██████▊   | 278/409 [00:10<00:05, 25.10it/s]  loading images:  69%|██████▊   | 281/409 [00:10<00:05, 24.88it/s]  loading images:  69%|██████▉   | 284/409 [00:10<00:05, 24.28it/s]  loading images:  70%|███████   | 287/409 [00:10<00:04, 24.42it/s]  loading images:  71%|███████   | 290/409 [00:10<00:04, 24.70it/s]  loading images:  72%|███████▏  | 293/409 [00:10<00:04, 24.94it/s]  loading images:  72%|███████▏  | 296/409 [00:10<00:04, 25.92it/s]  loading images:  73%|███████▎  | 299/409 [00:10<00:04, 26.37it/s]  loading images:  74%|███████▍  | 302/409 [00:11<00:03, 27.15it/s]  loading images:  75%|███████▍  | 305/409 [00:11<00:03, 27.62it/s]  loading images:  75%|███████▌  | 308/409 [00:11<00:03, 27.81it/s]  loading images:  76%|███████▌  | 311/409 [00:11<00:03, 27.58it/s]  loading images:  77%|███████▋  | 314/409 [00:11<00:03, 28.03it/s]  loading images:  78%|███████▊  | 317/409 [00:11<00:03, 27.88it/s]  loading images:  78%|███████▊  | 320/409 [00:11<00:03, 28.14it/s]  loading images:  79%|███████▉  | 324/409 [00:11<00:02, 29.05it/s]  loading images:  80%|███████▉  | 327/409 [00:11<00:02, 27.91it/s]  loading images:  81%|████████  | 330/409 [00:12<00:02, 27.43it/s]  loading images:  81%|████████▏ | 333/409 [00:12<00:02, 26.62it/s]  loading images:  82%|████████▏ | 336/409 [00:12<00:02, 27.46it/s]  loading images:  83%|████████▎ | 339/409 [00:12<00:02, 26.85it/s]  loading images:  84%|████████▎ | 342/409 [00:12<00:02, 26.77it/s]  loading images:  84%|████████▍ | 345/409 [00:12<00:02, 26.91it/s]  loading images:  85%|████████▌ | 348/409 [00:12<00:02, 26.94it/s]  loading images:  86%|████████▌ | 351/409 [00:12<00:02, 26.39it/s]  loading images:  87%|████████▋ | 354/409 [00:12<00:02, 26.51it/s]  loading images:  87%|████████▋ | 357/409 [00:13<00:02, 25.18it/s]  loading images:  88%|████████▊ | 360/409 [00:13<00:01, 25.74it/s]  loading images:  89%|████████▉ | 363/409 [00:13<00:01, 26.38it/s]  loading images:  89%|████████▉ | 366/409 [00:13<00:01, 27.09it/s]  loading images:  90%|█████████ | 369/409 [00:13<00:01, 27.58it/s]  loading images:  91%|█████████ | 372/409 [00:13<00:01, 26.61it/s]  loading images:  92%|█████████▏| 375/409 [00:13<00:01, 27.26it/s]  loading images:  93%|█████████▎| 379/409 [00:13<00:01, 27.95it/s]  loading images:  93%|█████████▎| 382/409 [00:13<00:00, 28.35it/s]  loading images:  94%|█████████▍| 385/409 [00:14<00:00, 28.03it/s]  loading images:  95%|█████████▍| 388/409 [00:14<00:00, 28.49it/s]  loading images:  96%|█████████▌| 391/409 [00:14<00:00, 27.14it/s]  loading images:  96%|█████████▋| 394/409 [00:14<00:00, 25.91it/s]  loading images:  97%|█████████▋| 397/409 [00:14<00:00, 25.79it/s]  loading images:  98%|█████████▊| 400/409 [00:14<00:00, 24.01it/s]  loading images:  99%|█████████▊| 403/409 [00:14<00:00, 23.58it/s]  loading images:  99%|█████████▉| 406/409 [00:14<00:00, 24.60it/s]  loading images: 100%|██████████| 409/409 [00:15<00:00, 24.93it/s]                                                                     Data: 391 normal + 18 defect images  (K=42 concepts)
-  Extracting features ...
-  features T1:   0%|          | 0/26 [00:00<?, ?it/s]  features T1:   4%|▍         | 1/26 [00:01<00:42,  1.71s/it]  features T1:   8%|▊         | 2/26 [00:02<00:34,  1.46s/it]  features T1:  12%|█▏        | 3/26 [00:04<00:32,  1.39s/it]  features T1:  15%|█▌        | 4/26 [00:05<00:29,  1.35s/it]  features T1:  19%|█▉        | 5/26 [00:06<00:26,  1.24s/it]  features T1:  23%|██▎       | 6/26 [00:07<00:25,  1.26s/it]  features T1:  27%|██▋       | 7/26 [00:08<00:21,  1.16s/it]  features T1:  31%|███       | 8/26 [00:10<00:21,  1.22s/it]  features T1:  35%|███▍      | 9/26 [00:11<00:21,  1.25s/it]  features T1:  38%|███▊      | 10/26 [00:12<00:19,  1.21s/it]  features T1:  42%|████▏     | 11/26 [00:13<00:18,  1.25s/it]  features T1:  46%|████▌     | 12/26 [00:15<00:17,  1.28s/it]  features T1:  50%|█████     | 13/26 [00:16<00:16,  1.29s/it]  features T1:  54%|█████▍    | 14/26 [00:17<00:15,  1.30s/it]  features T1:  58%|█████▊    | 15/26 [00:19<00:13,  1.25s/it]  features T1:  62%|██████▏   | 16/26 [00:20<00:12,  1.26s/it]  features T1:  65%|██████▌   | 17/26 [00:21<00:11,  1.28s/it]  features T1:  69%|██████▉   | 18/26 [00:23<00:10,  1.28s/it]  features T1:  73%|███████▎  | 19/26 [00:24<00:08,  1.24s/it]  features T1:  77%|███████▋  | 20/26 [00:25<00:07,  1.26s/it]  features T1:  81%|████████  | 21/26 [00:26<00:06,  1.28s/it]  features T1:  85%|████████▍ | 22/26 [00:27<00:04,  1.20s/it]  features T1:  88%|████████▊ | 23/26 [00:29<00:03,  1.26s/it]  features T1:  92%|█████████▏| 24/26 [00:30<00:02,  1.27s/it]  features T1:  96%|█████████▌| 25/26 [00:31<00:01,  1.26s/it]  features T1: 100%|██████████| 26/26 [00:32<00:00,  1.14s/it]                                                                patch_tokens (409, 256, 768), pooled_z (409, 1536)
-  Memory bank: 10,000 patches (29.3 MB) — FROZEN
-  τ = 0.6145  (95.0th percentile of normal s_novel)
-  Concept heads initialised: K=42
-  Concept heads updated via CONCIL  (K=42)
-  Anomaly head updated via CONCIL
-  Evaluating on test set ...
-  T1 result: I-AUC(novel)=1.0000  I-AUC(concept)=1.0000  C-AUC=0.9608
-  Checkpoint saved → checkpoints/hazelnut/task_1/
-
-============================================================
-TASK 2 — HOLE
-============================================================
-  loading images:   0%|          | 0/18 [00:00<?, ?it/s]  loading images:  17%|█▋        | 3/18 [00:00<00:00, 25.31it/s]  loading images:  33%|███▎      | 6/18 [00:00<00:00, 26.45it/s]  loading images:  56%|█████▌    | 10/18 [00:00<00:00, 28.80it/s]  loading images:  72%|███████▏  | 13/18 [00:00<00:00, 29.01it/s]  loading images:  89%|████████▉ | 16/18 [00:00<00:00, 29.12it/s]                                                                   Data: 18 defect images
-  Extracting pooled features ...
-  features T2:   0%|          | 0/2 [00:00<?, ?it/s]  features T2:  50%|█████     | 1/2 [00:00<00:00,  3.27it/s]                                                              pooled_z (18, 1536)
-  No new concepts. Updating existing 42 heads.
-  Concept heads updated  (K=42, n_tasks_seen=2)
-  Anomaly head updated
-  Evaluating all seen defects ...
-    crack    I-AUC(novel)=1.0000  I-AUC(concept)=1.0000  C-AUC=0.9596
-    hole     I-AUC(novel)=1.0000  I-AUC(concept)=1.0000  C-AUC=0.9601
-  Checkpoint saved → checkpoints/hazelnut/task_2/
-
-============================================================
-TASK 3 — CUT
-============================================================
-  loading images:   0%|          | 0/17 [00:00<?, ?it/s]  loading images:  18%|█▊        | 3/17 [00:00<00:00, 27.24it/s]  loading images:  35%|███▌      | 6/17 [00:00<00:00, 28.33it/s]  loading images:  53%|█████▎    | 9/17 [00:00<00:00, 28.00it/s]  loading images:  71%|███████   | 12/17 [00:00<00:00, 27.99it/s]  loading images:  88%|████████▊ | 15/17 [00:00<00:00, 28.32it/s]                                                                   Data: 17 defect images
-  Extracting pooled features ...
-  features T3:   0%|          | 0/2 [00:00<?, ?it/s]  features T3:  50%|█████     | 1/2 [00:00<00:00,  3.62it/s]                                                              pooled_z (17, 1536)
-  No new concepts. Updating existing 42 heads.
-  Concept heads updated  (K=42, n_tasks_seen=3)
-  Anomaly head updated
-  Evaluating all seen defects ...
-    crack    I-AUC(novel)=1.0000  I-AUC(concept)=1.0000  C-AUC=0.9560
-    hole     I-AUC(novel)=1.0000  I-AUC(concept)=1.0000  C-AUC=0.9571
-    cut      I-AUC(novel)=0.9750  I-AUC(concept)=1.0000  C-AUC=0.9465
-  Checkpoint saved → checkpoints/hazelnut/task_3/
-
-============================================================
-TASK 4 — PRINT
-============================================================
-  loading images:   0%|          | 0/17 [00:00<?, ?it/s]  loading images:  18%|█▊        | 3/17 [00:00<00:00, 24.81it/s]  loading images:  35%|███▌      | 6/17 [00:00<00:00, 26.77it/s]  loading images:  53%|█████▎    | 9/17 [00:00<00:00, 28.05it/s]  loading images:  76%|███████▋  | 13/17 [00:00<00:00, 28.98it/s]  loading images:  94%|█████████▍| 16/17 [00:00<00:00, 28.72it/s]                                                                   Data: 17 defect images
-  Extracting pooled features ...
-  features T4:   0%|          | 0/2 [00:00<?, ?it/s]  features T4:  50%|█████     | 1/2 [00:00<00:00,  3.42it/s]                                                              pooled_z (17, 1536)
-  No new concepts. Updating existing 42 heads.
-  Concept heads updated  (K=42, n_tasks_seen=4)
-  Anomaly head updated
-  Evaluating all seen defects ...
-    crack    I-AUC(novel)=1.0000  I-AUC(concept)=1.0000  C-AUC=0.9553
-    hole     I-AUC(novel)=1.0000  I-AUC(concept)=1.0000  C-AUC=0.9567
-    cut      I-AUC(novel)=0.9750  I-AUC(concept)=1.0000  C-AUC=0.9464
-    print    I-AUC(novel)=1.0000  I-AUC(concept)=1.0000  C-AUC=0.9409
-  Checkpoint saved → checkpoints/hazelnut/task_4/
-
-============================================================
-FINAL RESULTS
-============================================================
-==================================================================================
-  CONVAD-CL Continual Learning Evaluation
-==================================================================================
- T  defect      @   I-AUC(novel)  I-AUC(concept)  C-AUC(mean)         τ
-──────────────────────────────────────────────────────────────────────────────────
- 1  crack       1         1.0000          1.0000       0.9608    0.6145
- 1  crack       2         1.0000          1.0000       0.9596    0.6145
- 2  hole        2         1.0000          1.0000       0.9601    0.6145
- 1  crack       3         1.0000          1.0000       0.9560    0.6145
- 2  hole        3         1.0000          1.0000       0.9571    0.6145
- 3  cut         3         0.9750          1.0000       0.9465    0.6145
- 1  crack       4         1.0000          1.0000       0.9553    0.6145
- 2  hole        4         1.0000          1.0000       0.9567    0.6145
- 3  cut         4         0.9750          1.0000       0.9464    0.6145
- 4  print       4         1.0000          1.0000       0.9409    0.6145
-──────────────────────────────────────────────────────────────────────────────────
-  Mean Concept BWT : -0.0095
-==================================================================================
-
-I-AUC(novel) matrix:
-after_task      1      2      3      4
-defect                                
-crack      1.0000 1.0000 1.0000 1.0000
-hole          NaN 1.0000 1.0000 1.0000
-cut           NaN    NaN 0.9750 0.9750
-print         NaN    NaN    NaN 1.0000
-
-C-AUC(mean) matrix:
-after_task      1      2      3      4
-defect                                
-crack      0.9608 0.9596 0.9560 0.9553
-hole          NaN 0.9601 0.9571 0.9567
-cut           NaN    NaN 0.9465 0.9464
-print         NaN    NaN    NaN 0.9409
-
-Mean Concept BWT : -0.0095
-(Expected ≈ 0.00 with CONCIL zero-forgetting guarantee)
-
-Final log saved → checkpoints/hazelnut/log_final.json
-==================================================================================
-  CONVAD-CL Continual Learning Evaluation
-==================================================================================
- T  defect      @   I-AUC(novel)  I-AUC(concept)  C-AUC(mean)         τ
-──────────────────────────────────────────────────────────────────────────────────
- 1  crack       1         1.0000          1.0000       0.9608    0.6145
- 1  crack       2         1.0000          1.0000       0.9596    0.6145
- 2  hole        2         1.0000          1.0000       0.9601    0.6145
- 1  crack       3         1.0000          1.0000       0.9560    0.6145
- 2  hole        3         1.0000          1.0000       0.9571    0.6145
- 3  cut         3         0.9750          1.0000       0.9465    0.6145
- 1  crack       4         1.0000          1.0000       0.9553    0.6145
- 2  hole        4         1.0000          1.0000       0.9567    0.6145
- 3  cut         4         0.9750          1.0000       0.9464    0.6145
- 4  print       4         1.0000          1.0000       0.9409    0.6145
-──────────────────────────────────────────────────────────────────────────────────
-  Mean Concept BWT : -0.0095
-==================================================================================

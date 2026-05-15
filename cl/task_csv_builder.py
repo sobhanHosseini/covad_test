@@ -126,8 +126,15 @@ def build_task_dataframes(
 
     output_dir.mkdir(parents=True, exist_ok=True)
 
-    normal_df = df[df["anomaly_type"] == "good"].copy()
+    # Only include train/good/ normals — test/good/ is held out for evaluation
+    all_normal_df  = df[df["anomaly_type"] == "good"]
+    normal_df = all_normal_df[
+        all_normal_df["image_path"].str.contains("/train/good/", regex=False)
+    ].copy()
+    n_normal_before = len(all_normal_df)
     n_normal = len(normal_df)
+    if n_normal < n_normal_before:
+        print(f"  n_normal: {n_normal_before} → {n_normal}  (test/good/ excluded from task CSVs)")
 
     # Track which tier3 concepts have already appeared in prior tasks
     seen_tier3: set[str] = set()

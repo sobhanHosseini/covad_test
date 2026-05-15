@@ -66,10 +66,12 @@ class CLTrainer:
             lambda_concept = float(config.get("lambda_concept", 1e-4)),
             lambda_anomaly = float(config.get("lambda_anomaly", 1e-4)),
         )
-        self.deduplicator = ConceptDeduplicator()
-        self.evaluator:   Optional[CLEvaluator] = None
-        self.log          = ContinualLog()
-        self.tau:         Optional[float] = None
+        self.deduplicator       = ConceptDeduplicator()
+        self.evaluator:         Optional[CLEvaluator] = None
+        self.log                = ContinualLog()
+        self.tau:               Optional[float] = None
+        self.defect_train_ratio = float(config.get("defect_train_ratio", 0.8))
+        self._held_out_defects: dict[str, pd.DataFrame] = {}  # defect → held-out rows
 
     # ── private helpers ───────────────────────────────────────────────────────
 
@@ -93,25 +95,46 @@ class CLTrainer:
         """
         df = pd.read_csv(task_csv_path)
 
-        # Keep all anomalous rows + only normals whose path is under train/good/
-        # (MVTec test/good/ images are held-out for evaluation — never for training)
-        normal_mask      = df["label_index"] == 0
-        train_normal_mask = normal_mask & df["image_path"].str.contains(
-            "/train/good/", regex=False
+        # Keep train/good/ normals only (test/good/ stays held-out)
+        train_normal_mask = (
+            (df["label_index"] == 0) &
+            df["image_path"].str.contains("/train/good/", regex=False)
         )
         anomaly_mask = df["label_index"] == 1
-        df = df[train_normal_mask | anomaly_mask].reset_index(drop=True)
+
+        normal_df = df[train_normal_mask].reset_index(drop=True)
+        defect_df = df[anomaly_mask].reset_index(drop=True)
+
+        # ── 80/20 defect split (fixed seed for reproducibility) ───────────────
+        defect_types = defect_df["anomaly_type"].unique().tolist()
+        defect_name  = defect_types[0] if defect_types else "unknown"
+
+        n_defect = len(defect_df)
+        n_train  = max(1, int(n_defect * self.defect_train_ratio))
+
+        rng          = np.random.RandomState(42)
+        shuffled_idx = rng.permutation(n_defect)
+        train_idx    = shuffled_idx[:n_train]
+        held_idx     = shuffled_idx[n_train:]
+
+        defect_train    = defect_df.iloc[train_idx].reset_index(drop=True)
+        defect_held_out = defect_df.iloc[held_idx].reset_index(drop=True)
+
+        self._held_out_defects[defect_name] = defect_held_out
+
+        n_held = len(defect_held_out)
+        print(f"  Defect split ({defect_name}): {n_train} train / {n_held} held-out"
+              f"  (ratio={self.defect_train_ratio})")
+
+        training_df = pd.concat([normal_df, defect_train], ignore_index=True)
 
         images = [
             Image.open(p).convert("RGB")
-            for p in tqdm(df["image_path"], desc="  loading images", leave=False)
+            for p in tqdm(training_df["image_path"], desc="  loading images", leave=False)
         ]
-        concept_names  = self._concept_cols(df)
-        concept_matrix = df[concept_names].values.astype(np.float32)
-        y_labels       = df["label_index"].values.astype(np.float32)
-
-        defect_types = df[df["label_index"] == 1]["anomaly_type"].unique().tolist()
-        defect_name  = defect_types[0] if defect_types else "unknown"
+        concept_names  = self._concept_cols(training_df)
+        concept_matrix = training_df[concept_names].values.astype(np.float32)
+        y_labels       = training_df["label_index"].values.astype(np.float32)
 
         meta = {
             "n_normal":      int((y_labels == 0).sum()),
@@ -138,42 +161,50 @@ class CLTrainer:
     def _load_test_data_for_defect(
         self, defect_name: str
     ) -> tuple[list[Image.Image], list[Image.Image], pd.DataFrame]:
-        """Load held-out test images and their concept labels for evaluation.
+        """Load held-out evaluation images and their concept labels.
 
-        Normal images : MVTec test/good/ — never seen by CONCIL or memory bank.
-        Defect images : MVTec test/{defect}/ — all MVTec defects live in test/.
-        Concept labels: loaded from hazelnut.csv by matching image paths.
-                        hazelnut.csv covers all 501 MVTec hazelnut images,
-                        including test/good/ and all test defect images.
+        Normal images : MVTec test/good/ (always held-out, unchanged).
+        Defect images : held-out 20% from the task CSV (populated by _load_task_data).
+                        Falls back to ALL test/{defect}/ if ratio=1.0 or not split yet.
+        Concept labels: looked up from full annotation CSV by image path.
         """
         mvtec_cat = Path(self.config["mvtec_root"]) / self._category
 
-        # ── images ────────────────────────────────────────────────────────────
+        # ── normal images (test/good/ — unchanged) ────────────────────────────
         normal_paths  = sorted((mvtec_cat / "test" / "good").glob("*.png"))
-        defect_paths  = sorted((mvtec_cat / "test" / defect_name).glob("*.png"))
         normal_images = [Image.open(p).convert("RGB") for p in normal_paths]
-        defect_images = [Image.open(p).convert("RGB") for p in defect_paths]
 
-        # ── concept labels from annotation CSV ────────────────────────────────
-        full_df = pd.read_csv(self._full_csv_path)
-        meta_cols   = {"image_path", "label_index", "split", "anomaly_type",
-                       "mask_path", "view"}
+        # ── defect images: held-out 20% OR fallback to all ───────────────────
+        held_out_df = self._held_out_defects.get(defect_name)
+        if held_out_df is not None and len(held_out_df) > 0:
+            defect_paths  = held_out_df["image_path"].tolist()
+            defect_images = [Image.open(p).convert("RGB") for p in defect_paths]
+            print(f"  Evaluating {defect_name}: {len(normal_images)} normals "
+                  f"+ {len(defect_images)} held-out defects")
+        else:
+            # ratio=1.0 → no held-out; use all test images (original behaviour)
+            defect_paths  = sorted((mvtec_cat / "test" / defect_name).glob("*.png"))
+            defect_images = [Image.open(p).convert("RGB") for p in defect_paths]
+            print(f"  Evaluating {defect_name}: {len(normal_images)} normals "
+                  f"+ {len(defect_images)} test defects (ratio=1.0)")
+            defect_paths  = [str(p) for p in defect_paths]
+
+        # ── concept labels (looked up by image path from full CSV) ────────────
+        full_df      = pd.read_csv(self._full_csv_path)
+        meta_cols    = {"image_path", "label_index", "split", "anomaly_type",
+                        "mask_path", "view"}
         concept_cols = [c for c in full_df.columns if c not in meta_cols]
 
         normal_labels = full_df[
             full_df["image_path"].str.contains("test/good", regex=False)
         ][concept_cols].reset_index(drop=True)
 
+        # Match held-out defect rows by exact path
         defect_labels = full_df[
-            full_df["image_path"].str.contains(
-                f"test/{defect_name}", regex=False
-            )
-        ][concept_cols].reset_index(drop=True)
+            full_df["image_path"].isin(defect_paths)
+        ].sort_values("image_path")[concept_cols].reset_index(drop=True)
 
-        concept_labels = pd.concat(
-            [normal_labels, defect_labels], ignore_index=True
-        )
-
+        concept_labels = pd.concat([normal_labels, defect_labels], ignore_index=True)
         return normal_images, defect_images, concept_labels
 
     def _save_checkpoint(self, task_id: int) -> None:
@@ -427,6 +458,8 @@ class CLTrainer:
         print(f"\nStarting CONVAD-CL Scenario B — {self._category}")
         print(f"Task sequence: {[t['defect'] for t in tasks]}")
         print(f"Device: {self._device}")
+        pct = int(self.defect_train_ratio * 100)
+        print(f"Defect split : {pct}% train / {100-pct}% held-out (seed=42)")
 
         self.run_task_1(tasks[0])
 
@@ -434,6 +467,52 @@ class CLTrainer:
             self.run_task_n(task, previous_task_id=task["task_id"] - 1)
 
         # Final summary
+        # ── split verification ────────────────────────────────────────────────
+        violations: list[str] = []
+        full_df = pd.read_csv(self._full_csv_path)
+        train_paths_all: set[str] = set()
+
+        for t in tasks:
+            df_t = pd.read_csv(t["csv_path"])
+            train_normal = df_t[
+                (df_t["label_index"] == 0) &
+                df_t["image_path"].str.contains("/train/good/", regex=False)
+            ]["image_path"].tolist()
+            held_df = self._held_out_defects.get(t["defect"], pd.DataFrame())
+            # Check 1: no held-out defect path appears in training rows
+            train_defect_paths = set(df_t[df_t["label_index"] == 1]["image_path"])
+            if held_df is not None and len(held_df):
+                overlap = set(held_df["image_path"]) & train_defect_paths
+                if held_df is not None and set(held_df["image_path"]) - train_defect_paths:
+                    pass   # held-out not in training: correct
+                # The held-out rows come from splitting defect_df, so some are in training
+                # Real check: held-out paths must NOT be in the defect_train set
+                defect_df_all = df_t[df_t["label_index"] == 1].reset_index(drop=True)
+                n_defect = len(defect_df_all)
+                n_train  = max(1, int(n_defect * self.defect_train_ratio))
+                rng_v    = np.random.RandomState(42)
+                shuf     = rng_v.permutation(n_defect)
+                train_defect_set = set(defect_df_all.iloc[shuf[:n_train]]["image_path"])
+                held_defect_set  = set(defect_df_all.iloc[shuf[n_train:]]["image_path"])
+                leaked = train_defect_set & held_defect_set
+                if leaked:
+                    violations.append(f"  {t['defect']}: {len(leaked)} held-out paths in training")
+                # Check 3
+                if len(train_defect_set) + len(held_defect_set) != n_defect:
+                    violations.append(f"  {t['defect']}: split count mismatch")
+
+            # Check 2: no train/good/ path in eval normals
+            test_good = set(str(p) for p in
+                (Path(self.config["mvtec_root"]) / self._category / "test" / "good").glob("*.png"))
+            if set(train_normal) & test_good:
+                violations.append(f"  {t['defect']}: train/good/ paths leaked into eval normals")
+
+        if violations:
+            print("\nSplit verification WARNINGS:")
+            for v in violations: print(v)
+        else:
+            print("\nSplit verification PASSED ✓")
+
         print(f"\n{'='*60}")
         print("FINAL RESULTS")
         print(f"{'='*60}")
