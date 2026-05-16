@@ -2,8 +2,8 @@
   {
     "task_id": 1,
     "defect": "crack",
-    "n_images": 265,
-    "n_normal": 242,
+    "n_images": 242,
+    "n_normal": 219,
     "n_defect": 23,
     "n_concepts_total": 37,
     "new_concepts": [

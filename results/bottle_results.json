@@ -1,0 +1,19 @@
+{
+  "category": "bottle",
+  "n_tasks": 3,
+  "concil_c_auc": 0.8504222680408451,
+  "naive_c_auc": 0.819681207662927,
+  "joint_c_auc": 0.8504222680408451,
+  "bwt_concil": -0.007593581210181943,
+  "bwt_naive": -0.06121078800426627,
+  "concil_per_defect": {
+    "broken_large": 0.9207939074539865,
+    "broken_small": 0.9668148880105402,
+    "contamination": 0.6636580086580087
+  },
+  "naive_per_defect": {
+    "broken_large": 0.9215489166082051,
+    "broken_small": 0.9143675889328062,
+    "contamination": 0.6231271174477696
+  }
+}

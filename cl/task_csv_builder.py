@@ -126,6 +126,10 @@ def build_task_dataframes(
 
     output_dir.mkdir(parents=True, exist_ok=True)
 
+    # Remove any stale task_*.csv files from previous runs with different sequences
+    for stale in output_dir.glob("task_*.csv"):
+        stale.unlink()
+
     # Only include train/good/ normals — test/good/ is held out for evaluation
     all_normal_df  = df[df["anomaly_type"] == "good"]
     normal_df = all_normal_df[
@@ -272,6 +276,93 @@ def main() -> None:
     print(f"  task_sequence.json")
     for t in tasks:
         print(f"  {Path(t['csv_path']).name}")
+
+
+def discover_defect_sequence(
+    annotations_dir: Path,
+    category: str,
+    mvtec_root: Path,
+    order: str = "alphabetical",
+    defect_train_ratio: float = 0.8,
+    seed: int = 42,
+    explicit_sequence: list[str] | None = None,
+) -> list[str]:
+    """Auto-discover defect types and build per-task CSVs.
+
+    Reads {category}.csv, finds all defect types, cross-references with
+    MVTec test/ directories, sorts by 'order', builds task CSVs, and saves
+    the updated task_sequence.json.
+
+    Args:
+        annotations_dir:    path to annotations/{category}/
+        category:           e.g. "hazelnut"
+        mvtec_root:         MVTec dataset root
+        order:              "alphabetical" | "size_asc" | "size_desc"
+        defect_train_ratio: fraction for training (rest held out)
+        seed:               random seed for split
+        explicit_sequence:  if provided, overrides order (comma-separated or list)
+
+    Returns:
+        Ordered list of defect type strings.
+    """
+    import numpy as _np
+
+    annotations_dir = Path(annotations_dir)
+    mvtec_root      = Path(mvtec_root)
+    full_csv        = annotations_dir / f"{category}.csv"
+    output_dir      = annotations_dir / "cl_tasks"
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    df = pd.read_csv(full_csv)
+
+    # All defect types in CSV
+    csv_defects = [d for d in df["anomaly_type"].unique() if d != "good"]
+
+    # Cross-reference with MVTec test/ directories
+    test_root = mvtec_root / category / "test"
+    mvtec_defects = {d.name for d in test_root.iterdir() if d.is_dir() and d.name != "good"}
+    valid_defects = [d for d in csv_defects if d in mvtec_defects]
+
+    if not valid_defects:
+        raise RuntimeError(
+            f"No matching defect types between {full_csv} and {test_root}"
+        )
+
+    # Count images per defect (for size-based ordering)
+    defect_counts = {d: len(df[df["anomaly_type"] == d]) for d in valid_defects}
+
+    # Determine sequence order
+    if explicit_sequence is not None:
+        if isinstance(explicit_sequence, str):
+            explicit_sequence = [s.strip() for s in explicit_sequence.split(",")]
+        missing = set(explicit_sequence) - set(valid_defects)
+        if missing:
+            raise ValueError(f"Explicit sequence contains unknown defects: {missing}")
+        ordered = explicit_sequence
+    elif order == "alphabetical":
+        ordered = sorted(valid_defects)
+    elif order == "size_asc":
+        ordered = sorted(valid_defects, key=lambda d: defect_counts[d])
+    elif order == "size_desc":
+        ordered = sorted(valid_defects, key=lambda d: defect_counts[d], reverse=True)
+    else:
+        raise ValueError(f"Unknown order: {order!r}")
+
+    print(f"Auto-discovered {len(ordered)} defect types for {category}:")
+
+    # Build per-task CSVs
+    tasks, tier_map = build_task_dataframes(full_csv, ordered, output_dir)
+
+    # Print sequence with train/eval counts
+    for t in tasks:
+        n      = defect_counts[t["defect"]]
+        n_tr   = max(1, int(n * defect_train_ratio))
+        n_eval = n - n_tr
+        print(f"  T{t['task_id']}: {t['defect']:<20} "
+              f"({n} images, {n_tr} train / {n_eval} eval)")
+
+    print(f"Sequence saved → {output_dir}/task_sequence.json")
+    return ordered
 
 
 if __name__ == "__main__":

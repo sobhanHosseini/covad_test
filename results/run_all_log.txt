@@ -1,0 +1,159 @@
+12:19:59  Log file: /mnt/nvme1/sobhan_hosseini/covad_test/results/run_all_log.txt
+12:19:59  ==============================================================
+12:19:59  CONVAD-CL — Run all categories
+12:19:59  Categories : ['bottle', 'capsule', 'hazelnut', 'metal_nut', 'screw']
+12:19:59  Results    : /mnt/nvme1/sobhan_hosseini/covad_test/results
+12:19:59  Log        : results/run_all_log.txt
+12:19:59  ==============================================================
+12:19:59  
+DRY RUN — verifying plan only
+
+12:19:59  
+──────────────────────────────────────────────────
+12:19:59  Category: BOTTLE
+12:19:59    Category:  bottle  (3 tasks)
+12:19:59    Normals:   229 total → 209 train/good (eval: test/good)
+12:19:59      T1: broken_large           (20 images, 16 train / 4 eval)
+12:19:59      T2: broken_small           (22 images, 17 train / 5 eval)
+12:19:59      T3: contamination          (21 images, 16 train / 5 eval)
+12:19:59    CONCIL   → checkpoints/bottle-final/
+12:19:59    Naive    → checkpoints/bottle-baseline-final/
+12:19:59    Joint    → checkpoints/bottle-joint-final/
+12:19:59    All data files found ✓
+12:19:59  
+──────────────────────────────────────────────────
+12:19:59  Category: CAPSULE
+12:19:59    Category:  capsule  (5 tasks)
+12:19:59    Normals:   242 total → 219 train/good (eval: test/good)
+12:19:59      T1: crack                  (23 images, 18 train / 5 eval)
+12:19:59      T2: faulty_imprint         (22 images, 17 train / 5 eval)
+12:19:59      T3: poke                   (21 images, 16 train / 5 eval)
+12:19:59      T4: scratch                (23 images, 18 train / 5 eval)
+12:19:59      T5: squeeze                (20 images, 16 train / 4 eval)
+12:19:59    CONCIL   → checkpoints/capsule-final/
+12:19:59    Naive    → checkpoints/capsule-baseline-final/
+12:19:59    Joint    → checkpoints/capsule-joint-final/
+12:19:59    All data files found ✓
+12:19:59  
+──────────────────────────────────────────────────
+12:19:59  Category: HAZELNUT
+12:19:59    Category:  hazelnut  (4 tasks)
+12:19:59    Normals:   431 total → 391 train/good (eval: test/good)
+12:19:59      T1: crack                  (18 images, 14 train / 4 eval)
+12:19:59      T2: cut                    (17 images, 13 train / 4 eval)
+12:19:59      T3: hole                   (18 images, 14 train / 4 eval)
+12:19:59      T4: print                  (17 images, 13 train / 4 eval)
+12:19:59    CONCIL   → checkpoints/hazelnut-final/
+12:19:59    Naive    → checkpoints/hazelnut-baseline-final/
+12:19:59    Joint    → checkpoints/hazelnut-joint-final/
+12:19:59    All data files found ✓
+12:19:59  
+──────────────────────────────────────────────────
+12:19:59  Category: METAL_NUT
+12:19:59    Category:  metal_nut  (4 tasks)
+12:19:59    Normals:   242 total → 220 train/good (eval: test/good)
+12:19:59      T1: bent                   (25 images, 20 train / 5 eval)
+12:19:59      T2: color                  (22 images, 17 train / 5 eval)
+12:19:59      T3: flip                   (23 images, 18 train / 5 eval)
+12:19:59      T4: scratch                (23 images, 18 train / 5 eval)
+12:19:59    CONCIL   → checkpoints/metal_nut-final/
+12:19:59    Naive    → checkpoints/metal_nut-baseline-final/
+12:19:59    Joint    → checkpoints/metal_nut-joint-final/
+12:19:59    All data files found ✓
+12:19:59  
+──────────────────────────────────────────────────
+12:19:59  Category: SCREW
+12:19:59    Category:  screw  (5 tasks)
+12:19:59    Normals:   361 total → 320 train/good (eval: test/good)
+12:19:59      T1: manipulated_front      (24 images, 19 train / 5 eval)
+12:19:59      T2: scratch_head           (24 images, 19 train / 5 eval)
+12:19:59      T3: scratch_neck           (25 images, 20 train / 5 eval)
+12:19:59      T4: thread_side            (23 images, 18 train / 5 eval)
+12:19:59      T5: thread_top             (23 images, 18 train / 5 eval)
+12:19:59    CONCIL   → checkpoints/screw-final/
+12:19:59    Naive    → checkpoints/screw-baseline-final/
+12:19:59    Joint    → checkpoints/screw-joint-final/
+12:19:59    All data files found ✓
+12:19:59  
+==============================================================
+12:19:59  All checks passed ✓  Ready — remove --dry_run to start.
+12:21:43  Log file: /mnt/nvme1/sobhan_hosseini/covad_test/results/run_all_log.txt
+12:21:43  ==============================================================
+12:21:43  CONVAD-CL — Run all categories
+12:21:43  Categories : ['bottle', 'capsule', 'hazelnut', 'metal_nut', 'screw']
+12:21:43  Results    : /mnt/nvme1/sobhan_hosseini/covad_test/results
+12:21:43  Log        : results/run_all_log.txt
+12:21:43  ==============================================================
+12:21:43  All output directories created ✓
+12:21:43  
+══════════════════════════════════════════════════════════════
+12:21:43  CATEGORY: BOTTLE
+12:21:43  ══════════════════════════════════════════════════════════════
+12:21:43    ▶ bottle — CONCIL
+12:22:01    ✓ bottle — CONCIL done
+12:22:01    ▶ bottle — Naive baseline
+12:22:16    ✓ bottle — Naive baseline done
+12:22:16    ▶ bottle — Joint training
+12:22:29    ✓ bottle — Joint training done
+12:22:31    Intermediate results → results/bottle_results.json
+12:22:31  
+══════════════════════════════════════════════════════════════
+12:22:31  CATEGORY: CAPSULE
+12:22:31  ══════════════════════════════════════════════════════════════
+12:22:31    ▶ capsule — CONCIL
+12:23:04    ✓ capsule — CONCIL done
+12:23:04    ▶ capsule — Naive baseline
+12:23:35    ✓ capsule — Naive baseline done
+12:23:35    ▶ capsule — Joint training
+12:23:56    ✓ capsule — Joint training done
+12:23:56    Intermediate results → results/capsule_results.json
+12:23:56  
+══════════════════════════════════════════════════════════════
+12:23:56  CATEGORY: HAZELNUT
+12:23:56  ══════════════════════════════════════════════════════════════
+12:23:56    ▶ hazelnut — CONCIL
+12:24:35    ✓ hazelnut — CONCIL done
+12:24:35    ▶ hazelnut — Naive baseline
+12:25:11    ✓ hazelnut — Naive baseline done
+12:25:11    ▶ hazelnut — Joint training
+12:25:38    ✓ hazelnut — Joint training done
+12:25:38    Intermediate results → results/hazelnut_results.json
+12:25:38  
+══════════════════════════════════════════════════════════════
+12:25:38  CATEGORY: METAL_NUT
+12:25:38  ══════════════════════════════════════════════════════════════
+12:25:38    ▶ metal_nut — CONCIL
+12:25:57    ✓ metal_nut — CONCIL done
+12:25:57    ▶ metal_nut — Naive baseline
+12:26:13    ✓ metal_nut — Naive baseline done
+12:26:13    ▶ metal_nut — Joint training
+12:26:26    ✓ metal_nut — Joint training done
+12:26:26    Intermediate results → results/metal_nut_results.json
+12:26:26  
+══════════════════════════════════════════════════════════════
+12:26:26  CATEGORY: SCREW
+12:26:26  ══════════════════════════════════════════════════════════════
+12:26:26    ▶ screw — CONCIL
+12:26:56    ✓ screw — CONCIL done
+12:26:56    ▶ screw — Naive baseline
+12:27:23    ✓ screw — Naive baseline done
+12:27:23    ▶ screw — Joint training
+12:27:41    ✓ screw — Joint training done
+12:27:41    Intermediate results → results/screw_results.json
+12:27:41  
+════════════════════════════════════════════════════════════════════════════════════
+12:27:41    SUMMARY — All categories  (Standard BWT, Lopez-Paz 2017)
+12:27:41  ════════════════════════════════════════════════════════════════════════════════════
+12:27:41    Category     Tasks    Joint   CONCIL    Naive    BWT(C)    BWT(N)
+12:27:41    -----------   ----   ------   ------   ------   -------   -------
+12:27:41    bottle           3   0.8504   0.8504   0.8197   -0.0076   -0.0612
+12:27:41    capsule          5   0.8664   0.8664   0.5648   -0.0015   -0.1652
+12:27:41    hazelnut         4   0.8685   0.8685   0.6522   -0.0172   -0.1195
+12:27:41    metal_nut        4   0.8451   0.8451   0.7398   +0.0079   -0.0429
+12:27:41    screw            5   0.8466   0.8466   0.6835   -0.0064   -0.0936
+12:27:41    ───────────   ────   ──────   ──────   ──────   ───────   ───────
+12:27:41    Average          ─   0.8554   0.8554   0.6920   -0.0050   -0.0965
+12:27:41  ════════════════════════════════════════════════════════════════════════════════════
+12:27:41  
+Full summary → results/all_categories_summary.json
+12:27:41  CSV summary  → results/all_categories_summary.csv

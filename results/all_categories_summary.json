@@ -1,0 +1,109 @@
+[
+  {
+    "category": "bottle",
+    "n_tasks": 3,
+    "concil_c_auc": 0.8504222680408451,
+    "naive_c_auc": 0.819681207662927,
+    "joint_c_auc": 0.8504222680408451,
+    "bwt_concil": -0.007593581210181943,
+    "bwt_naive": -0.06121078800426627,
+    "concil_per_defect": {
+      "broken_large": 0.9207939074539865,
+      "broken_small": 0.9668148880105402,
+      "contamination": 0.6636580086580087
+    },
+    "naive_per_defect": {
+      "broken_large": 0.9215489166082051,
+      "broken_small": 0.9143675889328062,
+      "contamination": 0.6231271174477696
+    }
+  },
+  {
+    "category": "capsule",
+    "n_tasks": 5,
+    "concil_c_auc": 0.8664414815075979,
+    "naive_c_auc": 0.5648433903891277,
+    "joint_c_auc": 0.8664414815075979,
+    "bwt_concil": -0.0014680473391991133,
+    "bwt_naive": -0.16521519917296995,
+    "concil_per_defect": {
+      "crack": 0.8810994883382682,
+      "faulty_imprint": 0.8325704508856685,
+      "poke": 0.8891058776167472,
+      "scratch": 0.8334372166480861,
+      "squeeze": 0.8959943740492192
+    },
+    "naive_per_defect": {
+      "crack": 0.5822667553733472,
+      "faulty_imprint": 0.5159500805152979,
+      "poke": 0.6074178743961353,
+      "scratch": 0.6343559333581072,
+      "squeeze": 0.48422630830275043
+    }
+  },
+  {
+    "category": "hazelnut",
+    "n_tasks": 4,
+    "concil_c_auc": 0.868460387266945,
+    "naive_c_auc": 0.6521873661924603,
+    "joint_c_auc": 0.868460387266945,
+    "bwt_concil": -0.01719813944688146,
+    "bwt_naive": -0.11947267762924967,
+    "concil_per_defect": {
+      "crack": 0.8633801402167053,
+      "cut": 0.8466949035721709,
+      "hole": 0.8903945120505238,
+      "print": 0.8733719932283794
+    },
+    "naive_per_defect": {
+      "crack": 0.7048644805448622,
+      "cut": 0.6393587255712018,
+      "hole": 0.7787067261939574,
+      "print": 0.4858195324598199
+    }
+  },
+  {
+    "category": "metal_nut",
+    "n_tasks": 4,
+    "concil_c_auc": 0.8450549461652463,
+    "naive_c_auc": 0.7397690662181374,
+    "joint_c_auc": 0.8450549461652463,
+    "bwt_concil": 0.007912963114689031,
+    "bwt_naive": -0.042886136782827454,
+    "concil_per_defect": {
+      "bent": 0.8478991233628207,
+      "color": 0.8772311732362434,
+      "flip": 0.8450152677198713,
+      "scratch": 0.8100742203420502
+    },
+    "naive_per_defect": {
+      "bent": 0.7999711016558713,
+      "color": 0.5946490148715662,
+      "flip": 0.8123428889740342,
+      "scratch": 0.7521132593710779
+    }
+  },
+  {
+    "category": "screw",
+    "n_tasks": 5,
+    "concil_c_auc": 0.8466256294622074,
+    "naive_c_auc": 0.6834605302731639,
+    "joint_c_auc": 0.8466256294622074,
+    "bwt_concil": -0.006410974686581833,
+    "bwt_naive": -0.09356208086204976,
+    "concil_per_defect": {
+      "manipulated_front": 0.8312489510527082,
+      "scratch_head": 0.8799336690417587,
+      "scratch_neck": 0.8239015144098354,
+      "thread_side": 0.8486512128107757,
+      "thread_top": 0.8493927999959594
+    },
+    "naive_per_defect": {
+      "manipulated_front": 0.7307901282842458,
+      "scratch_head": 0.701271763843682,
+      "scratch_neck": 0.6209951874382542,
+      "thread_side": 0.6527740548547033,
+      "thread_top": 0.711471516944934
+    }
+  }
+]

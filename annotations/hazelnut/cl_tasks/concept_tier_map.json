@@ -43,7 +43,7 @@
     "unexpected_surface_pattern",
     "white_surface_patches"
   ],
-  "tier3_hole": [
+  "tier3_cut": [
     "bright_white_marking",
     "bright_white_patch",
     "circular_shell_perforation",
@@ -74,7 +74,7 @@
     "unexpected_surface_pattern",
     "white_surface_patches"
   ],
-  "tier3_cut": [
+  "tier3_hole": [
     "bright_white_marking",
     "bright_white_patch",
     "circular_shell_perforation",

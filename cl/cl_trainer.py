@@ -469,43 +469,39 @@ class CLTrainer:
         # Final summary
         # ── split verification ────────────────────────────────────────────────
         violations: list[str] = []
-        full_df = pd.read_csv(self._full_csv_path)
-        train_paths_all: set[str] = set()
+        test_good_paths = set(
+            str(p) for p in
+            (Path(self.config["mvtec_root"]) / self._category / "test" / "good").glob("*.png")
+        )
 
         for t in tasks:
+            defect = t["defect"]
+            held_df = self._held_out_defects.get(defect)
+
+            # Check 1: held-out set and train set are disjoint
+            if held_df is not None and len(held_df) > 0:
+                df_t = pd.read_csv(t["csv_path"])
+                all_defect = df_t[df_t["label_index"] == 1].reset_index(drop=True)
+                n_d    = len(all_defect)
+                n_tr   = max(1, int(n_d * self.defect_train_ratio))
+                rng_v  = np.random.RandomState(42)
+                shuf   = rng_v.permutation(n_d)
+                train_set = set(all_defect.iloc[shuf[:n_tr]]["image_path"])
+                held_set  = set(all_defect.iloc[shuf[n_tr:]]["image_path"])
+                if train_set & held_set:
+                    violations.append(f"  {defect}: held-out/train overlap!")
+                if len(train_set) + len(held_set) != n_d:
+                    violations.append(f"  {defect}: split count mismatch ({len(train_set)}+{len(held_set)} ≠ {n_d})")
+
+            # Check 2: no test/good/ paths in training normals
             df_t = pd.read_csv(t["csv_path"])
-            train_normal = df_t[
+            train_normals = set(df_t[
                 (df_t["label_index"] == 0) &
                 df_t["image_path"].str.contains("/train/good/", regex=False)
-            ]["image_path"].tolist()
-            held_df = self._held_out_defects.get(t["defect"], pd.DataFrame())
-            # Check 1: no held-out defect path appears in training rows
-            train_defect_paths = set(df_t[df_t["label_index"] == 1]["image_path"])
-            if held_df is not None and len(held_df):
-                overlap = set(held_df["image_path"]) & train_defect_paths
-                if held_df is not None and set(held_df["image_path"]) - train_defect_paths:
-                    pass   # held-out not in training: correct
-                # The held-out rows come from splitting defect_df, so some are in training
-                # Real check: held-out paths must NOT be in the defect_train set
-                defect_df_all = df_t[df_t["label_index"] == 1].reset_index(drop=True)
-                n_defect = len(defect_df_all)
-                n_train  = max(1, int(n_defect * self.defect_train_ratio))
-                rng_v    = np.random.RandomState(42)
-                shuf     = rng_v.permutation(n_defect)
-                train_defect_set = set(defect_df_all.iloc[shuf[:n_train]]["image_path"])
-                held_defect_set  = set(defect_df_all.iloc[shuf[n_train:]]["image_path"])
-                leaked = train_defect_set & held_defect_set
-                if leaked:
-                    violations.append(f"  {t['defect']}: {len(leaked)} held-out paths in training")
-                # Check 3
-                if len(train_defect_set) + len(held_defect_set) != n_defect:
-                    violations.append(f"  {t['defect']}: split count mismatch")
-
-            # Check 2: no train/good/ path in eval normals
-            test_good = set(str(p) for p in
-                (Path(self.config["mvtec_root"]) / self._category / "test" / "good").glob("*.png"))
-            if set(train_normal) & test_good:
-                violations.append(f"  {t['defect']}: train/good/ paths leaked into eval normals")
+            ]["image_path"])
+            leaked = train_normals & test_good_paths
+            if leaked:
+                violations.append(f"  {defect}: {len(leaked)} test/good/ paths in training normals")
 
         if violations:
             print("\nSplit verification WARNINGS:")
@@ -589,8 +585,9 @@ class CLTrainer:
                     issues.append(f"  MISSING image: {img}")
 
         mvtec_dir = Path(self.config["mvtec_root"]) / self._category
-        for subdir in ["train/good", "test/good", "test/crack",
-                        "test/hole", "test/cut", "test/print"]:
+        # Check generic dirs (train/good, test/good) + actual defect dirs for this category
+        defect_dirs = [f"test/{t['defect']}" for t in tasks]
+        for subdir in ["train/good", "test/good"] + defect_dirs:
             p = mvtec_dir / subdir
             if not p.exists():
                 issues.append(f"  MISSING dir: {p}")

@@ -1,0 +1,23 @@
+{
+  "category": "screw",
+  "n_tasks": 5,
+  "concil_c_auc": 0.8466256294622074,
+  "naive_c_auc": 0.6834605302731639,
+  "joint_c_auc": 0.8466256294622074,
+  "bwt_concil": -0.006410974686581833,
+  "bwt_naive": -0.09356208086204976,
+  "concil_per_defect": {
+    "manipulated_front": 0.8312489510527082,
+    "scratch_head": 0.8799336690417587,
+    "scratch_neck": 0.8239015144098354,
+    "thread_side": 0.8486512128107757,
+    "thread_top": 0.8493927999959594
+  },
+  "naive_per_defect": {
+    "manipulated_front": 0.7307901282842458,
+    "scratch_head": 0.701271763843682,
+    "scratch_neck": 0.6209951874382542,
+    "thread_side": 0.6527740548547033,
+    "thread_top": 0.711471516944934
+  }
+}
