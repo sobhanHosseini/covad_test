@@ -1,0 +1,99 @@
+[
+  {
+    "task_id": 1,
+    "defect": "manipulated_front",
+    "n_images": 344,
+    "n_normal": 320,
+    "n_defect": 24,
+    "n_concepts_total": 52,
+    "new_concepts": [
+      "abrasive_head_damage",
+      "compromised_thread_profile",
+      "damaged_thread_top",
+      "defined_thread_ridges",
+      "distorted_thread_ridges",
+      "even_metallic_sheen",
+      "flank_thread_erosion",
+      "gouged_thread_root",
+      "head_abrasion_mark",
+      "head_abrasion_scratches",
+      "head_neck_scuffing",
+      "head_scratch_abrasion",
+      "head_slot_distortion",
+      "head_surface_scratch",
+      "head_surface_scratching",
+      "head_thread_deformation",
+      "hexagonal_head_shape",
+      "intact_thread_pitch",
+      "linear_scratch_abrasion",
+      "linear_scratching",
+      "linear_surface_scratch",
+      "localized_surface_gouging",
+      "machined_metal_sheen",
+      "material_thread_bending",
+      "metallic_abrasion_mark",
+      "neck_abrasion_wear",
+      "non_uniform_thread_profile",
+      "raised_thread_ridges",
+      "rough_thread_surface",
+      "side_thread_abrasion",
+      "surface_irregularity",
+      "texture_inconsistency",
+      "thread_flank_erosion",
+      "thread_stress_failure",
+      "thread_top_chipping",
+      "unexpected_surface_pattern",
+      "uniform_gray_tone",
+      "uniform_metal_sheen",
+      "uniform_metallic_plating"
+    ],
+    "csv_path": "annotations/screw/cl_tasks/task_1_manipulated_front.csv"
+  },
+  {
+    "task_id": 2,
+    "defect": "scratch_head",
+    "n_images": 24,
+    "n_normal": 0,
+    "n_defect": 24,
+    "n_concepts_total": 52,
+    "new_concepts": [
+      "color_deviation"
+    ],
+    "csv_path": "annotations/screw/cl_tasks/task_2_scratch_head.csv"
+  },
+  {
+    "task_id": 3,
+    "defect": "scratch_neck",
+    "n_images": 25,
+    "n_normal": 0,
+    "n_defect": 25,
+    "n_concepts_total": 52,
+    "new_concepts": [
+      "slotted_recessed_head",
+      "structural_discontinuity"
+    ],
+    "csv_path": "annotations/screw/cl_tasks/task_3_scratch_neck.csv"
+  },
+  {
+    "task_id": 4,
+    "defect": "thread_side",
+    "n_images": 23,
+    "n_normal": 0,
+    "n_defect": 23,
+    "n_concepts_total": 52,
+    "new_concepts": [
+      "uniform_thread_pitch"
+    ],
+    "csv_path": "annotations/screw/cl_tasks/task_4_thread_side.csv"
+  },
+  {
+    "task_id": 5,
+    "defect": "thread_top",
+    "n_images": 23,
+    "n_normal": 0,
+    "n_defect": 23,
+    "n_concepts_total": 52,
+    "new_concepts": [],
+    "csv_path": "annotations/screw/cl_tasks/task_5_thread_top.csv"
+  }
+]

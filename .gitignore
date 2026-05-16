@@ -12,7 +12,7 @@ __pycache__/
 
 
 checkpoints/
-annotations/
+# annotations/
 
 # Distribution / packaging
 .Python

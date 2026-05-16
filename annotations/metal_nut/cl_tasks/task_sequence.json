@@ -1,0 +1,77 @@
+[
+  {
+    "task_id": 1,
+    "defect": "bent",
+    "n_images": 245,
+    "n_normal": 220,
+    "n_defect": 25,
+    "n_concepts_total": 44,
+    "new_concepts": [
+      "angular_distortion",
+      "angular_misalignment",
+      "asymmetrical_cross_section",
+      "asymmetrical_profile",
+      "cast_metal_material",
+      "chemical_deposit_streak",
+      "chemical_staining_deposit",
+      "continuous_wall_thickness",
+      "diagonal_scratch_mark",
+      "dragged_scratch_groove",
+      "geometric_deformation",
+      "lateral_deflection_bend",
+      "localized_bending_stress",
+      "localized_blue_stain",
+      "localized_discoloration_patch",
+      "localized_reddish_staining",
+      "machined_metal_sheen",
+      "mild_surface_abrasion",
+      "pigmentation_abnormality",
+      "pigmentation_bleed_mark",
+      "scratch_abrasion_mark",
+      "solid_ring_structure",
+      "structural_discontinuity",
+      "structural_warping",
+      "surface_irregularity",
+      "surface_scratches",
+      "texture_inconsistency",
+      "uneven_edge_bending",
+      "unexpected_surface_pattern",
+      "uniform_metallic_sheen",
+      "visible_abrasion_scratches"
+    ],
+    "csv_path": "annotations/metal_nut/cl_tasks/task_1_bent.csv"
+  },
+  {
+    "task_id": 2,
+    "defect": "color",
+    "n_images": 22,
+    "n_normal": 0,
+    "n_defect": 22,
+    "n_concepts_total": 44,
+    "new_concepts": [
+      "color_deviation",
+      "uniform_metallic_grey"
+    ],
+    "csv_path": "annotations/metal_nut/cl_tasks/task_2_color.csv"
+  },
+  {
+    "task_id": 3,
+    "defect": "flip",
+    "n_images": 23,
+    "n_normal": 0,
+    "n_defect": 23,
+    "n_concepts_total": 44,
+    "new_concepts": [],
+    "csv_path": "annotations/metal_nut/cl_tasks/task_3_flip.csv"
+  },
+  {
+    "task_id": 4,
+    "defect": "scratch",
+    "n_images": 23,
+    "n_normal": 0,
+    "n_defect": 23,
+    "n_concepts_total": 44,
+    "new_concepts": [],
+    "csv_path": "annotations/metal_nut/cl_tasks/task_4_scratch.csv"
+  }
+]
