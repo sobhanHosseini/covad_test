@@ -1,0 +1,231 @@
+{
+  "bottle": {
+    "defects": [
+      {
+        "task_id": 1,
+        "defect": "broken_large",
+        "b1_iauc": 1.0,
+        "b2_iauc": 1.0,
+        "combined_iauc": 1.0,
+        "n_normal_test": 20,
+        "n_defect_test": 4
+      },
+      {
+        "task_id": 2,
+        "defect": "broken_small",
+        "b1_iauc": 1.0,
+        "b2_iauc": 0.99,
+        "combined_iauc": 1.0,
+        "n_normal_test": 20,
+        "n_defect_test": 5
+      },
+      {
+        "task_id": 3,
+        "defect": "contamination",
+        "b1_iauc": 1.0,
+        "b2_iauc": 1.0,
+        "combined_iauc": 1.0,
+        "n_normal_test": 20,
+        "n_defect_test": 5
+      }
+    ],
+    "b1_mean_iauc": 1.0,
+    "b2_mean_iauc": 0.9967,
+    "comb_mean_iauc": 1.0,
+    "b2_mean_bwt": 0.0
+  },
+  "capsule": {
+    "defects": [
+      {
+        "task_id": 1,
+        "defect": "crack",
+        "b1_iauc": 0.9739,
+        "b2_iauc": 0.9913,
+        "combined_iauc": 0.9913,
+        "n_normal_test": 23,
+        "n_defect_test": 5
+      },
+      {
+        "task_id": 2,
+        "defect": "faulty_imprint",
+        "b1_iauc": 0.9478,
+        "b2_iauc": 0.7739,
+        "combined_iauc": 0.8957,
+        "n_normal_test": 23,
+        "n_defect_test": 5
+      },
+      {
+        "task_id": 3,
+        "defect": "poke",
+        "b1_iauc": 0.9565,
+        "b2_iauc": 0.9913,
+        "combined_iauc": 0.9652,
+        "n_normal_test": 23,
+        "n_defect_test": 5
+      },
+      {
+        "task_id": 4,
+        "defect": "scratch",
+        "b1_iauc": 0.9739,
+        "b2_iauc": 1.0,
+        "combined_iauc": 0.9826,
+        "n_normal_test": 23,
+        "n_defect_test": 5
+      },
+      {
+        "task_id": 5,
+        "defect": "squeeze",
+        "b1_iauc": 1.0,
+        "b2_iauc": 1.0,
+        "combined_iauc": 1.0,
+        "n_normal_test": 23,
+        "n_defect_test": 4
+      }
+    ],
+    "b1_mean_iauc": 0.9704,
+    "b2_mean_iauc": 0.9513,
+    "comb_mean_iauc": 0.967,
+    "b2_mean_bwt": 0.004347826086956552
+  },
+  "hazelnut": {
+    "defects": [
+      {
+        "task_id": 1,
+        "defect": "crack",
+        "b1_iauc": 1.0,
+        "b2_iauc": 1.0,
+        "combined_iauc": 1.0,
+        "n_normal_test": 40,
+        "n_defect_test": 4
+      },
+      {
+        "task_id": 2,
+        "defect": "cut",
+        "b1_iauc": 1.0,
+        "b2_iauc": 0.9875,
+        "combined_iauc": 0.9938,
+        "n_normal_test": 40,
+        "n_defect_test": 4
+      },
+      {
+        "task_id": 3,
+        "defect": "hole",
+        "b1_iauc": 1.0,
+        "b2_iauc": 1.0,
+        "combined_iauc": 1.0,
+        "n_normal_test": 40,
+        "n_defect_test": 4
+      },
+      {
+        "task_id": 4,
+        "defect": "print",
+        "b1_iauc": 1.0,
+        "b2_iauc": 0.9938,
+        "combined_iauc": 1.0,
+        "n_normal_test": 40,
+        "n_defect_test": 4
+      }
+    ],
+    "b1_mean_iauc": 1.0,
+    "b2_mean_iauc": 0.9953,
+    "comb_mean_iauc": 0.9985,
+    "b2_mean_bwt": 0.004166666666666652
+  },
+  "metal_nut": {
+    "defects": [
+      {
+        "task_id": 1,
+        "defect": "bent",
+        "b1_iauc": 1.0,
+        "b2_iauc": 0.9818,
+        "combined_iauc": 1.0,
+        "n_normal_test": 22,
+        "n_defect_test": 5
+      },
+      {
+        "task_id": 2,
+        "defect": "color",
+        "b1_iauc": 1.0,
+        "b2_iauc": 1.0,
+        "combined_iauc": 1.0,
+        "n_normal_test": 22,
+        "n_defect_test": 5
+      },
+      {
+        "task_id": 3,
+        "defect": "flip",
+        "b1_iauc": 1.0,
+        "b2_iauc": 1.0,
+        "combined_iauc": 1.0,
+        "n_normal_test": 22,
+        "n_defect_test": 5
+      },
+      {
+        "task_id": 4,
+        "defect": "scratch",
+        "b1_iauc": 1.0,
+        "b2_iauc": 1.0,
+        "combined_iauc": 1.0,
+        "n_normal_test": 22,
+        "n_defect_test": 5
+      }
+    ],
+    "b1_mean_iauc": 1.0,
+    "b2_mean_iauc": 0.9954,
+    "comb_mean_iauc": 1.0,
+    "b2_mean_bwt": 0.003030303030303013
+  },
+  "screw": {
+    "defects": [
+      {
+        "task_id": 1,
+        "defect": "manipulated_front",
+        "b1_iauc": 0.8537,
+        "b2_iauc": 0.9122,
+        "combined_iauc": 0.8634,
+        "n_normal_test": 41,
+        "n_defect_test": 5
+      },
+      {
+        "task_id": 2,
+        "defect": "scratch_head",
+        "b1_iauc": 0.9561,
+        "b2_iauc": 0.8146,
+        "combined_iauc": 0.9415,
+        "n_normal_test": 41,
+        "n_defect_test": 5
+      },
+      {
+        "task_id": 3,
+        "defect": "scratch_neck",
+        "b1_iauc": 0.9951,
+        "b2_iauc": 1.0,
+        "combined_iauc": 1.0,
+        "n_normal_test": 41,
+        "n_defect_test": 5
+      },
+      {
+        "task_id": 4,
+        "defect": "thread_side",
+        "b1_iauc": 0.9512,
+        "b2_iauc": 0.8732,
+        "combined_iauc": 0.9512,
+        "n_normal_test": 41,
+        "n_defect_test": 5
+      },
+      {
+        "task_id": 5,
+        "defect": "thread_top",
+        "b1_iauc": 0.961,
+        "b2_iauc": 0.9854,
+        "combined_iauc": 0.9854,
+        "n_normal_test": 41,
+        "n_defect_test": 5
+      }
+    ],
+    "b1_mean_iauc": 0.9434,
+    "b2_mean_iauc": 0.9171,
+    "comb_mean_iauc": 0.9483,
+    "b2_mean_bwt": 0.060975609756097504
+  }
+}

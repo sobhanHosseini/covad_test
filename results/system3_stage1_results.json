@@ -1,0 +1,243 @@
+{
+  "hazelnut": {
+    "tasks": [
+      {
+        "task_id": 1,
+        "defect": "crack",
+        "evaluated_after_task": 1,
+        "i_auc": 0.26875000000000004,
+        "n_normal_test": 40,
+        "n_defect_test": 4
+      },
+      {
+        "task_id": 1,
+        "defect": "crack",
+        "evaluated_after_task": 2,
+        "i_auc": 0.19374999999999998,
+        "n_normal_test": 40,
+        "n_defect_test": 4
+      },
+      {
+        "task_id": 2,
+        "defect": "cut",
+        "evaluated_after_task": 2,
+        "i_auc": 0.27499999999999997,
+        "n_normal_test": 40,
+        "n_defect_test": 4
+      },
+      {
+        "task_id": 1,
+        "defect": "crack",
+        "evaluated_after_task": 3,
+        "i_auc": 0.12500000000000003,
+        "n_normal_test": 40,
+        "n_defect_test": 4
+      },
+      {
+        "task_id": 2,
+        "defect": "cut",
+        "evaluated_after_task": 3,
+        "i_auc": 0.19374999999999998,
+        "n_normal_test": 40,
+        "n_defect_test": 4
+      },
+      {
+        "task_id": 3,
+        "defect": "hole",
+        "evaluated_after_task": 3,
+        "i_auc": 0.37500000000000006,
+        "n_normal_test": 40,
+        "n_defect_test": 4
+      },
+      {
+        "task_id": 1,
+        "defect": "crack",
+        "evaluated_after_task": 4,
+        "i_auc": 0.06875000000000003,
+        "n_normal_test": 40,
+        "n_defect_test": 4
+      },
+      {
+        "task_id": 2,
+        "defect": "cut",
+        "evaluated_after_task": 4,
+        "i_auc": 0.2,
+        "n_normal_test": 40,
+        "n_defect_test": 4
+      },
+      {
+        "task_id": 3,
+        "defect": "hole",
+        "evaluated_after_task": 4,
+        "i_auc": 0.46249999999999997,
+        "n_normal_test": 40,
+        "n_defect_test": 4
+      },
+      {
+        "task_id": 4,
+        "defect": "print",
+        "evaluated_after_task": 4,
+        "i_auc": 0.54375,
+        "n_normal_test": 40,
+        "n_defect_test": 4
+      }
+    ],
+    "mean_iauc": 0.31875,
+    "bwt_per_defect": {
+      "crack": -0.2,
+      "cut": -0.07499999999999996,
+      "hole": 0.08749999999999991
+    },
+    "mean_bwt": -0.06250000000000001,
+    "concept_accs": {
+      "rubber_cable": {
+        "precision": 0.6536,
+        "recall": 0.9329,
+        "f1": 0.7686,
+        "n_pos": 730
+      },
+      "leather_embossed_texture": {
+        "precision": null,
+        "recall": null,
+        "f1": null,
+        "n_pos": 0
+      },
+      "screw_thread_metal": {
+        "precision": null,
+        "recall": null,
+        "f1": null,
+        "n_pos": 0
+      },
+      "concept_03": {
+        "precision": null,
+        "recall": null,
+        "f1": null,
+        "n_pos": 0
+      },
+      "toothbrush_bristles": {
+        "precision": null,
+        "recall": null,
+        "f1": null,
+        "n_pos": 0
+      },
+      "metal_grid_mesh": {
+        "precision": null,
+        "recall": null,
+        "f1": null,
+        "n_pos": 0
+      },
+      "hole_pit_defect": {
+        "precision": null,
+        "recall": null,
+        "f1": null,
+        "n_pos": 0
+      },
+      "screw_thread_metal_1": {
+        "precision": null,
+        "recall": null,
+        "f1": null,
+        "n_pos": 0
+      },
+      "glass_bottle_surface": {
+        "precision": null,
+        "recall": null,
+        "f1": null,
+        "n_pos": 0
+      },
+      "hazelnut_shell_surface": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "n_pos": 4
+      },
+      "glass_bottle_surface_1": {
+        "precision": null,
+        "recall": null,
+        "f1": null,
+        "n_pos": 0
+      },
+      "concept_11": {
+        "precision": null,
+        "recall": null,
+        "f1": null,
+        "n_pos": 0
+      },
+      "properly_manufactured_part": {
+        "precision": null,
+        "recall": null,
+        "f1": null,
+        "n_pos": 0
+      },
+      "pill_tablet_surface": {
+        "precision": null,
+        "recall": null,
+        "f1": null,
+        "n_pos": 0
+      },
+      "properly_manufactured_part_1": {
+        "precision": null,
+        "recall": null,
+        "f1": null,
+        "n_pos": 0
+      },
+      "screw_thread_metal_2": {
+        "precision": null,
+        "recall": null,
+        "f1": null,
+        "n_pos": 0
+      },
+      "screw_thread_metal_3": {
+        "precision": null,
+        "recall": null,
+        "f1": null,
+        "n_pos": 0
+      },
+      "metal_grid_mesh_1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "n_pos": 21
+      },
+      "concept_18": {
+        "precision": null,
+        "recall": null,
+        "f1": null,
+        "n_pos": 0
+      },
+      "toothbrush_bristles_1": {
+        "precision": null,
+        "recall": null,
+        "f1": null,
+        "n_pos": 0
+      }
+    }
+  },
+  "summary": {
+    "avg_iauc": 0.31875,
+    "system2_iauc": 0.971,
+    "delta": -0.65225,
+    "K_concepts": 20,
+    "concept_names": [
+      "rubber_cable",
+      "leather_embossed_texture",
+      "screw_thread_metal",
+      "concept_03",
+      "toothbrush_bristles",
+      "metal_grid_mesh",
+      "hole_pit_defect",
+      "screw_thread_metal_1",
+      "glass_bottle_surface",
+      "hazelnut_shell_surface",
+      "glass_bottle_surface_1",
+      "concept_11",
+      "properly_manufactured_part",
+      "pill_tablet_surface",
+      "properly_manufactured_part_1",
+      "screw_thread_metal_2",
+      "screw_thread_metal_3",
+      "metal_grid_mesh_1",
+      "concept_18",
+      "toothbrush_bristles_1"
+    ]
+  }
+}

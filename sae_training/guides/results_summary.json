@@ -1,0 +1,501 @@
+{
+  "bottle": {
+    "tasks": [
+      {
+        "task_id": 1,
+        "defect": "broken_large",
+        "evaluated_after_task": 1,
+        "i_auc": 1.0,
+        "n_normal_test": 20,
+        "n_defect_test": 4
+      },
+      {
+        "task_id": 1,
+        "defect": "broken_large",
+        "evaluated_after_task": 2,
+        "i_auc": 1.0,
+        "n_normal_test": 20,
+        "n_defect_test": 4
+      },
+      {
+        "task_id": 2,
+        "defect": "broken_small",
+        "evaluated_after_task": 2,
+        "i_auc": 0.99,
+        "n_normal_test": 20,
+        "n_defect_test": 5
+      },
+      {
+        "task_id": 1,
+        "defect": "broken_large",
+        "evaluated_after_task": 3,
+        "i_auc": 1.0,
+        "n_normal_test": 20,
+        "n_defect_test": 4
+      },
+      {
+        "task_id": 2,
+        "defect": "broken_small",
+        "evaluated_after_task": 3,
+        "i_auc": 0.99,
+        "n_normal_test": 20,
+        "n_defect_test": 5
+      },
+      {
+        "task_id": 3,
+        "defect": "contamination",
+        "evaluated_after_task": 3,
+        "i_auc": 1.0,
+        "n_normal_test": 20,
+        "n_defect_test": 5
+      }
+    ],
+    "bwt_per_defect": {
+      "broken_large": 0.0,
+      "broken_small": 0.0
+    },
+    "mean_bwt": 0.0
+  },
+  "capsule": {
+    "tasks": [
+      {
+        "task_id": 1,
+        "defect": "crack",
+        "evaluated_after_task": 1,
+        "i_auc": 0.991304347826087,
+        "n_normal_test": 23,
+        "n_defect_test": 5
+      },
+      {
+        "task_id": 1,
+        "defect": "crack",
+        "evaluated_after_task": 2,
+        "i_auc": 1.0,
+        "n_normal_test": 23,
+        "n_defect_test": 5
+      },
+      {
+        "task_id": 2,
+        "defect": "faulty_imprint",
+        "evaluated_after_task": 2,
+        "i_auc": 0.7478260869565218,
+        "n_normal_test": 23,
+        "n_defect_test": 5
+      },
+      {
+        "task_id": 1,
+        "defect": "crack",
+        "evaluated_after_task": 3,
+        "i_auc": 1.0,
+        "n_normal_test": 23,
+        "n_defect_test": 5
+      },
+      {
+        "task_id": 2,
+        "defect": "faulty_imprint",
+        "evaluated_after_task": 3,
+        "i_auc": 0.7391304347826086,
+        "n_normal_test": 23,
+        "n_defect_test": 5
+      },
+      {
+        "task_id": 3,
+        "defect": "poke",
+        "evaluated_after_task": 3,
+        "i_auc": 1.0,
+        "n_normal_test": 23,
+        "n_defect_test": 5
+      },
+      {
+        "task_id": 1,
+        "defect": "crack",
+        "evaluated_after_task": 4,
+        "i_auc": 1.0,
+        "n_normal_test": 23,
+        "n_defect_test": 5
+      },
+      {
+        "task_id": 2,
+        "defect": "faulty_imprint",
+        "evaluated_after_task": 4,
+        "i_auc": 0.8,
+        "n_normal_test": 23,
+        "n_defect_test": 5
+      },
+      {
+        "task_id": 3,
+        "defect": "poke",
+        "evaluated_after_task": 4,
+        "i_auc": 1.0,
+        "n_normal_test": 23,
+        "n_defect_test": 5
+      },
+      {
+        "task_id": 4,
+        "defect": "scratch",
+        "evaluated_after_task": 4,
+        "i_auc": 1.0,
+        "n_normal_test": 23,
+        "n_defect_test": 5
+      },
+      {
+        "task_id": 1,
+        "defect": "crack",
+        "evaluated_after_task": 5,
+        "i_auc": 0.991304347826087,
+        "n_normal_test": 23,
+        "n_defect_test": 5
+      },
+      {
+        "task_id": 2,
+        "defect": "faulty_imprint",
+        "evaluated_after_task": 5,
+        "i_auc": 0.773913043478261,
+        "n_normal_test": 23,
+        "n_defect_test": 5
+      },
+      {
+        "task_id": 3,
+        "defect": "poke",
+        "evaluated_after_task": 5,
+        "i_auc": 0.991304347826087,
+        "n_normal_test": 23,
+        "n_defect_test": 5
+      },
+      {
+        "task_id": 4,
+        "defect": "scratch",
+        "evaluated_after_task": 5,
+        "i_auc": 1.0,
+        "n_normal_test": 23,
+        "n_defect_test": 5
+      },
+      {
+        "task_id": 5,
+        "defect": "squeeze",
+        "evaluated_after_task": 5,
+        "i_auc": 1.0,
+        "n_normal_test": 23,
+        "n_defect_test": 4
+      }
+    ],
+    "bwt_per_defect": {
+      "crack": 0.0,
+      "faulty_imprint": 0.026086956521739202,
+      "poke": -0.008695652173912993,
+      "scratch": 0.0
+    },
+    "mean_bwt": 0.004347826086956552
+  },
+  "hazelnut": {
+    "tasks": [
+      {
+        "task_id": 1,
+        "defect": "crack",
+        "evaluated_after_task": 1,
+        "i_auc": 1.0,
+        "n_normal_test": 40,
+        "n_defect_test": 4
+      },
+      {
+        "task_id": 1,
+        "defect": "crack",
+        "evaluated_after_task": 2,
+        "i_auc": 1.0,
+        "n_normal_test": 40,
+        "n_defect_test": 4
+      },
+      {
+        "task_id": 2,
+        "defect": "cut",
+        "evaluated_after_task": 2,
+        "i_auc": 0.98125,
+        "n_normal_test": 40,
+        "n_defect_test": 4
+      },
+      {
+        "task_id": 1,
+        "defect": "crack",
+        "evaluated_after_task": 3,
+        "i_auc": 1.0,
+        "n_normal_test": 40,
+        "n_defect_test": 4
+      },
+      {
+        "task_id": 2,
+        "defect": "cut",
+        "evaluated_after_task": 3,
+        "i_auc": 0.9874999999999999,
+        "n_normal_test": 40,
+        "n_defect_test": 4
+      },
+      {
+        "task_id": 3,
+        "defect": "hole",
+        "evaluated_after_task": 3,
+        "i_auc": 0.99375,
+        "n_normal_test": 40,
+        "n_defect_test": 4
+      },
+      {
+        "task_id": 1,
+        "defect": "crack",
+        "evaluated_after_task": 4,
+        "i_auc": 1.0,
+        "n_normal_test": 40,
+        "n_defect_test": 4
+      },
+      {
+        "task_id": 2,
+        "defect": "cut",
+        "evaluated_after_task": 4,
+        "i_auc": 0.9874999999999999,
+        "n_normal_test": 40,
+        "n_defect_test": 4
+      },
+      {
+        "task_id": 3,
+        "defect": "hole",
+        "evaluated_after_task": 4,
+        "i_auc": 1.0,
+        "n_normal_test": 40,
+        "n_defect_test": 4
+      },
+      {
+        "task_id": 4,
+        "defect": "print",
+        "evaluated_after_task": 4,
+        "i_auc": 0.99375,
+        "n_normal_test": 40,
+        "n_defect_test": 4
+      }
+    ],
+    "bwt_per_defect": {
+      "crack": 0.0,
+      "cut": 0.006249999999999978,
+      "hole": 0.006249999999999978
+    },
+    "mean_bwt": 0.004166666666666652
+  },
+  "metal_nut": {
+    "tasks": [
+      {
+        "task_id": 1,
+        "defect": "bent",
+        "evaluated_after_task": 1,
+        "i_auc": 0.9727272727272728,
+        "n_normal_test": 22,
+        "n_defect_test": 5
+      },
+      {
+        "task_id": 1,
+        "defect": "bent",
+        "evaluated_after_task": 2,
+        "i_auc": 1.0,
+        "n_normal_test": 22,
+        "n_defect_test": 5
+      },
+      {
+        "task_id": 2,
+        "defect": "color",
+        "evaluated_after_task": 2,
+        "i_auc": 1.0,
+        "n_normal_test": 22,
+        "n_defect_test": 5
+      },
+      {
+        "task_id": 1,
+        "defect": "bent",
+        "evaluated_after_task": 3,
+        "i_auc": 0.9818181818181818,
+        "n_normal_test": 22,
+        "n_defect_test": 5
+      },
+      {
+        "task_id": 2,
+        "defect": "color",
+        "evaluated_after_task": 3,
+        "i_auc": 1.0,
+        "n_normal_test": 22,
+        "n_defect_test": 5
+      },
+      {
+        "task_id": 3,
+        "defect": "flip",
+        "evaluated_after_task": 3,
+        "i_auc": 1.0,
+        "n_normal_test": 22,
+        "n_defect_test": 5
+      },
+      {
+        "task_id": 1,
+        "defect": "bent",
+        "evaluated_after_task": 4,
+        "i_auc": 0.9818181818181818,
+        "n_normal_test": 22,
+        "n_defect_test": 5
+      },
+      {
+        "task_id": 2,
+        "defect": "color",
+        "evaluated_after_task": 4,
+        "i_auc": 1.0,
+        "n_normal_test": 22,
+        "n_defect_test": 5
+      },
+      {
+        "task_id": 3,
+        "defect": "flip",
+        "evaluated_after_task": 4,
+        "i_auc": 1.0,
+        "n_normal_test": 22,
+        "n_defect_test": 5
+      },
+      {
+        "task_id": 4,
+        "defect": "scratch",
+        "evaluated_after_task": 4,
+        "i_auc": 1.0,
+        "n_normal_test": 22,
+        "n_defect_test": 5
+      }
+    ],
+    "bwt_per_defect": {
+      "bent": 0.009090909090909038,
+      "color": 0.0,
+      "flip": 0.0
+    },
+    "mean_bwt": 0.003030303030303013
+  },
+  "screw": {
+    "tasks": [
+      {
+        "task_id": 1,
+        "defect": "manipulated_front",
+        "evaluated_after_task": 1,
+        "i_auc": 0.6682926829268293,
+        "n_normal_test": 41,
+        "n_defect_test": 5
+      },
+      {
+        "task_id": 1,
+        "defect": "manipulated_front",
+        "evaluated_after_task": 2,
+        "i_auc": 0.6536585365853659,
+        "n_normal_test": 41,
+        "n_defect_test": 5
+      },
+      {
+        "task_id": 2,
+        "defect": "scratch_head",
+        "evaluated_after_task": 2,
+        "i_auc": 0.804878048780488,
+        "n_normal_test": 41,
+        "n_defect_test": 5
+      },
+      {
+        "task_id": 1,
+        "defect": "manipulated_front",
+        "evaluated_after_task": 3,
+        "i_auc": 0.7560975609756098,
+        "n_normal_test": 41,
+        "n_defect_test": 5
+      },
+      {
+        "task_id": 2,
+        "defect": "scratch_head",
+        "evaluated_after_task": 3,
+        "i_auc": 0.8146341463414635,
+        "n_normal_test": 41,
+        "n_defect_test": 5
+      },
+      {
+        "task_id": 3,
+        "defect": "scratch_neck",
+        "evaluated_after_task": 3,
+        "i_auc": 1.0,
+        "n_normal_test": 41,
+        "n_defect_test": 5
+      },
+      {
+        "task_id": 1,
+        "defect": "manipulated_front",
+        "evaluated_after_task": 4,
+        "i_auc": 0.8682926829268293,
+        "n_normal_test": 41,
+        "n_defect_test": 5
+      },
+      {
+        "task_id": 2,
+        "defect": "scratch_head",
+        "evaluated_after_task": 4,
+        "i_auc": 0.8146341463414635,
+        "n_normal_test": 41,
+        "n_defect_test": 5
+      },
+      {
+        "task_id": 3,
+        "defect": "scratch_neck",
+        "evaluated_after_task": 4,
+        "i_auc": 1.0,
+        "n_normal_test": 41,
+        "n_defect_test": 5
+      },
+      {
+        "task_id": 4,
+        "defect": "thread_side",
+        "evaluated_after_task": 4,
+        "i_auc": 0.8829268292682927,
+        "n_normal_test": 41,
+        "n_defect_test": 5
+      },
+      {
+        "task_id": 1,
+        "defect": "manipulated_front",
+        "evaluated_after_task": 5,
+        "i_auc": 0.9121951219512194,
+        "n_normal_test": 41,
+        "n_defect_test": 5
+      },
+      {
+        "task_id": 2,
+        "defect": "scratch_head",
+        "evaluated_after_task": 5,
+        "i_auc": 0.8146341463414635,
+        "n_normal_test": 41,
+        "n_defect_test": 5
+      },
+      {
+        "task_id": 3,
+        "defect": "scratch_neck",
+        "evaluated_after_task": 5,
+        "i_auc": 1.0,
+        "n_normal_test": 41,
+        "n_defect_test": 5
+      },
+      {
+        "task_id": 4,
+        "defect": "thread_side",
+        "evaluated_after_task": 5,
+        "i_auc": 0.8731707317073171,
+        "n_normal_test": 41,
+        "n_defect_test": 5
+      },
+      {
+        "task_id": 5,
+        "defect": "thread_top",
+        "evaluated_after_task": 5,
+        "i_auc": 0.9853658536585366,
+        "n_normal_test": 41,
+        "n_defect_test": 5
+      }
+    ],
+    "bwt_per_defect": {
+      "manipulated_front": 0.24390243902439013,
+      "scratch_head": 0.009756097560975507,
+      "scratch_neck": 0.0,
+      "thread_side": -0.009756097560975618
+    },
+    "mean_bwt": 0.060975609756097504
+  }
+}
