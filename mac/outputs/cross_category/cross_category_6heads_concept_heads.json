@@ -1,0 +1,62 @@
+[
+  {
+    "head": "surface_discontinuity",
+    "type": "defect",
+    "n_pos": 15309,
+    "n_neg": 8634,
+    "accuracy": 0.8991,
+    "f1": 0.9198,
+    "precision": 0.9355,
+    "recall": 0.9046
+  },
+  {
+    "head": "surface_discoloration",
+    "type": "defect",
+    "n_pos": 15620,
+    "n_neg": 8323,
+    "accuracy": 0.9083,
+    "f1": 0.9286,
+    "precision": 0.9438,
+    "recall": 0.9139
+  },
+  {
+    "head": "surface_crack",
+    "type": "defect",
+    "n_pos": 13518,
+    "n_neg": 10425,
+    "accuracy": 0.9014,
+    "f1": 0.9108,
+    "precision": 0.9316,
+    "recall": 0.8909
+  },
+  {
+    "head": "surface_abrasion",
+    "type": "defect",
+    "n_pos": 10070,
+    "n_neg": 13873,
+    "accuracy": 0.9167,
+    "f1": 0.9026,
+    "precision": 0.8877,
+    "recall": 0.9181
+  },
+  {
+    "head": "surface_void",
+    "type": "defect",
+    "n_pos": 4933,
+    "n_neg": 19010,
+    "accuracy": 0.9591,
+    "f1": 0.9085,
+    "precision": 0.8424,
+    "recall": 0.9858
+  },
+  {
+    "head": "normality",
+    "type": "normality",
+    "n_pos": 7500,
+    "n_neg": 16443,
+    "accuracy": 0.9278,
+    "f1": 0.8861,
+    "precision": 0.8752,
+    "recall": 0.8973
+  }
+]

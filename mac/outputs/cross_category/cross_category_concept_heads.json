@@ -1,0 +1,74 @@
+[
+  {
+    "concept": "surface_discontinuity",
+    "n_pos": 4933,
+    "n_neg": 5433,
+    "accuracy": 0.9446,
+    "f1": 0.9405,
+    "precision": 0.9609,
+    "recall": 0.921
+  },
+  {
+    "concept": "surface_discoloration",
+    "n_pos": 4933,
+    "n_neg": 5433,
+    "accuracy": 0.9147,
+    "f1": 0.9077,
+    "precision": 0.9355,
+    "recall": 0.8815
+  },
+  {
+    "concept": "surface_coating_failure",
+    "n_pos": 4933,
+    "n_neg": 5433,
+    "accuracy": 0.9441,
+    "f1": 0.9411,
+    "precision": 0.943,
+    "recall": 0.9392
+  },
+  {
+    "concept": "surface_abrasion",
+    "n_pos": 4933,
+    "n_neg": 5433,
+    "accuracy": 0.9315,
+    "f1": 0.9288,
+    "precision": 0.9196,
+    "recall": 0.9382
+  },
+  {
+    "concept": "surface_crack",
+    "n_pos": 4933,
+    "n_neg": 5433,
+    "accuracy": 0.9706,
+    "f1": 0.9689,
+    "precision": 0.9763,
+    "recall": 0.9615
+  },
+  {
+    "concept": "surface_void",
+    "n_pos": 4933,
+    "n_neg": 9101,
+    "accuracy": 0.9776,
+    "f1": 0.9678,
+    "precision": 0.9753,
+    "recall": 0.9605
+  },
+  {
+    "concept": "n/a",
+    "n_pos": 16443,
+    "n_neg": 13676,
+    "accuracy": 0.5543,
+    "f1": 0.498,
+    "precision": 0.6466,
+    "recall": 0.405
+  },
+  {
+    "concept": "irregular_surface_marking",
+    "n_pos": 16443,
+    "n_neg": 15057,
+    "accuracy": 0.5195,
+    "f1": 0.418,
+    "precision": 0.5685,
+    "recall": 0.3305
+  }
+]

@@ -1,0 +1,902 @@
+[
+  {
+    "atom_id": 1084,
+    "discrimination_score": 0.08713217824697495,
+    "anomaly_count": 644,
+    "mean_anomaly": 0.09180022776126862,
+    "mean_normal": 0.004668048117309809,
+    "top_patch_indices": [
+      349,
+      340,
+      205,
+      396,
+      347,
+      557,
+      348,
+      530,
+      65
+    ]
+  },
+  {
+    "atom_id": 1661,
+    "discrimination_score": 0.08690749853849411,
+    "anomaly_count": 561,
+    "mean_anomaly": 0.0966143012046814,
+    "mean_normal": 0.009706804528832436,
+    "top_patch_indices": [
+      44,
+      530,
+      327,
+      110,
+      339,
+      332,
+      531,
+      355,
+      358
+    ]
+  },
+  {
+    "atom_id": 924,
+    "discrimination_score": 0.08621800690889359,
+    "anomaly_count": 646,
+    "mean_anomaly": 0.11350546032190323,
+    "mean_normal": 0.027287453413009644,
+    "top_patch_indices": [
+      460,
+      549,
+      44,
+      171,
+      175,
+      158,
+      431,
+      552,
+      142
+    ]
+  },
+  {
+    "atom_id": 1262,
+    "discrimination_score": 0.04642842710018158,
+    "anomaly_count": 468,
+    "mean_anomaly": 0.0572880357503891,
+    "mean_normal": 0.010859609581530094,
+    "top_patch_indices": [
+      437,
+      138,
+      442,
+      453,
+      439,
+      484,
+      483,
+      438,
+      436
+    ]
+  },
+  {
+    "atom_id": 1504,
+    "discrimination_score": 0.04434310644865036,
+    "anomaly_count": 294,
+    "mean_anomaly": 0.044589925557374954,
+    "mean_normal": 0.00024681841023266315,
+    "top_patch_indices": [
+      512,
+      538,
+      21,
+      527,
+      529,
+      506,
+      556,
+      510,
+      499
+    ]
+  },
+  {
+    "atom_id": 1534,
+    "discrimination_score": 0.040174562484025955,
+    "anomaly_count": 427,
+    "mean_anomaly": 0.0402265340089798,
+    "mean_normal": 5.197306745685637e-05,
+    "top_patch_indices": [
+      29,
+      141,
+      34,
+      45,
+      164,
+      19,
+      23,
+      157,
+      372
+    ]
+  },
+  {
+    "atom_id": 3691,
+    "discrimination_score": 0.03721408545970917,
+    "anomaly_count": 370,
+    "mean_anomaly": 0.044609710574150085,
+    "mean_normal": 0.007395623717457056,
+    "top_patch_indices": [
+      372,
+      366,
+      236,
+      219,
+      364,
+      235,
+      368,
+      198,
+      192
+    ]
+  },
+  {
+    "atom_id": 3488,
+    "discrimination_score": 0.036801859736442566,
+    "anomaly_count": 584,
+    "mean_anomaly": 0.06690942496061325,
+    "mean_normal": 0.030107565224170685,
+    "top_patch_indices": [
+      415,
+      423,
+      319,
+      313,
+      397,
+      387,
+      417,
+      420,
+      318
+    ]
+  },
+  {
+    "atom_id": 3921,
+    "discrimination_score": 0.03574095666408539,
+    "anomaly_count": 278,
+    "mean_anomaly": 0.035878680646419525,
+    "mean_normal": 0.00013772331294603646,
+    "top_patch_indices": [
+      295,
+      62,
+      296,
+      71,
+      69,
+      70,
+      349,
+      323,
+      55
+    ]
+  },
+  {
+    "atom_id": 2943,
+    "discrimination_score": 0.03231819346547127,
+    "anomaly_count": 242,
+    "mean_anomaly": 0.032485246658325195,
+    "mean_normal": 0.00016705402231309563,
+    "top_patch_indices": [
+      583,
+      577,
+      582,
+      575,
+      686,
+      633,
+      662,
+      684,
+      579
+    ]
+  },
+  {
+    "atom_id": 2522,
+    "discrimination_score": 0.030742399394512177,
+    "anomaly_count": 418,
+    "mean_anomaly": 0.04161125794053078,
+    "mean_normal": 0.010868857614696026,
+    "top_patch_indices": [
+      59,
+      72,
+      68,
+      61,
+      64,
+      65,
+      537,
+      20,
+      62
+    ]
+  },
+  {
+    "atom_id": 3861,
+    "discrimination_score": 0.030612241476774216,
+    "anomaly_count": 298,
+    "mean_anomaly": 0.030651869252324104,
+    "mean_normal": 3.96283867303282e-05,
+    "top_patch_indices": [
+      131,
+      183,
+      180,
+      179,
+      186,
+      223,
+      204,
+      233,
+      74
+    ]
+  },
+  {
+    "atom_id": 2305,
+    "discrimination_score": 0.03006351739168167,
+    "anomaly_count": 344,
+    "mean_anomaly": 0.03407131880521774,
+    "mean_normal": 0.0040078009478747845,
+    "top_patch_indices": [
+      381,
+      43,
+      474,
+      508,
+      453,
+      247,
+      455,
+      460,
+      23
+    ]
+  },
+  {
+    "atom_id": 1049,
+    "discrimination_score": 0.02956009842455387,
+    "anomaly_count": 286,
+    "mean_anomaly": 0.03015497699379921,
+    "mean_normal": 0.0005948786856606603,
+    "top_patch_indices": [
+      679,
+      682,
+      694,
+      698,
+      598,
+      677,
+      680,
+      568,
+      655
+    ]
+  },
+  {
+    "atom_id": 3060,
+    "discrimination_score": 0.028827184811234474,
+    "anomaly_count": 394,
+    "mean_anomaly": 0.03843962028622627,
+    "mean_normal": 0.009612435474991798,
+    "top_patch_indices": [
+      418,
+      26,
+      60,
+      14,
+      13,
+      540,
+      9,
+      31,
+      383
+    ]
+  },
+  {
+    "atom_id": 1343,
+    "discrimination_score": 0.02781127393245697,
+    "anomaly_count": 328,
+    "mean_anomaly": 0.035873424261808395,
+    "mean_normal": 0.00806214939802885,
+    "top_patch_indices": [
+      466,
+      456,
+      629,
+      607,
+      599,
+      467,
+      600,
+      608,
+      597
+    ]
+  },
+  {
+    "atom_id": 2523,
+    "discrimination_score": 0.027766983956098557,
+    "anomaly_count": 307,
+    "mean_anomaly": 0.02790791168808937,
+    "mean_normal": 0.00014092684432398528,
+    "top_patch_indices": [
+      374,
+      45,
+      366,
+      53,
+      371,
+      373,
+      375,
+      147,
+      156
+    ]
+  },
+  {
+    "atom_id": 1531,
+    "discrimination_score": 0.026459649205207825,
+    "anomaly_count": 256,
+    "mean_anomaly": 0.02687055617570877,
+    "mean_normal": 0.0004109077563043684,
+    "top_patch_indices": [
+      53,
+      540,
+      471,
+      52,
+      491,
+      303,
+      224,
+      543,
+      45
+    ]
+  },
+  {
+    "atom_id": 1572,
+    "discrimination_score": 0.02640790119767189,
+    "anomaly_count": 309,
+    "mean_anomaly": 0.02673148550093174,
+    "mean_normal": 0.0003235846816096455,
+    "top_patch_indices": [
+      239,
+      312,
+      73,
+      226,
+      104,
+      304,
+      5,
+      75,
+      280
+    ]
+  },
+  {
+    "atom_id": 2596,
+    "discrimination_score": 0.021974943578243256,
+    "anomaly_count": 178,
+    "mean_anomaly": 0.02330518513917923,
+    "mean_normal": 0.0013302424922585487,
+    "top_patch_indices": [
+      591,
+      595,
+      653,
+      593,
+      687,
+      628,
+      645,
+      685,
+      592
+    ]
+  },
+  {
+    "atom_id": 156,
+    "discrimination_score": 0.021830737590789795,
+    "anomaly_count": 211,
+    "mean_anomaly": 0.02196750044822693,
+    "mean_normal": 0.00013676277012564242,
+    "top_patch_indices": [
+      293,
+      389,
+      388,
+      455,
+      537,
+      523,
+      491,
+      454,
+      441
+    ]
+  },
+  {
+    "atom_id": 652,
+    "discrimination_score": 0.021502014249563217,
+    "anomaly_count": 348,
+    "mean_anomaly": 0.03430187329649925,
+    "mean_normal": 0.012799859046936035,
+    "top_patch_indices": [
+      596,
+      400,
+      103,
+      414,
+      52,
+      282,
+      59,
+      415,
+      401
+    ]
+  },
+  {
+    "atom_id": 2193,
+    "discrimination_score": 0.02120077982544899,
+    "anomaly_count": 233,
+    "mean_anomaly": 0.022248534485697746,
+    "mean_normal": 0.0010477552423253655,
+    "top_patch_indices": [
+      165,
+      68,
+      54,
+      67,
+      344,
+      64,
+      24,
+      56,
+      343
+    ]
+  },
+  {
+    "atom_id": 1413,
+    "discrimination_score": 0.020705051720142365,
+    "anomaly_count": 211,
+    "mean_anomaly": 0.021482370793819427,
+    "mean_normal": 0.000777319073677063,
+    "top_patch_indices": [
+      398,
+      392,
+      420,
+      427,
+      188,
+      225,
+      387,
+      215,
+      234
+    ]
+  },
+  {
+    "atom_id": 639,
+    "discrimination_score": 0.02064867503941059,
+    "anomaly_count": 207,
+    "mean_anomaly": 0.020677868276834488,
+    "mean_normal": 2.9192999136284925e-05,
+    "top_patch_indices": [
+      57,
+      523,
+      282,
+      383,
+      491,
+      293,
+      72,
+      58,
+      70
+    ]
+  },
+  {
+    "atom_id": 1043,
+    "discrimination_score": 0.02018195576965809,
+    "anomaly_count": 279,
+    "mean_anomaly": 0.022741774097085,
+    "mean_normal": 0.0025598187930881977,
+    "top_patch_indices": [
+      303,
+      321,
+      340,
+      396,
+      504,
+      295,
+      540,
+      457,
+      283
+    ]
+  },
+  {
+    "atom_id": 126,
+    "discrimination_score": 0.019362950697541237,
+    "anomaly_count": 212,
+    "mean_anomaly": 0.019380098208785057,
+    "mean_normal": 1.714826430543326e-05,
+    "top_patch_indices": [
+      512,
+      509,
+      555,
+      526,
+      510,
+      521,
+      522,
+      541,
+      528
+    ]
+  },
+  {
+    "atom_id": 2653,
+    "discrimination_score": 0.01834297925233841,
+    "anomaly_count": 404,
+    "mean_anomaly": 0.037545345723629,
+    "mean_normal": 0.01920236647129059,
+    "top_patch_indices": [
+      708,
+      570,
+      603,
+      677,
+      703,
+      604,
+      263,
+      694,
+      680
+    ]
+  },
+  {
+    "atom_id": 123,
+    "discrimination_score": 0.017695972695946693,
+    "anomaly_count": 156,
+    "mean_anomaly": 0.018146343529224396,
+    "mean_normal": 0.0004503701929934323,
+    "top_patch_indices": [
+      587,
+      564,
+      584,
+      588,
+      448,
+      585,
+      657,
+      590,
+      589
+    ]
+  },
+  {
+    "atom_id": 1721,
+    "discrimination_score": 0.017346611246466637,
+    "anomaly_count": 157,
+    "mean_anomaly": 0.018398718908429146,
+    "mean_normal": 0.0010521078947931528,
+    "top_patch_indices": [
+      711,
+      699,
+      695,
+      689,
+      698,
+      692,
+      560,
+      566,
+      691
+    ]
+  },
+  {
+    "atom_id": 1018,
+    "discrimination_score": 0.0169553030282259,
+    "anomaly_count": 300,
+    "mean_anomaly": 0.025605928152799606,
+    "mean_normal": 0.008650625124573708,
+    "top_patch_indices": [
+      400,
+      415,
+      423,
+      429,
+      309,
+      44,
+      51,
+      414,
+      453
+    ]
+  },
+  {
+    "atom_id": 2504,
+    "discrimination_score": 0.016006633639335632,
+    "anomaly_count": 133,
+    "mean_anomaly": 0.016841327771544456,
+    "mean_normal": 0.0008346932008862495,
+    "top_patch_indices": [
+      609,
+      486,
+      613,
+      610,
+      584,
+      590,
+      589,
+      586,
+      585
+    ]
+  },
+  {
+    "atom_id": 2449,
+    "discrimination_score": 0.015700679272413254,
+    "anomaly_count": 182,
+    "mean_anomaly": 0.01574920490384102,
+    "mean_normal": 4.85263008158654e-05,
+    "top_patch_indices": [
+      442,
+      453,
+      489,
+      455,
+      439,
+      488,
+      474,
+      473,
+      437
+    ]
+  },
+  {
+    "atom_id": 3092,
+    "discrimination_score": 0.015661494806408882,
+    "anomaly_count": 107,
+    "mean_anomaly": 0.017130037769675255,
+    "mean_normal": 0.0014685424976050854,
+    "top_patch_indices": [
+      699,
+      696,
+      698,
+      711,
+      689,
+      679,
+      677,
+      682,
+      695
+    ]
+  },
+  {
+    "atom_id": 1741,
+    "discrimination_score": 0.015001910738646984,
+    "anomaly_count": 174,
+    "mean_anomaly": 0.016261562705039978,
+    "mean_normal": 0.0012596517335623503,
+    "top_patch_indices": [
+      627,
+      630,
+      628,
+      631,
+      686,
+      606,
+      480,
+      653,
+      479
+    ]
+  },
+  {
+    "atom_id": 808,
+    "discrimination_score": 0.014626452699303627,
+    "anomaly_count": 205,
+    "mean_anomaly": 0.021970750764012337,
+    "mean_normal": 0.00734429806470871,
+    "top_patch_indices": [
+      482,
+      443,
+      444,
+      631,
+      434,
+      628,
+      630,
+      408,
+      466
+    ]
+  },
+  {
+    "atom_id": 2744,
+    "discrimination_score": 0.014409291557967663,
+    "anomaly_count": 113,
+    "mean_anomaly": 0.014662159606814384,
+    "mean_normal": 0.0002528680779505521,
+    "top_patch_indices": [
+      296,
+      354,
+      352,
+      350,
+      42,
+      547,
+      353,
+      41,
+      456
+    ]
+  },
+  {
+    "atom_id": 3684,
+    "discrimination_score": 0.014275485649704933,
+    "anomaly_count": 195,
+    "mean_anomaly": 0.014328981749713421,
+    "mean_normal": 5.349581260816194e-05,
+    "top_patch_indices": [
+      391,
+      172,
+      159,
+      242,
+      166,
+      461,
+      177,
+      133,
+      248
+    ]
+  },
+  {
+    "atom_id": 447,
+    "discrimination_score": 0.013851959258317947,
+    "anomaly_count": 162,
+    "mean_anomaly": 0.01389173325151205,
+    "mean_normal": 3.9774313336238265e-05,
+    "top_patch_indices": [
+      379,
+      382,
+      54,
+      67,
+      491,
+      385,
+      377,
+      468,
+      56
+    ]
+  },
+  {
+    "atom_id": 3337,
+    "discrimination_score": 0.013835056684911251,
+    "anomaly_count": 208,
+    "mean_anomaly": 0.014199706725776196,
+    "mean_normal": 0.00036464998265728354,
+    "top_patch_indices": [
+      333,
+      6,
+      392,
+      115,
+      420,
+      548,
+      398,
+      205,
+      106
+    ]
+  },
+  {
+    "atom_id": 3107,
+    "discrimination_score": 0.01343789417296648,
+    "anomaly_count": 105,
+    "mean_anomaly": 0.013458718545734882,
+    "mean_normal": 2.082394712488167e-05,
+    "top_patch_indices": [
+      623,
+      640,
+      619,
+      638,
+      634,
+      636,
+      622,
+      616,
+      618
+    ]
+  },
+  {
+    "atom_id": 3993,
+    "discrimination_score": 0.013104005716741085,
+    "anomaly_count": 178,
+    "mean_anomaly": 0.015265644527971745,
+    "mean_normal": 0.002161639044061303,
+    "top_patch_indices": [
+      689,
+      691,
+      692,
+      661,
+      695,
+      592,
+      681,
+      711,
+      682
+    ]
+  },
+  {
+    "atom_id": 2773,
+    "discrimination_score": 0.012888234108686447,
+    "anomaly_count": 245,
+    "mean_anomaly": 0.034411896020174026,
+    "mean_normal": 0.02152366191148758,
+    "top_patch_indices": [
+      265,
+      264,
+      273,
+      274,
+      261,
+      292,
+      25,
+      278,
+      270
+    ]
+  },
+  {
+    "atom_id": 1316,
+    "discrimination_score": 0.012857685796916485,
+    "anomaly_count": 148,
+    "mean_anomaly": 0.012991338036954403,
+    "mean_normal": 0.00013365269114729017,
+    "top_patch_indices": [
+      293,
+      537,
+      523,
+      389,
+      383,
+      388,
+      299,
+      5,
+      542
+    ]
+  },
+  {
+    "atom_id": 1740,
+    "discrimination_score": 0.012551989406347275,
+    "anomaly_count": 235,
+    "mean_anomaly": 0.016811171546578407,
+    "mean_normal": 0.0042591821402311325,
+    "top_patch_indices": [
+      14,
+      3,
+      99,
+      109,
+      8,
+      306,
+      112,
+      118,
+      98
+    ]
+  },
+  {
+    "atom_id": 3559,
+    "discrimination_score": 0.012474806979298592,
+    "anomaly_count": 175,
+    "mean_anomaly": 0.012698153965175152,
+    "mean_normal": 0.00022334673849400133,
+    "top_patch_indices": [
+      447,
+      448,
+      486,
+      613,
+      609,
+      610,
+      481,
+      659,
+      657
+    ]
+  },
+  {
+    "atom_id": 3436,
+    "discrimination_score": 0.012277410365641117,
+    "anomaly_count": 229,
+    "mean_anomaly": 0.016122447326779366,
+    "mean_normal": 0.0038450369611382484,
+    "top_patch_indices": [
+      342,
+      267,
+      150,
+      117,
+      233,
+      79,
+      98,
+      214,
+      138
+    ]
+  },
+  {
+    "atom_id": 438,
+    "discrimination_score": 0.012193617410957813,
+    "anomaly_count": 140,
+    "mean_anomaly": 0.012431293725967407,
+    "mean_normal": 0.00023767670791130513,
+    "top_patch_indices": [
+      517,
+      188,
+      328,
+      139,
+      144,
+      533,
+      182,
+      237,
+      536
+    ]
+  },
+  {
+    "atom_id": 2880,
+    "discrimination_score": 0.011892986483871937,
+    "anomaly_count": 142,
+    "mean_anomaly": 0.012007022276520729,
+    "mean_normal": 0.0001140353488153778,
+    "top_patch_indices": [
+      33,
+      673,
+      647,
+      6,
+      199,
+      670,
+      635,
+      190,
+      628
+    ]
+  },
+  {
+    "atom_id": 1751,
+    "discrimination_score": 0.01181410439312458,
+    "anomaly_count": 135,
+    "mean_anomaly": 0.011923669837415218,
+    "mean_normal": 0.00010956513870041817,
+    "top_patch_indices": [
+      218,
+      657,
+      184,
+      227,
+      228,
+      190,
+      191,
+      658,
+      656
+    ]
+  }
+]

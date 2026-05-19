@@ -1,0 +1,146 @@
+[
+  {
+    "concept": "surface_discontinuity",
+    "n_pos": 215,
+    "n_neg": 415,
+    "accuracy": 0.8889,
+    "f1": 0.8444,
+    "precision": 0.8085,
+    "recall": 0.8837
+  },
+  {
+    "concept": "linear_surface_crack",
+    "n_pos": 215,
+    "n_neg": 415,
+    "accuracy": 0.9762,
+    "f1": 0.9655,
+    "precision": 0.9545,
+    "recall": 0.9767
+  },
+  {
+    "concept": "irregular_surface_staining",
+    "n_pos": 215,
+    "n_neg": 415,
+    "accuracy": 0.8968,
+    "f1": 0.8632,
+    "precision": 0.7885,
+    "recall": 0.9535
+  },
+  {
+    "concept": "discoloration_and_mottling",
+    "n_pos": 215,
+    "n_neg": 415,
+    "accuracy": 0.881,
+    "f1": 0.8515,
+    "precision": 0.7414,
+    "recall": 1.0
+  },
+  {
+    "concept": "crack_network",
+    "n_pos": 215,
+    "n_neg": 415,
+    "accuracy": 0.873,
+    "f1": 0.84,
+    "precision": 0.7368,
+    "recall": 0.9767
+  },
+  {
+    "concept": "surface_fracturing_network",
+    "n_pos": 215,
+    "n_neg": 497,
+    "accuracy": 0.9021,
+    "f1": 0.8571,
+    "precision": 0.7636,
+    "recall": 0.9767
+  },
+  {
+    "concept": "flaking_material_disbondment",
+    "n_pos": 715,
+    "n_neg": 737,
+    "accuracy": 0.6048,
+    "f1": 0.6179,
+    "precision": 0.5886,
+    "recall": 0.6503
+  },
+  {
+    "concept": "surface_discoloration_flaws",
+    "n_pos": 715,
+    "n_neg": 708,
+    "accuracy": 0.614,
+    "f1": 0.6541,
+    "precision": 0.5943,
+    "recall": 0.7273
+  },
+  {
+    "concept": "irregular_material_loss",
+    "n_pos": 715,
+    "n_neg": 782,
+    "accuracy": 0.6,
+    "f1": 0.6341,
+    "precision": 0.5622,
+    "recall": 0.7273
+  },
+  {
+    "concept": "patchy_surface_delamination",
+    "n_pos": 715,
+    "n_neg": 808,
+    "accuracy": 0.5705,
+    "f1": 0.631,
+    "precision": 0.5283,
+    "recall": 0.7832
+  },
+  {
+    "concept": "surface_flaking_or_cracking",
+    "n_pos": 715,
+    "n_neg": 741,
+    "accuracy": 0.5856,
+    "f1": 0.6134,
+    "precision": 0.5647,
+    "recall": 0.6713
+  },
+  {
+    "concept": "pitting_and_surface_erosion",
+    "n_pos": 715,
+    "n_neg": 720,
+    "accuracy": 0.6307,
+    "f1": 0.6581,
+    "precision": 0.6108,
+    "recall": 0.7133
+  },
+  {
+    "concept": "linear_fracture_network",
+    "n_pos": 715,
+    "n_neg": 753,
+    "accuracy": 0.619,
+    "f1": 0.6522,
+    "precision": 0.5866,
+    "recall": 0.7343
+  },
+  {
+    "concept": "blotchy_foreign_deposition",
+    "n_pos": 715,
+    "n_neg": 740,
+    "accuracy": 0.6323,
+    "f1": 0.6708,
+    "precision": 0.5989,
+    "recall": 0.7622
+  },
+  {
+    "concept": "void_discontinuity",
+    "n_pos": 715,
+    "n_neg": 775,
+    "accuracy": 0.5872,
+    "f1": 0.6372,
+    "precision": 0.551,
+    "recall": 0.7552
+  },
+  {
+    "concept": "irregular_material_chipping",
+    "n_pos": 715,
+    "n_neg": 773,
+    "accuracy": 0.5973,
+    "f1": 0.6552,
+    "precision": 0.5561,
+    "recall": 0.7972
+  }
+]

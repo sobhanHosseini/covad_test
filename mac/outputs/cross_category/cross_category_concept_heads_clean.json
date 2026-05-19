@@ -1,0 +1,29 @@
+[
+  {
+    "concept": "surface_discontinuity",
+    "n_pos": 4933,
+    "n_neg": 5433,
+    "accuracy": 0.9354,
+    "f1": 0.9313,
+    "precision": 0.9429,
+    "recall": 0.92
+  },
+  {
+    "concept": "surface_discoloration",
+    "n_pos": 4933,
+    "n_neg": 5433,
+    "accuracy": 0.933,
+    "f1": 0.9266,
+    "precision": 0.967,
+    "recall": 0.8896
+  },
+  {
+    "concept": "surface_void",
+    "n_pos": 4933,
+    "n_neg": 9812,
+    "accuracy": 0.9725,
+    "f1": 0.9589,
+    "precision": 0.9613,
+    "recall": 0.9564
+  }
+]

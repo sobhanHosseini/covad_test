@@ -1,0 +1,245 @@
+{
+  "concepts": [
+    {
+      "name": "surface_discontinuity",
+      "frequency": 13,
+      "atom_ids": [
+        "2193",
+        "1316",
+        "1049",
+        "3107",
+        "156",
+        "126",
+        "123",
+        "1531",
+        "1018",
+        "808",
+        "3337",
+        "3993",
+        "1751"
+      ],
+      "patterns": [
+        "The patches consistently display marks or breaks that disrupt the normal appearance and structural integrity of the material surface.",
+        "All patches consistently show areas of disrupted surface integrity, characterized by rough edges, uneven texture, and localized discoloration suggesting material degradation or structural imperfections.",
+        "The shared visual pattern consists of localized, non-uniform patches or clusters of material that are either missing or covered by a distinct, lighter-colored material, characterized by highly irregular, non-geometric boundaries.",
+        "The common pattern is characterized by sharply defined, high-contrast boundaries surrounding irregular areas of apparent material loss or structural discontinuity.",
+        "The patches consistently display lines or zones of structural discontinuity, indicative of breaks or separation within the object's surface material.",
+        "Localized, irregular areas of discoloration or material absence disrupting the consistent surface texture.",
+        "The consistent presence of irregular, high-contrast white or light-colored patches that disrupt the surrounding uniform reddish base material.",
+        "The patches consistently display non-uniform surface defects, primarily appearing as darkened, irregular, or linear breaks that interrupt the smooth continuity of the background material.",
+        "The patches universally show localized structural discontinuities, including scratches, micro-cracks, and visible signs of surface degradation or contamination.",
+        "The common visual pattern is localized surface discontinuity, characterized by irregular, non-linear breaks, chipping, abrasions, or patchy material degradation.",
+        "The consistent presence of physical surface breaches, appearing as voids, cracks, or localized material detachment.",
+        "The consistent presence of irregular, patchy, and non-uniform areas of surface material disruption or localized discoloration.",
+        "The patches consistently show irregular, non-linear breaks in the material's surface continuity, manifesting as voids, cracks, or areas of missing/displaced material."
+      ],
+      "members": [
+        "surface_discontinuity",
+        "irregular_material_discontinuity",
+        "irregular_material_discontinuity",
+        "surface_discontinuity_defect",
+        "surface_discontinuity_defect",
+        "surface_discontinuity_flaw",
+        "surface_structural_flaw",
+        "surface_structural_flaw",
+        "surface_discontinuity_flaw",
+        "surface_abrasions_and_discontinuities",
+        "surface_abrasions_and_discontinuities",
+        "surface_abrasion_discontinuity",
+        "surface_abrasion_discontinuity",
+        "surface_voids_and_discontinuities",
+        "surface_voids_and_discontinuities",
+        "patchy_surface_discontinuity",
+        "patchy_surface_discontinuity",
+        "surface_discontinuity_defects",
+        "surface_discontinuity_defects"
+      ]
+    },
+    {
+      "name": "linear_surface_crack",
+      "frequency": 11,
+      "atom_ids": [
+        "1084",
+        "3921",
+        "1504",
+        "2744",
+        "3436",
+        "2305",
+        "1413",
+        "1043",
+        "1343",
+        "2449",
+        "1661"
+      ],
+      "patterns": [
+        "The patches consistently display evidence of physical structural failure in the form of linear, dark, and irregular cracks or fissures.",
+        "All patches uniformly display dark, linear discontinuities that represent breaks, fissures, or cracks in the material's surface continuity.",
+        "All patches exhibit an irregular, network-like pattern of surface disruptions, typically manifesting as fine, dark linear features (fractures or micro-cracks) that interrupt the original smooth surface material.",
+        "The patches consistently show narrow, linear disruptions or fissures across the surface material, suggesting structural weakness or material failure.",
+        "The common pattern is the presence of deep, linear breaks, fissures, or cracks that suggest structural integrity failure across the material.",
+        "The patches consistently display evidence of structural discontinuities, appearing as irregular cracks, fissures, and lines of material separation that disrupt the homogeneity of the surface.",
+        "The consistent presence of linear or irregular breaks that disrupt the continuity of the object's surface material.",
+        "The patches consistently display surface discontinuities, characterized by cracks, fissures, and localized material splitting.",
+        "The visual anomaly across all patches is characterized by linear streaks, scratches, or cracks, indicating surface discontinuities and material degradation.",
+        "The patches consistently exhibit an irregular, linear structural discontinuity, appearing as a crack or fissure that breaches the surface continuity of the object."
+      ],
+      "members": [
+        "linear_surface_fractures",
+        "linear_surface_cracking",
+        "hairline_surface_cracking",
+        "linear_surface_fissuring",
+        "linear_fissuring_and_fractures",
+        "surface_cracking_and_fissures",
+        "surface_cracking_or_fissures",
+        "surface_fissures_and_fractures",
+        "surface_cracking_and_fractures",
+        "linear_surface_flaws",
+        "irregular_surface_cracking",
+        "irregular_surface_cracking"
+      ]
+    },
+    {
+      "name": "irregular_surface_staining",
+      "frequency": 7,
+      "atom_ids": [
+        "3861",
+        "3488",
+        "2943",
+        "1572",
+        "652",
+        "2773",
+        "1740"
+      ],
+      "patterns": [
+        "All patches show localized, irregular areas of dark, disrupted coloration or material blemishes contrasting with the surrounding base material.",
+        "The visual anomaly is characterized by localized, non-uniform deviations from the base material's color and texture, involving both discoloration/staining and structural surface irregularity.",
+        "The consistent visual anomaly is the presence of irregular, highly contrasting white or light-colored patches and streaks that interrupt the uniform color and texture of the darker underlying material.",
+        "The patches consistently exhibit localized, non-linear areas of surface irregularity, characterized by boundary disruption, discoloration, and localized material degradation.",
+        "The patches consistently exhibit non-uniform surface damage characterized by patches of discoloration, streaks, and minor physical disruptions (pitting/abrasions).",
+        "All patches exhibit localized, irregularly shaped areas of darkened discoloration or spotting on the surface, suggesting superficial material alteration or staining.",
+        "The patches consistently display irregular, blotchy, or diffuse areas of discoloration contrasting with the base material, suggesting material staining or subsurface seepage."
+      ],
+      "members": [
+        "irregular_surface_staining",
+        "irregular_surface_blemishes",
+        "irregular_surface_blemishes",
+        "discontinuous_surface_streaking",
+        "discontinuous_surface_streaking",
+        "surface_irregularity_pitting",
+        "surface_irregularity_pitting",
+        "surface_staining_and_abrasion",
+        "surface_staining_and_abrasion",
+        "surface_staining_spots",
+        "surface_staining_spots",
+        "localized_surface_staining",
+        "localized_surface_staining"
+      ]
+    },
+    {
+      "name": "discoloration_and_mottling",
+      "frequency": 6,
+      "atom_ids": [
+        "3691",
+        "1262",
+        "1534",
+        "2523",
+        "924",
+        "2653"
+      ],
+      "patterns": [
+        "The shared visual anomaly is characterized by patches of uneven color, tonal shifts, and disrupted texture that appear stained or absorbed into the material surface.",
+        "The patches consistently exhibit non-uniform discoloration and superficial material loss, manifesting as streaks, spots, and patchy pigment disruption across the surface.",
+        "The common visual pattern is the presence of localized, irregular pigment or color changes, coupled with surface texture disruption, indicating contamination or compromised material integrity.",
+        "The common pattern is the presence of amorphous, patchy areas of altered surface color and stain, suggesting localized material degradation or surface contamination.",
+        "The patches consistently display localized, irregularly shaped areas of dark discoloration or staining against the lighter background material.",
+        "The patches consistently display non-uniform, patchy surface discoloration and irregular material discontinuities, regardless of whether the defect is surface-level staining or deep material compromise."
+      ],
+      "members": [
+        "discoloration_and_mottling",
+        "surface_discoloration_and_wear",
+        "surface_discoloration_and_wear",
+        "discoloration_mottling",
+        "discoloration_mottling",
+        "irregular_discoloration",
+        "localized_discoloration_blotches",
+        "localized_discoloration_blotches",
+        "irregular_discoloration",
+        "blotchy_mottling_or_staining",
+        "blotchy_mottling_or_staining"
+      ]
+    },
+    {
+      "name": "crack_network",
+      "frequency": 2,
+      "atom_ids": [
+        "1721",
+        "3060"
+      ],
+      "patterns": [
+        "The patches uniformly display extensive, irregular, and interconnected networks of hairline fractures, fissures, and surface cracks across the material.",
+        "The patches consistently display a pattern of fine, interconnected, linear surface discontinuities, suggesting widespread material cracking."
+      ],
+      "members": [
+        "crack_network",
+        "micro_crack_network",
+        "micro_crack_network"
+      ]
+    },
+    {
+      "name": "surface_fracturing_network",
+      "frequency": 1,
+      "atom_ids": [
+        "2522"
+      ],
+      "patterns": [
+        "The patches consistently exhibit signs of surface discontinuity, characterized by irregular, fine, and interconnected linear breaks or network patterns of material fracturing."
+      ],
+      "members": [
+        "surface_fracturing_network"
+      ]
+    }
+  ],
+  "total_atoms_interpreted": 50,
+  "total_unique_concepts": 6,
+  "discarded_by_llm": [
+    "surface_discontinuity_defect",
+    "duplicate",
+    "surface_discontinuity",
+    "surface_discontinuity_defects",
+    "duplicate",
+    "surface_discontinuity",
+    "surface_structural_flaw",
+    "merged",
+    "into",
+    "structural_defect",
+    "void_discontinuity",
+    "merged",
+    "into",
+    "surface_void",
+    "surface_voids_and_discontinuities",
+    "merged",
+    "into",
+    "surface_void",
+    "surface_abrasion_discontinuity",
+    "merged",
+    "into",
+    "surface_abrasion",
+    "surface_staining_and_abrasion",
+    "merged",
+    "into",
+    "surface_wear",
+    "linear_surface_flaws",
+    "merged",
+    "into",
+    "linear_surface_crack",
+    "irregular_material_discontinuity",
+    "merged",
+    "into",
+    "surface_discontinuity"
+  ],
+  "quality_filter": {
+    "criterion": "f1 > 0.80",
+    "original": 16,
+    "kept": 6
+  }
+}

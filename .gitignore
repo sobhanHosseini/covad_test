@@ -11,6 +11,8 @@ __pycache__/
 *.so
 
 *.pt
+*.pkl
+*.png
 
 #
 checkpoints/

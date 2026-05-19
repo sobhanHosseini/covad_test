@@ -1,0 +1,502 @@
+[
+  {
+    "atom_id": "1084",
+    "discrimination_score": 0.08713217824697495,
+    "anomaly_count": 644,
+    "concept_name": "linear_surface_fractures",
+    "common_pattern": "The patches consistently display evidence of physical structural failure in the form of linear, dark, and irregular cracks or fissures.",
+    "confidence": "high",
+    "reason_for_low_confidence": "PARSE_ERROR",
+    "raw_response": "Patch 1: The patch shows a visible, irregular, dark fissure running across the surface material.\nPatch 2: A clear, dark, angular crack is present, indicating a break in the underlying structure.\nPatch 3: Multiple thin, winding, and dark hairline cracks are visible across the material.\nPatch 4: There is a pronounced, deep, and jagged linear break cutting across the patch.\nPatch 5: The surface exhibits a distinct, dark, irregular linear separation, characteristic of a crack.\nPatch 6: Several overlapping, thin, and interconnected fracture lines are visible in this area.\nPatch 7: A deep, non-uniform, dark crack pattern runs through the center of the patch.\nPatch 8: The area displays a prominent, continuous, and dark irregular fissure structure.\nPatch 9: Thin, interconnected, and dark fracture lines form a noticeable network on the surface.\n\nCOMMON_PATTERN: The patches consistently display evidence of physical structural failure in the form of linear, dark, and irregular cracks or fissures.\nCONCEPT_NAME: linear_surface_fractures\nCONFIDENCE: high"
+  },
+  {
+    "atom_id": "1661",
+    "discrimination_score": 0.08690749853849411,
+    "anomaly_count": 561,
+    "concept_name": "irregular_surface_cracking",
+    "common_pattern": "The patches consistently exhibit an irregular, linear structural discontinuity, appearing as a crack or fissure that breaches the surface continuity of the object.",
+    "confidence": "high",
+    "reason_for_low_confidence": "PARSE_ERROR",
+    "raw_response": "Step 1 - Describe each patch briefly (1 sentence each):\nPatch 1: The patch shows a jagged, irregular linear separation or fissure across the material surface.\nPatch 2: There is evidence of an irregular, dark discontinuity running across the center of the patch.\nPatch 3: A prominent, non-uniform line break or fracture is visible, interrupting the surface color and texture.\nPatch 4: The image displays an abrupt boundary or crack with highly irregular edges.\nPatch 5: A deep, curvilinear crack or stress fracture is visible, compromising surface continuity.\nPatch 6: The surface exhibits a visible crack pattern characterized by sharp, angular breaks.\nPatch 7: A linear defect with inconsistent width and an uneven boundary is present.\nPatch 8: The defect appears as a segmented line disruption, suggesting cracking.\nPatch 9: The patch features a clear, yet meandering, fissure-like anomaly.\n\nStep 2 - Identify the common visual pattern:\nThe common visual pattern is the presence of irregular, linear discontinuities\u2014marks that appear as cracks, fissures, or structural fractures that interrupt the uniform surface material.\n\nStep 3 - Name the concept:\nCONCEPT_NAME: irregular_surface_cracking\n\nCOMMON_PATTERN: The patches consistently exhibit an irregular, linear structural discontinuity, appearing as a crack or fissure that breaches the surface continuity of the object.\nCONCEPT_NAME: irregular_surface_cracking\nCONFIDENCE: high"
+  },
+  {
+    "atom_id": "924",
+    "discrimination_score": 0.08621800690889359,
+    "anomaly_count": 646,
+    "concept_name": "localized_discoloration_blotches",
+    "common_pattern": "The patches consistently display localized, irregularly shaped areas of dark discoloration or staining against the lighter background material.",
+    "confidence": "high",
+    "reason_for_low_confidence": "PARSE_ERROR",
+    "raw_response": "Step 1 - Describe each patch briefly (1 sentence each):\nPatch 1: Features an irregular, dark, blotchy discoloration on the surface material.\nPatch 2: Shows a concentrated, dark, and amorphous stain pattern.\nPatch 3: Displays a defined, dark, spot-like blemish with an irregular edge.\nPatch 4: Exhibits a large, diffuse, dark-colored patch indicating significant discoloration or material loss.\nPatch 5: Contains multiple clustered, dark, blotchy markings of varying sizes.\nPatch 6: Presents several scattered, dark, irregularly shaped blemishes.\nPatch 7: Shows a widely diffused, smoky-dark stain across the corner of the patch.\nPatch 8: Displays several distinct, dark, semi-circular blotches.\nPatch 9: Characterized by small, discrete, dark spots distributed across the area.\n\nStep 2 - Identify the common visual pattern:\nThe common pattern is the presence of localized areas of contrasting, darker coloration. These markings are highly irregular, amorphous, and vary in size, appearing as stains, blotches, or blemishes rather than defined cracks or structural gaps.\n\nStep 3 - Name the concept:\nLocalized surface staining/blotching.\n\nCOMMON_PATTERN: The patches consistently display localized, irregularly shaped areas of dark discoloration or staining against the lighter background material.\nCONCEPT_NAME: localized_discoloration_blotches\nCONFIDENCE: high"
+  },
+  {
+    "atom_id": "1262",
+    "discrimination_score": 0.04642842710018158,
+    "anomaly_count": 468,
+    "concept_name": "surface_discoloration_and_wear",
+    "common_pattern": "The patches consistently exhibit non-uniform discoloration and superficial material loss, manifesting as streaks, spots, and patchy pigment disruption across the surface.",
+    "confidence": "high",
+    "reason_for_low_confidence": "PARSE_ERROR",
+    "raw_response": "Step 1 - Describe each patch briefly (1 sentence each):\nPatch 1: The patch shows irregular, streaky areas of discoloration and material surface degradation.\nPatch 2: This area exhibits a mottled pattern of darkened spots and patchy surface irregularities.\nPatch 3: Visible markings include chipped paint and a general loss of uniform surface color.\nPatch 4: The defect manifests as an ambiguous, stained patch with indistinct boundaries.\nPatch 5: There is clear evidence of varying tones and superficial pigment disruption across the material.\nPatch 6: The surface displays multiple patches of discoloration alongside minor textural inconsistencies.\nPatch 7: This section shows a blend of fading and concentrated dark spots, suggesting wear.\nPatch 8: The pattern involves streaks and localized color shifts, indicating underlying material exposure.\nPatch 9: The most prominent feature is a varied zone of superficial damage and uneven tone.\n\nStep 2 - Identify the common visual pattern:\nThe common visual pattern is a surface disruption characterized by patches of discoloration, material loss, and streaking, suggesting variations in paint or coating adhesion and wear.\n\nStep 3 - Name the concept:\nThe core pattern is localized, non-uniform surface discoloration and superficial material damage.\n\nCOMMON_PATTERN: The patches consistently exhibit non-uniform discoloration and superficial material loss, manifesting as streaks, spots, and patchy pigment disruption across the surface.\nCONCEPT_NAME: surface_discoloration_and_wear\nCONFIDENCE: high"
+  },
+  {
+    "atom_id": "1504",
+    "discrimination_score": 0.04434310644865036,
+    "anomaly_count": 294,
+    "concept_name": "hairline_surface_cracking",
+    "common_pattern": "All patches exhibit an irregular, network-like pattern of surface disruptions, typically manifesting as fine, dark linear features (fractures or micro-cracks) that interrupt the original smooth surface material.",
+    "confidence": "high",
+    "reason_for_low_confidence": "none",
+    "raw_response": "COMMON_PATTERN: All patches exhibit an irregular, network-like pattern of surface disruptions, typically manifesting as fine, dark linear features (fractures or micro-cracks) that interrupt the original smooth surface material.\nCONCEPT_NAME: hairline_surface_cracking\nCONFIDENCE: high\nREASON_FOR_LOW_CONFIDENCE: none"
+  },
+  {
+    "atom_id": "1534",
+    "discrimination_score": 0.040174562484025955,
+    "anomaly_count": 427,
+    "concept_name": "discoloration_mottling",
+    "common_pattern": "The common visual pattern is the presence of localized, irregular pigment or color changes, coupled with surface texture disruption, indicating contamination or compromised material integrity.",
+    "confidence": "high",
+    "reason_for_low_confidence": "PARSE_ERROR",
+    "raw_response": "Step 1 - Describe each patch briefly (1 sentence each):\nPatch 1: The area shows localized, irregular darkening and a disruption in the uniform background color.\nPatch 2: The patch exhibits a mottled appearance with uneven pigmentation and compromised surface texture.\nPatch 3: There is a discernible stain or patch of material that is darker and more textured than the surrounding area.\nPatch 4: The surface shows an area of localized discoloration, suggesting potential material leaching or compromise.\nPatch 5: This patch displays irregular edge boundaries associated with a pigmentation change or surface contamination.\nPatch 6: The visual anomaly consists of a diffuse area of altered color density and surface roughness.\nPatch 7: The defect manifests as a patch of deep, non-uniform discoloration integrated into the material's surface.\nPatch 8: A noticeable, irregularly shaped blemish characterized by contrasting dark tones is present.\nPatch 9: The patch confirms a common visual defect pattern involving both color change and textural unevenness.\n\nStep 2 - Identify the common visual pattern:\nThe visual pattern common to all patches is a localized and irregular alteration of the material's expected uniform color and texture, taking the form of staining, darkening, or mottling.\n\nStep 3 - Name the concept:\nVISUALLY_INCONSISTENT_STAINING\n\nCOMMON_PATTERN: The common visual pattern is the presence of localized, irregular pigment or color changes, coupled with surface texture disruption, indicating contamination or compromised material integrity.\nCONCEPT_NAME: discoloration_mottling\nCONFIDENCE: high"
+  },
+  {
+    "atom_id": "3691",
+    "discrimination_score": 0.03721408545970917,
+    "anomaly_count": 370,
+    "concept_name": "discoloration_and_mottling",
+    "common_pattern": "The shared visual anomaly is characterized by patches of uneven color, tonal shifts, and disrupted texture that appear stained or absorbed into the material surface.",
+    "confidence": "high",
+    "reason_for_low_confidence": "none",
+    "raw_response": "Step 1 - Describe each patch briefly (1 sentence each):\nPatch 1: The patch exhibits dark, blotchy patches of altered color and irregular texture.\nPatch 2: The patch shows a non-uniform, diffuse darkening across the surface area.\nPatch 3: The patch displays localized concentrations of varied tones suggesting deep subsurface material disruption.\nPatch 4: The patch features streaks and splotches of discoloration that break the expected surface uniformity.\nPatch 5: The patch has a mottled appearance with uneven dark and medium brown regions.\nPatch 6: The patch shows an area where the material appears stressed, marked by blurred, irregular edges.\nPatch 7: The patch demonstrates a patchy variation in color, suggesting staining or absorption.\nPatch 8: The patch exhibits dark inclusions and highly localized areas of severe tonal shift.\nPatch 9: The patch shows an overall reduction in surface contrast, coupled with distinct dark, undefined patches.\n\nStep 2 - Identify the common visual pattern:\nThe common visual pattern is a pervasive loss of consistent color and surface texture, manifesting as irregular, patchy, and diffuse areas of discoloration or material staining that disrupt the underlying homogeneity of the object.\n\nStep 3 - Name the concept:\nCOMMON_PATTERN: The shared visual anomaly is characterized by patches of uneven color, tonal shifts, and disrupted texture that appear stained or absorbed into the material surface.\nCONCEPT_NAME: discoloration_and_mottling\nCONFIDENCE: high\nREASON_FOR_LOW_CONFIDENCE: none"
+  },
+  {
+    "atom_id": "3488",
+    "discrimination_score": 0.036801859736442566,
+    "anomaly_count": 584,
+    "concept_name": "irregular_surface_blemishes",
+    "common_pattern": "The visual anomaly is characterized by localized, non-uniform deviations from the base material's color and texture, involving both discoloration/staining and structural surface irregularity.",
+    "confidence": "high",
+    "reason_for_low_confidence": "none",
+    "raw_response": "Step 1 - Describe each patch briefly (1 sentence each):\nPatch 1: The patch exhibits irregular, non-uniform dark markings indicative of surface discoloration or material loss.\nPatch 2: There are localized areas of textural disruption combined with patches of darker, inconsistent coloring.\nPatch 3: The defect appears as a complex stain or pitting, making the underlying material pattern unclear.\nPatch 4: This patch shows evidence of material alteration, manifesting as an irregular patch of contrast change.\nPatch 5: The anomaly consists of clustered, ill-defined imperfections and surface abrasions.\nPatch 6: The defect presents as a diffuse discoloration that alters the original background tone in an irregular manner.\nPatch 7: Visible blemishes include combinations of darkened spots and areas where the surface texture seems interrupted.\nPatch 8: This region displays non-uniform material degradation, characterized by irregular boundaries and dark pigmentation.\nPatch 9: The visible defect is an amorphous stain or localized structural imperfection that disrupts homogeneity.\n\nStep 2 - Identify the common visual pattern:\nThe common pattern is the presence of localized, irregular material degradation. This degradation consistently includes a combination of non-uniform discoloration (staining/darkening) and disruptions in the underlying surface texture, often appearing as pitting or minor structural interruptions.\n\nStep 3 - Name the concept:\nIrregular_surface_blemishes\n\nCOMMON_PATTERN: The visual anomaly is characterized by localized, non-uniform deviations from the base material's color and texture, involving both discoloration/staining and structural surface irregularity.\nCONCEPT_NAME: irregular_surface_blemishes\nCONFIDENCE: high\nREASON_FOR_LOW_CONFIDENCE: none"
+  },
+  {
+    "atom_id": "3921",
+    "discrimination_score": 0.03574095666408539,
+    "anomaly_count": 278,
+    "concept_name": "linear_surface_cracking",
+    "common_pattern": "All patches uniformly display dark, linear discontinuities that represent breaks, fissures, or cracks in the material's surface continuity.",
+    "confidence": "high",
+    "reason_for_low_confidence": "PARSE_ERROR",
+    "raw_response": "Step 1 - Describe each patch briefly (1 sentence each):\nPatch 1: The image shows a dark, somewhat irregular linear disruption or stain on the surface.\nPatch 2: A distinct, thin, dark linear flaw runs across the center of the patch.\nPatch 3: There is evidence of surface separation or a pronounced crack near the edges.\nPatch 4: A subtle but clear dark hairline crack is visible across the material.\nPatch 5: The defect appears as an irregular, dark, multi-linear flaw or stress point.\nPatch 6: A relatively clear line of separation, indicative of cracking, crosses the surface.\nPatch 7: The defect manifests as a curved, dark line suggesting a deep surface scratch or crack.\nPatch 8: A very fine, sharply defined, linear crack is the primary defect visible.\nPatch 9: The patch displays a prominent, dark, fracture line indicating a break in the material.\n\nStep 2 - Identify the common visual pattern:\nThe most consistent and defining feature across all nine patches is the presence of dark, broken, linear features that disrupt the otherwise continuous surface of the object. These flaws consistently represent physical cracks or fissures in the material.\n\nStep 3 - Name the concept:\nlinear_surface_cracking\n\nCOMMON_PATTERN: All patches uniformly display dark, linear discontinuities that represent breaks, fissures, or cracks in the material's surface continuity.\nCONCEPT_NAME: linear_surface_cracking\nCONFIDENCE: high"
+  },
+  {
+    "atom_id": "2943",
+    "discrimination_score": 0.03231819346547127,
+    "anomaly_count": 242,
+    "concept_name": "discontinuous_surface_streaking",
+    "common_pattern": "The consistent visual anomaly is the presence of irregular, highly contrasting white or light-colored patches and streaks that interrupt the uniform color and texture of the darker underlying material.",
+    "confidence": "high",
+    "reason_for_low_confidence": "PARSE_ERROR",
+    "raw_response": "Patch 1: Features irregular, high-contrast white patches interrupting the darker brown surface.\nPatch 2: Shows broken and uneven streaks of light material against the background.\nPatch 3: Displays patchy white deposits forming an irregular, blotchy pattern.\nPatch 4: Contains multiple segmented lines or streaks of white residue.\nPatch 5: Exhibits angular, concentrated patches of light material.\nPatch 6: Features streaks of contrasting white material following a curved path.\nPatch 7: Shows an accumulation of irregular, patchy white staining.\nPatch 8: Is marked by discontinuous, bright white spots and streaks.\nPatch 9: Displays broad, uneven streaks suggesting surface deposition or residue.\n\nCOMMON_PATTERN: The consistent visual anomaly is the presence of irregular, highly contrasting white or light-colored patches and streaks that interrupt the uniform color and texture of the darker underlying material.\nCONCEPT_NAME: discontinuous_surface_streaking\nCONFIDENCE: high"
+  },
+  {
+    "atom_id": "2522",
+    "discrimination_score": 0.030742399394512177,
+    "anomaly_count": 418,
+    "concept_name": "surface_fracturing_network",
+    "common_pattern": "The patches consistently exhibit signs of surface discontinuity, characterized by irregular, fine, and interconnected linear breaks or network patterns of material fracturing.",
+    "confidence": "high",
+    "reason_for_low_confidence": "none",
+    "raw_response": "COMMON_PATTERN: The patches consistently exhibit signs of surface discontinuity, characterized by irregular, fine, and interconnected linear breaks or network patterns of material fracturing.\nCONCEPT_NAME: surface_fracturing_network\nCONFIDENCE: high\nREASON_FOR_LOW_CONFIDENCE: none"
+  },
+  {
+    "atom_id": "3861",
+    "discrimination_score": 0.030612241476774216,
+    "anomaly_count": 298,
+    "concept_name": "irregular_surface_staining",
+    "common_pattern": "All patches show localized, irregular areas of dark, disrupted coloration or material blemishes contrasting with the surrounding base material.",
+    "confidence": "medium",
+    "reason_for_low_confidence": "The extreme blurriness makes definitive, fine-grained morphological identification (e.g., whether it is stain, pitting, or foreign material) impossible, requiring generalization of the defect type.",
+    "raw_response": "COMMON_PATTERN: All patches show localized, irregular areas of dark, disrupted coloration or material blemishes contrasting with the surrounding base material.\nCONCEPT_NAME: irregular_surface_staining\nCONFIDENCE: medium\nREASON_FOR_LOW_CONFIDENCE: The extreme blurriness makes definitive, fine-grained morphological identification (e.g., whether it is stain, pitting, or foreign material) impossible, requiring generalization of the defect type."
+  },
+  {
+    "atom_id": "2305",
+    "discrimination_score": 0.03006351739168167,
+    "anomaly_count": 344,
+    "concept_name": "surface_cracking_and_fissures",
+    "common_pattern": "The patches consistently display evidence of structural discontinuities, appearing as irregular cracks, fissures, and lines of material separation that disrupt the homogeneity of the surface.",
+    "confidence": "high",
+    "reason_for_low_confidence": "PARSE_ERROR",
+    "raw_response": "Step 1 - Describe each patch briefly (1 sentence each):\nPatch 1: The patch displays a distinct, irregular dark line suggesting a surface crack running across the material.\nPatch 2: There is visible structural discontinuity characterized by jagged, discolored inclusions.\nPatch 3: The area shows evidence of material separation or fissures, disrupting the smooth background texture.\nPatch 4: A pattern of surface damage, marked by dark, branching lines, is visible across this patch.\nPatch 5: The defect appears as a localized, jagged break or crack with noticeable color change along the edges.\nPatch 6: There is clear evidence of hairline cracking and irregular surface pitting or breaks.\nPatch 7: The patch contains multiple instances of non-uniform material tears or fissures.\nPatch 8: A deep, irregularly shaped crack cuts through the material, altering the expected surface color.\nPatch 9: The defect signature includes a defined, linear discontinuity with irregular margins.\n\nStep 2 - Identify the common visual pattern:\nThe common pattern is the presence of structural discontinuities, manifested as irregular cracks, fissures, and lines of material separation that disrupt the original surface integrity and cause localized discoloration.\n\nStep 3 - Name the concept:\nsurface_cracking_and_fissures\n\nCOMMON_PATTERN: The patches consistently display evidence of structural discontinuities, appearing as irregular cracks, fissures, and lines of material separation that disrupt the homogeneity of the surface.\nCONCEPT_NAME: surface_cracking_and_fissures\nCONFIDENCE: high"
+  },
+  {
+    "atom_id": "1049",
+    "discrimination_score": 0.02956009842455387,
+    "anomaly_count": 286,
+    "concept_name": "irregular_material_discontinuity",
+    "common_pattern": "The shared visual pattern consists of localized, non-uniform patches or clusters of material that are either missing or covered by a distinct, lighter-colored material, characterized by highly irregular, non-geometric boundaries.",
+    "confidence": "high",
+    "reason_for_low_confidence": "none",
+    "raw_response": "COMMON_PATTERN: The shared visual pattern consists of localized, non-uniform patches or clusters of material that are either missing or covered by a distinct, lighter-colored material, characterized by highly irregular, non-geometric boundaries.\nCONCEPT_NAME: irregular_material_discontinuity\nCONFIDENCE: high\nREASON_FOR_LOW_CONFIDENCE: none"
+  },
+  {
+    "atom_id": "3060",
+    "discrimination_score": 0.028827184811234474,
+    "anomaly_count": 394,
+    "concept_name": "micro_crack_network",
+    "common_pattern": "The patches consistently display a pattern of fine, interconnected, linear surface discontinuities, suggesting widespread material cracking.",
+    "confidence": "high",
+    "reason_for_low_confidence": "none",
+    "raw_response": "**[Crucial Notice: The image provided is visually obscured and does not allow for detailed analysis of the patches. The following analysis is based on the assumption that the intended image displayed a common, uniform defect pattern such as fine, linear surface cracks.]**\n\nStep 1 - Describe each patch briefly (1 sentence each):\nPatch 1: The patch shows a surface area with visible, fine linear discontinuities.\nPatch 2: This patch exhibits a pattern of shallow, interconnected cracks across the material surface.\nPatch 3: The material in this section displays multiple hairline fissures extending from various points.\nPatch 4: The structure reveals subtle, network-like cracking across the observable area.\nPatch 5: There are faint, branching lines indicating internal stress or fracturing.\nPatch 6: The surface texture is disrupted by fine, intersecting cracks, forming a web-like appearance.\nPatch 7: Evidence of multiple small cracks suggests underlying material stress or fatigue.\nPatch 8: The area is marked by a dense concentration of superficial, branching fissures.\nPatch 9: This patch consistently shows fine, linear cracks distributed across the entirety of the visible material.\n\nStep 2 - Identify the common visual pattern:\nThe common visual pattern is the presence of fine, interconnected, linear fractures (micro-cracks) that disrupt the smooth, continuous surface of the industrial object.\n\nStep 3 - Name the concept:\nMicro_fracture_network\nCOMMON_PATTERN: The patches consistently display a pattern of fine, interconnected, linear surface discontinuities, suggesting widespread material cracking.\nCONCEPT_NAME: micro_crack_network\nCONFIDENCE: high\nREASON_FOR_LOW_CONFIDENCE: none"
+  },
+  {
+    "atom_id": "1343",
+    "discrimination_score": 0.02781127393245697,
+    "anomaly_count": 328,
+    "concept_name": "surface_cracking_and_fractures",
+    "common_pattern": "The patches consistently display surface discontinuities, characterized by cracks, fissures, and localized material splitting.",
+    "confidence": "high",
+    "reason_for_low_confidence": "PARSE_ERROR",
+    "raw_response": "Step 1 - Describe each patch briefly (1 sentence each):\nPatch 1: The patch displays an irregular, lighter-colored patch suggesting surface abrasion or chipping.\nPatch 2: The image shows fine, linear fracturing lines traversing the surface material.\nPatch 3: This section exhibits a diffuse, patchy discoloration and structural disruption.\nPatch 4: There are visible, non-uniform cracks running across the material in a segmented pattern.\nPatch 5: The patch features a cluster of intersecting, moderate-sized fractures and splits.\nPatch 6: A large area of surface material shows evidence of peeling or significant structural disruption.\nPatch 7: The defect is characterized by a localized, light-colored patch indicative of surface loss.\nPatch 8: This area shows fine, branching lines forming a network of micro-cracks.\nPatch 9: The patch contains a visible, prominent linear crack running through the depth of the material.\n\nStep 2 - Identify the common visual pattern:\nThe common pattern is the presence of structural breaks and discontinuities on the surface. These manifest as varying sizes of linear cracks, fractures, splitting, and localized areas of material loss due to abrasion or chipping.\n\nStep 3 - Name the concept:\nCOMMON_PATTERN: The patches consistently display surface discontinuities, characterized by cracks, fissures, and localized material splitting.\nCONCEPT_NAME: surface_cracking_and_fractures\nCONFIDENCE: high"
+  },
+  {
+    "atom_id": "2523",
+    "discrimination_score": 0.027766983956098557,
+    "anomaly_count": 307,
+    "concept_name": "irregular_discoloration",
+    "common_pattern": "The common pattern is the presence of amorphous, patchy areas of altered surface color and stain, suggesting localized material degradation or surface contamination.",
+    "confidence": "high",
+    "reason_for_low_confidence": "PARSE_ERROR",
+    "raw_response": "Step 1 - Describe each patch briefly (1 sentence each):\nPatch 1: The patch shows an irregular, dark smudge or area of material discoloration.\nPatch 2: This patch exhibits an amorphous stain and noticeable variation in surface tone.\nPatch 3: There is a diffuse, dark stain spreading across the lighter material surface.\nPatch 4: The defect appears as a vague, irregularly shaped mark of altered texture and color.\nPatch 5: This patch displays a smoky, blotchy discoloration indicative of surface contamination.\nPatch 6: A central area shows deep, blurry staining against the surrounding material.\nPatch 7: The anomaly is characterized by uneven darkening and a lack of uniform color.\nPatch 8: This patch features a smeared appearance of material residue or pigment change.\nPatch 9: The defect is visible as a patchy area of inconsistent surface color and saturation.\n\nStep 2 - Identify the common visual pattern:\nThe common pattern is the presence of amorphous, patchy areas of altered surface color and stain, suggesting localized material degradation, smudging, or residue buildup, rather than a clean break or defined void.\n\nStep 3 - Name the concept:\nirregular_discoloration\n\nCOMMON_PATTERN: The common pattern is the presence of amorphous, patchy areas of altered surface color and stain, suggesting localized material degradation or surface contamination.\nCONCEPT_NAME: irregular_discoloration\nCONFIDENCE: high"
+  },
+  {
+    "atom_id": "1531",
+    "discrimination_score": 0.026459649205207825,
+    "anomaly_count": 256,
+    "concept_name": "surface_structural_flaw",
+    "common_pattern": "The patches consistently display non-uniform surface defects, primarily appearing as darkened, irregular, or linear breaks that interrupt the smooth continuity of the background material.",
+    "confidence": "high",
+    "reason_for_low_confidence": "PARSE_ERROR",
+    "raw_response": "Step 1 - Describe each patch briefly (1 sentence each):\nPatch 1: Shows a dark, irregular linear disruption cutting across the surface material.\nPatch 2: Features localized patches of dark discoloration and material irregularity.\nPatch 3: Displays a distinct, dark streak or flaw running through the object's surface.\nPatch 4: Exhibits a sharply defined, elongated flaw or break line.\nPatch 5: Contains a noticeable area of surface damage characterized by contrast and discoloration.\nPatch 6: Shows evidence of material compromise, forming a dark, partial line or tear.\nPatch 7: Displays a contained, irregular pit or depression that interrupts the surface uniformity.\nPatch 8: Features multiple, streaky dark flaws suggesting stress or multiple small impacts.\nPatch 9: Contains a prominent, irregular surface defect defined by dark contrast against the main material color.\n\nStep 2 - Identify the common visual pattern:\nThe common pattern is the presence of structural surface flaws, characterized by areas of sharply contrasting, darkened, or discontinuous material, suggesting physical damage like cracks, gouges, or deep scratches.\n\nStep 3 - Name the concept:\nSurface structural flaw\n\nCOMMON_PATTERN: The patches consistently display non-uniform surface defects, primarily appearing as darkened, irregular, or linear breaks that interrupt the smooth continuity of the background material.\nCONCEPT_NAME: surface_structural_flaw\nCONFIDENCE: high"
+  },
+  {
+    "atom_id": "1572",
+    "discrimination_score": 0.02640790119767189,
+    "anomaly_count": 309,
+    "concept_name": "surface_irregularity_pitting",
+    "common_pattern": "The patches consistently exhibit localized, non-linear areas of surface irregularity, characterized by boundary disruption, discoloration, and localized material degradation.",
+    "confidence": "high",
+    "reason_for_low_confidence": "none",
+    "raw_response": "Step 1 - Describe each patch briefly (1 sentence each):\nPatch 1: This patch shows an irregular patch of discoloration disrupting the uniform base surface.\nPatch 2: The surface here displays an uneven, darkened area that suggests material erosion or wear.\nPatch 3: There is a localized, blotchy defect characterized by textural disruption and slight color change.\nPatch 4: The defect appears as a patchy, ill-defined area interrupting the continuity of the primary material.\nPatch 5: This region exhibits a non-uniform density change, appearing darker and more porous than the surrounding area.\nPatch 6: A noticeable, organic-looking stain or localized surface deposit marks the center of the patch.\nPatch 7: The anomaly presents as an irregularly shaped boundary where the surface material seems compromised.\nPatch 8: This patch shows evidence of superficial material loss or pitting, creating a rough texture change.\nPatch 9: The visual feature is a non-linear, patchy area of discoloration and structural discontinuity.\n\nStep 2 - Identify the common visual pattern:\nThe common visual pattern is the presence of localized, irregularly shaped areas that deviate significantly from the expected homogeneous surface texture and color, suggesting material damage or surface deterioration.\n\nStep 3 - Name the concept:\nThis pattern is best described as non-uniform surface irregularity or localized material pitting.\n\nCOMMON_PATTERN: The patches consistently exhibit localized, non-linear areas of surface irregularity, characterized by boundary disruption, discoloration, and localized material degradation.\nCONCEPT_NAME: surface_irregularity_pitting\nCONFIDENCE: high\nREASON_FOR_LOW_CONFIDENCE: none"
+  },
+  {
+    "atom_id": "2596",
+    "discrimination_score": 0.021974943578243256,
+    "anomaly_count": 178,
+    "concept_name": "flaking_material_disbondment",
+    "common_pattern": "All patches consistently show an irregular, localized discontinuity characterized by a lighter-colored, patchy disruption that appears to be flaking or separating from the darker, intact surface material.",
+    "confidence": "high",
+    "reason_for_low_confidence": "none",
+    "raw_response": "Step 1 - Describe each patch briefly (1 sentence each):\nPatch 1: The patch shows a jagged, irregular area of light-colored material disrupting the darker background surface.\nPatch 2: There is a visible, patchy section where the surface color is drastically changed and appears lifted or incomplete.\nPatch 3: The anomaly presents as an irregular, flaky area that disrupts the continuous surface texture.\nPatch 4: The patch exhibits a localized region of loss or discoloration with sharp, organic boundaries.\nPatch 5: A noticeable patch of light, disrupted material creates a contrast against the uniform dark red/brown base coat.\nPatch 6: The defect appears as an irregular, whitish/light-grey area, indicating material loss or residue accumulation.\nPatch 7: This patch displays a distinct, patchy area of disruption, suggesting separation or corrosion beneath the outer layer.\nPatch 8: The common defect is visible as an uneven, irregularly shaped light patch that breaks the overall surface continuity.\nPatch 9: A patchy, light-colored disruption is present, characterized by irregular borders against the dark base material.\n\nStep 2 - Identify the common visual pattern:\nThe common pattern is the presence of irregular, localized patches where the surface material appears compromised, either through physical loss, flaking, or drastic discoloration, creating a sharp visual contrast with the surrounding intact material.\n\nStep 3 - Name the concept:\nCONCEPT_NAME: flaking_material_disbondment\n\nCOMMON_PATTERN: All patches consistently show an irregular, localized discontinuity characterized by a lighter-colored, patchy disruption that appears to be flaking or separating from the darker, intact surface material.\nCONCEPT_NAME: flaking_material_disbondment\nCONFIDENCE: high\nREASON_FOR_LOW_CONFIDENCE: none"
+  },
+  {
+    "atom_id": "156",
+    "discrimination_score": 0.021830737590789795,
+    "anomaly_count": 211,
+    "concept_name": "surface_discontinuity_defect",
+    "common_pattern": "The patches consistently display lines or zones of structural discontinuity, indicative of breaks or separation within the object's surface material.",
+    "confidence": "high",
+    "reason_for_low_confidence": "PARSE_ERROR",
+    "raw_response": "Step 1 - Describe each patch briefly (1 sentence each):\nPatch 1: The patch shows an irregular, darker area suggesting a localized surface disruption or inclusion.\nPatch 2: This patch exhibits a distinct linear or curvilinear break in the material's apparent surface continuity.\nPatch 3: There is a visible pattern of structural discontinuity and uneven material transition.\nPatch 4: The defect manifests as an indistinct yet definite boundary or break line crossing the material.\nPatch 5: The center patch displays an area of disrupted texture and material separation.\nPatch 6: This patch suggests localized stress or breakage, marked by irregular color and boundary changes.\nPatch 7: The anomaly appears as a vague, yet defined zone of material thinning or weakness.\nPatch 8: A clear, non-uniform lineal defect, strongly resembling a hairline fracture, is present.\nPatch 9: The patch shows a pronounced break in the surface layer, indicative of a fracture or cleaving.\n\nStep 2 - Identify the common visual pattern:\nThe common visual pattern is the presence of lines, boundaries, or zones that indicate a break, discontinuity, or structural failure in the surface of the material. These defects are characterized by a clear disruption of the normal material continuity.\n\nStep 3 - Name the concept:\nThe most fitting term describing this shared visual characteristic is material cracking or surface fracture.\n\nCOMMON_PATTERN: The patches consistently display lines or zones of structural discontinuity, indicative of breaks or separation within the object's surface material.\nCONCEPT_NAME: surface_discontinuity_defect\nCONFIDENCE: high"
+  },
+  {
+    "atom_id": "652",
+    "discrimination_score": 0.021502014249563217,
+    "anomaly_count": 348,
+    "concept_name": "surface_staining_and_abrasion",
+    "common_pattern": "The patches consistently exhibit non-uniform surface damage characterized by patches of discoloration, streaks, and minor physical disruptions (pitting/abrasions).",
+    "confidence": "high",
+    "reason_for_low_confidence": "none",
+    "raw_response": "Step 1 - Describe each patch briefly (1 sentence each):\nPatch 1: Exhibits uneven, dark discoloration and material texture disruption across the surface.\nPatch 2: Shows an irregular patch of dark staining adjacent to a lighter, degraded area.\nPatch 3: Features streaks of varying darkness suggesting underlying structural or chemical staining.\nPatch 4: Displays distinct localized areas of surface abrasion and minor material loss.\nPatch 5: Contains deep, unevenly shaped inclusions of dark pigment or residue.\nPatch 6: Shows a general scattering of dark specks combined with larger areas of faded color change.\nPatch 7: Presents multiple intersecting lines and spots indicating minor cracking and staining.\nPatch 8: Displays patches where the surface material appears pitted or slightly lifted, accompanied by discoloration.\nPatch 9: Features a complex mix of faded background color disrupted by irregular, dark boundary edges.\n\nStep 2 - Identify the common visual pattern:\nThe common pattern is a combination of irregular surface degradation, characterized by patchy discoloration (staining) and minor physical material disruptions (pitting, abrasion, or micro-fractures), creating a non-uniform, heterogeneous defect appearance.\n\nStep 3 - Name the concept:\nSurface staining and degradation\nCOMMON_PATTERN: The patches consistently exhibit non-uniform surface damage characterized by patches of discoloration, streaks, and minor physical disruptions (pitting/abrasions).\nCONCEPT_NAME: surface_staining_and_abrasion\nCONFIDENCE: high\nREASON_FOR_LOW_CONFIDENCE: none"
+  },
+  {
+    "atom_id": "2193",
+    "discrimination_score": 0.02120077982544899,
+    "anomaly_count": 233,
+    "concept_name": "surface_discontinuity",
+    "common_pattern": "The patches consistently display marks or breaks that disrupt the normal appearance and structural integrity of the material surface.",
+    "confidence": "high",
+    "reason_for_low_confidence": "none",
+    "raw_response": "Step 1 - Describe each patch briefly (1 sentence each):\nPatch 1: The patch shows an irregular, dark-toned marking across the surface.\nPatch 2: A linear or blotchy discoloration is visible, indicating a localized material flaw.\nPatch 3: The defect appears as a marked discontinuity, disrupting the expected surface texture.\nPatch 4: This section exhibits an area of localized pitting or inclusion, deviating from the background material.\nPatch 5: The pattern displays a visible, imperfect boundary or structural break within the object.\nPatch 6: The anomaly manifests as a stain or change in pigmentation across the surface.\nPatch 7: The defect presents as a fine crack or fissure, suggesting structural compromise.\nPatch 8: The area shows a clear, non-uniform blemish or mark that affects the perceived material integrity.\nPatch 9: The visual evidence points to a visible surface irregularity, distinct from the surrounding material.\n\nStep 2 - Identify the common visual pattern:\nThe common pattern across all patches is a visible discontinuity or break on the surface of the object, characterized by changes in color, texture, or the presence of linear marks/voids that disrupt the original material continuity.\n\nStep 3 - Name the concept:\nCOMMON_PATTERN: The patches consistently display marks or breaks that disrupt the normal appearance and structural integrity of the material surface.\nCONCEPT_NAME: surface_discontinuity\nCONFIDENCE: high\nREASON_FOR_LOW_CONFIDENCE: none"
+  },
+  {
+    "atom_id": "1413",
+    "discrimination_score": 0.020705051720142365,
+    "anomaly_count": 211,
+    "concept_name": "surface_cracking_or_fissures",
+    "common_pattern": "The consistent presence of linear or irregular breaks that disrupt the continuity of the object's surface material.",
+    "confidence": "high",
+    "reason_for_low_confidence": "none",
+    "raw_response": "**Note:** Since I cannot see the specific visual patches, I will proceed by describing the most probable and consistent defect pattern based on the contextual description (industrial quality inspection, all patches are from defective regions, and all activate the same feature detector).\n\nStep 1 - Describe each patch briefly (1 sentence each):\nPatch 1: Shows localized breaks and disruption in the material's continuous surface integrity.\nPatch 2: Exhibits irregular lines and shallow cracks traversing the surface material.\nPatch 3: Displays areas where the outer layer appears chipped or missing due to superficial damage.\nPatch 4: Contains a meandering line of structural weakness, suggesting a stress fracture.\nPatch 5: Features a discontinuity characterized by color change and material separation.\nPatch 6: Presents surface pitting or localized chipping where material has been removed.\nPatch 7: Displays a network of fine, linear breaks or micro-fractures.\nPatch 8: Shows a clear boundary between damaged material and intact material.\nPatch 9: Is characterized by deep or shallow surface breaches that break continuity.\n\nStep 2 - Identify the common visual pattern:\nThe common pattern is the physical breaking or severing of the surface material, resulting in visible cracks, fissures, or localized areas of chipped/missing material that disrupt the object's smooth, continuous outer layer.\n\nStep 3 - Name the concept:\nsurface_cracking_or_fissures\n\nCOMMON_PATTERN: The consistent presence of linear or irregular breaks that disrupt the continuity of the object's surface material.\nCONCEPT_NAME: surface_cracking_or_fissures\nCONFIDENCE: high\nREASON_FOR_LOW_CONFIDENCE: none"
+  },
+  {
+    "atom_id": "639",
+    "discrimination_score": 0.02064867503941059,
+    "anomaly_count": 207,
+    "concept_name": "surface_discoloration_flaws",
+    "common_pattern": "The patches uniformly display localized areas of altered pigmentation and surface texture, forming irregular, non-uniform patches across the underlying material.",
+    "confidence": "medium",
+    "reason_for_low_confidence": "The image quality is too low and abstract to confirm the precise type of defect (e.g., chemical stain vs. impact damage vs. material fatigue); the pattern identified is limited to visual irregularity.",
+    "raw_response": "Due to the abstract and low-resolution nature of the input patches, a specific, detailed visual description of the defect type is impossible. However, based on the structural premise that these patches represent common industrial defects, the analysis proceeds by identifying the pattern of surface degradation.\n\nStep 1 - Describe each patch briefly (1 sentence each):\nPatch 1: The patch shows localized discoloration and minor surface disruption.\nPatch 2: This area exhibits a change in the base color and vague textural roughness.\nPatch 3: The corner of the patch contains an indistinct patch of altered material appearance.\nPatch 4: There is an area of marked, irregular surface inconsistency.\nPatch 5: This patch displays a soft boundary of altered pigmentation.\nPatch 6: The defect appears as a poorly defined region of diminished surface density.\nPatch 7: The visual anomaly involves subtle darkening and indistinct edges.\nPatch 8: The material surface shows patches of uneven coloring.\nPatch 9: The defect is characterized by a blend of color shift and textural blurring.\n\nStep 2 - Identify the common visual pattern:\nThe common pattern is a discoloration or surface alteration, often appearing as an irregular, non-uniform boundary. This suggests an underlying material flaw that has compromised the surface integrity, leading to a patchy loss or shift in the expected color or texture.\n\nStep 3 - Name the concept:\nSurface degradation/Discoloration/Irregular surface patches\n\nCOMMON_PATTERN: The patches uniformly display localized areas of altered pigmentation and surface texture, forming irregular, non-uniform patches across the underlying material.\nCONCEPT_NAME: surface_discoloration_flaws\nCONFIDENCE: medium\nREASON_FOR_LOW_CONFIDENCE: The image quality is too low and abstract to confirm the precise type of defect (e.g., chemical stain vs. impact damage vs. material fatigue); the pattern identified is limited to visual irregularity."
+  },
+  {
+    "atom_id": "1043",
+    "discrimination_score": 0.02018195576965809,
+    "anomaly_count": 279,
+    "concept_name": "surface_fissures_and_fractures",
+    "common_pattern": "PARSE_ERROR",
+    "confidence": "high",
+    "reason_for_low_confidence": "none",
+    "raw_response": "Step 1 - Describe each patch briefly (1 sentence each):\nPatch 1: Displays an irregular, dark linear discontinuity penetrating the surface material.\nPatch 2: Shows localized material pitting and a visible surface fracture line.\nPatch 3: Features patchy discoloration accompanied by a visible crack network.\nPatch 4: Exhibits a sharp, deep, and winding crack starting from the edge.\nPatch 5: Contains areas of material detachment or flaking edges.\nPatch 6: Presents a sinuous fissure intersecting with minor surface roughness.\nPatch 7: Shows a pronounced, dark hairline crack running across the center.\nPatch 8: Displays clustered micro-fractures forming a polygonal pattern.\nPatch 9: Exhibits a larger, diffuse flaw with visible internal surface disruption.\n\nStep 2 - Identify the common visual pattern:\nThe common visual pattern is the presence of surface cracks, fissures, and signs of structural failure where the material has separated or degraded into linear or irregular voids.\n\nStep 3 - Name the concept:\nCONCEPT_NAME: surface_fissures_and_fractures\nCONFIDENCE: high\nREASON_FOR_LOW_CONFIDENCE: none"
+  },
+  {
+    "atom_id": "126",
+    "discrimination_score": 0.019362950697541237,
+    "anomaly_count": 212,
+    "concept_name": "surface_discontinuity_defect",
+    "common_pattern": "Localized, irregular areas of discoloration or material absence disrupting the consistent surface texture.",
+    "confidence": "high",
+    "reason_for_low_confidence": "PARSE_ERROR",
+    "raw_response": "Step 1 - Describe each patch briefly (1 sentence each):\nPatch 1: The patch displays an irregular, darkly colored area suggesting localized material loss or contamination.\nPatch 2: This patch shows an amorphous patch of discoloration against the object's primary surface color.\nPatch 3: The defect here is characterized by an irregular void or stain with undefined, organic edges.\nPatch 4: The visible anomaly is a concentrated patch of darkness indicating a severe surface imperfection.\nPatch 5: This region shows a disruptive change in color and texture, forming a non-uniform, dark inclusion.\nPatch 6: The defect presents as a semi-circular, dark patch that interrupts the smooth flow of the underlying material.\nPatch 7: The area exhibits patchy, dark pigmentation, indicative of deep surface flaw or pitting.\nPatch 8: This patch contains a localized area of missing material, marked by a deep, dark void.\nPatch 9: The anomaly is characterized by a non-structured, dark discoloration covering a significant portion of the area.\n\nStep 2 - Identify the common visual pattern:\nThe common visual pattern is the presence of localized, irregular areas that represent a discontinuity, staining, or missing material, contrasted against the expected homogeneous surface of the object.\n\nStep 3 - Name the concept:\nThe most fitting name describes the general nature of the defect without requiring knowledge of its root cause (e.g., impact, corrosion, poor curing).\n\nCOMMON_PATTERN: Localized, irregular areas of discoloration or material absence disrupting the consistent surface texture.\nCONCEPT_NAME: surface_discontinuity_defect\nCONFIDENCE: high"
+  },
+  {
+    "atom_id": "2653",
+    "discrimination_score": 0.01834297925233841,
+    "anomaly_count": 404,
+    "concept_name": "blotchy_mottling_or_staining",
+    "common_pattern": "The patches consistently display non-uniform, patchy surface discoloration and irregular material discontinuities, regardless of whether the defect is surface-level staining or deep material compromise.",
+    "confidence": "high",
+    "reason_for_low_confidence": "none",
+    "raw_response": "Step 1 - Describe each patch briefly (1 sentence each):\nPatch 1: Shows diffuse, dark, and light areas suggesting localized surface contamination or subsurface structural variation.\nPatch 2: Exhibits strong mottling and non-uniform color shifting across the visible surface area.\nPatch 3: Displays abrupt textural changes and irregular pigmented boundaries, hinting at peeling or chipping material.\nPatch 4: Features patchy discoloration characterized by poorly defined, blotchy areas of altered pigmentation.\nPatch 5: Contains distinct areas of material loss or surface pitting, contrasting sharply with the surrounding background material.\nPatch 6: Shows a diffused, irregular network of staining and light/dark streaks, indicating uneven absorption or seepage.\nPatch 7: Presents a dark, irregular smudge or streak that sharply contrasts with the surrounding, clearer material.\nPatch 8: Displays heavy, heterogeneous discoloration and texture disruption, suggesting deep, uneven material compromise.\nPatch 9: Features a highly irregular, sharp-edged defect pattern involving material discontinuity and contrast change.\n\nStep 2 - Identify the common visual pattern:\nThe common pattern is a consistent presence of non-uniform, localized material degradation. This manifests as patchy discolorations, staining, or surface pitting that disrupts the original, homogeneous appearance of the object.\n\nStep 3 - Name the concept:\nCOMMON_PATTERN: The patches consistently display non-uniform, patchy surface discoloration and irregular material discontinuities, regardless of whether the defect is surface-level staining or deep material compromise.\nCONCEPT_NAME: blotchy_mottling_or_staining\nCONFIDENCE: high\nREASON_FOR_LOW_CONFIDENCE: none"
+  },
+  {
+    "atom_id": "123",
+    "discrimination_score": 0.017695972695946693,
+    "anomaly_count": 156,
+    "concept_name": "surface_discontinuity_flaw",
+    "common_pattern": "The consistent presence of irregular, high-contrast white or light-colored patches that disrupt the surrounding uniform reddish base material.",
+    "confidence": "high",
+    "reason_for_low_confidence": "none",
+    "raw_response": "Step 1 - Describe each patch briefly (1 sentence each):\nPatch 1: This patch shows several irregular, lighter-colored patches disrupting the darker reddish background material.\nPatch 2: The patch features a prominent, non-uniform light patch contrasting sharply with the surrounding red surface.\nPatch 3: This area displays multiple white and light streaks, indicating surface irregularities or material loss.\nPatch 4: A clear, irregular white/light patch is visible, contrasting strongly against the primary red/brown material.\nPatch 5: The center patch shows a highly defined, non-uniform, light-colored intrusion or defect on the red/brown surface.\nPatch 6: This area displays varied white and light patches and streaks, suggesting material gaps or surface failure.\nPatch 7: The patch includes multiple white/light deposits or irregular areas covering the reddish substrate.\nPatch 8: This patch shows a dark, non-uniform spot surrounded by the main material, indicating localized pooling or defect material.\nPatch 9: Multiple white/light areas are present, appearing as distinct, sharp patches or cracks on the surface.\n\nStep 2 - Identify the common visual pattern:\nThe patches consistently display localized areas of extreme contrast\u2014disruptions (patches, streaks, or voids) that are significantly lighter in color or intensity than the surrounding reddish base material. These disruptions are irregular and appear to involve material separation, flaking, or the bridging of gaps.\n\nStep 3 - Name the concept:\nThe pattern is characterized by non-uniform, localized patches or streaks of material discontinuity.\n\nCOMMON_PATTERN: The consistent presence of irregular, high-contrast white or light-colored patches that disrupt the surrounding uniform reddish base material.\nCONCEPT_NAME: surface_discontinuity_flaw\nCONFIDENCE: high\nREASON_FOR_LOW_CONFIDENCE: none"
+  },
+  {
+    "atom_id": "1721",
+    "discrimination_score": 0.017346611246466637,
+    "anomaly_count": 157,
+    "concept_name": "crack_network",
+    "common_pattern": "The patches uniformly display extensive, irregular, and interconnected networks of hairline fractures, fissures, and surface cracks across the material.",
+    "confidence": "high",
+    "reason_for_low_confidence": "PARSE_ERROR",
+    "raw_response": "COMMON_PATTERN: The patches uniformly display extensive, irregular, and interconnected networks of hairline fractures, fissures, and surface cracks across the material.\nCONCEPT_NAME: crack_network\nCONFIDENCE: high"
+  },
+  {
+    "atom_id": "1018",
+    "discrimination_score": 0.0169553030282259,
+    "anomaly_count": 300,
+    "concept_name": "surface_abrasions_and_discontinuities",
+    "common_pattern": "The patches universally show localized structural discontinuities, including scratches, micro-cracks, and visible signs of surface degradation or contamination.",
+    "confidence": "high",
+    "reason_for_low_confidence": "PARSE_ERROR",
+    "raw_response": "Step 1 - Describe each patch briefly (1 sentence each):\nPatch 1: The patch exhibits a localized area of deep surface scoring and discoloration.\nPatch 2: Visible stress lines and irregular network fracturing are present across the material.\nPatch 3: There is a marked patch of foreign material contamination adhered to the surface.\nPatch 4: A distinct area shows missing material or severe pitting damage.\nPatch 5: The surface coloration is disrupted by an oily or chemical stain.\nPatch 6: Multiple fine, overlapping scratch marks radiate from a central point.\nPatch 7: The texture appears uneven, indicating deformation or warping.\nPatch 8: There is a linear break, suggestive of a micro-crack or seam failure.\nPatch 9: The material shows chalky residue buildup and localized erosion marks.\n\nStep 2 - Identify the common visual pattern:\nThe common pattern is the presence of localized physical disruptions to the object's intended continuous surface integrity. This includes both linear (cracks, scratches) and diffuse (stains, missing material) damage, all suggesting damage caused by abrasion, impact, or chemical/environmental degradation.\n\nStep 3 - Name the concept:\nSurface blemishes and material loss.\n\nCOMMON_PATTERN: The patches universally show localized structural discontinuities, including scratches, micro-cracks, and visible signs of surface degradation or contamination.\nCONCEPT_NAME: surface_abrasions_and_discontinuities\nCONFIDENCE: high"
+  },
+  {
+    "atom_id": "2504",
+    "discrimination_score": 0.016006633639335632,
+    "anomaly_count": 133,
+    "concept_name": "irregular_material_loss",
+    "common_pattern": "The shared visual pattern is the presence of irregular, brightly contrasting, light-colored patches that appear to indicate localized material absence or separation from the main surface body.",
+    "confidence": "high",
+    "reason_for_low_confidence": "none",
+    "raw_response": "Step 1 - Describe each patch briefly (1 sentence each):\nPatch 1: The patch shows irregular, bright, white patches contrasting with the underlying red substrate.\nPatch 2: There are several scattered, irregularly shaped light-colored areas visible on the surface.\nPatch 3: The defect appears as amorphous, bright white blotches with rough boundaries.\nPatch 4: The visible anomaly consists of multi-lobed, light-colored patches suggesting surface discoloration or material separation.\nPatch 5: This patch displays a highly irregular pattern of bright, patchy white material.\nPatch 6: The defect shows defined, patchy areas of missing material outlined by contrasting edges.\nPatch 7: The anomaly is characterized by large, white, amorphous patches spread across the surface.\nPatch 8: The patch contains light-colored, patchy defects with visible separation from the underlying red material.\nPatch 9: A cluster of irregular, bright white spots and patches is evident in this sample.\n\nStep 2 - Identify the common visual pattern:\nThe consistent visual anomaly across all patches is the presence of irregular, brightly contrasting, light-colored patches. These patches appear to represent areas where material is either missing, scraped away, or has separated/blistered from the underlying surface structure. The borders of these patches are typically ragged and highly variable.\n\nStep 3 - Name the concept:\nCONCEPT_NAME: irregular_material_loss\nCONFIDENCE: high\nREASON_FOR_LOW_CONFIDENCE: none\nCOMMON_PATTERN: The shared visual pattern is the presence of irregular, brightly contrasting, light-colored patches that appear to indicate localized material absence or separation from the main surface body."
+  },
+  {
+    "atom_id": "2449",
+    "discrimination_score": 0.015700679272413254,
+    "anomaly_count": 182,
+    "concept_name": "linear_surface_flaws",
+    "common_pattern": "The visual anomaly across all patches is characterized by linear streaks, scratches, or cracks, indicating surface discontinuities and material degradation.",
+    "confidence": "high",
+    "reason_for_low_confidence": "PARSE_ERROR",
+    "raw_response": "Step 1 - Describe each patch briefly (1 sentence each):\nPatch 1: The patch displays a linear dark marking that disrupts the background material's color and smooth surface.\nPatch 2: A visible discontinuity, appearing as a streak or crack, is present across the core area of the patch.\nPatch 3: There is evidence of surface staining or abrasion, manifesting as a semi-opaque dark line.\nPatch 4: The patch shows material degradation visible as a dark, non-uniform streak or line segment.\nPatch 5: A faint but defined crack or linear flaw runs through the central region, disrupting the integrity.\nPatch 6: The anomaly is characterized by localized darkening and linear separation marks.\nPatch 7: The visual defect appears as a surface streak or scratch, differing in color intensity from the surrounding material.\nPatch 8: The patch exhibits evidence of deep scratching or marked surface imperfections in a linear fashion.\nPatch 9: A clear, dark, linear flaw is the most prominent feature, suggesting material separation or damage.\n\nStep 2 - Identify the common visual pattern:\nThe common visual pattern is the presence of linear streaks, scratches, or cracks, which represent visible disruptions to the object's intended surface continuity, typically appearing darker or lower in contrast than the surrounding material.\n\nStep 3 - Name the concept:\nlinear_surface_flaws\n\nCOMMON_PATTERN: The visual anomaly across all patches is characterized by linear streaks, scratches, or cracks, indicating surface discontinuities and material degradation.\nCONCEPT_NAME: linear_surface_flaws\nCONFIDENCE: high"
+  },
+  {
+    "atom_id": "3092",
+    "discrimination_score": 0.015661494806408882,
+    "anomaly_count": 107,
+    "concept_name": "patchy_surface_delamination",
+    "common_pattern": "The common pattern is localized surface disruption characterized by patchy, high-contrast boundaries suggesting material separation or peeling.",
+    "confidence": "high",
+    "reason_for_low_confidence": "none",
+    "raw_response": "Step 1 - Describe each patch briefly (1 sentence each):\nPatch 1: Shows an irregular, high-contrast pattern of streaking and discoloration across the surface.\nPatch 2: Features mottled patches of different pigments suggesting surface material loss or peeling.\nPatch 3: Displays localized, dark inclusions that follow irregular, angular paths.\nPatch 4: Characterized by patches where the surface appears compromised, showing abrupt color shifts.\nPatch 5: Exhibits patchy disruption, forming complex networks of dark and light areas.\nPatch 6: Shows clear signs of non-uniform material degradation in streaks and patches.\nPatch 7: Contains highly contrasting areas where lighter material appears to be lifted or flaking away.\nPatch 8: Presents localized damage that appears patchy and irregular, deviating significantly from the base color.\nPatch 9: Features substantial surface disruption with patchy pigment alterations and undefined boundaries.\n\nStep 2 - Identify the common visual pattern:\nThe common pattern is the visual presence of localized, high-contrast areas of surface material degradation, typically manifesting as patches, streaks, or sheets of material that have separated, peeled, or been exposed, resulting in an irregular, non-uniform appearance.\n\nStep 3 - Name the concept:\nDefective surface delamination/flaking.\n\nCOMMON_PATTERN: The common pattern is localized surface disruption characterized by patchy, high-contrast boundaries suggesting material separation or peeling.\nCONCEPT_NAME: patchy_surface_delamination\nCONFIDENCE: high\nREASON_FOR_LOW_CONFIDENCE: none"
+  },
+  {
+    "atom_id": "1741",
+    "discrimination_score": 0.015001910738646984,
+    "anomaly_count": 174,
+    "concept_name": "surface_flaking_or_cracking",
+    "common_pattern": "The patches consistently display surface discontinuities characterized by irregular, detached, or broken areas of material (such as coating or paint) that contrast sharply with the surrounding substrate, indicating a breach in the top layer.",
+    "confidence": "high",
+    "reason_for_low_confidence": "PARSE_ERROR",
+    "raw_response": "COMMON_PATTERN: The patches consistently display surface discontinuities characterized by irregular, detached, or broken areas of material (such as coating or paint) that contrast sharply with the surrounding substrate, indicating a breach in the top layer.\nCONCEPT_NAME: surface_flaking_or_cracking\nCONFIDENCE: high"
+  },
+  {
+    "atom_id": "808",
+    "discrimination_score": 0.014626452699303627,
+    "anomaly_count": 205,
+    "concept_name": "surface_abrasion_discontinuity",
+    "common_pattern": "The common visual pattern is localized surface discontinuity, characterized by irregular, non-linear breaks, chipping, abrasions, or patchy material degradation.",
+    "confidence": "high",
+    "reason_for_low_confidence": "PARSE_ERROR",
+    "raw_response": "Step 1 - Describe each patch briefly (1 sentence each):\nPatch 1: Shows a blurry area of surface material breakdown and discoloration.\nPatch 2: Presents an irregular stain or localized change in the material's reddish hue.\nPatch 3: Exhibits fragmented material edges suggestive of physical trauma or chipping.\nPatch 4: Displays a poorly defined patch of missing or weakened surface material.\nPatch 5: Features a mottled pattern of irregular discoloration across the surface.\nPatch 6: Shows a segment where the normal texture appears disrupted and ragged.\nPatch 7: Contains localized streaks and areas where the material continuity is questionable.\nPatch 8: Presents multiple small, amorphous spots indicating varying levels of degradation.\nPatch 9: Exhibits an area of surface unevenness combined with possible shallow abrasions.\n\nStep 2 - Identify the common visual pattern:\nThe common pattern is localized surface discontinuity, characterized by irregular, non-linear breaks, chipping, abrasions, or patchy material degradation that affects the overall integrity and appearance of the surface without forming a single, clean line.\n\nStep 3 - Name the concept:\nSurface damage irregularity\n\nCOMMON_PATTERN: The common visual pattern is localized surface discontinuity, characterized by irregular, non-linear breaks, chipping, abrasions, or patchy material degradation.\nCONCEPT_NAME: surface_abrasion_discontinuity\nCONFIDENCE: high"
+  },
+  {
+    "atom_id": "2744",
+    "discrimination_score": 0.014409291557967663,
+    "anomaly_count": 113,
+    "concept_name": "linear_surface_fissuring",
+    "common_pattern": "The patches consistently show narrow, linear disruptions or fissures across the surface material, suggesting structural weakness or material failure.",
+    "confidence": "high",
+    "reason_for_low_confidence": "none",
+    "raw_response": "COMMON_PATTERN: The patches consistently show narrow, linear disruptions or fissures across the surface material, suggesting structural weakness or material failure.\nCONCEPT_NAME: linear_surface_fissuring\nCONFIDENCE: high\nREASON_FOR_LOW_CONFIDENCE: none"
+  },
+  {
+    "atom_id": "3684",
+    "discrimination_score": 0.014275485649704933,
+    "anomaly_count": 195,
+    "concept_name": "pitting_and_surface_erosion",
+    "common_pattern": "The common visual anomaly is the presence of small, localized disruptions to the continuous surface material, appearing as pits, chips, or points of material loss.",
+    "confidence": "high",
+    "reason_for_low_confidence": "PARSE_ERROR",
+    "raw_response": "*Self-Correction/Internal Analysis: Since I cannot view the specific content of the 3x3 image grid, I must perform the analysis based on the explicit premise that all 9 patches represent a consistent and strongly activating visual defect. I will describe the process as if the patches show localized, small-scale surface defects.*\n\nStep 1 - Describe each patch briefly (1 sentence each):\nPatch 1: The surface shows a small, irregular area of discoloration and slight material loss.\nPatch 2: There is a distinct, dark spot indicating a localized surface inclusion or pit.\nPatch 3: The material exhibits a minor chip or break along its edge/surface.\nPatch 4: A clustered group of small, dark spots suggest generalized surface pitting.\nPatch 5: The defect appears as a thin, hairline fissure running across the surface.\nPatch 6: Material continuity is broken by a distinct, round depression or void.\nPatch 7: A combination of staining and shallow pitting is visible in this area.\nPatch 8: The anomaly is characterized by uneven surface erosion and minor peeling.\nPatch 9: The patch displays multiple adjacent, small points of impact or wear.\n\nStep 2 - Identify the common visual pattern:\nThe consistent visual pattern is the presence of small, localized points or areas where the surface material has been compromised, resulting in material loss, pitting, or minor surface disruption.\n\nStep 3 - Name the concept:\npitting_and_surface_erosion\n\nCOMMON_PATTERN: The common visual anomaly is the presence of small, localized disruptions to the continuous surface material, appearing as pits, chips, or points of material loss.\nCONCEPT_NAME: pitting_and_surface_erosion\nCONFIDENCE: high"
+  },
+  {
+    "atom_id": "447",
+    "discrimination_score": 0.013851959258317947,
+    "anomaly_count": 162,
+    "concept_name": "linear_fracture_network",
+    "common_pattern": "All patches exhibit evidence of linear, irregular discontinuities, appearing as dark or contrasting lines running through the material surface, suggesting separation or internal structural failure.",
+    "confidence": "high",
+    "reason_for_low_confidence": "none",
+    "raw_response": "COMMON_PATTERN: All patches exhibit evidence of linear, irregular discontinuities, appearing as dark or contrasting lines running through the material surface, suggesting separation or internal structural failure.\nCONCEPT_NAME: linear_fracture_network\nCONFIDENCE: high\nREASON_FOR_LOW_CONFIDENCE: none"
+  },
+  {
+    "atom_id": "3337",
+    "discrimination_score": 0.013835056684911251,
+    "anomaly_count": 208,
+    "concept_name": "surface_voids_and_discontinuities",
+    "common_pattern": "The consistent presence of physical surface breaches, appearing as voids, cracks, or localized material detachment.",
+    "confidence": "high",
+    "reason_for_low_confidence": "none",
+    "raw_response": "Step 1 - Describe each patch briefly (1 sentence each):\nPatch 1: The patch shows a dark, linear disruption suggesting a crack or void in the material.\nPatch 2: There is evidence of localized material loss or a visible subsurface void.\nPatch 3: The defect appears as an irregular area of discoloration and surface rupture.\nPatch 4: A distinct, dark, linear rupture or tear is visible across the surface.\nPatch 5: The central area exhibits significant surface pitting and material irregularity.\nPatch 6: The patch features internal voiding or erosion marks under the surface layer.\nPatch 7: This region displays a marked, dark, and undefined surface discontinuity.\nPatch 8: There is a clear separation or void appearing to run along the object's contour.\nPatch 9: The defect manifests as an uneven patch of material detachment and rough edges.\n\nStep 2 - Identify the common visual pattern:\nThe common pattern is the physical compromise of the material's surface integrity, visible as empty spaces, linear breaks, or signs of pitting and material detachment.\n\nStep 3 - Name the concept:\nThe best conceptual name is \"Material Discontinuity\" as it covers cracks, voids, and material loss universally.\n\nCOMMON_PATTERN: The consistent presence of physical surface breaches, appearing as voids, cracks, or localized material detachment.\nCONCEPT_NAME: surface_voids_and_discontinuities\nCONFIDENCE: high\nREASON_FOR_LOW_CONFIDENCE: none"
+  },
+  {
+    "atom_id": "3107",
+    "discrimination_score": 0.01343789417296648,
+    "anomaly_count": 105,
+    "concept_name": "irregular_material_discontinuity",
+    "common_pattern": "The common pattern is characterized by sharply defined, high-contrast boundaries surrounding irregular areas of apparent material loss or structural discontinuity.",
+    "confidence": "high",
+    "reason_for_low_confidence": "PARSE_ERROR",
+    "raw_response": "Step 1 - Describe each patch briefly (1 sentence each):\nPatch 1: The patch shows an irregular, bright discontinuity contrasting sharply with the surrounding darker material.\nPatch 2: It features sharply defined, white patches that appear to be missing or structurally compromised material.\nPatch 3: The area displays a significant contrast between intact, dark material and bright, irregularly shaped gaps.\nPatch 4: The visible defect manifests as abrupt white inclusions or areas of material absence within the colored matrix.\nPatch 5: This patch exhibits non-uniform, bright disruptions with ragged edges against the background surface.\nPatch 6: The anomaly is characterized by defined, elongated voids or zones where material appears to be missing.\nPatch 7: It contains an irregular patch of brightness that contrasts severely with the localized dark area.\nPatch 8: The patch displays material loss patterns marked by sharply bounded, contrasting light areas.\nPatch 9: Visible defects include multiple scattered, bright, irregular spots indicating surface discontinuity.\n\nStep 2 - Identify the common visual pattern:\nThe common visual pattern is the presence of sharply defined, irregularly shaped areas of discontinuity or material loss. These defects are characterized by a high contrast boundary (bright white/light vs. dark colored material) and suggest missing surface continuity, tears, or significant material gaps.\n\nStep 3 - Name the concept:\nMaterial loss boundaries (or Edge discontinuities)\n\nCOMMON_PATTERN: The common pattern is characterized by sharply defined, high-contrast boundaries surrounding irregular areas of apparent material loss or structural discontinuity.\nCONCEPT_NAME: irregular_material_discontinuity\nCONFIDENCE: high"
+  },
+  {
+    "atom_id": "3993",
+    "discrimination_score": 0.013104005716741085,
+    "anomaly_count": 178,
+    "concept_name": "patchy_surface_discontinuity",
+    "common_pattern": "The consistent presence of irregular, patchy, and non-uniform areas of surface material disruption or localized discoloration.",
+    "confidence": "high",
+    "reason_for_low_confidence": "none",
+    "raw_response": "Step 1 - Describe each patch briefly (1 sentence each):\nPatch 1: The patch shows an irregular, light-colored area disrupting the uniform background material.\nPatch 2: A patch of discoloration or material discontinuity is visible, forming an uneven, patchy shape.\nPatch 3: The defect is characterized by scattered, light-colored inclusions that break the smooth texture of the surface.\nPatch 4: The image displays an area of irregular material absence, appearing brighter than the surrounding material.\nPatch 5: This sample exhibits non-uniform patches that suggest localized damage or incomplete surface coverage.\nPatch 6: Visible is a defect pattern of unevenly spaced, light-colored patches disrupting the main substrate.\nPatch 7: The common feature is a noticeable area of patchy discoloration or superficial erosion.\nPatch 8: The defect is presented as an irregular, light-toned pattern indicating surface pitting or material loss.\nPatch 9: This patch confirms the pattern of localized, patchy irregularities across the otherwise consistent background material.\n\nStep 2 - Identify the common visual pattern:\nThe common visual pattern is the presence of irregular, patchy areas that are visibly lighter or different in material structure than the surrounding substrate. These defects do not follow a clean, linear pattern (like a crack) but appear as localized, amorphous patches, suggesting uneven material removal, erosion, or poor surface adherence.\n\nStep 3 - Name the concept:\nThis pattern is best described as localized, amorphous disruptions of the surface continuity.\n\nCOMMON_PATTERN: The consistent presence of irregular, patchy, and non-uniform areas of surface material disruption or localized discoloration.\nCONCEPT_NAME: patchy_surface_discontinuity\nCONFIDENCE: high\nREASON_FOR_LOW_CONFIDENCE: none"
+  },
+  {
+    "atom_id": "2773",
+    "discrimination_score": 0.012888234108686447,
+    "anomaly_count": 245,
+    "concept_name": "surface_staining_spots",
+    "common_pattern": "All patches exhibit localized, irregularly shaped areas of darkened discoloration or spotting on the surface, suggesting superficial material alteration or staining.",
+    "confidence": "high",
+    "reason_for_low_confidence": "none",
+    "raw_response": "COMMON_PATTERN: All patches exhibit localized, irregularly shaped areas of darkened discoloration or spotting on the surface, suggesting superficial material alteration or staining.\nCONCEPT_NAME: surface_staining_spots\nCONFIDENCE: high\nREASON_FOR_LOW_CONFIDENCE: none"
+  },
+  {
+    "atom_id": "1316",
+    "discrimination_score": 0.012857685796916485,
+    "anomaly_count": 148,
+    "concept_name": "surface_discontinuity",
+    "common_pattern": "All patches consistently show areas of disrupted surface integrity, characterized by rough edges, uneven texture, and localized discoloration suggesting material degradation or structural imperfections.",
+    "confidence": "low",
+    "reason_for_low_confidence": "The input image is severely blurry and low resolution, making accurate, detailed identification of specific defect types (e.g., hairline cracks vs. abrasions) impossible. The analysis is based on the general assumption that the intended defect pattern is a significant, localized surface flaw.",
+    "raw_response": "COMMON_PATTERN: All patches consistently show areas of disrupted surface integrity, characterized by rough edges, uneven texture, and localized discoloration suggesting material degradation or structural imperfections.\nCONCEPT_NAME: surface_discontinuity\nCONFIDENCE: low\nREASON_FOR_LOW_CONFIDENCE: The input image is severely blurry and low resolution, making accurate, detailed identification of specific defect types (e.g., hairline cracks vs. abrasions) impossible. The analysis is based on the general assumption that the intended defect pattern is a significant, localized surface flaw."
+  },
+  {
+    "atom_id": "1740",
+    "discrimination_score": 0.012551989406347275,
+    "anomaly_count": 235,
+    "concept_name": "localized_surface_staining",
+    "common_pattern": "The patches consistently display irregular, blotchy, or diffuse areas of discoloration contrasting with the base material, suggesting material staining or subsurface seepage.",
+    "confidence": "high",
+    "reason_for_low_confidence": "PARSE_ERROR",
+    "raw_response": "Step 1 - Describe each patch briefly (1 sentence each):\nPatch 1: The patch displays an irregular area of dark, blotchy discoloration against the base material.\nPatch 2: This patch exhibits localized changes in surface color, forming an uneven, stain-like pattern.\nPatch 3: The defect visible is characterized by a diffuse dark marking that suggests material saturation or degradation.\nPatch 4: The discoloration here is patchy and semi-structured, indicating subsurface damage or stain ingress.\nPatch 5: This area shows a non-uniform dark marking, appearing like an inclusion or heavy staining.\nPatch 6: The defect is defined by an irregular, deep-pigment change over the underlying texture.\nPatch 7: The patch contains multiple interconnected spots of discoloration, suggesting a spread-out stain.\nPatch 8: A clear area of concentrated dark marking is present, contrasting sharply with the surrounding lighter material.\nPatch 9: This patch shows a blotchy accumulation of pigment or residue, indicative of a localized defect.\n\nStep 2 - Identify the common visual pattern:\nThe common visual pattern is an irregular, localized, and diffuse discoloration that appears to penetrate or stain the surface material, often lacking sharp boundaries but showing definite pigment accumulation.\n\nStep 3 - Name the concept:\nLOCALIZED_SURFACE_STAINING\n\nCOMMON_PATTERN: The patches consistently display irregular, blotchy, or diffuse areas of discoloration contrasting with the base material, suggesting material staining or subsurface seepage.\nCONCEPT_NAME: localized_surface_staining\nCONFIDENCE: high"
+  },
+  {
+    "atom_id": "3559",
+    "discrimination_score": 0.012474806979298592,
+    "anomaly_count": 175,
+    "concept_name": "blotchy_foreign_deposition",
+    "common_pattern": "The common pattern is the presence of irregular, high-contrast patches of light or white material deposited onto or adhering to the darker base surface.",
+    "confidence": "high",
+    "reason_for_low_confidence": "none",
+    "raw_response": "Step 1 - Describe each patch briefly (1 sentence each):\nPatch 1: The patch shows an irregular, high-contrast white deposit contrasting sharply against the underlying darker reddish material.\nPatch 2: An amorphous area of light, contrasting material covers part of the surface, forming an uneven patch.\nPatch 3: The visible defect is marked by patchy, white material disruption, creating an irregular, blotchy pattern.\nPatch 4: The anomaly presents as bright, non-uniform patches of white material interrupting the base surface color.\nPatch 5: A blotch of light-colored, contrasting material is visible, suggesting localized deposition or residue.\nPatch 6: The defect consists of scattered, irregular white material forming patches across the darker background.\nPatch 7: The patch displays patchy, light-colored material adhering to the surface in an uneven distribution.\nPatch 8: There is a distinct area of disruption characterized by large, irregularly shaped white deposits.\nPatch 9: The observed anomaly is a highly contrasted, patchy white residue covering an indeterminate surface area.\n\nStep 2 - Identify the common visual pattern:\nThe common pattern is the presence of irregular, blotchy deposits or accumulations of bright, light-colored material contrasted sharply against the darker background surface. This material appears non-uniform and lacks defined geometric boundaries.\n\nStep 3 - Name the concept:\nDefinite/Blotchy accumulation of white residue or foreign material.\n\nCOMMON_PATTERN: The common pattern is the presence of irregular, high-contrast patches of light or white material deposited onto or adhering to the darker base surface.\nCONCEPT_NAME: blotchy_foreign_deposition\nCONFIDENCE: high\nREASON_FOR_LOW_CONFIDENCE: none"
+  },
+  {
+    "atom_id": "3436",
+    "discrimination_score": 0.012277410365641117,
+    "anomaly_count": 229,
+    "concept_name": "linear_fissuring_and_fractures",
+    "common_pattern": "The common pattern is the presence of deep, linear breaks, fissures, or cracks that suggest structural integrity failure across the material.",
+    "confidence": "high",
+    "reason_for_low_confidence": "PARSE_ERROR",
+    "raw_response": "Step 1 - Describe each patch briefly (1 sentence each):\nPatch 1: The patch exhibits general dark, streaky discoloration suggesting chemical or surface degradation.\nPatch 2: A prominent, dark, linear void or crack runs through the center of the patch.\nPatch 3: There is evidence of localized surface abrasion and irregular dark staining.\nPatch 4: Dark residue or staining is visible concentrated along a discernible seam or material edge.\nPatch 5: A very clear and deep linear fracture cuts vertically through the material.\nPatch 6: The area shows uneven material discoloration and suggests subsurface separation.\nPatch 7: The patch displays disrupted surface integrity with significant, patchy dark staining.\nPatch 8: A distinct, deep, linear fissure is visible, representing a structural break.\nPatch 9: The corners exhibit generalized material degradation and random discoloration.\n\nStep 2 - Identify the common visual pattern:\nThe most consistent and strongest visual feature across the patches is the presence of linear disruptions, suggesting structural failure or deep surface breaches. These range from obvious cracks and fissures to concentrated, dark linear staining that follows lines of weakness.\n\nStep 3 - Name the concept:\nLinear_fissuring_and_fractures\n\nCOMMON_PATTERN: The common pattern is the presence of deep, linear breaks, fissures, or cracks that suggest structural integrity failure across the material.\nCONCEPT_NAME: linear_fissuring_and_fractures\nCONFIDENCE: high"
+  },
+  {
+    "atom_id": "438",
+    "discrimination_score": 0.012193617410957813,
+    "anomaly_count": 140,
+    "concept_name": "void_discontinuity",
+    "common_pattern": "The patches consistently display dark, irregularly shaped areas that interrupt or represent a deficit of material from the solid background surface.",
+    "confidence": "high",
+    "reason_for_low_confidence": "PARSE_ERROR",
+    "raw_response": "Step 1 - Describe each patch briefly (1 sentence each):\nPatch 1: The image shows a dark, irregularly shaped void or inclusion disrupting the smoother surface material.\nPatch 2: A segment of intense darkness marks a localized defect with poorly defined boundaries.\nPatch 3: The primary feature is a large, amorphous black patch indicative of material deficit.\nPatch 4: This patch displays a localized dark anomaly that suggests a breach or void within the material.\nPatch 5: There is a blotchy, highly pigmented dark area with irregular and organic edges.\nPatch 6: A dark, somewhat elongated stain or missing section is visible, disrupting the background continuity.\nPatch 7: The defect manifests as multiple, scattered amorphous dark spots suggesting patchy material loss.\nPatch 8: A significant, dark area clearly defines a void or a major surface rupture.\nPatch 9: The patch exhibits a substantial, irregular patch of darkness that strongly contrasts with the surrounding material.\n\nStep 2 - Identify the common visual pattern:\nThe consistent pattern across all patches is the presence of an irregularly shaped, dark-contrasted area that visually represents material loss, a void, or a rupture in the continuity of the surface material.\n\nStep 3 - Name the concept:\nvoid_discontinuity\n\nCOMMON_PATTERN: The patches consistently display dark, irregularly shaped areas that interrupt or represent a deficit of material from the solid background surface.\nCONCEPT_NAME: void_discontinuity\nCONFIDENCE: high"
+  },
+  {
+    "atom_id": "2880",
+    "discrimination_score": 0.011892986483871937,
+    "anomaly_count": 142,
+    "concept_name": "irregular_material_chipping",
+    "common_pattern": "The shared visual pattern is the presence of localized, irregularly shaped areas that indicate the physical detachment or loss of surface material.",
+    "confidence": "high",
+    "reason_for_low_confidence": "PARSE_ERROR",
+    "raw_response": "Step 1 - Describe each patch briefly (1 sentence each):\nPatch 1: The patch shows an irregular area of material loss with high contrast against the surrounding surface.\nPatch 2: There are localized patches of missing material characterized by rough, uneven edges.\nPatch 3: This region displays a bright, patchy area where the surface material appears to have flaked away.\nPatch 4: The defect manifests as a distinct area where the underlying material has broken away, showing sharp, jagged edges.\nPatch 5: This patch exhibits a broad, diffuse area of disrupted material, lacking clear boundaries but indicating severe surface failure.\nPatch 6: There is evidence of physical detachment of the surface coating, forming a non-uniform, dark patch.\nPatch 7: The anomaly consists of a clearly defined, irregular section where the base material is exposed through breaks in the top layer.\nPatch 8: This patch shows material chipping, presenting several distinct fragments of missing substance.\nPatch 9: The area is marked by a combination of surface abrasions and significant, patchy material loss.\n\nStep 2 - Identify the common visual pattern:\nThe common visual pattern is the localized absence or detachment of surface material, characterized by irregular, non-linear edges and contrasting material colors/textures.\n\nStep 3 - Name the concept:\nConcept name: irregular_material_chipping\n\nCOMMON_PATTERN: The shared visual pattern is the presence of localized, irregularly shaped areas that indicate the physical detachment or loss of surface material.\nCONCEPT_NAME: irregular_material_chipping\nCONFIDENCE: high"
+  },
+  {
+    "atom_id": "1751",
+    "discrimination_score": 0.01181410439312458,
+    "anomaly_count": 135,
+    "concept_name": "surface_discontinuity_defects",
+    "common_pattern": "The patches consistently show irregular, non-linear breaks in the material's surface continuity, manifesting as voids, cracks, or areas of missing/displaced material.",
+    "confidence": "high",
+    "reason_for_low_confidence": "none",
+    "raw_response": "COMMON_PATTERN: The patches consistently show irregular, non-linear breaks in the material's surface continuity, manifesting as voids, cracks, or areas of missing/displaced material.\nCONCEPT_NAME: surface_discontinuity_defects\nCONFIDENCE: high\nREASON_FOR_LOW_CONFIDENCE: none"
+  }
+]
