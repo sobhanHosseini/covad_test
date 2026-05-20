@@ -1,0 +1,86 @@
+[
+  {
+    "concept": "surface_uniformity",
+    "f1": 0.9186602870813397,
+    "auc": 0.9855693069306931,
+    "n_atoms": 13,
+    "n_pos": 1010
+  },
+  {
+    "concept": "structural_regularity",
+    "f1": 0.8979591836734694,
+    "auc": 0.9683614864864865,
+    "n_atoms": 12,
+    "n_pos": 1480
+  },
+  {
+    "concept": "texture_regularity",
+    "f1": 0.8849270664505673,
+    "auc": 0.9603629032258065,
+    "n_atoms": 11,
+    "n_pos": 1548
+  },
+  {
+    "concept": "directional_grain_structure",
+    "f1": 0.9285714285714286,
+    "auc": 0.9864228318093655,
+    "n_atoms": 3,
+    "n_pos": 272
+  },
+  {
+    "concept": "structural_textural_coherence",
+    "f1": 0.8952380952380953,
+    "auc": 0.9850952380952381,
+    "n_atoms": 2,
+    "n_pos": 524
+  },
+  {
+    "concept": "structured_periodicity",
+    "f1": 0.9846153846153847,
+    "auc": 0.9999244313458778,
+    "n_atoms": 2,
+    "n_pos": 167
+  },
+  {
+    "concept": "wood_grain_periodicity",
+    "f1": 0.9019607843137255,
+    "auc": 0.9992410278651198,
+    "n_atoms": 1,
+    "n_pos": 117
+  },
+  {
+    "concept": "material_homogeneity",
+    "f1": 0.5862068965517241,
+    "auc": 0.9762498515615723,
+    "n_atoms": 1,
+    "n_pos": 107
+  },
+  {
+    "concept": "linear_fibrous_pattern_consistency",
+    "f1": 0.875,
+    "auc": 0.9970528224892314,
+    "n_atoms": 1,
+    "n_pos": 112
+  },
+  {
+    "concept": "structured_surface_texture",
+    "f1": 0.9629629629629629,
+    "auc": 0.999910936943356,
+    "n_atoms": 1,
+    "n_pos": 141
+  },
+  {
+    "concept": "structural_integrity",
+    "f1": 0.9583333333333334,
+    "auc": 1.0,
+    "n_atoms": 1,
+    "n_pos": 123
+  },
+  {
+    "concept": "uniform_material_regularity",
+    "f1": 0.75,
+    "auc": 0.990375,
+    "n_atoms": 1,
+    "n_pos": 99
+  }
+]

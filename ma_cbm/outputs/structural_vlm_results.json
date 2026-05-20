@@ -1,0 +1,230 @@
+[
+  {
+    "concept_name": "head_deformation_or_flaring",
+    "common_pattern": "All nine images display structural fasteners (anchors/screws) that exhibit a consistent manufacturing defect involving the flared or deformed shape of the head relative to the threaded body.",
+    "confidence": "high",
+    "raw": "COMMON_PATTERN: All nine images display structural fasteners (anchors/screws) that exhibit a consistent manufacturing defect involving the flared or deformed shape of the head relative to the threaded body.\nCONCEPT_NAME: head_deformation_or_flaring\nCONFIDENCE: high",
+    "cluster_id": 0,
+    "cluster_size": 119,
+    "categories": [
+      "screw"
+    ],
+    "defect_types": [
+      "manipulated_front",
+      "scratch_head",
+      "scratch_neck",
+      "thread_side",
+      "thread_top"
+    ],
+    "representative_images": [
+      "/home/sobhan_hosseini/datasets/mvtec/screw/test/scratch_head/002.png",
+      "/home/sobhan_hosseini/datasets/mvtec/screw/test/manipulated_front/000.png",
+      "/home/sobhan_hosseini/datasets/mvtec/screw/test/thread_top/003.png",
+      "/home/sobhan_hosseini/datasets/mvtec/screw/test/thread_side/004.png",
+      "/home/sobhan_hosseini/datasets/mvtec/screw/test/thread_top/019.png",
+      "/home/sobhan_hosseini/datasets/mvtec/screw/test/thread_side/009.png",
+      "/home/sobhan_hosseini/datasets/mvtec/screw/test/scratch_neck/002.png",
+      "/home/sobhan_hosseini/datasets/mvtec/screw/test/thread_top/008.png",
+      "/home/sobhan_hosseini/datasets/mvtec/screw/test/scratch_neck/023.png"
+    ]
+  },
+  {
+    "concept_name": "structural_discontinuity",
+    "common_pattern": "All images show a structural defect manifesting as a gap or break running lengthwise through the center body of the capsule, disrupting the otherwise continuous curve of the object.",
+    "confidence": "high",
+    "raw": "COMMON_PATTERN: All images show a structural defect manifesting as a gap or break running lengthwise through the center body of the capsule, disrupting the otherwise continuous curve of the object.\nCONCEPT_NAME: structural_discontinuity\nCONFIDENCE: high",
+    "cluster_id": 1,
+    "cluster_size": 109,
+    "categories": [
+      "capsule"
+    ],
+    "defect_types": [
+      "crack",
+      "faulty_imprint",
+      "poke",
+      "scratch",
+      "squeeze"
+    ],
+    "representative_images": [
+      "/home/sobhan_hosseini/datasets/mvtec/capsule/test/scratch/007.png",
+      "/home/sobhan_hosseini/datasets/mvtec/capsule/test/poke/016.png",
+      "/home/sobhan_hosseini/datasets/mvtec/capsule/test/faulty_imprint/011.png",
+      "/home/sobhan_hosseini/datasets/mvtec/capsule/test/faulty_imprint/010.png",
+      "/home/sobhan_hosseini/datasets/mvtec/capsule/test/poke/017.png",
+      "/home/sobhan_hosseini/datasets/mvtec/capsule/test/crack/013.png",
+      "/home/sobhan_hosseini/datasets/mvtec/capsule/test/poke/020.png",
+      "/home/sobhan_hosseini/datasets/mvtec/capsule/test/faulty_imprint/015.png",
+      "/home/sobhan_hosseini/datasets/mvtec/capsule/test/poke/006.png"
+    ]
+  },
+  {
+    "concept_name": "structural_displacement",
+    "common_pattern": "The anomaly, present only in the bottom right image, shows that the rightmost component has lost its proper containment or is attached via irregular, non-structural material (strands), disrupting the clean, defined triad structure expected in all other images.",
+    "confidence": "high",
+    "raw": "COMMON_PATTERN: The anomaly, present only in the bottom right image, shows that the rightmost component has lost its proper containment or is attached via irregular, non-structural material (strands), disrupting the clean, defined triad structure expected in all other images.\nCONCEPT_NAME: structural_displacement\nCONFIDENCE: high",
+    "cluster_id": 2,
+    "cluster_size": 48,
+    "categories": [
+      "cable"
+    ],
+    "defect_types": [
+      "bent_wire",
+      "cable_swap",
+      "combined",
+      "cut_inner_insulation",
+      "cut_outer_insulation",
+      "missing_cable",
+      "missing_wire",
+      "poke_insulation"
+    ],
+    "representative_images": [
+      "/home/sobhan_hosseini/datasets/mvtec/cable/test/cut_inner_insulation/006.png",
+      "/home/sobhan_hosseini/datasets/mvtec/cable/test/cut_outer_insulation/000.png",
+      "/home/sobhan_hosseini/datasets/mvtec/cable/test/poke_insulation/004.png",
+      "/home/sobhan_hosseini/datasets/mvtec/cable/test/cable_swap/006.png",
+      "/home/sobhan_hosseini/datasets/mvtec/cable/test/poke_insulation/000.png",
+      "/home/sobhan_hosseini/datasets/mvtec/cable/test/cut_inner_insulation/008.png",
+      "/home/sobhan_hosseini/datasets/mvtec/cable/test/poke_insulation/001.png",
+      "/home/sobhan_hosseini/datasets/mvtec/cable/test/missing_wire/009.png",
+      "/home/sobhan_hosseini/datasets/mvtec/cable/test/combined/001.png"
+    ]
+  },
+  {
+    "concept_name": "internal_passage_blockage",
+    "common_pattern": "The internal passage of the cylindrical object is consistently compromised or restricted by various forms of foreign material, residue, or accumulated debris, preventing the full, clear flow path expected from the component's original geometry.",
+    "confidence": "high",
+    "raw": "COMMON_PATTERN: The internal passage of the cylindrical object is consistently compromised or restricted by various forms of foreign material, residue, or accumulated debris, preventing the full, clear flow path expected from the component's original geometry.\nCONCEPT_NAME: internal_passage_blockage\nCONFIDENCE: high",
+    "cluster_id": 3,
+    "cluster_size": 23,
+    "categories": [
+      "bottle"
+    ],
+    "defect_types": [
+      "broken_small",
+      "contamination"
+    ],
+    "representative_images": [
+      "/home/sobhan_hosseini/datasets/mvtec/bottle/test/contamination/002.png",
+      "/home/sobhan_hosseini/datasets/mvtec/bottle/test/broken_small/006.png",
+      "/home/sobhan_hosseini/datasets/mvtec/bottle/test/contamination/018.png",
+      "/home/sobhan_hosseini/datasets/mvtec/bottle/test/broken_small/000.png",
+      "/home/sobhan_hosseini/datasets/mvtec/bottle/test/contamination/015.png",
+      "/home/sobhan_hosseini/datasets/mvtec/bottle/test/contamination/014.png",
+      "/home/sobhan_hosseini/datasets/mvtec/bottle/test/broken_small/016.png",
+      "/home/sobhan_hosseini/datasets/mvtec/bottle/test/contamination/001.png",
+      "/home/sobhan_hosseini/datasets/mvtec/bottle/test/contamination/016.png"
+    ]
+  },
+  {
+    "concept_name": "stud_array_discontinuity",
+    "common_pattern": "The object is composed of a base material studded with multiple repeating components, but the structural anomaly is the inconsistent or irregular arrangement, spacing, or presence of these individual attached studs across the surface.",
+    "confidence": "high",
+    "raw": "COMMON_PATTERN: The object is composed of a base material studded with multiple repeating components, but the structural anomaly is the inconsistent or irregular arrangement, spacing, or presence of these individual attached studs across the surface.\nCONCEPT_NAME: stud_array_discontinuity\nCONFIDENCE: high",
+    "cluster_id": 4,
+    "cluster_size": 30,
+    "categories": [
+      "toothbrush"
+    ],
+    "defect_types": [
+      "defective"
+    ],
+    "representative_images": [
+      "/home/sobhan_hosseini/datasets/mvtec/toothbrush/test/defective/028.png",
+      "/home/sobhan_hosseini/datasets/mvtec/toothbrush/test/defective/011.png",
+      "/home/sobhan_hosseini/datasets/mvtec/toothbrush/test/defective/016.png",
+      "/home/sobhan_hosseini/datasets/mvtec/toothbrush/test/defective/005.png",
+      "/home/sobhan_hosseini/datasets/mvtec/toothbrush/test/defective/006.png",
+      "/home/sobhan_hosseini/datasets/mvtec/toothbrush/test/defective/014.png",
+      "/home/sobhan_hosseini/datasets/mvtec/toothbrush/test/defective/017.png",
+      "/home/sobhan_hosseini/datasets/mvtec/toothbrush/test/defective/012.png",
+      "/home/sobhan_hosseini/datasets/mvtec/toothbrush/test/defective/019.png"
+    ]
+  },
+  {
+    "concept_name": "compromised_lead_attachment",
+    "common_pattern": "The components are correctly positioned, but the structural integrity of their conductive pins (leads) is compromised; they show evidence of bending, irregularity, or non-flush contact points with the substrate, indicating poor or incomplete attachment.",
+    "confidence": "high",
+    "raw": "COMMON_PATTERN: The components are correctly positioned, but the structural integrity of their conductive pins (leads) is compromised; they show evidence of bending, irregularity, or non-flush contact points with the substrate, indicating poor or incomplete attachment.\nCONCEPT_NAME: compromised_lead_attachment\nCONFIDENCE: high",
+    "cluster_id": 5,
+    "cluster_size": 40,
+    "categories": [
+      "transistor"
+    ],
+    "defect_types": [
+      "bent_lead",
+      "cut_lead",
+      "damaged_case",
+      "misplaced"
+    ],
+    "representative_images": [
+      "/home/sobhan_hosseini/datasets/mvtec/transistor/test/cut_lead/006.png",
+      "/home/sobhan_hosseini/datasets/mvtec/transistor/test/bent_lead/004.png",
+      "/home/sobhan_hosseini/datasets/mvtec/transistor/test/bent_lead/002.png",
+      "/home/sobhan_hosseini/datasets/mvtec/transistor/test/damaged_case/005.png",
+      "/home/sobhan_hosseini/datasets/mvtec/transistor/test/cut_lead/002.png",
+      "/home/sobhan_hosseini/datasets/mvtec/transistor/test/damaged_case/000.png",
+      "/home/sobhan_hosseini/datasets/mvtec/transistor/test/cut_lead/007.png",
+      "/home/sobhan_hosseini/datasets/mvtec/transistor/test/cut_lead/009.png",
+      "/home/sobhan_hosseini/datasets/mvtec/transistor/test/cut_lead/008.png"
+    ]
+  },
+  {
+    "concept_name": "internal_bore_restriction",
+    "common_pattern": "All images show the cross-section of a tubular component (bore) that is significantly restricted or deformed, failing to maintain a uniform, perfect circular cross-section.",
+    "confidence": "high",
+    "raw": "COMMON_PATTERN: All images show the cross-section of a tubular component (bore) that is significantly restricted or deformed, failing to maintain a uniform, perfect circular cross-section.\nCONCEPT_NAME: internal_bore_restriction\nCONFIDENCE: high",
+    "cluster_id": 6,
+    "cluster_size": 40,
+    "categories": [
+      "bottle"
+    ],
+    "defect_types": [
+      "broken_large",
+      "broken_small",
+      "contamination"
+    ],
+    "representative_images": [
+      "/home/sobhan_hosseini/datasets/mvtec/bottle/test/broken_small/020.png",
+      "/home/sobhan_hosseini/datasets/mvtec/bottle/test/broken_small/015.png",
+      "/home/sobhan_hosseini/datasets/mvtec/bottle/test/broken_large/013.png",
+      "/home/sobhan_hosseini/datasets/mvtec/bottle/test/broken_large/012.png",
+      "/home/sobhan_hosseini/datasets/mvtec/bottle/test/broken_large/009.png",
+      "/home/sobhan_hosseini/datasets/mvtec/bottle/test/broken_large/010.png",
+      "/home/sobhan_hosseini/datasets/mvtec/bottle/test/broken_small/002.png",
+      "/home/sobhan_hosseini/datasets/mvtec/bottle/test/broken_large/007.png",
+      "/home/sobhan_hosseini/datasets/mvtec/bottle/test/broken_small/001.png"
+    ]
+  },
+  {
+    "concept_name": "trio_arrangement",
+    "common_pattern": "The object consistently consists of three distinct, separately placed circular components (blue, green, and brown) arranged in a fixed, triangular configuration.",
+    "confidence": "high",
+    "raw": "COMMON_PATTERN: The object consistently consists of three distinct, separately placed circular components (blue, green, and brown) arranged in a fixed, triangular configuration.\nCONCEPT_NAME: trio_arrangement\nCONFIDENCE: high",
+    "cluster_id": 7,
+    "cluster_size": 44,
+    "categories": [
+      "cable"
+    ],
+    "defect_types": [
+      "bent_wire",
+      "cable_swap",
+      "combined",
+      "cut_inner_insulation",
+      "cut_outer_insulation",
+      "missing_cable",
+      "missing_wire",
+      "poke_insulation"
+    ],
+    "representative_images": [
+      "/home/sobhan_hosseini/datasets/mvtec/cable/test/cut_outer_insulation/009.png",
+      "/home/sobhan_hosseini/datasets/mvtec/cable/test/missing_wire/007.png",
+      "/home/sobhan_hosseini/datasets/mvtec/cable/test/cut_outer_insulation/007.png",
+      "/home/sobhan_hosseini/datasets/mvtec/cable/test/missing_wire/004.png",
+      "/home/sobhan_hosseini/datasets/mvtec/cable/test/bent_wire/001.png",
+      "/home/sobhan_hosseini/datasets/mvtec/cable/test/missing_wire/002.png",
+      "/home/sobhan_hosseini/datasets/mvtec/cable/test/missing_cable/002.png",
+      "/home/sobhan_hosseini/datasets/mvtec/cable/test/missing_wire/003.png",
+      "/home/sobhan_hosseini/datasets/mvtec/cable/test/cut_outer_insulation/002.png"
+    ]
+  }
+]

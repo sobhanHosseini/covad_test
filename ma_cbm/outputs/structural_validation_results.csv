@@ -1,0 +1,6 @@
+category,type,concept_only_auc,cls_auc,cls_acc,cls_f1,mean_patch_auc,mean_patch_acc,mean_patch_f1,max_patch_auc,max_patch_acc,max_patch_f1,sae_mean_auc,sae_mean_acc,sae_mean_f1
+cable,structural,0.562,0.96,0.92,0.8125,0.9688,0.92,0.8235,0.9357,0.9067,0.7586,0.6715,0.6533,0.4583
+transistor,structural,0.608,0.9795,0.9206,0.7368,0.9841,0.9365,0.7778,0.9932,0.9524,0.7692,0.9023,0.9365,0.7778
+toothbrush,structural,0.694,0.9889,0.9048,0.8333,0.9333,0.8571,0.7692,1.0,1.0,1.0,0.8333,0.8095,0.7143
+bottle,structural,0.669,1.0,1.0,1.0,1.0,0.9831,0.96,1.0,1.0,1.0,0.9465,0.9153,0.8148
+hazelnut,surface,0.932,0.9984,0.9802,0.9231,0.9992,0.9802,0.9231,0.9959,0.9703,0.88,0.8547,0.8713,0.5806

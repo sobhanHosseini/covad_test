@@ -1,0 +1,227 @@
+[
+  {
+    "concept_name": "perfect_circular_symmetry",
+    "common_pattern": "All images display highly symmetrical, uniformly formed, dark circular openings or rims, suggesting standardized manufactured components.",
+    "confidence": "high",
+    "raw": "COMMON_PATTERN: All images display highly symmetrical, uniformly formed, dark circular openings or rims, suggesting standardized manufactured components.\nCONCEPT_NAME: perfect_circular_symmetry\nCONFIDENCE: high",
+    "cluster_id": 0,
+    "cluster_size": 229,
+    "categories": [
+      "bottle"
+    ],
+    "representative_images": [
+      "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/025.png",
+      "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/191.png",
+      "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/145.png",
+      "/home/sobhan_hosseini/datasets/mvtec/bottle/test/good/013.png",
+      "/home/sobhan_hosseini/datasets/mvtec/bottle/test/good/001.png",
+      "/home/sobhan_hosseini/datasets/mvtec/bottle/test/good/005.png",
+      "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/016.png",
+      "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/204.png",
+      "/home/sobhan_hosseini/datasets/mvtec/bottle/train/good/094.png"
+    ]
+  },
+  {
+    "concept_name": "modular_paneling",
+    "common_pattern": "The image displays a uniform, reddish-brown, pebbled material surface systematically organized into a clear, undamaged grid of square panels.",
+    "confidence": "high",
+    "raw": "COMMON_PATTERN: The image displays a uniform, reddish-brown, pebbled material surface systematically organized into a clear, undamaged grid of square panels.\nCONCEPT_NAME: modular_paneling\nCONFIDENCE: high",
+    "cluster_id": 1,
+    "cluster_size": 543,
+    "categories": [
+      "leather",
+      "wood"
+    ],
+    "representative_images": [
+      "/home/sobhan_hosseini/datasets/mvtec/leather/train/good/075.png",
+      "/home/sobhan_hosseini/datasets/mvtec/leather/train/good/175.png",
+      "/home/sobhan_hosseini/datasets/mvtec/leather/train/good/230.png",
+      "/home/sobhan_hosseini/datasets/mvtec/leather/train/good/167.png",
+      "/home/sobhan_hosseini/datasets/mvtec/leather/train/good/116.png",
+      "/home/sobhan_hosseini/datasets/mvtec/leather/train/good/243.png",
+      "/home/sobhan_hosseini/datasets/mvtec/leather/train/good/143.png",
+      "/home/sobhan_hosseini/datasets/mvtec/leather/train/good/173.png",
+      "/home/sobhan_hosseini/datasets/mvtec/leather/train/good/105.png"
+    ]
+  },
+  {
+    "concept_name": "product_uniformity",
+    "common_pattern": "The images display a collection of nine highly uniform, oval-shaped, white pharmaceutical tablets, each consistently marked with the letters 'FF', indicating standardized manufacturing consistency.",
+    "confidence": "high",
+    "raw": "COMMON_PATTERN: The images display a collection of nine highly uniform, oval-shaped, white pharmaceutical tablets, each consistently marked with the letters 'FF', indicating standardized manufacturing consistency.\nCONCEPT_NAME: product_uniformity\nCONFIDENCE: high",
+    "cluster_id": 2,
+    "cluster_size": 535,
+    "categories": [
+      "capsule",
+      "pill"
+    ],
+    "representative_images": [
+      "/home/sobhan_hosseini/datasets/mvtec/pill/train/good/109.png",
+      "/home/sobhan_hosseini/datasets/mvtec/pill/train/good/025.png",
+      "/home/sobhan_hosseini/datasets/mvtec/pill/train/good/143.png",
+      "/home/sobhan_hosseini/datasets/mvtec/pill/train/good/227.png",
+      "/home/sobhan_hosseini/datasets/mvtec/pill/train/good/126.png",
+      "/home/sobhan_hosseini/datasets/mvtec/pill/train/good/023.png",
+      "/home/sobhan_hosseini/datasets/mvtec/pill/train/good/085.png",
+      "/home/sobhan_hosseini/datasets/mvtec/pill/train/good/010.png",
+      "/home/sobhan_hosseini/datasets/mvtec/pill/train/good/231.png"
+    ]
+  },
+  {
+    "concept_name": "structural_integrity",
+    "common_pattern": "The image set displays nine uniform, reddish-brown, ovoid objects that maintain consistent structure and form across all instances.",
+    "confidence": "high",
+    "raw": "COMMON_PATTERN: The image set displays nine uniform, reddish-brown, ovoid objects that maintain consistent structure and form across all instances.\nCONCEPT_NAME: structural_integrity\nCONFIDENCE: high",
+    "cluster_id": 3,
+    "cluster_size": 673,
+    "categories": [
+      "hazelnut",
+      "metal_nut"
+    ],
+    "representative_images": [
+      "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/188.png",
+      "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/038.png",
+      "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/209.png",
+      "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/304.png",
+      "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/174.png",
+      "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/036.png",
+      "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/116.png",
+      "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/240.png",
+      "/home/sobhan_hosseini/datasets/mvtec/hazelnut/train/good/257.png"
+    ]
+  },
+  {
+    "concept_name": "manufactured_fasteners",
+    "common_pattern": "These are nine images showing standardized, metal, threaded fasteners with consistent geometry, comprising a head, shaft, and regularly spaced threads.",
+    "confidence": "high",
+    "raw": "COMMON_PATTERN: These are nine images showing standardized, metal, threaded fasteners with consistent geometry, comprising a head, shaft, and regularly spaced threads.\nCONCEPT_NAME: manufactured_fasteners\nCONFIDENCE: high",
+    "cluster_id": 4,
+    "cluster_size": 361,
+    "categories": [
+      "screw"
+    ],
+    "representative_images": [
+      "/home/sobhan_hosseini/datasets/mvtec/screw/train/good/242.png",
+      "/home/sobhan_hosseini/datasets/mvtec/screw/train/good/027.png",
+      "/home/sobhan_hosseini/datasets/mvtec/screw/test/good/021.png",
+      "/home/sobhan_hosseini/datasets/mvtec/screw/test/good/040.png",
+      "/home/sobhan_hosseini/datasets/mvtec/screw/train/good/134.png",
+      "/home/sobhan_hosseini/datasets/mvtec/screw/train/good/069.png",
+      "/home/sobhan_hosseini/datasets/mvtec/screw/train/good/003.png",
+      "/home/sobhan_hosseini/datasets/mvtec/screw/train/good/215.png",
+      "/home/sobhan_hosseini/datasets/mvtec/screw/test/good/033.png"
+    ]
+  },
+  {
+    "concept_name": "woven_textile_structure",
+    "common_pattern": "The image displays a uniform and continuous woven textile surface with a consistent, interlocking fiber pattern across its entire expanse.",
+    "confidence": "high",
+    "raw": "COMMON_PATTERN: The image displays a uniform and continuous woven textile surface with a consistent, interlocking fiber pattern across its entire expanse.\nCONCEPT_NAME: woven_textile_structure\nCONFIDENCE: high",
+    "cluster_id": 5,
+    "cluster_size": 593,
+    "categories": [
+      "carpet",
+      "grid"
+    ],
+    "representative_images": [
+      "/home/sobhan_hosseini/datasets/mvtec/carpet/train/good/193.png",
+      "/home/sobhan_hosseini/datasets/mvtec/carpet/train/good/275.png",
+      "/home/sobhan_hosseini/datasets/mvtec/carpet/train/good/143.png",
+      "/home/sobhan_hosseini/datasets/mvtec/carpet/train/good/204.png",
+      "/home/sobhan_hosseini/datasets/mvtec/carpet/train/good/250.png",
+      "/home/sobhan_hosseini/datasets/mvtec/carpet/train/good/266.png",
+      "/home/sobhan_hosseini/datasets/mvtec/carpet/train/good/129.png",
+      "/home/sobhan_hosseini/datasets/mvtec/carpet/train/good/248.png",
+      "/home/sobhan_hosseini/datasets/mvtec/carpet/train/good/080.png"
+    ]
+  },
+  {
+    "concept_name": "structural_uniformity_and_completeness",
+    "common_pattern": "The objects display consistent, repetitive, and balanced component placement within standardized, complete circular casings.",
+    "confidence": "high",
+    "raw": "Step 1: I see a 3x3 grid of circular containers, each holding a stable, repeated arrangement of three distinct, circular components.\n\nStep 2: The objects appear normal and intact because the components are symmetrically arranged within their confines, maintaining consistent spacing, relative size, and expected geometry across all nine units. There is no component missing, broken, or misaligned in any instance.\n\nStep 3: The global property is the predictable and uniform arrangement of its constituent parts within a defined boundary.\n\nCOMMON_PATTERN: The objects display consistent, repetitive, and balanced component placement within standardized, complete circular casings.\nCONCEPT_NAME: structural_uniformity_and_completeness\nCONFIDENCE: high",
+    "cluster_id": 6,
+    "cluster_size": 354,
+    "categories": [
+      "cable",
+      "toothbrush"
+    ],
+    "representative_images": [
+      "/home/sobhan_hosseini/datasets/mvtec/cable/train/good/165.png",
+      "/home/sobhan_hosseini/datasets/mvtec/cable/train/good/161.png",
+      "/home/sobhan_hosseini/datasets/mvtec/cable/train/good/203.png",
+      "/home/sobhan_hosseini/datasets/mvtec/cable/train/good/091.png",
+      "/home/sobhan_hosseini/datasets/mvtec/cable/train/good/222.png",
+      "/home/sobhan_hosseini/datasets/mvtec/cable/train/good/087.png",
+      "/home/sobhan_hosseini/datasets/mvtec/cable/train/good/215.png",
+      "/home/sobhan_hosseini/datasets/mvtec/cable/train/good/223.png",
+      "/home/sobhan_hosseini/datasets/mvtec/cable/train/good/095.png"
+    ]
+  },
+  {
+    "concept_name": "material_homogeneity",
+    "common_pattern": "The image shows a dense, uniform gray surface with a consistently distributed speckled texture across the entire area.",
+    "confidence": "high",
+    "raw": "COMMON_PATTERN: The image shows a dense, uniform gray surface with a consistently distributed speckled texture across the entire area.\nCONCEPT_NAME: material_homogeneity\nCONFIDENCE: high",
+    "cluster_id": 7,
+    "cluster_size": 263,
+    "categories": [
+      "tile"
+    ],
+    "representative_images": [
+      "/home/sobhan_hosseini/datasets/mvtec/tile/train/good/229.png",
+      "/home/sobhan_hosseini/datasets/mvtec/tile/train/good/204.png",
+      "/home/sobhan_hosseini/datasets/mvtec/tile/train/good/088.png",
+      "/home/sobhan_hosseini/datasets/mvtec/tile/train/good/082.png",
+      "/home/sobhan_hosseini/datasets/mvtec/tile/train/good/000.png",
+      "/home/sobhan_hosseini/datasets/mvtec/tile/train/good/037.png",
+      "/home/sobhan_hosseini/datasets/mvtec/tile/train/good/198.png",
+      "/home/sobhan_hosseini/datasets/mvtec/tile/train/good/119.png",
+      "/home/sobhan_hosseini/datasets/mvtec/tile/train/good/048.png"
+    ]
+  },
+  {
+    "concept_name": "parallel_and_uniform_striping",
+    "common_pattern": "The image displays three distinct, parallel vertical strips of fabric, each incorporating a straight, unbroken zipper, maintaining a consistent and highly structured industrial pattern.",
+    "confidence": "high",
+    "raw": "COMMON_PATTERN: The image displays three distinct, parallel vertical strips of fabric, each incorporating a straight, unbroken zipper, maintaining a consistent and highly structured industrial pattern.\nCONCEPT_NAME: parallel_and_uniform_striping\nCONFIDENCE: high",
+    "cluster_id": 8,
+    "cluster_size": 272,
+    "categories": [
+      "zipper"
+    ],
+    "representative_images": [
+      "/home/sobhan_hosseini/datasets/mvtec/zipper/test/good/011.png",
+      "/home/sobhan_hosseini/datasets/mvtec/zipper/test/good/029.png",
+      "/home/sobhan_hosseini/datasets/mvtec/zipper/test/good/020.png",
+      "/home/sobhan_hosseini/datasets/mvtec/zipper/test/good/004.png",
+      "/home/sobhan_hosseini/datasets/mvtec/zipper/test/good/012.png",
+      "/home/sobhan_hosseini/datasets/mvtec/zipper/train/good/094.png",
+      "/home/sobhan_hosseini/datasets/mvtec/zipper/train/good/028.png",
+      "/home/sobhan_hosseini/datasets/mvtec/zipper/train/good/007.png",
+      "/home/sobhan_hosseini/datasets/mvtec/zipper/train/good/160.png"
+    ]
+  },
+  {
+    "concept_name": "engineered_array_pattern",
+    "common_pattern": "The image displays multiple identical black electronic components systematically arranged in rows upon a standardized, perforated copper-colored substrate.",
+    "confidence": "high",
+    "raw": "COMMON_PATTERN: The image displays multiple identical black electronic components systematically arranged in rows upon a standardized, perforated copper-colored substrate.\nCONCEPT_NAME: engineered_array_pattern\nCONFIDENCE: high",
+    "cluster_id": 9,
+    "cluster_size": 273,
+    "categories": [
+      "transistor"
+    ],
+    "representative_images": [
+      "/home/sobhan_hosseini/datasets/mvtec/transistor/train/good/040.png",
+      "/home/sobhan_hosseini/datasets/mvtec/transistor/train/good/151.png",
+      "/home/sobhan_hosseini/datasets/mvtec/transistor/train/good/168.png",
+      "/home/sobhan_hosseini/datasets/mvtec/transistor/train/good/163.png",
+      "/home/sobhan_hosseini/datasets/mvtec/transistor/test/good/047.png",
+      "/home/sobhan_hosseini/datasets/mvtec/transistor/train/good/038.png",
+      "/home/sobhan_hosseini/datasets/mvtec/transistor/train/good/093.png",
+      "/home/sobhan_hosseini/datasets/mvtec/transistor/train/good/027.png",
+      "/home/sobhan_hosseini/datasets/mvtec/transistor/train/good/192.png"
+    ]
+  }
+]

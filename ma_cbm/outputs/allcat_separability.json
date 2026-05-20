@@ -1,0 +1,1084 @@
+{
+  "separability": {
+    "bottle": {
+      "perimeter_discontinuity": {
+        "mean_anom": 0.0059376910193321315,
+        "mean_norm": 7.552520611290376e-05,
+        "ratio": 77.59131037911588
+      },
+      "structural_segmentation_or_discontinuity": {
+        "mean_anom": 1.5306682703351374e-06,
+        "mean_norm": 1.249417599149048e-06,
+        "ratio": 0.6804731459886271
+      },
+      "inconsistent_marking_application": {
+        "mean_anom": 0.0006732287422565665,
+        "mean_norm": 5.879157610034933e-05,
+        "ratio": 11.259591838266214
+      },
+      "woven_fabric_integrity": {
+        "mean_anom": 2.4827974511967265e-05,
+        "mean_norm": 9.023995863508451e-06,
+        "ratio": 2.4768540260827026
+      },
+      "incomplete_fastener_tips": {
+        "mean_anom": 0.00014669212406752107,
+        "mean_norm": 3.078274280161e-05,
+        "ratio": 4.615464592945395
+      },
+      "misplaced_surface_fragments": {
+        "mean_anom": 4.814252703308243e-05,
+        "mean_norm": 3.4560216575402183e-06,
+        "ratio": 10.8039257285966
+      },
+      "inlay_pattern_failure": {
+        "mean_anom": 0.0013542038772318015,
+        "mean_norm": 1.0071977457571132e-05,
+        "ratio": 122.30912521464565
+      },
+      "irregular_bore_geometry": {
+        "mean_anom": 0.9799393552995069,
+        "mean_norm": 0.02155144472164083,
+        "ratio": 45.46766587066333
+      },
+      "planar_segmentation": {
+        "mean_anom": 0.00037038466751884415,
+        "mean_norm": 0.0001644874023463648,
+        "ratio": 2.2381441866108323
+      },
+      "surface_warpage_or_creasing": {
+        "mean_anom": 3.905533674165361e-05,
+        "mean_norm": 1.47501138114588e-05,
+        "ratio": 2.4796860015855495
+      },
+      "through_hole_component_mounting": {
+        "mean_anom": 7.931763135871665e-05,
+        "mean_norm": 4.918989440123652e-06,
+        "ratio": 13.400536047764879
+      },
+      "panel_seam_misalignment": {
+        "mean_anom": 3.8518103762598014e-05,
+        "mean_norm": 3.1648993378499345e-05,
+        "ratio": 1.179763900101242
+      }
+    },
+    "cable": {
+      "perimeter_discontinuity": {
+        "mean_anom": 0.001965651267523497,
+        "mean_norm": 0.00016160274369723075,
+        "ratio": 12.088672200904403
+      },
+      "structural_segmentation_or_discontinuity": {
+        "mean_anom": 2.595571499714747e-06,
+        "mean_norm": 5.847003848366322e-07,
+        "ratio": 1.6378941562397147
+      },
+      "inconsistent_marking_application": {
+        "mean_anom": 0.0021427511784337626,
+        "mean_norm": 0.00025551216811197595,
+        "ratio": 8.353409486205665
+      },
+      "woven_fabric_integrity": {
+        "mean_anom": 0.00010411720973293452,
+        "mean_norm": 4.569830193655712e-05,
+        "ratio": 2.2295716421206273
+      },
+      "incomplete_fastener_tips": {
+        "mean_anom": 3.578860269252844e-05,
+        "mean_norm": 2.7701341251005767e-05,
+        "ratio": 1.2469313674068914
+      },
+      "misplaced_surface_fragments": {
+        "mean_anom": 0.00036059278537350876,
+        "mean_norm": 0.0001642536719409701,
+        "ratio": 2.182056114930477
+      },
+      "inlay_pattern_failure": {
+        "mean_anom": 0.9586081722327964,
+        "mean_norm": 0.04795863138174903,
+        "ratio": 19.987813596865827
+      },
+      "irregular_bore_geometry": {
+        "mean_anom": 0.0004779493497678991,
+        "mean_norm": 0.0001806055884902633,
+        "ratio": 2.6317986893532415
+      },
+      "planar_segmentation": {
+        "mean_anom": 0.00013963321573619208,
+        "mean_norm": 8.697466580887697e-05,
+        "ratio": 1.5871980240259416
+      },
+      "surface_warpage_or_creasing": {
+        "mean_anom": 0.0003484489458236754,
+        "mean_norm": 0.0001702265249470768,
+        "ratio": 2.0350173311721127
+      },
+      "through_hole_component_mounting": {
+        "mean_anom": 0.0006936424779841242,
+        "mean_norm": 0.00032182168705040823,
+        "ratio": 2.148686119330678
+      },
+      "panel_seam_misalignment": {
+        "mean_anom": 1.6213583614303256e-05,
+        "mean_norm": 2.007888321966423e-05,
+        "ratio": 0.7691860828365804
+      }
+    },
+    "capsule": {
+      "perimeter_discontinuity": {
+        "mean_anom": 0.00036808415740756097,
+        "mean_norm": 2.975421492604337e-05,
+        "ratio": 11.96857595918857
+      },
+      "structural_segmentation_or_discontinuity": {
+        "mean_anom": 3.6660888745565936e-05,
+        "mean_norm": 2.0025513156456535e-05,
+        "ratio": 1.7436382395408063
+      },
+      "inconsistent_marking_application": {
+        "mean_anom": 0.0008492329334305269,
+        "mean_norm": 0.0002163685221160818,
+        "ratio": 3.9068809281272525
+      },
+      "woven_fabric_integrity": {
+        "mean_anom": 3.279559146562505e-05,
+        "mean_norm": 1.831246536977618e-05,
+        "ratio": 1.6981566484489254
+      },
+      "incomplete_fastener_tips": {
+        "mean_anom": 3.541533661121642e-07,
+        "mean_norm": 9.863483672391659e-08,
+        "ratio": 0.32235766996815324
+      },
+      "misplaced_surface_fragments": {
+        "mean_anom": 0.00020553311833931186,
+        "mean_norm": 6.021454230742065e-05,
+        "ratio": 3.357586458902534
+      },
+      "inlay_pattern_failure": {
+        "mean_anom": 0.00032573309778673913,
+        "mean_norm": 8.255680624029938e-05,
+        "ratio": 3.898343084702995
+      },
+      "irregular_bore_geometry": {
+        "mean_anom": 1.1342083496068674e-05,
+        "mean_norm": 5.722432992461173e-06,
+        "ratio": 1.6871991894583669
+      },
+      "planar_segmentation": {
+        "mean_anom": 0.985037163704617,
+        "mean_norm": 0.10188474833321172,
+        "ratio": 9.668056424173352
+      },
+      "surface_warpage_or_creasing": {
+        "mean_anom": 3.506515210215402e-05,
+        "mean_norm": 1.364526454758229e-05,
+        "ratio": 2.3942996719675333
+      },
+      "through_hole_component_mounting": {
+        "mean_anom": 0.00011219469755222622,
+        "mean_norm": 4.4396862068442096e-05,
+        "ratio": 2.4714196629510887
+      },
+      "panel_seam_misalignment": {
+        "mean_anom": 9.113095509394476e-05,
+        "mean_norm": 6.140444965979173e-05,
+        "ratio": 1.460327838651897
+      }
+    },
+    "carpet": {
+      "perimeter_discontinuity": {
+        "mean_anom": 0.0008423231136010779,
+        "mean_norm": 4.299498065298999e-06,
+        "ratio": 158.9439420907787
+      },
+      "structural_segmentation_or_discontinuity": {
+        "mean_anom": 0.00010719323064063626,
+        "mean_norm": 1.6485621312397488e-06,
+        "ratio": 40.472235624112336
+      },
+      "inconsistent_marking_application": {
+        "mean_anom": 0.0008848009679489348,
+        "mean_norm": 3.995603444619719e-06,
+        "ratio": 177.1159335919404
+      },
+      "woven_fabric_integrity": {
+        "mean_anom": 0.98937917453885,
+        "mean_norm": 0.011773195451524141,
+        "ratio": 84.02945055670682
+      },
+      "incomplete_fastener_tips": {
+        "mean_anom": 0.00011651946447793837,
+        "mean_norm": 8.025374089640216e-07,
+        "ratio": 64.641911950613
+      },
+      "misplaced_surface_fragments": {
+        "mean_anom": 0.0015779840271010483,
+        "mean_norm": 4.174117186675229e-06,
+        "ratio": 304.97647621217203
+      },
+      "inlay_pattern_failure": {
+        "mean_anom": 1.1172971679672829e-05,
+        "mean_norm": 4.412119419088146e-07,
+        "ratio": 7.7524834167518595
+      },
+      "irregular_bore_geometry": {
+        "mean_anom": 9.120976795653886e-05,
+        "mean_norm": 2.7440522108860735e-05,
+        "ratio": 3.207035637651749
+      },
+      "planar_segmentation": {
+        "mean_anom": 0.0001544395291449748,
+        "mean_norm": 3.831457282653145e-05,
+        "ratio": 3.9283023581716567
+      },
+      "surface_warpage_or_creasing": {
+        "mean_anom": 0.0003094614335160569,
+        "mean_norm": 2.510863968567399e-06,
+        "ratio": 88.14395439032975
+      },
+      "through_hole_component_mounting": {
+        "mean_anom": 0.001460968467568711,
+        "mean_norm": 4.288468962177366e-05,
+        "ratio": 33.29107440796032
+      },
+      "panel_seam_misalignment": {
+        "mean_anom": 0.0004985127684517075,
+        "mean_norm": 4.530436626458392e-06,
+        "ratio": 90.13985732460108
+      }
+    },
+    "grid": {
+      "perimeter_discontinuity": {
+        "mean_anom": 0.0029710461831849873,
+        "mean_norm": 5.453183854969573e-06,
+        "ratio": 460.40005212264265
+      },
+      "structural_segmentation_or_discontinuity": {
+        "mean_anom": 0.000353285365660061,
+        "mean_norm": 4.815202796715663e-06,
+        "ratio": 60.75202843477637
+      },
+      "inconsistent_marking_application": {
+        "mean_anom": 0.0015353658239103437,
+        "mean_norm": 5.214217089394713e-07,
+        "ratio": 1009.1651873303375
+      },
+      "woven_fabric_integrity": {
+        "mean_anom": 0.0013078126222384658,
+        "mean_norm": 6.553238682848817e-07,
+        "ratio": 790.0644987337251
+      },
+      "incomplete_fastener_tips": {
+        "mean_anom": 4.850326259140805e-05,
+        "mean_norm": 1.198099685171719e-05,
+        "ratio": 3.7364821165480673
+      },
+      "misplaced_surface_fragments": {
+        "mean_anom": 0.0031454222232641933,
+        "mean_norm": 8.634784231704446e-07,
+        "ratio": 1687.930584091606
+      },
+      "inlay_pattern_failure": {
+        "mean_anom": 8.11333965173071e-05,
+        "mean_norm": 1.0099396692164939e-06,
+        "ratio": 40.36608548998597
+      },
+      "irregular_bore_geometry": {
+        "mean_anom": 0.0002858153181701976,
+        "mean_norm": 4.525484221504912e-05,
+        "ratio": 6.179143728161004
+      },
+      "planar_segmentation": {
+        "mean_anom": 0.0008390474406219601,
+        "mean_norm": 4.379896829125249e-05,
+        "ratio": 18.72916883190352
+      },
+      "surface_warpage_or_creasing": {
+        "mean_anom": 0.9984502852291244,
+        "mean_norm": 0.008539019322137112,
+        "ratio": 116.91428878164008
+      },
+      "through_hole_component_mounting": {
+        "mean_anom": 0.0010594449344081978,
+        "mean_norm": 2.1065827889362837e-05,
+        "ratio": 48.01292476857028
+      },
+      "panel_seam_misalignment": {
+        "mean_anom": 0.0004723532143827803,
+        "mean_norm": 5.4479782455461e-06,
+        "ratio": 73.25601861468056
+      }
+    },
+    "hazelnut": {
+      "perimeter_discontinuity": {
+        "mean_anom": 0.9889254099304295,
+        "mean_norm": 0.027027859142776053,
+        "ratio": 36.5877599460108
+      },
+      "structural_segmentation_or_discontinuity": {
+        "mean_anom": 5.13464549909553e-05,
+        "mean_norm": 8.049790638171293e-05,
+        "ratio": 0.6300340373219302
+      },
+      "inconsistent_marking_application": {
+        "mean_anom": 0.0011486596979604913,
+        "mean_norm": 6.529755600583344e-05,
+        "ratio": 17.32582265716435
+      },
+      "woven_fabric_integrity": {
+        "mean_anom": 0.00031277783264802727,
+        "mean_norm": 8.011488811513089e-05,
+        "ratio": 3.8559855029829326
+      },
+      "incomplete_fastener_tips": {
+        "mean_anom": 0.00030253834583928146,
+        "mean_norm": 0.00023783316910129342,
+        "ratio": 1.2667350476389212
+      },
+      "misplaced_surface_fragments": {
+        "mean_anom": 0.0002688535228942832,
+        "mean_norm": 2.2894539024150704e-05,
+        "ratio": 11.251672301463836
+      },
+      "inlay_pattern_failure": {
+        "mean_anom": 0.000805839627146055,
+        "mean_norm": 7.854653409716803e-05,
+        "ratio": 10.130417827654217
+      },
+      "irregular_bore_geometry": {
+        "mean_anom": 0.0001025787126239806,
+        "mean_norm": 1.0001656726480647e-05,
+        "ratio": 9.323933219719246
+      },
+      "planar_segmentation": {
+        "mean_anom": 0.00047787754797606907,
+        "mean_norm": 0.00030073618410600384,
+        "ratio": 1.5837594996832878
+      },
+      "surface_warpage_or_creasing": {
+        "mean_anom": 8.24406140955924e-06,
+        "mean_norm": 1.8762946581409616e-06,
+        "ratio": 2.866208921337577
+      },
+      "through_hole_component_mounting": {
+        "mean_anom": 0.0004138338874463607,
+        "mean_norm": 7.310594878132004e-05,
+        "ratio": 5.58435448505689
+      },
+      "panel_seam_misalignment": {
+        "mean_anom": 0.0001262890626175269,
+        "mean_norm": 9.336541419636327e-05,
+        "ratio": 1.3382981857604557
+      }
+    },
+    "leather": {
+      "perimeter_discontinuity": {
+        "mean_anom": 0.00020500495859193196,
+        "mean_norm": 4.803175698828498e-07,
+        "ratio": 138.4871481381902
+      },
+      "structural_segmentation_or_discontinuity": {
+        "mean_anom": 1.0306405396157888e-05,
+        "mean_norm": 1.0161182081992979e-07,
+        "ratio": 9.355750547853445
+      },
+      "inconsistent_marking_application": {
+        "mean_anom": 0.0003302684485849804,
+        "mean_norm": 1.603463701484766e-07,
+        "ratio": 284.6291909740017
+      },
+      "woven_fabric_integrity": {
+        "mean_anom": 0.001037086550026414,
+        "mean_norm": 1.2373684416518316e-07,
+        "ratio": 922.8909378662039
+      },
+      "incomplete_fastener_tips": {
+        "mean_anom": 0.0005047000563776037,
+        "mean_norm": 9.01512094055339e-08,
+        "ratio": 462.9633504262402
+      },
+      "misplaced_surface_fragments": {
+        "mean_anom": 0.0027045506887113406,
+        "mean_norm": 4.0331936832917524e-07,
+        "ratio": 1927.2524485509252
+      },
+      "inlay_pattern_failure": {
+        "mean_anom": 0.00043544545059371893,
+        "mean_norm": 0.00011047643789356064,
+        "ratio": 3.906165812451675
+      },
+      "irregular_bore_geometry": {
+        "mean_anom": 0.0001567470256262389,
+        "mean_norm": 4.9138791233628146e-05,
+        "ratio": 3.126262555789508
+      },
+      "planar_segmentation": {
+        "mean_anom": 0.00030920121730297596,
+        "mean_norm": 8.023861275003673e-05,
+        "ratio": 3.806086869729766
+      },
+      "surface_warpage_or_creasing": {
+        "mean_anom": 0.0009241722115720212,
+        "mean_norm": 3.6370790686695793e-06,
+        "ratio": 199.30050747165168
+      },
+      "through_hole_component_mounting": {
+        "mean_anom": 0.00014342130345877804,
+        "mean_norm": 3.47468901516746e-05,
+        "ratio": 4.012133722688582
+      },
+      "panel_seam_misalignment": {
+        "mean_anom": 0.9995369757179853,
+        "mean_norm": 0.007370572951774907,
+        "ratio": 135.5934455586334
+      }
+    },
+    "metal_nut": {
+      "perimeter_discontinuity": {
+        "mean_anom": 0.9598343099678548,
+        "mean_norm": 0.065863641782714,
+        "ratio": 14.57283124888657
+      },
+      "structural_segmentation_or_discontinuity": {
+        "mean_anom": 1.6914780847979254e-05,
+        "mean_norm": 4.963629066331569e-06,
+        "ratio": 2.8363234298849695
+      },
+      "inconsistent_marking_application": {
+        "mean_anom": 0.0005813875502398804,
+        "mean_norm": 1.7977096116360196e-05,
+        "ratio": 30.636275786086415
+      },
+      "woven_fabric_integrity": {
+        "mean_anom": 2.802101492907613e-05,
+        "mean_norm": 4.0292463345546076e-06,
+        "ratio": 5.5716131334731465
+      },
+      "incomplete_fastener_tips": {
+        "mean_anom": 0.00048716818402978757,
+        "mean_norm": 0.00019626265400689272,
+        "ratio": 2.4696422466908765
+      },
+      "misplaced_surface_fragments": {
+        "mean_anom": 5.094013875334529e-05,
+        "mean_norm": 4.719821110633471e-06,
+        "ratio": 8.90589718944963
+      },
+      "inlay_pattern_failure": {
+        "mean_anom": 0.0008787473025036507,
+        "mean_norm": 8.854006899305726e-05,
+        "ratio": 9.814011898648268
+      },
+      "irregular_bore_geometry": {
+        "mean_anom": 0.0011919242625651387,
+        "mean_norm": 0.00026783286205898173,
+        "ratio": 4.433700007641296
+      },
+      "planar_segmentation": {
+        "mean_anom": 0.00025014151067071335,
+        "mean_norm": 6.873341986546533e-05,
+        "ratio": 3.5871109025386123
+      },
+      "surface_warpage_or_creasing": {
+        "mean_anom": 2.1935219633632407e-05,
+        "mean_norm": 6.996255377315092e-06,
+        "ratio": 2.7431864789938225
+      },
+      "through_hole_component_mounting": {
+        "mean_anom": 0.0011443546862320208,
+        "mean_norm": 0.00048267850899124797,
+        "ratio": 2.3659407332748117
+      },
+      "panel_seam_misalignment": {
+        "mean_anom": 1.4366187491003067e-05,
+        "mean_norm": 6.25383702303304e-06,
+        "ratio": 1.9804949360436759
+      }
+    },
+    "pill": {
+      "perimeter_discontinuity": {
+        "mean_anom": 0.0011090362832486776,
+        "mean_norm": 5.113790518085635e-05,
+        "ratio": 21.271209102123386
+      },
+      "structural_segmentation_or_discontinuity": {
+        "mean_anom": 0.00020147087594337164,
+        "mean_norm": 0.00010144949556418761,
+        "ratio": 1.9665384864403186
+      },
+      "inconsistent_marking_application": {
+        "mean_anom": 0.9783876635695736,
+        "mean_norm": 0.09740242900243601,
+        "ratio": 10.044694253475457
+      },
+      "woven_fabric_integrity": {
+        "mean_anom": 3.758442906584808e-05,
+        "mean_norm": 1.3590249449977657e-05,
+        "ratio": 2.575996331982222
+      },
+      "incomplete_fastener_tips": {
+        "mean_anom": 0.00020347097355449193,
+        "mean_norm": 7.619884083321377e-05,
+        "ratio": 2.635673947411802
+      },
+      "misplaced_surface_fragments": {
+        "mean_anom": 0.0004705762080479309,
+        "mean_norm": 9.012715340340237e-05,
+        "ratio": 5.16395158273825
+      },
+      "inlay_pattern_failure": {
+        "mean_anom": 0.00020710783843614296,
+        "mean_norm": 3.239161627058351e-05,
+        "ratio": 6.202390347261972
+      },
+      "irregular_bore_geometry": {
+        "mean_anom": 0.00028041195293709734,
+        "mean_norm": 5.147426850740248e-05,
+        "ratio": 5.343799178401887
+      },
+      "planar_segmentation": {
+        "mean_anom": 4.204883448396103e-05,
+        "mean_norm": 7.879621507394659e-06,
+        "ratio": 4.73543094702225
+      },
+      "surface_warpage_or_creasing": {
+        "mean_anom": 8.935014007196775e-05,
+        "mean_norm": 3.579285751936912e-05,
+        "ratio": 2.4284642752993717
+      },
+      "through_hole_component_mounting": {
+        "mean_anom": 0.00013098404205950432,
+        "mean_norm": 3.222105785980824e-05,
+        "ratio": 3.9428016594851565
+      },
+      "panel_seam_misalignment": {
+        "mean_anom": 0.0001404324286760057,
+        "mean_norm": 0.00011338296078328341,
+        "ratio": 1.22773905933487
+      }
+    },
+    "screw": {
+      "perimeter_discontinuity": {
+        "mean_anom": 0.0003528566705970356,
+        "mean_norm": 0.0001488314051014364,
+        "ratio": 2.3550247717302684
+      },
+      "structural_segmentation_or_discontinuity": {
+        "mean_anom": 0.00013044713619131165,
+        "mean_norm": 7.193507828277992e-05,
+        "ratio": 1.7885376867019886
+      },
+      "inconsistent_marking_application": {
+        "mean_anom": 2.2597257655739586e-05,
+        "mean_norm": 6.68821178770524e-06,
+        "ratio": 2.939208528552302
+      },
+      "woven_fabric_integrity": {
+        "mean_anom": 5.92041783567161e-05,
+        "mean_norm": 4.651179282967633e-05,
+        "ratio": 1.2460943869021208
+      },
+      "incomplete_fastener_tips": {
+        "mean_anom": 0.968008133761332,
+        "mean_norm": 0.09975567854624015,
+        "ratio": 9.703692503280688
+      },
+      "misplaced_surface_fragments": {
+        "mean_anom": 0.00016526886959428153,
+        "mean_norm": 0.00010246237613637112,
+        "ratio": 1.5973813454317427
+      },
+      "inlay_pattern_failure": {
+        "mean_anom": 0.00012975679392666255,
+        "mean_norm": 0.00011832371169130261,
+        "ratio": 1.0874351131680426
+      },
+      "irregular_bore_geometry": {
+        "mean_anom": 3.31189633492081e-05,
+        "mean_norm": 2.7062293046265462e-05,
+        "ratio": 1.1801944799951258
+      },
+      "planar_segmentation": {
+        "mean_anom": 0.00027593266653127603,
+        "mean_norm": 9.404181766246897e-05,
+        "ratio": 2.903276403143108
+      },
+      "surface_warpage_or_creasing": {
+        "mean_anom": 8.243569892234537e-05,
+        "mean_norm": 8.287382594490846e-05,
+        "ratio": 0.9828536852067806
+      },
+      "through_hole_component_mounting": {
+        "mean_anom": 0.00010467463501266926,
+        "mean_norm": 0.0001168908588109099,
+        "ratio": 0.8878944141085723
+      },
+      "panel_seam_misalignment": {
+        "mean_anom": 0.0001193999463682617,
+        "mean_norm": 8.281970843295826e-05,
+        "ratio": 1.424485345994274
+      }
+    },
+    "tile": {
+      "perimeter_discontinuity": {
+        "mean_anom": 0.011108777202273934,
+        "mean_norm": 5.017662641160821e-08,
+        "ratio": 10578.008425336959
+      },
+      "structural_segmentation_or_discontinuity": {
+        "mean_anom": 0.0003338130854827178,
+        "mean_norm": 4.3005418959403946e-05,
+        "ratio": 7.585726789481733
+      },
+      "inconsistent_marking_application": {
+        "mean_anom": 0.0015791419241849248,
+        "mean_norm": 9.981248163422188e-06,
+        "ratio": 143.80350035662997
+      },
+      "woven_fabric_integrity": {
+        "mean_anom": 0.00015701568179793014,
+        "mean_norm": 3.5659969470726696e-07,
+        "ratio": 115.7420884071566
+      },
+      "incomplete_fastener_tips": {
+        "mean_anom": 0.0002568797869805945,
+        "mean_norm": 5.8700163828446635e-05,
+        "ratio": 4.302832195214068
+      },
+      "misplaced_surface_fragments": {
+        "mean_anom": 0.9968466680495159,
+        "mean_norm": 0.013239516628715135,
+        "ratio": 75.28759609633528
+      },
+      "inlay_pattern_failure": {
+        "mean_anom": 0.0009591105381721978,
+        "mean_norm": 2.0691889337913905e-05,
+        "ratio": 44.215168316197705
+      },
+      "irregular_bore_geometry": {
+        "mean_anom": 9.595575994631375e-05,
+        "mean_norm": 1.0374395057439241e-06,
+        "ratio": 47.096249815416094
+      },
+      "planar_segmentation": {
+        "mean_anom": 0.000559305553752073,
+        "mean_norm": 9.081566157312782e-06,
+        "ratio": 55.47804230262122
+      },
+      "surface_warpage_or_creasing": {
+        "mean_anom": 0.004198133050204663,
+        "mean_norm": 3.03003686170113e-06,
+        "ratio": 1041.7108315065332
+      },
+      "through_hole_component_mounting": {
+        "mean_anom": 0.0010121259581007157,
+        "mean_norm": 5.480949049681089e-06,
+        "ratio": 156.16940518156363
+      },
+      "panel_seam_misalignment": {
+        "mean_anom": 0.0009172125676053784,
+        "mean_norm": 5.431533414822718e-06,
+        "ratio": 142.6118016415003
+      }
+    },
+    "toothbrush": {
+      "perimeter_discontinuity": {
+        "mean_anom": 0.0018172416975788897,
+        "mean_norm": 0.0004748699570356204,
+        "ratio": 3.8187779470240084
+      },
+      "structural_segmentation_or_discontinuity": {
+        "mean_anom": 4.550909259742363e-05,
+        "mean_norm": 3.936412131186894e-05,
+        "ratio": 1.1274639734085288
+      },
+      "inconsistent_marking_application": {
+        "mean_anom": 0.0009519768104195368,
+        "mean_norm": 0.00013004250541211816,
+        "ratio": 7.264641403380118
+      },
+      "woven_fabric_integrity": {
+        "mean_anom": 6.96071379675148e-05,
+        "mean_norm": 3.261462993498919e-05,
+        "ratio": 2.070739380505906
+      },
+      "incomplete_fastener_tips": {
+        "mean_anom": 7.656691157372506e-07,
+        "mean_norm": 7.861587545642949e-07,
+        "ratio": 0.4286680082499293
+      },
+      "misplaced_surface_fragments": {
+        "mean_anom": 2.435801679633579e-05,
+        "mean_norm": 2.4184318661101942e-05,
+        "ratio": 0.9671898264993603
+      },
+      "inlay_pattern_failure": {
+        "mean_anom": 1.3072878144622695e-06,
+        "mean_norm": 7.251979449132311e-07,
+        "ratio": 0.7577610547919008
+      },
+      "irregular_bore_geometry": {
+        "mean_anom": 0.0005257892271566412,
+        "mean_norm": 0.00023161978257812686,
+        "ratio": 2.260294551603974
+      },
+      "planar_segmentation": {
+        "mean_anom": 1.846196537337158e-07,
+        "mean_norm": 4.9226375193430784e-08,
+        "ratio": 0.17595788487463457
+      },
+      "surface_warpage_or_creasing": {
+        "mean_anom": 3.8997406553356375e-05,
+        "mean_norm": 1.7519545718921152e-05,
+        "ratio": 2.105743150789778
+      },
+      "through_hole_component_mounting": {
+        "mean_anom": 0.9471950923627424,
+        "mean_norm": 0.1020560586952818,
+        "ratio": 9.281034594489368
+      },
+      "panel_seam_misalignment": {
+        "mean_anom": 1.5101235154055312e-06,
+        "mean_norm": 1.1076508420460138e-06,
+        "ratio": 0.7164960558360656
+      }
+    },
+    "transistor": {
+      "perimeter_discontinuity": {
+        "mean_anom": 0.00015437546915423792,
+        "mean_norm": 3.397770748524793e-05,
+        "ratio": 4.4135388009447665
+      },
+      "structural_segmentation_or_discontinuity": {
+        "mean_anom": 0.0001678446304193251,
+        "mean_norm": 0.00010424691214847565,
+        "ratio": 1.5947701171749395
+      },
+      "inconsistent_marking_application": {
+        "mean_anom": 9.787486642189665e-05,
+        "mean_norm": 2.2239075859551613e-05,
+        "ratio": 4.211650541244246
+      },
+      "woven_fabric_integrity": {
+        "mean_anom": 0.00025527521307348633,
+        "mean_norm": 0.00010569652358709414,
+        "ratio": 2.392535431251521
+      },
+      "incomplete_fastener_tips": {
+        "mean_anom": 0.0002096103962889893,
+        "mean_norm": 8.348464146832764e-05,
+        "ratio": 2.4810473554245944
+      },
+      "misplaced_surface_fragments": {
+        "mean_anom": 0.05166080676686802,
+        "mean_norm": 0.000534767015204379,
+        "ratio": 96.42401510507506
+      },
+      "inlay_pattern_failure": {
+        "mean_anom": 0.0012365138366288021,
+        "mean_norm": 0.0005686075238214277,
+        "ratio": 2.170817246817916
+      },
+      "irregular_bore_geometry": {
+        "mean_anom": 8.977649165792884e-06,
+        "mean_norm": 6.971136789966292e-06,
+        "ratio": 1.1262696152816678
+      },
+      "planar_segmentation": {
+        "mean_anom": 2.6747147011585393e-05,
+        "mean_norm": 2.422088048189047e-05,
+        "ratio": 1.0605159891539409
+      },
+      "surface_warpage_or_creasing": {
+        "mean_anom": 0.0004349030630483272,
+        "mean_norm": 0.00010399704359980144,
+        "ratio": 4.142050558165903
+      },
+      "through_hole_component_mounting": {
+        "mean_anom": 0.8701152924469469,
+        "mean_norm": 0.041773062813164896,
+        "ratio": 20.82907990871154
+      },
+      "panel_seam_misalignment": {
+        "mean_anom": 8.362263903643439e-06,
+        "mean_norm": 4.2819700949643555e-06,
+        "ratio": 1.5831713836501513
+      }
+    },
+    "wood": {
+      "perimeter_discontinuity": {
+        "mean_anom": 0.0033580211418974175,
+        "mean_norm": 5.119901827070846e-06,
+        "ratio": 548.7050669740333
+      },
+      "structural_segmentation_or_discontinuity": {
+        "mean_anom": 6.312888576328287e-06,
+        "mean_norm": 5.74397925352898e-05,
+        "ratio": 0.10802380197561703
+      },
+      "inconsistent_marking_application": {
+        "mean_anom": 0.00012621237549857782,
+        "mean_norm": 1.9656904977066777e-06,
+        "ratio": 42.55750072240373
+      },
+      "woven_fabric_integrity": {
+        "mean_anom": 0.0014403638810406574,
+        "mean_norm": 2.6957204698771042e-05,
+        "ratio": 51.520311009633005
+      },
+      "incomplete_fastener_tips": {
+        "mean_anom": 6.806955520789324e-07,
+        "mean_norm": 1.3423522969978947e-07,
+        "ratio": 0.6001361395370338
+      },
+      "misplaced_surface_fragments": {
+        "mean_anom": 0.9960316162995987,
+        "mean_norm": 0.019640567957346176,
+        "ratio": 50.71039228958659
+      },
+      "inlay_pattern_failure": {
+        "mean_anom": 0.0007395086587066974,
+        "mean_norm": 0.00010885235766186914,
+        "ratio": 6.731841486579112
+      },
+      "irregular_bore_geometry": {
+        "mean_anom": 0.00020376059797539984,
+        "mean_norm": 9.650303009625117e-05,
+        "ratio": 2.0897873407037233
+      },
+      "planar_segmentation": {
+        "mean_anom": 0.0007122084066129895,
+        "mean_norm": 0.00017233725774639468,
+        "ratio": 4.108801626797416
+      },
+      "surface_warpage_or_creasing": {
+        "mean_anom": 0.0009317839254598933,
+        "mean_norm": 2.5802627174092176e-05,
+        "ratio": 34.76464898040181
+      },
+      "through_hole_component_mounting": {
+        "mean_anom": 0.0007685582736344168,
+        "mean_norm": 0.00015673670532729555,
+        "ratio": 4.872412366162321
+      },
+      "panel_seam_misalignment": {
+        "mean_anom": 0.0003802947462921953,
+        "mean_norm": 2.3790700657112927e-05,
+        "ratio": 15.340217751493096
+      }
+    },
+    "zipper": {
+      "perimeter_discontinuity": {
+        "mean_anom": 0.0008929207190861747,
+        "mean_norm": 2.9875429883209634e-05,
+        "ratio": 28.920106455643353
+      },
+      "structural_segmentation_or_discontinuity": {
+        "mean_anom": 0.9963177433433373,
+        "mean_norm": 0.03797452349867322,
+        "ratio": 26.235786937292556
+      },
+      "inconsistent_marking_application": {
+        "mean_anom": 0.00037099044582165436,
+        "mean_norm": 4.896372998602754e-05,
+        "ratio": 7.425195155073542
+      },
+      "woven_fabric_integrity": {
+        "mean_anom": 0.0001119191963197602,
+        "mean_norm": 9.81609760308163e-06,
+        "ratio": 10.347465456291106
+      },
+      "incomplete_fastener_tips": {
+        "mean_anom": 0.0001744353012422081,
+        "mean_norm": 8.061055394586891e-05,
+        "ratio": 2.1374110676654454
+      },
+      "misplaced_surface_fragments": {
+        "mean_anom": 3.443275432145033e-05,
+        "mean_norm": 6.825392789820426e-06,
+        "ratio": 4.400131117538508
+      },
+      "inlay_pattern_failure": {
+        "mean_anom": 1.4623192292019148e-05,
+        "mean_norm": 4.717286057268097e-06,
+        "ratio": 2.5577156968435086
+      },
+      "irregular_bore_geometry": {
+        "mean_anom": 4.4235922093107205e-05,
+        "mean_norm": 3.4102039883771144e-05,
+        "ratio": 1.2602094419463914
+      },
+      "planar_segmentation": {
+        "mean_anom": 0.0014153842294470482,
+        "mean_norm": 5.4641560245225375e-05,
+        "ratio": 25.437536675986777
+      },
+      "surface_warpage_or_creasing": {
+        "mean_anom": 0.00012716190427280113,
+        "mean_norm": 2.417140292667678e-05,
+        "ratio": 5.051840163347999
+      },
+      "through_hole_component_mounting": {
+        "mean_anom": 6.1027268046986e-07,
+        "mean_norm": 8.634775955465793e-08,
+        "ratio": 0.5617654890916678
+      },
+      "panel_seam_misalignment": {
+        "mean_anom": 5.607748396100615e-06,
+        "mean_norm": 1.747678896081123e-06,
+        "ratio": 2.0409038349054054
+      }
+    }
+  },
+  "head_metrics": [
+    {
+      "cluster": 0,
+      "concept": "perimeter_discontinuity",
+      "f1": 0.8732394366197183,
+      "auc": 0.9983651544345186,
+      "n_pos": 163,
+      "n_neg": 5191,
+      "categories": [
+        "hazelnut",
+        "metal_nut"
+      ],
+      "confidence": "high"
+    },
+    {
+      "cluster": 1,
+      "concept": "structural_segmentation_or_discontinuity",
+      "f1": 0.9795918367346939,
+      "auc": 1.0,
+      "n_pos": 119,
+      "n_neg": 5235,
+      "categories": [
+        "zipper"
+      ],
+      "confidence": "high"
+    },
+    {
+      "cluster": 2,
+      "concept": "inconsistent_marking_application",
+      "f1": 0.8852459016393442,
+      "auc": 0.99887001780578,
+      "n_pos": 141,
+      "n_neg": 5213,
+      "categories": [
+        "pill"
+      ],
+      "confidence": "high"
+    },
+    {
+      "cluster": 3,
+      "concept": "woven_fabric_integrity",
+      "f1": 0.9714285714285714,
+      "auc": 0.9999472406879814,
+      "n_pos": 89,
+      "n_neg": 5265,
+      "categories": [
+        "carpet"
+      ],
+      "confidence": "low (the single image does not show the type of systemic structural defect described in the prompt.)"
+    },
+    {
+      "cluster": 4,
+      "concept": "incomplete_fastener_tips",
+      "f1": 0.8627450980392157,
+      "auc": 0.9976122254059216,
+      "n_pos": 119,
+      "n_neg": 5235,
+      "categories": [
+        "screw"
+      ],
+      "confidence": "high"
+    },
+    {
+      "cluster": 5,
+      "concept": "misplaced_surface_fragments",
+      "f1": 0.9666666666666667,
+      "auc": 1.0,
+      "n_pos": 146,
+      "n_neg": 5208,
+      "categories": [
+        "tile",
+        "transistor",
+        "wood"
+      ],
+      "confidence": "high"
+    },
+    {
+      "cluster": 6,
+      "concept": "inlay_pattern_failure",
+      "f1": 0.7878787878787878,
+      "auc": 0.99889205444761,
+      "n_pos": 92,
+      "n_neg": 5262,
+      "categories": [
+        "cable"
+      ],
+      "confidence": "high"
+    },
+    {
+      "cluster": 7,
+      "concept": "irregular_bore_geometry",
+      "f1": 0.9166666666666666,
+      "auc": 1.0,
+      "n_pos": 63,
+      "n_neg": 5291,
+      "categories": [
+        "bottle"
+      ],
+      "confidence": "high"
+    },
+    {
+      "cluster": 8,
+      "concept": "planar_segmentation",
+      "f1": 0.88,
+      "auc": 0.9998700060663837,
+      "n_pos": 109,
+      "n_neg": 5245,
+      "categories": [
+        "capsule"
+      ],
+      "confidence": "high"
+    },
+    {
+      "cluster": 9,
+      "concept": "surface_warpage_or_creasing",
+      "f1": 1.0,
+      "auc": 1.0,
+      "n_pos": 57,
+      "n_neg": 5297,
+      "categories": [
+        "grid"
+      ],
+      "confidence": "high"
+    },
+    {
+      "cluster": 10,
+      "concept": "through_hole_component_mounting",
+      "f1": 0.7142857142857143,
+      "auc": 0.9944587106365725,
+      "n_pos": 68,
+      "n_neg": 5286,
+      "categories": [
+        "toothbrush",
+        "transistor"
+      ],
+      "confidence": "high"
+    },
+    {
+      "cluster": 11,
+      "concept": "panel_seam_misalignment",
+      "f1": 1.0,
+      "auc": 1.0,
+      "n_pos": 92,
+      "n_neg": 5262,
+      "categories": [
+        "leather"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

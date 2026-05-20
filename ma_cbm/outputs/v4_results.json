@@ -1,0 +1,101 @@
+{
+  "v4": {
+    "bottle": {
+      "v4_concept": 1.0,
+      "v4_dual": 1.0,
+      "bwt": 0.0,
+      "type": "T"
+    },
+    "cable": {
+      "v4_concept": 0.9992503748125937,
+      "v4_dual": 0.9801349325337332,
+      "bwt": 0.0,
+      "type": "T"
+    },
+    "capsule": {
+      "v4_concept": 1.0,
+      "v4_dual": 0.9776625448743519,
+      "bwt": 0.0,
+      "type": "T"
+    },
+    "carpet": {
+      "v4_concept": 1.0,
+      "v4_dual": 0.9979935794542536,
+      "bwt": 0.0,
+      "type": "S"
+    },
+    "grid": {
+      "v4_concept": 1.0,
+      "v4_dual": 1.0,
+      "bwt": 0.0,
+      "type": "S"
+    },
+    "hazelnut": {
+      "v4_concept": 1.0,
+      "v4_dual": 0.9985714285714286,
+      "bwt": 0.0,
+      "type": "S"
+    },
+    "leather": {
+      "v4_concept": 1.0,
+      "v4_dual": 1.0,
+      "bwt": 0.0,
+      "type": "S"
+    },
+    "metal_nut": {
+      "v4_concept": 0.9995112414467253,
+      "v4_dual": 0.9995112414467253,
+      "bwt": 0.0,
+      "type": "S"
+    },
+    "pill": {
+      "v4_concept": 1.0,
+      "v4_dual": 0.9950900163666121,
+      "bwt": 0.0,
+      "type": "S"
+    },
+    "screw": {
+      "v4_concept": 1.0,
+      "v4_dual": 0.9881123180979708,
+      "bwt": 0.0,
+      "type": "T"
+    },
+    "tile": {
+      "v4_concept": 1.0,
+      "v4_dual": 1.0,
+      "bwt": 0.0,
+      "type": "S"
+    },
+    "toothbrush": {
+      "v4_concept": 1.0,
+      "v4_dual": 0.9916666666666667,
+      "bwt": 0.0,
+      "type": "T"
+    },
+    "transistor": {
+      "v4_concept": 0.9995833333333333,
+      "v4_dual": 0.9895833333333333,
+      "bwt": 0.0,
+      "type": "T"
+    },
+    "wood": {
+      "v4_concept": 1.0,
+      "v4_dual": 0.9956140350877192,
+      "bwt": 0.0,
+      "type": "S"
+    },
+    "zipper": {
+      "v4_concept": 1.0,
+      "v4_dual": 0.9989495798319328,
+      "bwt": NaN,
+      "type": "S"
+    }
+  },
+  "n_conc": 28,
+  "summary": {
+    "surface": 0.9999456934940807,
+    "structural": 0.9998056180243212,
+    "overall": 0.9998896633061769,
+    "bwt": 0.0
+  }
+}

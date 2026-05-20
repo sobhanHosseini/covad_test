@@ -1,0 +1,107 @@
+[
+  {
+    "concept": "perfect_circular_symmetry",
+    "cluster_id": 0,
+    "f1": 0.989247311827957,
+    "auc": 1.0,
+    "n_pos": 229,
+    "categories": [
+      "bottle"
+    ]
+  },
+  {
+    "concept": "modular_paneling",
+    "cluster_id": 1,
+    "f1": 0.9864253393665159,
+    "auc": 0.9999271880005826,
+    "n_pos": 543,
+    "categories": [
+      "leather",
+      "wood"
+    ]
+  },
+  {
+    "concept": "product_uniformity",
+    "cluster_id": 2,
+    "f1": 0.9162995594713657,
+    "auc": 0.9936582109479306,
+    "n_pos": 535,
+    "categories": [
+      "capsule",
+      "pill"
+    ]
+  },
+  {
+    "concept": "structural_integrity",
+    "cluster_id": 3,
+    "f1": 0.9642857142857143,
+    "auc": 0.998589065255732,
+    "n_pos": 673,
+    "categories": [
+      "hazelnut",
+      "metal_nut"
+    ]
+  },
+  {
+    "concept": "manufactured_fasteners",
+    "cluster_id": 4,
+    "f1": 0.9271523178807947,
+    "auc": 0.9969135802469136,
+    "n_pos": 361,
+    "categories": [
+      "screw"
+    ]
+  },
+  {
+    "concept": "woven_textile_structure",
+    "cluster_id": 5,
+    "f1": 0.9916666666666667,
+    "auc": 0.9999666533279978,
+    "n_pos": 593,
+    "categories": [
+      "carpet",
+      "grid"
+    ]
+  },
+  {
+    "concept": "structural_uniformity_and_completeness",
+    "cluster_id": 6,
+    "f1": 0.9459459459459459,
+    "auc": 0.9908897831433042,
+    "n_pos": 354,
+    "categories": [
+      "cable",
+      "toothbrush"
+    ]
+  },
+  {
+    "concept": "material_homogeneity",
+    "cluster_id": 7,
+    "f1": 1.0,
+    "auc": 1.0,
+    "n_pos": 263,
+    "categories": [
+      "tile"
+    ]
+  },
+  {
+    "concept": "parallel_and_uniform_striping",
+    "cluster_id": 8,
+    "f1": 0.9557522123893806,
+    "auc": 1.0,
+    "n_pos": 272,
+    "categories": [
+      "zipper"
+    ]
+  },
+  {
+    "concept": "engineered_array_pattern",
+    "cluster_id": 9,
+    "f1": 0.9482758620689655,
+    "auc": 0.9965367965367966,
+    "n_pos": 273,
+    "categories": [
+      "transistor"
+    ]
+  }
+]

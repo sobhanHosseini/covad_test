@@ -1,0 +1,93 @@
+[
+  {
+    "concept": "perimeter_discontinuity",
+    "f1": 0.8732394366197183,
+    "auc": 0.9983651544345186,
+    "n_pos": 163,
+    "n_neg": 5191
+  },
+  {
+    "concept": "structural_segmentation_or_discontinuity",
+    "f1": 0.9795918367346939,
+    "auc": 1.0,
+    "n_pos": 119,
+    "n_neg": 5235
+  },
+  {
+    "concept": "inconsistent_marking_application",
+    "f1": 0.8852459016393442,
+    "auc": 0.99887001780578,
+    "n_pos": 141,
+    "n_neg": 5213
+  },
+  {
+    "concept": "incomplete_fastener_tips",
+    "f1": 0.8627450980392157,
+    "auc": 0.9976122254059216,
+    "n_pos": 119,
+    "n_neg": 5235
+  },
+  {
+    "concept": "misplaced_surface_fragments",
+    "f1": 0.9666666666666667,
+    "auc": 1.0,
+    "n_pos": 146,
+    "n_neg": 5208
+  },
+  {
+    "concept": "inlay_pattern_failure",
+    "f1": 0.7878787878787878,
+    "auc": 0.99889205444761,
+    "n_pos": 92,
+    "n_neg": 5262
+  },
+  {
+    "concept": "irregular_bore_geometry",
+    "f1": 0.9166666666666666,
+    "auc": 1.0,
+    "n_pos": 63,
+    "n_neg": 5291
+  },
+  {
+    "concept": "planar_segmentation",
+    "f1": 0.88,
+    "auc": 0.9998700060663837,
+    "n_pos": 109,
+    "n_neg": 5245
+  },
+  {
+    "concept": "surface_warpage_or_creasing",
+    "f1": 1.0,
+    "auc": 1.0,
+    "n_pos": 57,
+    "n_neg": 5297
+  },
+  {
+    "concept": "through_hole_component_mounting",
+    "f1": 0.7142857142857143,
+    "auc": 0.9944587106365725,
+    "n_pos": 68,
+    "n_neg": 5286
+  },
+  {
+    "concept": "panel_seam_misalignment",
+    "f1": 1.0,
+    "auc": 1.0,
+    "n_pos": 92,
+    "n_neg": 5262
+  },
+  {
+    "concept": "stain_or_contamination_markings",
+    "f1": 1.0,
+    "auc": 1.0,
+    "n_pos": 53,
+    "n_neg": 5301
+  },
+  {
+    "concept": "structural_weave_interruption",
+    "f1": 0.9333333333333333,
+    "auc": 1.0,
+    "n_pos": 36,
+    "n_neg": 5318
+  }
+]

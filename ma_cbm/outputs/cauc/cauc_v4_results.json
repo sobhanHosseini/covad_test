@@ -1,0 +1,153 @@
+{
+  "mean_c_auc_activation": 0.8706200445811081,
+  "mean_c_auc_suppression": 0.8962478034122962,
+  "mean_c_auc_unified": 0.8822180144021945,
+  "prev_activation": 0.847,
+  "convad_reference": 0.86,
+  "delta_from_normality": 0.03521801440219452,
+  "gap_vs_convad": 0.022218014402194508,
+  "n_heads": 40,
+  "coverage": {
+    "well": 154,
+    "partial": 14,
+    "none": 1,
+    "total": 169
+  },
+  "per_category": {
+    "bottle": {
+      "c_auc_activation": 0.9766526749060255,
+      "c_auc_suppression": 0.9519398750839525,
+      "c_auc_unified": 0.9548686711357971,
+      "n_activation": 4,
+      "n_suppression": 5,
+      "n_images": 292,
+      "n_skipped": 0
+    },
+    "cable": {
+      "c_auc_activation": 0.815868241600003,
+      "c_auc_suppression": 0.8884597378277153,
+      "c_auc_unified": 0.8732961808379266,
+      "n_activation": 7,
+      "n_suppression": 6,
+      "n_images": 38,
+      "n_skipped": 0
+    },
+    "capsule": {
+      "c_auc_activation": 0.8868379398028354,
+      "c_auc_suppression": 0.9653061224489795,
+      "c_auc_unified": 0.9151095644326962,
+      "n_activation": 14,
+      "n_suppression": 2,
+      "n_images": 36,
+      "n_skipped": 0
+    },
+    "carpet": {
+      "c_auc_activation": 0.7641422629408899,
+      "c_auc_suppression": 0.8632653061224491,
+      "c_auc_unified": 0.7828952711103742,
+      "n_activation": 11,
+      "n_suppression": 3,
+      "n_images": 30,
+      "n_skipped": 0
+    },
+    "grid": {
+      "c_auc_activation": 1.0,
+      "c_auc_suppression": 0.9019298245614036,
+      "c_auc_unified": 0.909546925566343,
+      "n_activation": 5,
+      "n_suppression": 7,
+      "n_images": 35,
+      "n_skipped": 0
+    },
+    "hazelnut": {
+      "c_auc_activation": 0.8596023816474482,
+      "c_auc_suppression": 0.9772727272727273,
+      "c_auc_unified": 0.932868823263188,
+      "n_activation": 17,
+      "n_suppression": 4,
+      "n_images": 38,
+      "n_skipped": 0
+    },
+    "leather": {
+      "c_auc_activation": 0.9388128584767239,
+      "c_auc_suppression": 0.7999325236167342,
+      "c_auc_unified": 0.8760147940182936,
+      "n_activation": 8,
+      "n_suppression": 2,
+      "n_images": 37,
+      "n_skipped": 0
+    },
+    "metal_nut": {
+      "c_auc_activation": 0.93663710656359,
+      "c_auc_suppression": 0.9312978142076503,
+      "c_auc_unified": 0.9332620098411826,
+      "n_activation": 12,
+      "n_suppression": 5,
+      "n_images": 34,
+      "n_skipped": 0
+    },
+    "pill": {
+      "c_auc_activation": 0.8136889754091294,
+      "c_auc_suppression": 0.7612734487734487,
+      "c_auc_unified": 0.7897601480319708,
+      "n_activation": 9,
+      "n_suppression": 2,
+      "n_images": 44,
+      "n_skipped": 0
+    },
+    "screw": {
+      "c_auc_activation": 0.8500030991210213,
+      "c_auc_suppression": 0.940857100415924,
+      "c_auc_unified": 0.8943433294180552,
+      "n_activation": 10,
+      "n_suppression": 5,
+      "n_images": 36,
+      "n_skipped": 0
+    },
+    "tile": {
+      "c_auc_activation": 0.8400979350417853,
+      "c_auc_suppression": 0.945054945054945,
+      "c_auc_unified": 0.8895488339902933,
+      "n_activation": 8,
+      "n_suppression": 2,
+      "n_images": 35,
+      "n_skipped": 0
+    },
+    "toothbrush": {
+      "c_auc_activation": 1.0,
+      "c_auc_suppression": 1.0,
+      "c_auc_unified": 1.0,
+      "n_activation": 2,
+      "n_suppression": 1,
+      "n_images": 11,
+      "n_skipped": 0
+    },
+    "transistor": {
+      "c_auc_activation": 0.7267135631167251,
+      "c_auc_suppression": 0.8090035265684975,
+      "c_auc_unified": 0.7943564456952046,
+      "n_activation": 2,
+      "n_suppression": 2,
+      "n_images": 313,
+      "n_skipped": 0
+    },
+    "wood": {
+      "c_auc_activation": 0.7302560118752144,
+      "c_auc_suppression": 0.8161598135157301,
+      "c_auc_unified": 0.7801701908832946,
+      "n_activation": 5,
+      "n_suppression": 2,
+      "n_images": 326,
+      "n_skipped": 0
+    },
+    "zipper": {
+      "c_auc_activation": 0.9199876182152302,
+      "c_auc_suppression": 0.8919642857142858,
+      "c_auc_unified": 0.9072290278082962,
+      "n_activation": 11,
+      "n_suppression": 2,
+      "n_images": 40,
+      "n_skipped": 0
+    }
+  }
+}

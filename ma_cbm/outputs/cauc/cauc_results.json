@@ -1,0 +1,1485 @@
+{
+  "mean_c_auc_activation": 0.8471291258954945,
+  "mean_c_auc_suppression": 0.8723842585131848,
+  "convad_reference": 0.86,
+  "per_category": {
+    "bottle": {
+      "c_auc_activation": 0.9755590364283702,
+      "c_auc_suppression": 0.9508608050939417,
+      "n_activation": 4,
+      "n_suppression": 5,
+      "n_images": 292,
+      "n_skipped": 0,
+      "convad_ref": null,
+      "suppression_concepts": [
+        "reflective highlights",
+        "consistent color",
+        "amber color",
+        "cylindrical shape",
+        "smooth surface"
+      ]
+    },
+    "cable": {
+      "c_auc_activation": 0.7601657089282751,
+      "c_auc_suppression": 0.8807935393258427,
+      "n_activation": 7,
+      "n_suppression": 6,
+      "n_images": 38,
+      "n_skipped": 0,
+      "convad_ref": null,
+      "suppression_concepts": [
+        "twisted cables",
+        "uniform color",
+        "gray color",
+        "black color",
+        "parallel lines",
+        "repeating pattern"
+      ]
+    },
+    "capsule": {
+      "c_auc_activation": 0.8664065899484067,
+      "c_auc_suppression": 0.9653061224489795,
+      "n_activation": 14,
+      "n_suppression": 2,
+      "n_images": 36,
+      "n_skipped": 0,
+      "convad_ref": null,
+      "suppression_concepts": [
+        "uniform texture",
+        "smooth surface"
+      ]
+    },
+    "carpet": {
+      "c_auc_activation": 0.7262135736964113,
+      "c_auc_suppression": 0.7724489795918368,
+      "n_activation": 11,
+      "n_suppression": 3,
+      "n_images": 30,
+      "n_skipped": 0,
+      "convad_ref": null,
+      "suppression_concepts": [
+        "Lighter Area",
+        "Shadowed Area",
+        "Spotty Appearance"
+      ]
+    },
+    "grid": {
+      "c_auc_activation": 1.0,
+      "c_auc_suppression": 0.8640350877192984,
+      "n_activation": 5,
+      "n_suppression": 7,
+      "n_images": 35,
+      "n_skipped": 0,
+      "convad_ref": null,
+      "suppression_concepts": [
+        "consistent lines",
+        "visible strand",
+        "dark coloration",
+        "rectangular cells",
+        "uniform texture",
+        "sharp edge",
+        "metallic appearance"
+      ]
+    },
+    "hazelnut": {
+      "c_auc_activation": 0.8716926594252259,
+      "c_auc_suppression": 0.9734848484848485,
+      "n_activation": 17,
+      "n_suppression": 4,
+      "n_images": 38,
+      "n_skipped": 0,
+      "convad_ref": 0.89,
+      "suppression_concepts": [
+        "Compact Appearance",
+        "Natural Appearance",
+        "Intact Shell",
+        "Uniform Appearance"
+      ]
+    },
+    "leather": {
+      "c_auc_activation": 0.934096305188742,
+      "c_auc_suppression": 0.7761470985155194,
+      "n_activation": 8,
+      "n_suppression": 2,
+      "n_images": 37,
+      "n_skipped": 0,
+      "convad_ref": null,
+      "suppression_concepts": [
+        "creased area",
+        "darker patch"
+      ]
+    },
+    "metal_nut": {
+      "c_auc_activation": 0.927251332022635,
+      "c_auc_suppression": 0.9228961748633879,
+      "n_activation": 12,
+      "n_suppression": 5,
+      "n_images": 34,
+      "n_skipped": 0,
+      "convad_ref": null,
+      "suppression_concepts": [
+        "regular pattern",
+        "threaded interior",
+        "silver color",
+        "circular profile",
+        "rounded edges"
+      ]
+    },
+    "pill": {
+      "c_auc_activation": 0.7845758078749092,
+      "c_auc_suppression": 0.7612734487734487,
+      "n_activation": 9,
+      "n_suppression": 2,
+      "n_images": 44,
+      "n_skipped": 0,
+      "convad_ref": null,
+      "suppression_concepts": [
+        "surface indentation",
+        "raised markings"
+      ]
+    },
+    "screw": {
+      "c_auc_activation": 0.8335268097475359,
+      "c_auc_suppression": 0.9355466428995842,
+      "n_activation": 10,
+      "n_suppression": 5,
+      "n_images": 36,
+      "n_skipped": 0,
+      "convad_ref": null,
+      "suppression_concepts": [
+        "tapered form",
+        "Flat head",
+        "uniform appearance",
+        "rounded edges",
+        "smooth surface"
+      ]
+    },
+    "tile": {
+      "c_auc_activation": 0.8015524804963308,
+      "c_auc_suppression": 0.9309262166405023,
+      "n_activation": 8,
+      "n_suppression": 2,
+      "n_images": 35,
+      "n_skipped": 0,
+      "convad_ref": null,
+      "suppression_concepts": [
+        "rectangular shape",
+        "uniform color"
+      ]
+    },
+    "toothbrush": {
+      "c_auc_activation": 0.9523809523809523,
+      "c_auc_suppression": 0.9,
+      "n_activation": 2,
+      "n_suppression": 1,
+      "n_images": 11,
+      "n_skipped": 0,
+      "convad_ref": null,
+      "suppression_concepts": [
+        "rounded edges"
+      ]
+    },
+    "transistor": {
+      "c_auc_activation": 0.6836758893280632,
+      "c_auc_suppression": 0.7475786369743969,
+      "n_activation": 2,
+      "n_suppression": 2,
+      "n_images": 313,
+      "n_skipped": 0,
+      "convad_ref": null,
+      "suppression_concepts": [
+        "symmetrical design",
+        "solder joints"
+      ]
+    },
+    "wood": {
+      "c_auc_activation": 0.7296444658869561,
+      "c_auc_suppression": 0.8125019906518988,
+      "n_activation": 5,
+      "n_suppression": 2,
+      "n_images": 326,
+      "n_skipped": 0,
+      "convad_ref": null,
+      "suppression_concepts": [
+        "smooth surface",
+        "uniformity"
+      ]
+    },
+    "zipper": {
+      "c_auc_activation": 0.8601952770796054,
+      "c_auc_suppression": 0.8919642857142858,
+      "n_activation": 11,
+      "n_suppression": 2,
+      "n_images": 40,
+      "n_skipped": 0,
+      "convad_ref": null,
+      "suppression_concepts": [
+        "Crease Present",
+        "Consistent Spacing"
+      ]
+    }
+  },
+  "coverage": {
+    "well": 106,
+    "partial": 13,
+    "none": 0,
+    "total": 119
+  },
+  "per_category_per_concept": {
+    "bottle": [
+      {
+        "concept": "visible crack",
+        "type": "activation",
+        "best_auc": 0.9848571428571428,
+        "best_head": "irregular_bore_geometry",
+        "weight": 42
+      },
+      {
+        "concept": "glass fragment",
+        "type": "activation",
+        "best_auc": 0.9936974789915967,
+        "best_head": "irregular_bore_geometry",
+        "weight": 54
+      },
+      {
+        "concept": "foreign particles",
+        "type": "activation",
+        "best_auc": 0.9301278488048914,
+        "best_head": "irregular_bore_geometry",
+        "weight": 35
+      },
+      {
+        "concept": "sharp edge",
+        "type": "activation",
+        "best_auc": 0.9813510153336097,
+        "best_head": "surface_abrasion",
+        "weight": 38
+      },
+      {
+        "concept": "reflective highlights",
+        "type": "suppression",
+        "best_auc": 0.9246690734055356,
+        "best_head": "irregular_bore_geometry",
+        "weight": 277
+      },
+      {
+        "concept": "consistent color",
+        "type": "suppression",
+        "best_auc": 1.0,
+        "best_head": "irregular_bore_geometry",
+        "weight": 229
+      },
+      {
+        "concept": "amber color",
+        "type": "suppression",
+        "best_auc": 0.9214563646470262,
+        "best_head": "irregular_bore_geometry",
+        "weight": 257
+      },
+      {
+        "concept": "cylindrical shape",
+        "type": "suppression",
+        "best_auc": 0.9304807293825115,
+        "best_head": "irregular_bore_geometry",
+        "weight": 254
+      },
+      {
+        "concept": "smooth surface",
+        "type": "suppression",
+        "best_auc": 0.9872596153846154,
+        "best_head": "irregular_bore_geometry",
+        "weight": 240
+      }
+    ],
+    "cable": [
+      {
+        "concept": "cable misalignment",
+        "type": "activation",
+        "best_auc": 0.9333333333333333,
+        "best_head": "inlay_pattern_failure",
+        "weight": 3
+      },
+      {
+        "concept": "circular cable",
+        "type": "activation",
+        "best_auc": 0.65,
+        "best_head": "surface_discoloration",
+        "weight": 30
+      },
+      {
+        "concept": "exposed conductor",
+        "type": "activation",
+        "best_auc": 0.967741935483871,
+        "best_head": "inlay_pattern_failure",
+        "weight": 7
+      },
+      {
+        "concept": "sharp bend",
+        "type": "activation",
+        "best_auc": NaN,
+        "best_head": "\u2014",
+        "weight": 0
+      },
+      {
+        "concept": "cut cable end",
+        "type": "activation",
+        "best_auc": 0.9444444444444444,
+        "best_head": "surface_crack",
+        "weight": 2
+      },
+      {
+        "concept": "metallic shielding",
+        "type": "activation",
+        "best_auc": 0.9411764705882353,
+        "best_head": "inlay_pattern_failure",
+        "weight": 4
+      },
+      {
+        "concept": "material crack",
+        "type": "activation",
+        "best_auc": 1.0,
+        "best_head": "surface_discontinuity",
+        "weight": 1
+      },
+      {
+        "concept": "twisted cables",
+        "type": "suppression",
+        "best_auc": 0.9485294117647058,
+        "best_head": "inlay_pattern_failure",
+        "weight": 34
+      },
+      {
+        "concept": "uniform color",
+        "type": "suppression",
+        "best_auc": 0.8365384615384616,
+        "best_head": "inlay_pattern_failure",
+        "weight": 26
+      },
+      {
+        "concept": "gray color",
+        "type": "suppression",
+        "best_auc": 0.76,
+        "best_head": "through_hole_component_mounting",
+        "weight": 25
+      },
+      {
+        "concept": "black color",
+        "type": "suppression",
+        "best_auc": 0.6264204545454546,
+        "best_head": "incomplete_fastener_tips",
+        "weight": 22
+      },
+      {
+        "concept": "parallel lines",
+        "type": "suppression",
+        "best_auc": 0.9714285714285715,
+        "best_head": "inlay_pattern_failure",
+        "weight": 35
+      },
+      {
+        "concept": "repeating pattern",
+        "type": "suppression",
+        "best_auc": 1.0,
+        "best_head": "structural_segmentation_or_discontinuity",
+        "weight": 36
+      }
+    ],
+    "capsule": [
+      {
+        "concept": "linear defect",
+        "type": "activation",
+        "best_auc": 0.9107142857142858,
+        "best_head": "surface_crack",
+        "weight": 8
+      },
+      {
+        "concept": "blurred_imprint",
+        "type": "activation",
+        "best_auc": 0.9191919191919192,
+        "best_head": "planar_segmentation",
+        "weight": 3
+      },
+      {
+        "concept": "bicolor appearance",
+        "type": "activation",
+        "best_auc": 0.78125,
+        "best_head": "surface_crack",
+        "weight": 32
+      },
+      {
+        "concept": "visible fissure",
+        "type": "activation",
+        "best_auc": 0.9696969696969697,
+        "best_head": "surface_crack",
+        "weight": 3
+      },
+      {
+        "concept": "distorted_characters",
+        "type": "activation",
+        "best_auc": 0.9453125,
+        "best_head": "planar_segmentation",
+        "weight": 4
+      },
+      {
+        "concept": "asymmetrical appearance",
+        "type": "activation",
+        "best_auc": 0.8686868686868686,
+        "best_head": "panel_seam_misalignment",
+        "weight": 3
+      },
+      {
+        "concept": "surface depression",
+        "type": "activation",
+        "best_auc": 0.8529411764705882,
+        "best_head": "surface_crack",
+        "weight": 2
+      },
+      {
+        "concept": "edge deformation",
+        "type": "activation",
+        "best_auc": 0.921875,
+        "best_head": "panel_seam_misalignment",
+        "weight": 4
+      },
+      {
+        "concept": "distorted profile",
+        "type": "activation",
+        "best_auc": 0.9670781893004115,
+        "best_head": "planar_segmentation",
+        "weight": 9
+      },
+      {
+        "concept": "localized dent",
+        "type": "activation",
+        "best_auc": 0.8516129032258064,
+        "best_head": "planar_segmentation",
+        "weight": 5
+      },
+      {
+        "concept": "surface abrasion",
+        "type": "activation",
+        "best_auc": 0.838235294117647,
+        "best_head": "surface_abrasion",
+        "weight": 2
+      },
+      {
+        "concept": "compression mark",
+        "type": "activation",
+        "best_auc": 0.8686868686868686,
+        "best_head": "panel_seam_misalignment",
+        "weight": 3
+      },
+      {
+        "concept": "puncture mark",
+        "type": "activation",
+        "best_auc": 0.9714285714285714,
+        "best_head": "misplaced_surface_fragments",
+        "weight": 1
+      },
+      {
+        "concept": "deformed shape",
+        "type": "activation",
+        "best_auc": 0.9285714285714286,
+        "best_head": "planar_segmentation",
+        "weight": 8
+      },
+      {
+        "concept": "uniform texture",
+        "type": "suppression",
+        "best_auc": 1.0,
+        "best_head": "planar_segmentation",
+        "weight": 23
+      },
+      {
+        "concept": "smooth surface",
+        "type": "suppression",
+        "best_auc": 0.9346153846153846,
+        "best_head": "planar_segmentation",
+        "weight": 26
+      }
+    ],
+    "carpet": [
+      {
+        "concept": "Hole",
+        "type": "activation",
+        "best_auc": 1.0,
+        "best_head": "surface_discontinuity",
+        "weight": 1
+      },
+      {
+        "concept": "Dark Area",
+        "type": "activation",
+        "best_auc": 0.6018518518518519,
+        "best_head": "planar_segmentation",
+        "weight": 12
+      },
+      {
+        "concept": "Color Variation",
+        "type": "activation",
+        "best_auc": 0.6650717703349283,
+        "best_head": "surface_warpage_or_creasing",
+        "weight": 11
+      },
+      {
+        "concept": "Metallic Sheen",
+        "type": "activation",
+        "best_auc": 1.0,
+        "best_head": "surface_abrasion",
+        "weight": 2
+      },
+      {
+        "concept": "Uneven Distribution",
+        "type": "activation",
+        "best_auc": 0.6315789473684211,
+        "best_head": "planar_segmentation",
+        "weight": 11
+      },
+      {
+        "concept": "Irregular Shape",
+        "type": "activation",
+        "best_auc": 0.7204968944099379,
+        "best_head": "misplaced_surface_fragments",
+        "weight": 7
+      },
+      {
+        "concept": "Unraveling",
+        "type": "activation",
+        "best_auc": NaN,
+        "best_head": "\u2014",
+        "weight": 0
+      },
+      {
+        "concept": "Chromatic Anomaly",
+        "type": "activation",
+        "best_auc": 1.0,
+        "best_head": "woven_fabric_integrity",
+        "weight": 2
+      },
+      {
+        "concept": "Isolated Patch",
+        "type": "activation",
+        "best_auc": 1.0,
+        "best_head": "woven_fabric_integrity",
+        "weight": 1
+      },
+      {
+        "concept": "Discoloration",
+        "type": "activation",
+        "best_auc": 0.903846153846154,
+        "best_head": "incomplete_fastener_tips",
+        "weight": 4
+      },
+      {
+        "concept": "Pattern Disruption",
+        "type": "activation",
+        "best_auc": 0.8253968253968254,
+        "best_head": "inconsistent_marking_application",
+        "weight": 9
+      },
+      {
+        "concept": "Lighter Area",
+        "type": "suppression",
+        "best_auc": 0.76,
+        "best_head": "woven_fabric_integrity",
+        "weight": 10
+      },
+      {
+        "concept": "Shadowed Area",
+        "type": "suppression",
+        "best_auc": 0.9285714285714286,
+        "best_head": "inlay_pattern_failure",
+        "weight": 2
+      },
+      {
+        "concept": "Spotty Appearance",
+        "type": "suppression",
+        "best_auc": 0.6785714285714286,
+        "best_head": "surface_abrasion",
+        "weight": 2
+      }
+    ],
+    "grid": [
+      {
+        "concept": "metal particle cluster",
+        "type": "activation",
+        "best_auc": 1.0,
+        "best_head": "woven_fabric_integrity",
+        "weight": 2
+      },
+      {
+        "concept": "broken thread",
+        "type": "activation",
+        "best_auc": 1.0,
+        "best_head": "surface_warpage_or_creasing",
+        "weight": 3
+      },
+      {
+        "concept": "gap",
+        "type": "activation",
+        "best_auc": 1.0,
+        "best_head": "surface_discontinuity",
+        "weight": 5
+      },
+      {
+        "concept": "distorted pattern",
+        "type": "activation",
+        "best_auc": 1.0,
+        "best_head": "surface_discontinuity",
+        "weight": 5
+      },
+      {
+        "concept": "adhesive residue",
+        "type": "activation",
+        "best_auc": 1.0,
+        "best_head": "structural_segmentation_or_discontinuity",
+        "weight": 1
+      },
+      {
+        "concept": "consistent lines",
+        "type": "suppression",
+        "best_auc": 1.0,
+        "best_head": "perimeter_discontinuity",
+        "weight": 31
+      },
+      {
+        "concept": "visible strand",
+        "type": "suppression",
+        "best_auc": 0.896,
+        "best_head": "through_hole_component_mounting",
+        "weight": 25
+      },
+      {
+        "concept": "dark coloration",
+        "type": "suppression",
+        "best_auc": 0.7463768115942029,
+        "best_head": "planar_segmentation",
+        "weight": 23
+      },
+      {
+        "concept": "rectangular cells",
+        "type": "suppression",
+        "best_auc": 0.6774193548387096,
+        "best_head": "incomplete_fastener_tips",
+        "weight": 31
+      },
+      {
+        "concept": "uniform texture",
+        "type": "suppression",
+        "best_auc": 1.0,
+        "best_head": "surface_discontinuity",
+        "weight": 28
+      },
+      {
+        "concept": "sharp edge",
+        "type": "suppression",
+        "best_auc": 0.88,
+        "best_head": "misplaced_surface_fragments",
+        "weight": 20
+      },
+      {
+        "concept": "metallic appearance",
+        "type": "suppression",
+        "best_auc": 0.84375,
+        "best_head": "through_hole_component_mounting",
+        "weight": 32
+      }
+    ],
+    "hazelnut": [
+      {
+        "concept": "Crack",
+        "type": "activation",
+        "best_auc": 1.0,
+        "best_head": "perimeter_discontinuity",
+        "weight": 2
+      },
+      {
+        "concept": "Hole",
+        "type": "activation",
+        "best_auc": 1.0,
+        "best_head": "surface_abrasion",
+        "weight": 3
+      },
+      {
+        "concept": "Split",
+        "type": "activation",
+        "best_auc": 1.0,
+        "best_head": "perimeter_discontinuity",
+        "weight": 2
+      },
+      {
+        "concept": "Fracture",
+        "type": "activation",
+        "best_auc": 1.0,
+        "best_head": "perimeter_discontinuity",
+        "weight": 2
+      },
+      {
+        "concept": "Color Deviation",
+        "type": "activation",
+        "best_auc": NaN,
+        "best_head": "\u2014",
+        "weight": 0
+      },
+      {
+        "concept": "Surface Imperfection",
+        "type": "activation",
+        "best_auc": 0.8005952380952381,
+        "best_head": "woven_fabric_integrity",
+        "weight": 14
+      },
+      {
+        "concept": "Texture Anomaly",
+        "type": "activation",
+        "best_auc": 0.7815384615384616,
+        "best_head": "woven_fabric_integrity",
+        "weight": 13
+      },
+      {
+        "concept": "Structural Damage",
+        "type": "activation",
+        "best_auc": 0.9926470588235294,
+        "best_head": "surface_discontinuity",
+        "weight": 4
+      },
+      {
+        "concept": "Visible Mark",
+        "type": "activation",
+        "best_auc": 0.8248847926267281,
+        "best_head": "perimeter_discontinuity",
+        "weight": 7
+      },
+      {
+        "concept": "Irregular Shape",
+        "type": "activation",
+        "best_auc": 0.9926470588235294,
+        "best_head": "surface_discontinuity",
+        "weight": 4
+      },
+      {
+        "concept": "Surface Discontinuity",
+        "type": "activation",
+        "best_auc": 0.7371794871794872,
+        "best_head": "woven_fabric_integrity",
+        "weight": 12
+      },
+      {
+        "concept": "Linear Disruption",
+        "type": "activation",
+        "best_auc": 1.0,
+        "best_head": "perimeter_discontinuity",
+        "weight": 2
+      },
+      {
+        "concept": "Visible Crevices",
+        "type": "activation",
+        "best_auc": 1.0,
+        "best_head": "perimeter_discontinuity",
+        "weight": 1
+      },
+      {
+        "concept": "Dark Interior",
+        "type": "activation",
+        "best_auc": NaN,
+        "best_head": "\u2014",
+        "weight": 0
+      },
+      {
+        "concept": "Broken Shell",
+        "type": "activation",
+        "best_auc": 1.0,
+        "best_head": "perimeter_discontinuity",
+        "weight": 6
+      },
+      {
+        "concept": "Visible Ink",
+        "type": "activation",
+        "best_auc": 0.9027777777777777,
+        "best_head": "perimeter_discontinuity",
+        "weight": 2
+      },
+      {
+        "concept": "Uneven Tone",
+        "type": "activation",
+        "best_auc": 1.0,
+        "best_head": "perimeter_discontinuity",
+        "weight": 6
+      },
+      {
+        "concept": "Compact Appearance",
+        "type": "suppression",
+        "best_auc": 1.0,
+        "best_head": "perimeter_discontinuity",
+        "weight": 32
+      },
+      {
+        "concept": "Natural Appearance",
+        "type": "suppression",
+        "best_auc": 0.9027777777777777,
+        "best_head": "perimeter_discontinuity",
+        "weight": 36
+      },
+      {
+        "concept": "Intact Shell",
+        "type": "suppression",
+        "best_auc": 1.0,
+        "best_head": "perimeter_discontinuity",
+        "weight": 32
+      },
+      {
+        "concept": "Uniform Appearance",
+        "type": "suppression",
+        "best_auc": 1.0,
+        "best_head": "perimeter_discontinuity",
+        "weight": 32
+      }
+    ],
+    "leather": [
+      {
+        "concept": "sharp bend",
+        "type": "activation",
+        "best_auc": 0.9714285714285714,
+        "best_head": "surface_crack",
+        "weight": 2
+      },
+      {
+        "concept": "perforated region",
+        "type": "activation",
+        "best_auc": 0.9803921568627451,
+        "best_head": "surface_crack",
+        "weight": 3
+      },
+      {
+        "concept": "uneven tone",
+        "type": "activation",
+        "best_auc": 0.9444444444444444,
+        "best_head": "inlay_pattern_failure",
+        "weight": 36
+      },
+      {
+        "concept": "white residue",
+        "type": "activation",
+        "best_auc": 0.9803921568627451,
+        "best_head": "surface_crack",
+        "weight": 3
+      },
+      {
+        "concept": "linear boundary",
+        "type": "activation",
+        "best_auc": 1.0,
+        "best_head": "surface_crack",
+        "weight": 3
+      },
+      {
+        "concept": "localized deformation",
+        "type": "activation",
+        "best_auc": 0.8400000000000001,
+        "best_head": "surface_crack",
+        "weight": 12
+      },
+      {
+        "concept": "adhesive deposit",
+        "type": "activation",
+        "best_auc": 0.9857142857142857,
+        "best_head": "surface_warpage_or_creasing",
+        "weight": 2
+      },
+      {
+        "concept": "raised area",
+        "type": "activation",
+        "best_auc": 0.9857142857142857,
+        "best_head": "surface_warpage_or_creasing",
+        "weight": 2
+      },
+      {
+        "concept": "creased area",
+        "type": "suppression",
+        "best_auc": 0.8333333333333333,
+        "best_head": "planar_segmentation",
+        "weight": 34
+      },
+      {
+        "concept": "darker patch",
+        "type": "suppression",
+        "best_auc": 0.6681286549707602,
+        "best_head": "surface_warpage_or_creasing",
+        "weight": 18
+      }
+    ],
+    "metal_nut": [
+      {
+        "concept": "metal surface damage",
+        "type": "activation",
+        "best_auc": 0.9955555555555555,
+        "best_head": "perimeter_discontinuity",
+        "weight": 9
+      },
+      {
+        "concept": "scratched area",
+        "type": "activation",
+        "best_auc": 0.8511904761904762,
+        "best_head": "misplaced_surface_fragments",
+        "weight": 6
+      },
+      {
+        "concept": "distorted profile",
+        "type": "activation",
+        "best_auc": 0.9880952380952381,
+        "best_head": "woven_fabric_integrity",
+        "weight": 6
+      },
+      {
+        "concept": "misaligned faces",
+        "type": "activation",
+        "best_auc": 0.9247311827956989,
+        "best_head": "woven_fabric_integrity",
+        "weight": 3
+      },
+      {
+        "concept": "bent profile",
+        "type": "activation",
+        "best_auc": 0.9880952380952381,
+        "best_head": "woven_fabric_integrity",
+        "weight": 6
+      },
+      {
+        "concept": "hexagonal_shape",
+        "type": "activation",
+        "best_auc": 0.8317307692307692,
+        "best_head": "inconsistent_marking_application",
+        "weight": 8
+      },
+      {
+        "concept": "irregular geometry",
+        "type": "activation",
+        "best_auc": 0.9682539682539684,
+        "best_head": "perimeter_discontinuity",
+        "weight": 7
+      },
+      {
+        "concept": "deformed thread",
+        "type": "activation",
+        "best_auc": 0.9862068965517242,
+        "best_head": "perimeter_discontinuity",
+        "weight": 5
+      },
+      {
+        "concept": "uneven color",
+        "type": "activation",
+        "best_auc": 0.9172413793103449,
+        "best_head": "perimeter_discontinuity",
+        "weight": 5
+      },
+      {
+        "concept": "linear mark",
+        "type": "activation",
+        "best_auc": 0.8333333333333333,
+        "best_head": "misplaced_surface_fragments",
+        "weight": 4
+      },
+      {
+        "concept": "dark color",
+        "type": "activation",
+        "best_auc": 0.90625,
+        "best_head": "surface_void",
+        "weight": 2
+      },
+      {
+        "concept": "surface abrasion",
+        "type": "activation",
+        "best_auc": 0.9041666666666667,
+        "best_head": "perimeter_discontinuity",
+        "weight": 10
+      },
+      {
+        "concept": "regular pattern",
+        "type": "suppression",
+        "best_auc": 0.9903846153846154,
+        "best_head": "perimeter_discontinuity",
+        "weight": 26
+      },
+      {
+        "concept": "threaded interior",
+        "type": "suppression",
+        "best_auc": 0.8416666666666668,
+        "best_head": "perimeter_discontinuity",
+        "weight": 30
+      },
+      {
+        "concept": "silver color",
+        "type": "suppression",
+        "best_auc": 0.8844444444444445,
+        "best_head": "panel_seam_misalignment",
+        "weight": 9
+      },
+      {
+        "concept": "circular profile",
+        "type": "suppression",
+        "best_auc": 0.9226190476190477,
+        "best_head": "perimeter_discontinuity",
+        "weight": 28
+      },
+      {
+        "concept": "rounded edges",
+        "type": "suppression",
+        "best_auc": 0.9586206896551724,
+        "best_head": "woven_fabric_integrity",
+        "weight": 29
+      }
+    ],
+    "pill": [
+      {
+        "concept": "crack present",
+        "type": "activation",
+        "best_auc": 1.0,
+        "best_head": "surface_crack",
+        "weight": 1
+      },
+      {
+        "concept": "discoloration",
+        "type": "activation",
+        "best_auc": 0.9282051282051282,
+        "best_head": "inconsistent_marking_application",
+        "weight": 5
+      },
+      {
+        "concept": "scratched area",
+        "type": "activation",
+        "best_auc": 1.0,
+        "best_head": "surface_discontinuity",
+        "weight": 2
+      },
+      {
+        "concept": "blurred_imprint",
+        "type": "activation",
+        "best_auc": 0.9349593495934959,
+        "best_head": "inconsistent_marking_application",
+        "weight": 3
+      },
+      {
+        "concept": "linear marking",
+        "type": "activation",
+        "best_auc": 0.8070175438596492,
+        "best_head": "planar_segmentation",
+        "weight": 6
+      },
+      {
+        "concept": "oval shape",
+        "type": "activation",
+        "best_auc": 0.6773504273504274,
+        "best_head": "planar_segmentation",
+        "weight": 26
+      },
+      {
+        "concept": "foreign particle",
+        "type": "activation",
+        "best_auc": 0.8571428571428572,
+        "best_head": "inconsistent_marking_application",
+        "weight": 2
+      },
+      {
+        "concept": "flat top",
+        "type": "activation",
+        "best_auc": NaN,
+        "best_head": "\u2014",
+        "weight": 0
+      },
+      {
+        "concept": "localized marking",
+        "type": "activation",
+        "best_auc": 0.9230769230769231,
+        "best_head": "inconsistent_marking_application",
+        "weight": 5
+      },
+      {
+        "concept": "surface indentation",
+        "type": "suppression",
+        "best_auc": 0.7355371900826446,
+        "best_head": "inconsistent_marking_application",
+        "weight": 22
+      },
+      {
+        "concept": "raised markings",
+        "type": "suppression",
+        "best_auc": 0.7895833333333333,
+        "best_head": "surface_discontinuity",
+        "weight": 20
+      }
+    ],
+    "screw": [
+      {
+        "concept": "Head scratch",
+        "type": "activation",
+        "best_auc": 0.9555555555555556,
+        "best_head": "incomplete_fastener_tips",
+        "weight": 6
+      },
+      {
+        "concept": "Neck scratch",
+        "type": "activation",
+        "best_auc": 0.9548387096774194,
+        "best_head": "incomplete_fastener_tips",
+        "weight": 5
+      },
+      {
+        "concept": "thread truncation",
+        "type": "activation",
+        "best_auc": 0.926470588235294,
+        "best_head": "surface_void",
+        "weight": 2
+      },
+      {
+        "concept": "metal abrasion",
+        "type": "activation",
+        "best_auc": 0.90625,
+        "best_head": "incomplete_fastener_tips",
+        "weight": 8
+      },
+      {
+        "concept": "head marking",
+        "type": "activation",
+        "best_auc": 0.6790123456790124,
+        "best_head": "surface_warpage_or_creasing",
+        "weight": 9
+      },
+      {
+        "concept": "altered geometry",
+        "type": "activation",
+        "best_auc": 0.96875,
+        "best_head": "surface_void",
+        "weight": 4
+      },
+      {
+        "concept": "visible_markings",
+        "type": "activation",
+        "best_auc": 0.8421052631578947,
+        "best_head": "incomplete_fastener_tips",
+        "weight": 17
+      },
+      {
+        "concept": "unnatural rounding",
+        "type": "activation",
+        "best_auc": 0.96875,
+        "best_head": "surface_void",
+        "weight": 4
+      },
+      {
+        "concept": "visible lines",
+        "type": "activation",
+        "best_auc": 0.7961538461538462,
+        "best_head": "incomplete_fastener_tips",
+        "weight": 26
+      },
+      {
+        "concept": "linear mark",
+        "type": "activation",
+        "best_auc": 0.7961538461538462,
+        "best_head": "incomplete_fastener_tips",
+        "weight": 26
+      },
+      {
+        "concept": "tapered form",
+        "type": "suppression",
+        "best_auc": 0.9163636363636364,
+        "best_head": "incomplete_fastener_tips",
+        "weight": 25
+      },
+      {
+        "concept": "Flat head",
+        "type": "suppression",
+        "best_auc": 0.7777777777777778,
+        "best_head": "surface_crack",
+        "weight": 6
+      },
+      {
+        "concept": "uniform appearance",
+        "type": "suppression",
+        "best_auc": 1.0,
+        "best_head": "incomplete_fastener_tips",
+        "weight": 28
+      },
+      {
+        "concept": "rounded edges",
+        "type": "suppression",
+        "best_auc": 0.9870967741935485,
+        "best_head": "incomplete_fastener_tips",
+        "weight": 31
+      },
+      {
+        "concept": "smooth surface",
+        "type": "suppression",
+        "best_auc": 0.7708333333333333,
+        "best_head": "woven_fabric_integrity",
+        "weight": 12
+      }
+    ],
+    "tile": [
+      {
+        "concept": "gray line",
+        "type": "activation",
+        "best_auc": 0.736,
+        "best_head": "woven_fabric_integrity",
+        "weight": 10
+      },
+      {
+        "concept": "dark staining",
+        "type": "activation",
+        "best_auc": 0.764,
+        "best_head": "surface_abrasion",
+        "weight": 10
+      },
+      {
+        "concept": "viscous film",
+        "type": "activation",
+        "best_auc": 0.9791666666666666,
+        "best_head": "planar_segmentation",
+        "weight": 3
+      },
+      {
+        "concept": "visible fissure",
+        "type": "activation",
+        "best_auc": 1.0,
+        "best_head": "misplaced_surface_fragments",
+        "weight": 2
+      },
+      {
+        "concept": "material separation",
+        "type": "activation",
+        "best_auc": 0.9948979591836735,
+        "best_head": "surface_crack",
+        "weight": 7
+      },
+      {
+        "concept": "uneven height",
+        "type": "activation",
+        "best_auc": 0.9411764705882353,
+        "best_head": "structural_segmentation_or_discontinuity",
+        "weight": 1
+      },
+      {
+        "concept": "discolored patch",
+        "type": "activation",
+        "best_auc": 0.9545454545454545,
+        "best_head": "inconsistent_marking_application",
+        "weight": 2
+      },
+      {
+        "concept": "surface mark",
+        "type": "activation",
+        "best_auc": 0.7166666666666666,
+        "best_head": "misplaced_surface_fragments",
+        "weight": 20
+      },
+      {
+        "concept": "rectangular shape",
+        "type": "suppression",
+        "best_auc": 1.0,
+        "best_head": "surface_crack",
+        "weight": 27
+      },
+      {
+        "concept": "uniform color",
+        "type": "suppression",
+        "best_auc": 0.8461538461538461,
+        "best_head": "perimeter_discontinuity",
+        "weight": 22
+      }
+    ],
+    "toothbrush": [
+      {
+        "concept": "blue color",
+        "type": "activation",
+        "best_auc": 0.8928571428571428,
+        "best_head": "structural_segmentation_or_discontinuity",
+        "weight": 4
+      },
+      {
+        "concept": "deformed head",
+        "type": "activation",
+        "best_auc": 1.0,
+        "best_head": "through_hole_component_mounting",
+        "weight": 5
+      },
+      {
+        "concept": "rounded edges",
+        "type": "suppression",
+        "best_auc": 0.9,
+        "best_head": "surface_discoloration",
+        "weight": 10
+      }
+    ],
+    "transistor": [
+      {
+        "concept": "metallic body",
+        "type": "activation",
+        "best_auc": 0.6048716605552645,
+        "best_head": "planar_segmentation",
+        "weight": 83
+      },
+      {
+        "concept": "visible markings",
+        "type": "activation",
+        "best_auc": 0.9259259259259258,
+        "best_head": "through_hole_component_mounting",
+        "weight": 27
+      },
+      {
+        "concept": "symmetrical design",
+        "type": "suppression",
+        "best_auc": 0.8757949125596185,
+        "best_head": "through_hole_component_mounting",
+        "weight": 296
+      },
+      {
+        "concept": "solder joints",
+        "type": "suppression",
+        "best_auc": 0.568559686157295,
+        "best_head": "incomplete_fastener_tips",
+        "weight": 212
+      }
+    ],
+    "wood": [
+      {
+        "concept": "surface abrasion",
+        "type": "activation",
+        "best_auc": 0.9164750957854406,
+        "best_head": "surface_discontinuity",
+        "weight": 36
+      },
+      {
+        "concept": "linear mark",
+        "type": "activation",
+        "best_auc": 0.6076262308820448,
+        "best_head": "surface_abrasion",
+        "weight": 215
+      },
+      {
+        "concept": "fiber distortion",
+        "type": "activation",
+        "best_auc": 0.9637997432605905,
+        "best_head": "misplaced_surface_fragments",
+        "weight": 41
+      },
+      {
+        "concept": "dark stain",
+        "type": "activation",
+        "best_auc": 0.9395569620253164,
+        "best_head": "panel_seam_misalignment",
+        "weight": 10
+      },
+      {
+        "concept": "void area",
+        "type": "activation",
+        "best_auc": 0.959307010475423,
+        "best_head": "misplaced_surface_fragments",
+        "weight": 34
+      },
+      {
+        "concept": "smooth surface",
+        "type": "suppression",
+        "best_auc": 0.7657536698890083,
+        "best_head": "surface_discoloration",
+        "weight": 228
+      },
+      {
+        "concept": "uniformity",
+        "type": "suppression",
+        "best_auc": 0.8572860962566846,
+        "best_head": "surface_discoloration",
+        "weight": 238
+      }
+    ],
+    "zipper": [
+      {
+        "concept": "Fabric Distortion",
+        "type": "activation",
+        "best_auc": 0.9743589743589743,
+        "best_head": "planar_segmentation",
+        "weight": 1
+      },
+      {
+        "concept": "Gap in Line",
+        "type": "activation",
+        "best_auc": 0.9305555555555556,
+        "best_head": "surface_discoloration",
+        "weight": 4
+      },
+      {
+        "concept": "Fiber Misalignment",
+        "type": "activation",
+        "best_auc": NaN,
+        "best_head": "\u2014",
+        "weight": 0
+      },
+      {
+        "concept": "Deformed Slider",
+        "type": "activation",
+        "best_auc": 0.9743589743589743,
+        "best_head": "planar_segmentation",
+        "weight": 1
+      },
+      {
+        "concept": "Frayed Edge",
+        "type": "activation",
+        "best_auc": 0.9909909909909911,
+        "best_head": "surface_void",
+        "weight": 3
+      },
+      {
+        "concept": "Damaged Segment",
+        "type": "activation",
+        "best_auc": 1.0,
+        "best_head": "surface_discoloration",
+        "weight": 9
+      },
+      {
+        "concept": "Irregular Border",
+        "type": "activation",
+        "best_auc": 0.9583333333333333,
+        "best_head": "surface_discontinuity",
+        "weight": 4
+      },
+      {
+        "concept": "Uneven Surface",
+        "type": "activation",
+        "best_auc": 0.72,
+        "best_head": "surface_crack",
+        "weight": 30
+      },
+      {
+        "concept": "Broken Element",
+        "type": "activation",
+        "best_auc": 0.954954954954955,
+        "best_head": "surface_discoloration",
+        "weight": 3
+      },
+      {
+        "concept": "Irregular Pattern",
+        "type": "activation",
+        "best_auc": 0.9305555555555556,
+        "best_head": "surface_crack",
+        "weight": 4
+      },
+      {
+        "concept": "Disrupted Structure",
+        "type": "activation",
+        "best_auc": 0.99609375,
+        "best_head": "structural_segmentation_or_discontinuity",
+        "weight": 8
+      },
+      {
+        "concept": "Crease Present",
+        "type": "suppression",
+        "best_auc": 0.8225,
+        "best_head": "surface_void",
+        "weight": 20
+      },
+      {
+        "concept": "Consistent Spacing",
+        "type": "suppression",
+        "best_auc": 0.9305555555555556,
+        "best_head": "surface_discoloration",
+        "weight": 36
+      }
+    ]
+  }
+}

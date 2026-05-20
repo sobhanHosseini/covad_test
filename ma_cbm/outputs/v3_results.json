@@ -1,0 +1,101 @@
+{
+  "results": {
+    "bottle": {
+      "v3_concept": 1.0,
+      "v3_dual": 1.0,
+      "bwt": 0.0,
+      "type": "T"
+    },
+    "cable": {
+      "v3_concept": 0.9981259370314842,
+      "v3_dual": 0.9814467766116942,
+      "bwt": 0.0,
+      "type": "T"
+    },
+    "capsule": {
+      "v3_concept": 1.0,
+      "v3_dual": 0.9752692461108895,
+      "bwt": 0.0,
+      "type": "T"
+    },
+    "carpet": {
+      "v3_concept": 0.9995987158908507,
+      "v3_dual": 0.9983948635634029,
+      "bwt": 0.0,
+      "type": "S"
+    },
+    "grid": {
+      "v3_concept": 1.0,
+      "v3_dual": 1.0,
+      "bwt": 0.0,
+      "type": "S"
+    },
+    "hazelnut": {
+      "v3_concept": 1.0,
+      "v3_dual": 0.9985714285714286,
+      "bwt": 0.0,
+      "type": "S"
+    },
+    "leather": {
+      "v3_concept": 1.0,
+      "v3_dual": 1.0,
+      "bwt": 0.0,
+      "type": "S"
+    },
+    "metal_nut": {
+      "v3_concept": 0.9936461388074291,
+      "v3_dual": 0.9975562072336266,
+      "bwt": 0.0,
+      "type": "S"
+    },
+    "pill": {
+      "v3_concept": 1.0,
+      "v3_dual": 0.9948172394980905,
+      "bwt": 0.0,
+      "type": "S"
+    },
+    "screw": {
+      "v3_concept": 0.9995900799344127,
+      "v3_dual": 0.9852428776388605,
+      "bwt": 0.0,
+      "type": "T"
+    },
+    "tile": {
+      "v3_concept": 1.0,
+      "v3_dual": 1.0,
+      "bwt": 0.0,
+      "type": "S"
+    },
+    "toothbrush": {
+      "v3_concept": 0.9888888888888888,
+      "v3_dual": 0.9916666666666667,
+      "bwt": 0.0,
+      "type": "T"
+    },
+    "transistor": {
+      "v3_concept": 0.97875,
+      "v3_dual": 0.9895833333333333,
+      "bwt": -0.0004166666666666208,
+      "type": "T"
+    },
+    "wood": {
+      "v3_concept": 1.0,
+      "v3_dual": 0.9956140350877192,
+      "bwt": 0.0,
+      "type": "S"
+    },
+    "zipper": {
+      "v3_concept": 1.0,
+      "v3_dual": 0.9997373949579832,
+      "bwt": NaN,
+      "type": "S"
+    }
+  },
+  "summary": {
+    "surface": 0.9992494282998088,
+    "structural": 0.9942258176424642,
+    "overall": 0.997239984036871,
+    "bwt": -2.9761904761901486e-05,
+    "dual_overall": 0.9938600046182464
+  }
+}
