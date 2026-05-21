@@ -1,0 +1,86 @@
+[
+  {
+    "concept": "fiber_strand_breakage",
+    "parent": "surface_discontinuity",
+    "n_pos": 1282,
+    "f1": 0.8827586206896552,
+    "auc": 0.9971427743293378
+  },
+  {
+    "concept": "micro_surface_fracture",
+    "parent": "surface_discontinuity",
+    "n_pos": 6749,
+    "f1": 0.8983111749910169,
+    "auc": 0.9745759950822191
+  },
+  {
+    "concept": "diffuse_surface_mottling",
+    "parent": "surface_discontinuity",
+    "n_pos": 7278,
+    "f1": 0.9291497975708503,
+    "auc": 0.9867058126335471
+  },
+  {
+    "concept": "coating_mottling_or_streaking",
+    "parent": "surface_discoloration",
+    "n_pos": 2832,
+    "f1": 0.9511784511784511,
+    "auc": 0.9977259702932397
+  },
+  {
+    "concept": "material_residue_build_up",
+    "parent": "surface_discoloration",
+    "n_pos": 5226,
+    "f1": 0.8779631255487269,
+    "auc": 0.9837080899133821
+  },
+  {
+    "concept": "hairline_micro_fracture_network",
+    "parent": "surface_crack",
+    "n_pos": 1851,
+    "f1": 0.8608187134502924,
+    "auc": 0.9970836323048713
+  },
+  {
+    "concept": "networked_micro_cracking",
+    "parent": "surface_crack",
+    "n_pos": 7443,
+    "f1": 0.8839427662957074,
+    "auc": 0.968907168642258
+  },
+  {
+    "concept": "directional_scuffing_marks",
+    "parent": "surface_abrasion",
+    "n_pos": 3380,
+    "f1": 0.8554533508541393,
+    "auc": 0.9878572552360341
+  },
+  {
+    "concept": "shallow_scuffing_wear",
+    "parent": "surface_abrasion",
+    "n_pos": 2080,
+    "f1": 0.9076923076923077,
+    "auc": 0.9971389630106735
+  },
+  {
+    "concept": "cumulative_scratch_and_stripping",
+    "parent": "surface_abrasion",
+    "n_pos": 4610,
+    "f1": 0.7792329279700655,
+    "auc": 0.9494710001696836
+  },
+  {
+    "concept": "surface_boundary_defects",
+    "parent": "surface_void",
+    "n_pos": 2137,
+    "f1": 0.66723259762309,
+    "auc": 0.9675019024150658
+  },
+  {
+    "concept": "gas_entrapment_porosity",
+    "parent": "surface_void",
+    "n_pos": 2796,
+    "f1": 0.8587301587301587,
+    "auc": 0.9915506055520441
+  }
+]
